@@ -1,0 +1,49 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: The Sandbox
+metadata:
+  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
+  title: The Sandbox
+  description: The Sandbox is an area of [docs.microsoft.com](https://docs.microsoft.com/) that is designed to be a place where we can experiment, play with new technology, and get feedback on ideas.
+  keywords: Azure, .NET, Node.js, API
+  author: brianpeek
+  ms.author: brpeek
+  manager: timheuer
+  ms.date: 08/09/2017
+  ms.topic: article
+  featureFlags:
+  - clicktale
+  ms.service: multiple
+sections:
+- items:
+  - type: markdown
+    text: The Sandbox is an area of [docs.microsoft.com](https://docs.microsoft.com/) that is designed to be a place where we can experiment, play with new technology, and get feedback on ideas. This content isn't guaranteed to be kept up-to-date, maintained, or even work at any given moment, and we may revise, rewrite, or even delete things at any time. Of course, community contributions and feedback are welcome. We hope you find something fun or interesting to explore and learn from!
+- title: Demos and Code
+  items:
+  - type: paragraph
+    text: Some fun demos (with code!) using various Azure services
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items: 
+    - title: Placeholder1
+      html: <p>Some text goes here.</p>
+      href: https://review.docs.microsoft.com/sandbox/template
+      image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
+    - title: Placeholder2
+      html: <p>Some text goes here.</p>
+      href: https://review.docs.microsoft.com/sandbox/template
+      image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
+    - title: Placeholder3
+      html: <p>Some text goes here.</p>
+      href: https://review.docs.microsoft.com/sandbox/template
+      image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
+    - title: Placeholder4
+      html: <p>Some text goes here.</p>
+      href: https://review.docs.microsoft.com/sandbox/template
+      image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
