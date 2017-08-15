@@ -24,7 +24,7 @@ sections:
     text: Some fun demos (with code!) using various Azure services
   - type: list
     style: cards
-    className: cardsM
+    className: cardsC
     columns: 2
     items: 
     - title: Placeholder1
