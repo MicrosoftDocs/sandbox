@@ -4,11 +4,5 @@
     - name: Demos
       expanded: true
       items:
-      - name: Placeholder1
-        href: https://review.docs.microsoft.com/sandbox/template
-      - name: Placeholder2
-        href: https://review.docs.microsoft.com/sandbox/template
-      - name: Placeholder3
-        href: https://review.docs.microsoft.com/sandbox/template
-      - name: Placeholder4
-        href: https://review.docs.microsoft.com/sandbox/template
+      - name: GitHubBot
+        href: /sandbox/githubbot

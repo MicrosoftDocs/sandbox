@@ -24,26 +24,11 @@ sections:
     text: Some fun demos (with code!) using various Azure services
   - type: list
     style: cards
-    className: cardsM
+    className: cardsC
     columns: 2
     items: 
-    - title: Placeholder1
-      html: <p>Some text goes here.</p>
-      href: https://review.docs.microsoft.com/sandbox/template
+    - title: GitHubBot
+      html: <p>Manage GitHub repos and issues in chat.</p>
+      href: githubbot
       image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-    - title: Placeholder2
-      html: <p>Some text goes here.</p>
-      href: https://review.docs.microsoft.com/sandbox/template
-      image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-    - title: Placeholder3
-      html: <p>Some text goes here.</p>
-      href: https://review.docs.microsoft.com/sandbox/template
-      image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-    - title: Placeholder4
-      html: <p>Some text goes here.</p>
-      href: https://review.docs.microsoft.com/sandbox/template
-      image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
+        src: media/githubbot/index.png
