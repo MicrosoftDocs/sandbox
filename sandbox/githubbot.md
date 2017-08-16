@@ -28,7 +28,7 @@ ms.devlang: csharp
 * [GitHubBot Repo](https://github.com/BrianPeek/GitHubBot)
 
 ## Configuration
-Setting this bot up for your own use is a bit tricky as there many parts.  However, if you follow this guide closely, and in the order specified, you should be able to get this running yourself.
+Setting this bot up for your own use is a bit tricky as there many parts.  However, if you follow this guide closely, and in the order specified, you should be able to get this running yourself.  Note that all of the IDs and keys shown in this guide are fake/invalid and you will need to create your own.
 
 ### Azure Deployment
 1. Click the [Deploy to Azure](http://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot) link here or the button above.
