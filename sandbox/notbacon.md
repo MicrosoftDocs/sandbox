@@ -51,7 +51,7 @@ The application consists of two components:
     ![New Project](media/notbacon/create-custom-vision-project.png)
 
 1. Obtain a variety of photos. To properly train your model, you need at least 30 photos that contain bacon, and 30 that do not. Download and separate the photos into two folders: `bacon` and `not-bacon`.
-    > Tip: A good place to find the photos is by doing an internet image search for "breakfast". 
+    > Tip: A good place to find the photos is by doing an internet image search for `breakfast`. 
 
 1. Click on **Add Images** and select all the photos you previously downloaded in the `bacon` folder.
     * Create a tag named `bacon`, click **+** to add it.
@@ -75,10 +75,10 @@ The application consists of two components:
 
 ### Obtain Custom Vision Service API information
 
-In order to configure the web application, you need some information about the Custom Vision Service API project you just created.
+In order to configure the web application, you need some information about the Custom Vision Service API project you created.
 
 1. Select the **Performance** tab in your project.
-1. If you have trained your model more than once, select the latest iteration and click **Make Default**. The default REST API endpoint of your project will be set to use this iteration of the model.
+1. If you have trained your model more than once, select the latest iteration and click **Make Default**. The default REST API endpoint of your project is set to use this iteration of the model.
     
     ![Make default](media/notbacon/set-default.png)
 
@@ -88,7 +88,7 @@ In order to configure the web application, you need some information about the C
 
 ### Deploy to a Functions App
 
-1. Click the Deploy to Azure link here or the button above.
+1. Click the Deploy to Azure link here or the button at the top of this page.
 1. Enter the information for your Azure subscription, such as the resource group name, site name, etc.
 1. Fill in the **Custom Vision API Key** and **Custom Vision API URL** with the values that you previously copied.
 
