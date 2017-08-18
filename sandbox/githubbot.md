@@ -27,8 +27,24 @@ ms.devlang: csharp
 ## Links
 * [GitHubBot Repo](https://github.com/BrianPeek/GitHubBot)
 
+## What's It Do?
+GitHubBot lets you manage your GitHub repos and issues from a chat window.  For example, you can:
+
+* Log into GitHub with OAuth
+* List your public and private repos
+* List issues in your repos
+* Add comments to issues
+* Close issues
+* Create new issues
+
+You can see a demo of some of these interactions below.
+
+![demo](media/githubbot/demo.gif)
+
+The bot can understand long sentences, short commands, and it remembers the last repo and issue you mentioned, so the conversation flows naturally.  Responses also include clickable links you can use to view detailed information on the GitHub website.
+
 ## Configuration
-Setting this bot up for your own use is a bit tricky as there many parts.  However, if you follow this guide closely, and in the order specified, you should be able to get this running yourself.  Note that all of the IDs and keys shown in this guide are fake/invalid and you will need to create your own.
+Setting this bot up for your own use is a bit tricky as there many parts.  However, if you follow this guide closely, and in the order specified, you should be able to get this running yourself.
 
 ### Azure Deployment
 1. Click the [Deploy to Azure](http://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot) link here or the button above.
@@ -107,8 +123,6 @@ Head back to the [Bot Framework portal](https://dev.botframework.com/bots/) and 
 * Click the Skype link to add the bot to your Skype contact list
 * Add additional channels and communicate through those apps
 * Type **help** at the bot to get more information, or **login** to log into GitHub with the bot.
-
-![GitHubBot in Skype](media/githubbot/skype.png)
 
 ## How it Works
 There are a lot of parts here -- let's talk about some of the important ones:
