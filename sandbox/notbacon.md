@@ -21,19 +21,19 @@ NotBacon is a web application that detects the presence of bacon in a photograph
 
 Custom Vision Service is part of Microsoft Azure's Cognitive Services. You can use it to create customized image classifiers in a few minutes. 
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot)
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
 
 ## Links
-* [GitHubBot Repo](https://github.com/BrianPeek/GitHubBot)
+* [GitHubBot Repo](https://github.com/anthonychu/not-bacon)
 
 ## Overview
 
 The application consists of two components:
 * A Custom Vision Service project - allows you to build a custom image classifier to detect bacon in a photo.
-* An Azure Functions App - displays a web interface for users to submit photos.
+* An Azure Web App - displays a web interface for users to submit photos.
 
 ## Custom Vision Service
 
@@ -42,7 +42,7 @@ The application consists of two components:
 1. Navigate to [customvision.ai](https://customvision.ai/).
 1. Click **Sign in** and log in with your Microsoft Account.
 
-### Create and train a Custom Vision Service project
+### Create and train a Custom Vision project
 
 1. Click on **New Project**.
     * Provide a name for the project.
@@ -51,7 +51,7 @@ The application consists of two components:
     ![New Project](media/notbacon/create-custom-vision-project.png)
 
 1. Obtain a variety of photos. To properly train your model, you need at least 30 photos that contain bacon, and 30 that do not. Download and separate the photos into two folders: `bacon` and `not-bacon`.
-    > Tip: A good place to find the photos is by doing an internet image search for `breakfast`. 
+    > Tip: A good place to find photos is by doing an internet image search for `breakfast`. 
 
 1. Click on **Add Images** and select all the photos you previously downloaded in the `bacon` folder.
     * Create a tag named `bacon`, click **+** to add it.
@@ -67,7 +67,7 @@ The application consists of two components:
     
     ![Train model](media/notbacon/click-train.png)
 
-1. Click **Quick Test** to test your classifier. Find a photo that has *not* been used during the training. Upload it or enter its URL. Check that the model correctly predicted the tags for the photo.
+1. Click **Quick Test** to test your classifier. Find a photo that was *not* in your training set. **Browse local files** to upload it or enter its URL. Check that the model correctly predicted the tags for the photo.
     
     ![Test model](media/notbacon/test-model.png)
 
@@ -86,7 +86,7 @@ In order to configure the web application, you need some information about the C
     
     ![Get API information](media/notbacon/grab-keys.png)
 
-### Deploy to a Functions App
+### Deploy to a Web App
 
 1. Click the Deploy to Azure link here or the button at the top of this page.
 1. Enter the information for your Azure subscription, such as the resource group name, site name, etc.
@@ -98,7 +98,9 @@ In order to configure the web application, you need some information about the C
 
 ### Test the web application
 
-1. 
+1. If the application is successfully deployed, the Deploy to Azure tool displays a URL. Open the application by clicking on the link.
+1. Find a photo on the internet, paste its URL in the URL text box, and click **Submit**.
+1. The application should display whether or not bacon was detected in the photo.
 
 ## Next Steps
 
