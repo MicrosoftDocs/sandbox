@@ -28,7 +28,7 @@ sections:
     columns: 2
     items: 
     - title: GitHubBot
-      html: <p>Manage GitHub repos and issues in chat.</p>
+      html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
       href: githubbot
       image:
         src: media/githubbot/index.png
