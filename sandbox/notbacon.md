@@ -53,7 +53,7 @@ The application consists of two components:
     ![New Project](media/notbacon/create-custom-vision-project.png)
 
 1. Obtain a variety of photos. To properly train your model, you need at least 30 photos that contain bacon, and 30 that do not. Download and separate the photos into two folders: `bacon` and `not-bacon`.
-    > Tip: A good place to find photos is by doing an internet image search for `breakfast`. 
+    > Tip: A good place to find photos is by doing an internet image search for `breakfast`. The list of images used in the training set for this article is [here](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md).
 
 1. Click on **Add Images** and select all the photos you previously downloaded in the `bacon` folder.
     * Create a tag named `bacon`, click **+** to add it.
@@ -111,3 +111,6 @@ In order to configure the web application, you need some information about the C
 
 * Read the Custom Vision Service [documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
 * [Improve](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier) your classifier
+
+
+[List of images used for training](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md)
