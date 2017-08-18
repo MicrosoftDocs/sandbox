@@ -19,7 +19,7 @@ ms.devlang: csharp
 
 [NotBacon](https://github.com/anthonychu/not-bacon) is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses [Custom Vision Service](https://customvision.ai).
 
-Custom Vision Service is part of Microsoft Azure's Cognitive Services. You can use it to create customized image classifiers in a few minutes. 
+Custom Vision Service is part of Microsoft Azure's [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/). You can use it to create customized image classifiers in a few minutes. 
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
 
@@ -61,7 +61,7 @@ The application consists of two components:
 
     ![Add bacon images](media/notbacon/add-bacon-images.png)
     
-1. Click on **Add Images** again to add images from the `not-bacon` folder. Tag them as `not-bacon`.
+1. Click on **Add Images** again to add images from the `not-bacon` folder. This time, tag them as `not-bacon`.
     
     ![Add not bacon images](media/notbacon/add-not-bacon-images.png)
 
@@ -92,14 +92,16 @@ In order to configure the web application, you need some information about the C
 
 1. Click the [Deploy to Azure link](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon) here or the button at the top of this page.
 1. If prompted, sign in to your Azure account.
-1. Enter the information for your Azure subscription, such as the resource group name, site name, etc.
+1. Enter the information for your new application, such as the resource group name, site name, etc.
 1. Fill in the **Custom Vision API Key** and **Custom Vision API URL** with the values that you previously copied.
 
-    screenshot here
+![Deploy to Azure](media/notbacon/azuredeploy-start.png)
 
 1. Click **Next** and then **Deploy**.
 
 ### Test the web application
+
+![Deploy to Azure](media/notbacon/azuredeploy-finish.png)
 
 1. If the application is successfully deployed, the Deploy to Azure tool displays a URL. Open the application by clicking on the link.
 1. Find a photo on the internet, paste its URL in the URL text box, and click **Submit**.
@@ -107,8 +109,5 @@ In order to configure the web application, you need some information about the C
 
 ## Next Steps
 
-Here are links to the docs for the items discussed. Enjoy!
-
-* [Bot Framework Docs](https://docs.microsoft.com/bot-framework)
-* [LUIS.ai Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home)
-* [OctoKit.NET](https://octokit.github.io/)
+* Read the Custom Vision Service [documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
+* [Improve](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier) your classifier
