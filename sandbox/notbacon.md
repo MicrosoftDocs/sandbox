@@ -88,7 +88,8 @@ In order to configure the web application, you need some information about the C
 
 ### Deploy to a Web App
 
-1. Click the Deploy to Azure link here or the button at the top of this page.
+1. Click the [Deploy to Azure link](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon) here or the button at the top of this page.
+1. If prompted, sign in to your Azure account.
 1. Enter the information for your Azure subscription, such as the resource group name, site name, etc.
 1. Fill in the **Custom Vision API Key** and **Custom Vision API URL** with the values that you previously copied.
 
