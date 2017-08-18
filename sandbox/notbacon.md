@@ -17,7 +17,7 @@ ms.devlang: csharp
 
 # NotBacon
 
-NotBacon is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses Custom Vision Service.
+[NotBacon](https://github.com/anthonychu/not-bacon) is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses [Custom Vision Service](https://customvision.ai).
 
 Custom Vision Service is part of Microsoft Azure's Cognitive Services. You can use it to create customized image classifiers in a few minutes. 
 
@@ -27,13 +27,15 @@ Custom Vision Service is part of Microsoft Azure's Cognitive Services. You can u
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
 
 ## Links
-* [GitHubBot Repo](https://github.com/anthonychu/not-bacon)
+* [NotBacon Repo](https://github.com/anthonychu/not-bacon)
 
 ## Overview
 
 The application consists of two components:
 * A Custom Vision Service project - allows you to build a custom image classifier to detect bacon in a photo.
 * An Azure Web App - displays a web interface for users to submit photos.
+
+![NotBacon in action](media/notbacon/not-bacon.gif)
 
 ## Custom Vision Service
 
