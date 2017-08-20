@@ -32,3 +32,8 @@ sections:
       href: githubbot
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+    - title: NotBacon
+      html: <p>Detect the presence of bacon in photos using Azure Custom Vision Service</p>
+      href: notbacon
+      image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/cs-custom-vision.svg
