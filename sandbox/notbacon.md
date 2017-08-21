@@ -71,7 +71,7 @@ The application consists of two components:
 
 ### Obtain Custom Vision Service API information
 
-In order to configure the web application, you need some information about the Custom Vision Service API project you created.
+In order to configure the web application, you need some information about the Custom Vision Service project you created.
 
 1. Select the **Performance** tab in your project.
 1. If you have trained your model more than once, select the latest iteration and click **Make Default**. The default REST API endpoint of your project is set to use this iteration of the model.
@@ -100,6 +100,33 @@ In order to configure the web application, you need some information about the C
 1. If the application is successfully deployed, the Deploy to Azure tool displays a URL. Open the application by clicking on the link.
 1. Find a photo on the internet, paste its URL in the URL text box, and click **Submit**.
 1. The application should display whether or not bacon was detected in the photo.
+
+## How it works
+
+The web application calls the Custom Vision Service REST API with the URL of the image to be analyzed in the body. Here is an example of the JSON response:
+
+```json
+{
+    "Id": "38d1249f-7153-4c2b-aa11-292bf9bd7085",
+    "Project": "736b29fa-0c84-4f3e-87ee-201012399fd7",
+    "Iteration": "d27e017e-c162-4c10-9610-19772d5e5049",
+    "Created": "2017-08-21T17:48:26.2785384Z",
+    "Predictions": [
+        {
+            "TagId": "017dab76-8630-4ef4-9cd0-46cec6b01655",
+            "Tag": "bacon",
+            "Probability": 0.845978856
+        },
+        {
+            "TagId": "bf9f817a-ed74-4bb3-8e9d-49f1b3b7a4bb",
+            "Tag": "no-bacon",
+            "Probability": 0.041467078
+        }
+    ]
+}
+```
+
+The application reads the `bacon` probability and considers a score greater than 0.7 as a successful match.
 
 ## Next Steps
 Here are links to the docs for the items discussed above.  Play around with the project and feel free to leave comments on the article, [open issues](https://github.com/anthonychu/not-bacon/issues) in the repo, or submit [pull requests](https://github.com/anthonychu/not-bacon/pulls) with fixes and new features.  Enjoy!
