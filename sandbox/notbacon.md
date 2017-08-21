@@ -16,10 +16,7 @@ ms.devlang: csharp
 [!include[](includes/header.md)]
 
 # NotBacon
-
-[NotBacon](https://github.com/anthonychu/not-bacon) is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses [Custom Vision Service](https://customvision.ai).
-
-Custom Vision Service is part of Microsoft Azure's [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/). You can use it to create customized image classifiers in a few minutes. 
+[NotBacon](https://github.com/anthonychu/not-bacon) is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses Azure's [Custom Vision Service](https://customvision.ai), part of the [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) collection, to perform the image recognition using a customized image classifier.  
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
 
@@ -29,15 +26,14 @@ Custom Vision Service is part of Microsoft Azure's [Cognitive Services](https://
 ## Links
 * [NotBacon Repo](https://github.com/anthonychu/not-bacon)
 
-## Overview
-
+## What's It Do?
 The application consists of two components:
 * A Custom Vision Service project - allows you to build a custom image classifier to detect bacon in a photo.
 * An Azure Web App - displays a web interface for users to submit photos.
 
 ![NotBacon in action](media/notbacon/not-bacon.gif)
 
-## Custom Vision Service
+## Configuration
 
 ### Create a Custom Vision Service account
 
@@ -73,8 +69,6 @@ The application consists of two components:
     
     ![Test model](media/notbacon/test-model.png)
 
-## NotBacon web application
-
 ### Obtain Custom Vision Service API information
 
 In order to configure the web application, you need some information about the Custom Vision Service API project you created.
@@ -108,9 +102,10 @@ In order to configure the web application, you need some information about the C
 1. The application should display whether or not bacon was detected in the photo.
 
 ## Next Steps
+Here are links to the docs for the items discussed above.  Play around with the project and feel free to leave comments on the article, [open issues](https://github.com/anthonychu/not-bacon/issues) in the repo, or submit [pull requests](https://github.com/anthonychu/not-bacon/pulls) with fixes and new features.  Enjoy!
 
-* Read the Custom Vision Service [documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
-* [Improve](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier) your classifier
+* Custom Vision Service [documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
+* How to [Improve your classifier](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier)
 
 
 [List of images used for training](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md)
