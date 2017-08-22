@@ -13,7 +13,7 @@ ms.author: alias
 #ms.service:
 ---
 
-[!include[](includes/header.md)]
+[!include[](../../includes/header.md)]
 #Azure Storage Functions
 
 [!include[](azure-table-storage.md)]
