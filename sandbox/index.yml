@@ -37,3 +37,8 @@ sections:
       href: notbacon
       image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cs-custom-vision.svg
+    - title: 101 Functions
+      html: <p>101 Azure Function Samples</p>
+      href: 101functions
+      image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/cs-custom-vision.svg
