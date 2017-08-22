@@ -8,9 +8,7 @@ ms.topic: article
 ms.date: 08/21/2017
 ms.author: antchu
 ms.devlang: csharp
-#ms.prod:
-#ms.technology:
-#ms.service:
+ms.service: cognitive-services
 ---
 
 [!include[](includes/header.md)]
@@ -19,6 +17,9 @@ ms.devlang: csharp
 [NotBacon](https://github.com/anthonychu/not-bacon) is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses Azure's [Custom Vision Service](https://customvision.ai), part of the [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) collection, to perform the image recognition using a customized image classifier.  
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
+
+> [!TIP]
+> If you'd like to use the Computer Vision API to analyze your images and return known tags, check out the [NotHotdog](/sandbox/nothotdog) article.
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
@@ -133,6 +134,6 @@ Here are links to the docs for the items discussed above.  Play around with the 
 
 * Custom Vision Service [documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
 * How to [Improve your classifier](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier)
-
+* Check out [NotHotdog](/sandbox/nothotdog) for a variant of this using the Computer Vision API without any training.
 
 [List of images used for training](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md)
