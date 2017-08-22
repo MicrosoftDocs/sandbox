@@ -1,3 +1,3 @@
 #Azure Storage Functions
 
-[!include[](storage/azure-table-storage.md)]
+[!include[](azure-table-storage.md)]
