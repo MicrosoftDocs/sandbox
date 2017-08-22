@@ -8,9 +8,7 @@ ms.topic: article
 ms.date: 08/18/2017
 ms.author: brpeek
 ms.devlang: csharp
-#ms.prod:
-#ms.technology:
-#ms.service:
+ms.service: cognitive-services
 ---
 
 [!include[](includes/header.md)]
