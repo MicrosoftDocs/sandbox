@@ -33,7 +33,12 @@ sections:
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
     - title: NotBacon
-      html: <p>Detect the presence of bacon in photos using Azure Custom Vision Service</p>
+      html: <p>Train the Azure Custom Vision Service to detect the presence of bacon in photos</p>
       href: notbacon
       image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cs-custom-vision.svg
+    - title: NotHotdog
+      html: <p>Is it a hotdog or not? Let the Computer Vision API decide</p>
+      href: nothotdog
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
