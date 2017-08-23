@@ -19,7 +19,7 @@ ms.service: cognitive-services
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
 
 > [!TIP]
-> If you'd like to use the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) to analyze your images and return known tags, check out the [NotHotdog](/sandbox/nothotdog) article.
+> If you'd like to use the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) to analyze your images and return known tags, check out the [NotHotdog](/sandbox/demos/nothotdog) article.
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
@@ -135,6 +135,6 @@ Here are links to the docs for the items discussed above.  Play around with the 
 
 * Custom Vision Service [documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
 * How to [Improve your classifier](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier)
-* Check out [NotHotdog](/sandbox/nothotdog) for a variant of this using the Computer Vision API without any training.
+* Check out [NotHotdog](/sandbox/demos/nothotdog) for a variant of this using the Computer Vision API without any training.
 
 [List of images used for training](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md)

@@ -19,7 +19,7 @@ If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBrianPeek%2FNotHotdogFunc%2Fmaster%2Fazuredeploy.json)
 
 > [!TIP]
-> If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/sandbox/notbacon) article.
+> If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/sandbox/demos/notbacon) article.
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
@@ -139,4 +139,4 @@ Here are links to the docs for the items discussed above.  Play around with the 
 
 * [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/)
 * [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
-* Check out [NotBacon](/sandbox/notbacon) for a variant of this using the Custom Vision Service trained with images of bacon!
+* Check out [NotBacon](/sandbox/demos/notbacon) for a variant of this using the Custom Vision Service trained with images of bacon!
