@@ -5,8 +5,10 @@
       expanded: true
       items:
       - name: GitHubBot
-        href: /sandbox/demos/githubbot
+        href: /sandbox/githubbot
       - name: NotBacon
-        href: /sandbox/demos/notbacon
+        href: /sandbox/notbacon
       - name: NotHotdog
-        href: /sandbox/demos/nothotdog
+        href: /sandbox/nothotdog
+      - name: 101 Functions
+        href: /sandbox/101functions
