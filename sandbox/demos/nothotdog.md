@@ -11,9 +11,10 @@ ms.devlang: csharp
 ms.service: cognitive-services
 ---
 
+# NotHotdog
+
 [!include[](../includes/header.md)]
 
-# NotHotdog
 If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley), you'll understand the reference for this project.  If not, it'll seem very random.  Either way, it's still very stupid.  [NotHotdog](https://github.com/BrianPeek/NotHotdogFunc) is an Azure Function that uses the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) in [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) to determine if a provided image contains a hotdog or not.  
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBrianPeek%2FNotHotdogFunc%2Fmaster%2Fazuredeploy.json)
