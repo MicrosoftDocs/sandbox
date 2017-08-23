@@ -29,16 +29,16 @@ sections:
     items: 
     - title: GitHubBot
       html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
-      href: githubbot
+      href: demos/githubbot
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
     - title: NotBacon
       html: <p>Train the Azure Custom Vision Service to detect the presence of bacon in photos</p>
-      href: notbacon
+      href: demos/notbacon
       image:
         src: https://docs.microsoft.com/azure/media/index/cs-custom-vision.svg
     - title: NotHotdog
       html: <p>Is it a hotdog or not? Let the Computer Vision API decide</p>
-      href: nothotdog
+      href: demos/nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg

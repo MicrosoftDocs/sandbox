@@ -11,7 +11,7 @@ ms.devlang: csharp
 ms.prod: bot-framework
 ---
 
-[!include[](includes/header.md)]
+[!include[](../includes/header.md)]
 
 # GitHubBot
 [GitHubBot](https://github.com/BrianPeek/GitHubBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
