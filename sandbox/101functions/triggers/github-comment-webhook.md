@@ -1,6 +1,4 @@
-## Azure Function Triggers
-
-# GitHub Comment WebHook
+## GitHub Comment WebHook
 
 ```
 using System.Net;
