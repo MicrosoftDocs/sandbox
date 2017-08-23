@@ -16,7 +16,7 @@ ms.service: cognitive-services
 # NotBacon
 [NotBacon](https://github.com/anthonychu/not-bacon) is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses Azure's [Custom Vision Service](https://customvision.ai), part of the [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) collection, to perform the image recognition using a customized image classifier.  
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
 
 > [!TIP]
 > If you'd like to use the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) to analyze your images and return known tags, check out the [NotHotdog](/sandbox/demos/nothotdog) article.

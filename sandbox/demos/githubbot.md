@@ -16,7 +16,7 @@ ms.prod: bot-framework
 # GitHubBot
 [GitHubBot](https://github.com/BrianPeek/GitHubBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot)
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
@@ -45,7 +45,7 @@ The bot can understand long sentences, short commands, and it remembers the last
 Setting this bot up for your own use is a bit tricky as there many parts.  However, if you follow this guide closely, and in the order specified, you should be able to get this running yourself.
 
 ### Azure Deployment
-1. Click the [Deploy to Azure](http://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot) link here or the button above.
+1. Click the [Deploy to Azure](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot) link here or the button above.
 1. Enter the information for your Azure subscription, such as the resource group, location, etc. and give your site a unique Site Name.  This site name will become part of the URL.
 1. Click **Next** and then **Deploy**.
 1. When complete, opy down the URL to your web application, which will be **https://&lt;sitename&gt;.azurewebsites.net** .
