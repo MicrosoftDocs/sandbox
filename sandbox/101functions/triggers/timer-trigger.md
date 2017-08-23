@@ -1,13 +1,15 @@
-## GitHub Comment WebHook
+## Timer Trigger Function
 
 ```
-using System.Net;
+using System;
 
-public static async Task Run(HttpRequestMessage req, TraceWriter log)
+public static void Run(TimerInfo myTimer, TraceWriter log)
 {
-    var data = await req.Content.ReadAsAsync<object>();
-    string gitHubComment = data?.comment?.body;
-    log.Info("GitHub Comment WebHook: " + gitHubComment);
-}
+    if(myTimer.IsPastDue)
+    {
+        log.Info("Timer is late!");
+    }
 
+    log.Info($"C# Timer trigger function executed at: {DateTime.Now}.\n{myTimer.FormatNextOccurrences(5)}"); 
+}
 ```
