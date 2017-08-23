@@ -17,3 +17,6 @@ ms.author: alias
 #Azure Function Triggers
 
 [!include[](github-comment-webhook.md)]
+[!include[](blob-trigger.md)]
+[!include[](timer-trigger.md)]
+
