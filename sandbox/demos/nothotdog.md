@@ -69,7 +69,7 @@ You can clone the [repo](https://github.com/BrianPeek/NotHotdogFunc) and run the
 ```
 
 ## How to Run
-The Azure Function is now configured and running, and will be available at **https://&lt;sitename&gt;.azurewebsites.net/api/NotHotdogFunc** . To test it, let's use [cURL](https://curl.haxx.se/) to hit the endpoint, providing both a URL and POST data:
+The Azure Function is now configured and running, and will be available at **https://&lt;sitename&gt;.azurewebsites.net/api/NotHotdog** . To test it, let's use [cURL](https://curl.haxx.se/) to hit the endpoint, providing both a URL and POST data:
 
 ### Link to image
 ```
