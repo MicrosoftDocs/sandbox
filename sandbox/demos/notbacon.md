@@ -11,15 +11,16 @@ ms.devlang: csharp
 ms.service: cognitive-services
 ---
 
-[!include[](includes/header.md)]
-
 # NotBacon
+
+[!include[](../includes/header.md)]
+
 [NotBacon](https://github.com/anthonychu/not-bacon) is a web application that detects the presence of bacon in a photograph. This project is written in C# and JavaScript, and uses Azure's [Custom Vision Service](https://customvision.ai), part of the [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) collection, to perform the image recognition using a customized image classifier.  
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/anthonychu/not-bacon)
 
 > [!TIP]
-> If you'd like to use the Computer Vision API to analyze your images and return known tags, check out the [NotHotdog](/sandbox/nothotdog) article.
+> If you'd like to use the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) to analyze your images and return known tags, check out the [NotHotdog](/sandbox/demos/nothotdog) article.
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
@@ -29,8 +30,8 @@ ms.service: cognitive-services
 
 ## What's It Do?
 The application consists of two components:
-* A Custom Vision Service project - allows you to build a custom image classifier to detect bacon in a photo.
-* An Azure Web App - displays a web interface for users to submit photos.
+* A Custom Vision Service project that allows you to build a custom image classifier to detect bacon in a photo.
+* An Azure Web App to display a web interface for users to submit photos.
 
 ![NotBacon in action](media/notbacon/not-bacon.gif)
 
@@ -50,10 +51,11 @@ The application consists of two components:
     ![New Project](media/notbacon/create-custom-vision-project.png)
 
 1. Obtain a variety of photos. To properly train your model, you need at least 30 photos that contain bacon, and 30 that do not. Download and separate the photos into two folders: `bacon` and `not-bacon`.
-    > Tip: A good place to find photos is by doing an internet image search for `breakfast`. The list of images used in the training set for this article is [here](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md).
+   > [!TIP]
+   > A good place to find photos is by doing an internet image search for `breakfast`. The list of images used in the training set for this article is [here](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md).
 
 1. Click on **Add Images** and select all the photos you previously downloaded in the `bacon` folder.
-    * Create a tag named `bacon`, click **+** to add it.
+    * Create a tag named `bacon` and click **+** to add it.
     * Click **Upload** to upload the photos and tag them as `bacon`.
 
     ![Add bacon images](media/notbacon/add-bacon-images.png)
@@ -134,6 +136,6 @@ Here are links to the docs for the items discussed above.  Play around with the 
 
 * Custom Vision Service [documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
 * How to [Improve your classifier](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier)
-* Check out [NotHotdog](/sandbox/nothotdog) for a variant of this using the Computer Vision API without any training.
+* Check out [NotHotdog](/sandbox/demos/nothotdog) for a variant of this using the Computer Vision API without any training.
 
 [List of images used for training](https://github.com/anthonychu/not-bacon/blob/master/cc-attributions.md)
