@@ -2,11 +2,5 @@
   href: index.yml
   items:
     - name: Demos
+      href: /sandbox/demos/TOC.yml
       expanded: true
-      items:
-      - name: GitHubBot
-        href: /sandbox/demos/githubbot
-      - name: NotBacon
-        href: /sandbox/demos/notbacon
-      - name: NotHotdog
-        href: /sandbox/demos/nothotdog
