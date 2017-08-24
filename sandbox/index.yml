@@ -19,7 +19,7 @@ sections:
   - type: markdown
     text: The Sandbox is an area of [docs.microsoft.com](https://docs.microsoft.com/) that is designed to be a place where we can experiment, play with new technology, and get feedback on ideas. This content isn't guaranteed to be kept up-to-date, maintained, or even work at any given moment, and we may revise, rewrite, or even delete things at any time. Of course, community contributions and feedback are welcome. We hope you find something fun or interesting to explore and learn from!
   - type: paragraph
-    text: <center><img src="media/bit_sandbox1024.png" align="middle"></center>
+    text: <center><img src="media/bit_sandbox1024.png" align="middle" style="max-width:100%;height:auto;display:inline-block;"></center>
 - title: Demos and Code
   items:
   - type: paragraph
