@@ -2,5 +2,5 @@
   href: index.yml
   items:
     - name: Demos
-      href: /sandbox/demos/TOC.yml
+      href: ./sandbox/demos/TOC.yml
       expanded: true
