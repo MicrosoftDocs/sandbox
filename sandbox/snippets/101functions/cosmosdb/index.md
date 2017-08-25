@@ -32,15 +32,15 @@ using Microsoft.Azure.Documents.Linq;
 public static async Task<HttpResponseMessage> Run(
     HttpRequestMessage req, DocumentClient client, int minAge, TraceWriter log)
 {
-    var collectionUri = UriFactory.CreateDocumentCollectionUri("mydb", "mycollection");
+    Uri collectionUri = UriFactory.CreateDocumentCollectionUri("mydb", "mycollection");
 
-    var query = client.CreateDocumentQuery<Person>(collectionUri)
+    IDocumentQuery<Person> query = client.CreateDocumentQuery<Person>(collectionUri)
         .Where(p => p.Age >= minAge)
         .AsDocumentQuery();
 
     while (query.HasMoreResults)  
     {
-        foreach (var result in await query.ExecuteNextAsync())
+        foreach (Person result in await query.ExecuteNextAsync())
         {
             log.Info(result.Age.ToString());
         }
@@ -48,4 +48,4 @@ public static async Task<HttpResponseMessage> Run(
 }
 ```
 
-For more information about this topic, see [the documentation](https://msdn.microsoft.com/library/azure/microsoft.azure.documents.client.documentclient.aspx).
+For more information about this topic, see [the documentation](https://msdn.microsoft.com/library/azure/microsoft.azure.documents.client.documentclient.aspx) for `DocumentClient`.
