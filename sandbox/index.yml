@@ -18,10 +18,12 @@ sections:
 - items:
   - type: markdown
     text: The Sandbox is an area of [docs.microsoft.com](https://docs.microsoft.com/) that is designed to be a place where we can experiment, play with new technology, and get feedback on ideas. This content isn't guaranteed to be kept up-to-date, maintained, or even work at any given moment, and we may revise, rewrite, or even delete things at any time. Of course, community contributions and feedback are welcome. We hope you find something fun or interesting to explore and learn from!
+  - type: paragraph
+    text: <center><img src="media/bit_sandbox1024.png" align="middle" style="max-width:100%;height:auto;display:inline-block;"></center>
 - title: Demos and Code
   items:
   - type: paragraph
-    text: Some fun demos (with code!) using various Azure services
+    text: Some fun demos (with code!) using various Azure services.
   - type: list
     style: cards
     className: cardsM
@@ -29,20 +31,19 @@ sections:
     items: 
     - title: GitHubBot
       html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
-      href: githubbot
+      href: demos/githubbot
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
     - title: NotBacon
       html: <p>Train the Azure Custom Vision Service to detect the presence of bacon in photos</p>
-      href: notbacon
+      href: demos/notbacon
       image:
         src: https://docs.microsoft.com/azure/media/index/cs-custom-vision.svg
     - title: NotHotdog
       html: <p>Is it a hotdog or not? Let the Computer Vision API decide</p>
-      href: nothotdog
+      href: demos/nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
-        src: https://docs.microsoft.com/en-us/azure/media/index/cs-custom-vision.svg
     - title: 101 Functions
       html: <p>101 Azure Function Samples</p>
       href: 101functions

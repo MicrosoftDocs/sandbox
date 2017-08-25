@@ -13,9 +13,7 @@ ms.author: alias
 #ms.service:
 ---
 
-[!include[](includes/header.md)]
+[!include[](~/includes/header.md)]
+#Azure Storage Functions
 
-# Here are 101 Functions!
-
-* [Storage](101functions/storage/index.md)
-
+[!include[](azure-table-storage.md)]

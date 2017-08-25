@@ -11,15 +11,16 @@ ms.devlang: csharp
 ms.service: cognitive-services
 ---
 
-[!include[](includes/header.md)]
-
 # NotHotdog
+
+[!include[](../includes/header.md)]
+
 If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley), you'll understand the reference for this project.  If not, it'll seem very random.  Either way, it's still very stupid.  [NotHotdog](https://github.com/BrianPeek/NotHotdogFunc) is an Azure Function that uses the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) in [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) to determine if a provided image contains a hotdog or not.  
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBrianPeek%2FNotHotdogFunc%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBrianPeek%2FNotHotdogFunc%2Fmaster%2Fazuredeploy.json)
 
 > [!TIP]
-> If you'd like to train your own model to recognize images for your domain, check out the [NotBacon](/sandbox/notbacon) article.
+> If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/sandbox/demos/notbacon) article.
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
@@ -29,7 +30,7 @@ If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley
 * [NotHotdogFunc Repo](https://github.com/BrianPeek/NotHotdogFunc)
 
 ## What's It Do?
-Give the Azure Function a URL to an image, or POST the image data, and it will return a JSON payload stating whether the picture is a hotdog or not.
+Give the Azure Function a URL to an image, or POST the image data to the endpoint, and it will return a JSON payload stating whether the picture contains a hotdog.
 
 ## Configuration
 There are two parts to settings this up to try out:
@@ -68,7 +69,7 @@ You can clone the [repo](https://github.com/BrianPeek/NotHotdogFunc) and run the
 ```
 
 ## How to Run
-The Azure Function is now configured and running, and will be available at https://&lt;sitename&gt;.azurewebsites.net/api/NotHotdogFunc .  As an example, let's use [cURL](https://curl.haxx.se/) to hit the endpoint in both ways:
+The Azure Function is now configured and running, and will be available at **https://&lt;sitename&gt;.azurewebsites.net/api/NotHotdog** . To test it, let's use [cURL](https://curl.haxx.se/) to hit the endpoint, providing both a URL and POST data:
 
 ### Link to image
 ```
@@ -91,21 +92,21 @@ curl --data-binary "@not-a-hotdog.jpg" http://<appname>.azurewebsites.net/api/No
 Of course, you could call this from a web-based back-end, a mobile app, or anything else.  Simply hit the endpoint in either way and parse the JSON response.
 
 ## How it Works
-This Azure Function was created with the new Visual Studio 2017 Tools for Azure Functions included with the 15.3 update.  To create a new Function, ensure the Azure Development workload is installed and then create a new Azure Functions project:
+This Azure Function was created with the new [Azure Functions Tools for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) included with the 15.3 update.  To create a new Function, ensure the Azure Development workload is installed and then create a new Azure Functions project:
 
 ![new project](media/nothotdog/new-project.png)
 
-After the project is created, right-click on the project and select **Add > New Item...** from the context menu, then select **Azure Function** from the window that pops up, giving it a new name.
+After the project is created, right-click on the project in **Solution Explorer** and select **Add > New Item...** from the context menu, then select **Azure Function** from the window that pops up, giving it a new name.
 
 ![new item](media/nothotdog/new-item.png)
 
-Finally, select the [trigger](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings) action, in this case **Http trigger**, and select the authorization type.
+Finally, select the [trigger](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings) action, in this case **Http trigger**, and select its Access rights.  Anonymous lets anyone access the function endpoint.
 
 ![new function](media/nothotdog/new-function.png)
 
 For more details on these tools, please see the [official docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs).
 
-Additionally, a NuGet reference was set to the [Microsoft.ProjectOxford.Vision](https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/) package, which contains the API to call the Computer Vision API from .NET.
+To use the Computer Vision API from C#, a NuGet reference was set to the [Microsoft.ProjectOxford.Vision](https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/) package, which contains the full API for .NET projects.
 
 The steps above have already done in the [sample project](https://github.com/BrianPeek/NotHotdogFunc), and a function named **NotHotdog** was created.  The code for the function is only a few lines.  Here's a very condensed version (see the [source code](https://github.com/BrianPeek/NotHotdogFunc/blob/master/NotHotdog.cs) for the full version).
 
@@ -135,8 +136,8 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 ```
 
 ## Next Steps
-Here are links to the docs for the items discussed above.  Play around with the project and feel free to leave comments on the article, [open issues](https://github.com/BrianPeek/NotHotdogFunc/issues) in the repo, or submit [pull requests](https://github.com/BrianPeek/NotHotdogFunc/pulls) with fixes and new features.  Enjoy!
+Here are links to the docs for the items discussed above.  Play around with the project and feel free to leave comments on the article, [open issues](https://github.com/BrianPeek/NotHotdogFunc/issues) in the repo, or submit [pull requests](https://github.com/BrianPeek/NotHotdogFunc/pulls) with fixes and new features.
 
 * [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/)
 * [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
-* Check out [NotBacon](/sandbox/notbacon) for a variant of this using the Custom Vision Service trained with images of bacon!
+* Check out [NotBacon](/sandbox/demos/notbacon) for a variant of this using the Custom Vision Service trained with images of bacon!
