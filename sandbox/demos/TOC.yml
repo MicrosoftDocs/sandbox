@@ -2,8 +2,8 @@
   href: index.yml
   items:
   - name: GitHubBot
-    href: /sandbox/demos/githubbot
+    href: githubbot
   - name: NotBacon
-    href: /sandbox/demos/notbacon
+    href: notbacon
   - name: NotHotdog
-    href: /sandbox/demos/nothotdog
+    href: nothotdog
