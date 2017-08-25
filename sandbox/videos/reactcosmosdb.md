@@ -47,4 +47,4 @@ Let's go!
 
 ## Next Steps
 * [Cosmos DB Quickstart](https://docs.microsoft.com/en-us/azure/cosmos-db/create-mongodb-nodejs)
-* [Burke's Blog](http://https://medium.com/burke-knows-words)
+* [Burke's Blog](https://medium.com/burke-knows-words)
