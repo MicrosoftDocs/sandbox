@@ -5,3 +5,5 @@ _site/
 _themes*/
 
 .openpublishing.buildcore.ps1
+
+.DS_Store

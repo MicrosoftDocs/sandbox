@@ -10,3 +10,8 @@
         href: /sandbox/demos/notbacon
       - name: NotHotdog
         href: /sandbox/demos/nothotdog
+    - name: Videos
+      expanded: true
+      items: 
+      - name: React & Azure Cosmos DB
+      href: /sandbox/videos/reactcosmosdb

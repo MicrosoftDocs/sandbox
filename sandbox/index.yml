@@ -44,3 +44,17 @@ sections:
       href: demos/nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+- title: Videos
+  items:
+  - type: paragraph
+    text: Awesome videos to help you learn more Azure.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - title: React & Azure Cosmos DB
+      html: <p>Learn how to build an application with React, Express and Azure Cosmos DB</p>
+      href: videos/reactcosmosdb
+      image: 
+        src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
