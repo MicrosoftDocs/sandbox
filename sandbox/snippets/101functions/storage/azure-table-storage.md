@@ -8,7 +8,10 @@ Some code
 
 [!include[](../includes/takeaways-heading.md)]
 
-And some text!
+- Takeaways as bullets
+- Takeaways as bullets
 
 [!include[](../includes/read-more-heading.md)]
 
+- Read more stuff here!
+- and here!
