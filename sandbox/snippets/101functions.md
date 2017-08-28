@@ -19,6 +19,8 @@ ms.author: alias
 
 ## Storage
 * [Storage](101functions/storage/index.md)
+* [Storage](101functions/storage/index.md)
+* [Storage](101functions/storage/index.md)
 
 ## Cosmos DB
 * [Cosmos DB](101functions/storage/index.md)
