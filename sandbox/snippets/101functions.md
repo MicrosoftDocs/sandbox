@@ -17,5 +17,12 @@ ms.author: alias
 
 # Here are 101 Functions!
 
+## Storage
 * [Storage](101functions/storage/index.md)
+
+## Cosmos DB
+* [Cosmos DB](101functions/storage/index.md)
+
+## HTTP
+* [HTTP](101functions/storage/index.md)
 
