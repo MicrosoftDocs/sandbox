@@ -47,6 +47,6 @@ Among the different possibilities, it's possible to set a polling interval, retr
 }
 ```
 
-### Read more
+[!include[](../includes/read-more-heading.md)]
 
 For the full range of options, look-up the [complete documentation of host.json](https://github.com/Azure/azure-webjobs-sdk-script/wiki/host.json).

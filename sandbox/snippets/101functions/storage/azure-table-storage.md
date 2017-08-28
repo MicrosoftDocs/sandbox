@@ -6,7 +6,7 @@ Some description here
 Some code
 ```
 
-[!include[](../includes/takeaway-heading.md)]
+[!include[](../includes/takeaways-heading.md)]
 
 And some text!
 
