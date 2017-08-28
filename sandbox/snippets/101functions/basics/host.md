@@ -13,11 +13,11 @@ ms.author: marouill
 #ms.service:
 ---
 
-## Host.json basics
+# Host.json basics
 
 At the root of an application is a metadata file that describes the global configuration of the host serving the different functions.
 
-### Configuring timeout
+## Configuring timeout
 
 Timeouts allow the host to determine when the function will timeout.
 
@@ -29,7 +29,7 @@ On a Consumption plan, the valid values are between 1 second (`00:00:01`) and 10
 }
 ```
 
-### Configuring queues
+## Configuring queues
 
 Functions that depends on queues can have the behavior of the queues customized. 
 

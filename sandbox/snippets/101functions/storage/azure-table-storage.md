@@ -6,9 +6,9 @@ Some description here
 Some code
 ```
 
-### Takeaways
+[!include[](../includes/takeaway-heading.md)]
 
 And some text!
 
-### Read more
+[!include[](../includes/read-more-heading.md)]
 
