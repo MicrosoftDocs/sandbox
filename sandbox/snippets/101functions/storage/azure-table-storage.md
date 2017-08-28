@@ -13,10 +13,19 @@ ms.devlang: csharp
 
 ## Azure Table Storage
 
-Table Output Storage.
+Defining a binding between an Azure Function and a table in a storage account can be defined in two different ways.
 
-```
+### Code declaration
+
+```csharp
 Some code
 ```
+
+### Configuration Settings
+
+```json
+{}
+```
+
 
 And some text!
