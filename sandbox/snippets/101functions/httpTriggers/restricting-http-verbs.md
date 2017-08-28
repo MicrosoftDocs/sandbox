@@ -1,6 +1,5 @@
 ## Restricting HTTP verbs in in HTTP Triggers
 
-### Description
 With the `HttpTrigger` attribute, you can list one or more HTTP verbs that your function will respond to.
 
 Code

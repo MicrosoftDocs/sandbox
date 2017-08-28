@@ -1,6 +1,5 @@
 ## Accessing the request body  in HTTP Triggers
 
-### Description
 When making HTTP requests, you may need to pass on additional data via the body of the request. You can easily get access to content of the message body using `HttpRequestMessage`.
 
 JSON body content

@@ -1,6 +1,5 @@
 ## Securing HTTP Triggers with security keys
 
-### Description
 When creating your function, you have the option of allowing it to be called by anyone (Anonymous) or to require a security key.
 
  When making a request to a secure function, you will be required to provide the security key as shown below

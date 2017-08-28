@@ -1,6 +1,5 @@
 ## Accessing Environment variables
 
-### Description
 You may need to store custom settings for your Azure function. One availabe option is to use Environment variables. You can manage these settings in the `Application settings` section of your function app in the Azure portal.
 
 Code

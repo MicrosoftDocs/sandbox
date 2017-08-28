@@ -1,6 +1,5 @@
 ## Accessing querystring values in Http Triggers
 
-### Description
 When making HTTP request, you have the ability of supplying addional parameters via a query string to the request URL which can be retrieved from by the website or web api to alter how the response is returned.
 
 The example below appends 2 query string variables along with their associated values
