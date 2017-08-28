@@ -17,5 +17,18 @@ ms.author: alias
 
 # Here are 101 Functions!
 
+## Host.json basics
+* [Configuring timeout](101functions/basics/host.md#configuring-timeout)
+* [Configuring queues](101functions/basics/host.md#configuring-queues)
+
+## Storage
 * [Storage](101functions/storage/index.md)
+* [Storage](101functions/storage/index.md)
+* [Storage](101functions/storage/index.md)
+
+## Cosmos DB
+* [Cosmos DB](101functions/storage/index.md)
+
+## HTTP
+* [HTTP](101functions/storage/index.md)
 
