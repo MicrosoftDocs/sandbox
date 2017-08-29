@@ -5,10 +5,13 @@
       expanded: true
       items:
       - name: GitHubBot
-        href: /sandbox/githubbot
+        href: /sandbox/demos/githubbot
       - name: NotBacon
-        href: /sandbox/notbacon
+        href: /sandbox/demos/notbacon
       - name: NotHotdog
-        href: /sandbox/nothotdog
-      - name: 101 Functions
-        href: /sandbox/101functions
+        href: /sandbox/demos/nothotdog
+    - name: Snippets
+      expanded: true
+      items:
+      - name: 101 Azure Functions
+        href: /sandbox/snippets/101functions
