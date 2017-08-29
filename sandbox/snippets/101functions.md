@@ -1,8 +1,8 @@
 ---
-title: Your Project Name
-description: Your Project Description
+title: 101 Azure Functions
+description: 101 Azure Functions
 author: githubusername
-manager: alias
+manager: scottca
 keywords: 
 ms.topic: article
 ms.date: 01/01/2017
@@ -17,18 +17,98 @@ ms.author: alias
 
 # Here are 101 Functions!
 
-## Host.json basics
+## Functions Basics
+
+### Host.json basics
 * [Configuring timeout](101functions/basics/host.md#configuring-timeout)
 * [Configuring queues](101functions/basics/host.md#configuring-queues)
 
-## Storage
-* [Storage](101functions/storage/index.md)
-* [Storage](101functions/storage/index.md)
-* [Storage](101functions/storage/index.md)
+### Authentication
+* CORS
+* Azure Active Directory Authentication
+* Facebook Authentication
+* Google Authentication
+* Twitter Authentication
+* Microsoft Authentication
+* SasToken Basics
 
-## Cosmos DB
-* [Cosmos DB](101functions/storage/index.md)
+### Environment
+* App Settings
+* Environment Variables
 
-## HTTP
-* [HTTP](101functions/storage/index.md)
+### Routing
+* Route prefixes in host.json 
+* Defining routes at a function level
+* Defining routes in function.json
+* Defining routes in the integrate tab of Azure Portal
+* Defining route parameters
+* Optional route parameters
+* Defining routes with proxies
+
+### Proxies
+
+### Logging and monitoring
+
+### Testing
+* HTTP testing
+* Unit testing
+
+### Exception handling
+
+### OpenAPI 2.0 (Swagger)
+
+
+## Bindings
+
+### Blob storage
+
+### Cosmos DB
+* [Using DocumentClient](101functions/cosmosdb/index.md#using-documentclient)
+* [Retrieve a single document by ID](101functions/cosmosdb/index.md#retrieve-a-single-document-by-id)
+* [Retrieve a list of documents](101functions/cosmosdb/index.md#retrieve-a-list-of-documents)
+
+### Event Hubs
+
+### External file
+
+### External table
+
+### HTTP and webhooks
+
+### Mobile Apps
+
+### Notification Hubs
+
+### Queue Storage
+
+### SendGrid
+
+### Service Bus
+
+### Table storage
+* InTable
+* OutTable
+* CloudTable
+
+### Timer
+
+### Twilio
+
+
+## Coding Environment
+
+### Visual Studio
+
+### VS Code
+
+### Functions CLI
+
+### Portal
+
+
+## Continuous Integration/Deployment
+
+### GitHub
+
+### VSTS
 
