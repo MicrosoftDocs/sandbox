@@ -13,8 +13,9 @@ ms.author: alias
 #ms.service:
 ---
 
-[!include[](../../includes/header.md)]
-#Azure Function Triggers
+[!include[](~/includes/header.md)]
+
+# Azure Function Triggers
 
 [!include[](github-comment-webhook.md)]
 [!include[](blob-trigger.md)]
