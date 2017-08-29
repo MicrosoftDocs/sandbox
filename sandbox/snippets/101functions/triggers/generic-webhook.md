@@ -23,7 +23,6 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
 }
 ```
 
-
 [!include[](../includes/takeaways-heading.md)]
 
 - Generic webhook functions are a solution to customizable function triggers.

@@ -17,7 +17,7 @@ public static async Task Run(Stream myBlob, TraceWriter log)
 
 [!include[](../includes/takeaways-heading.md)]
 
-- `myBlob` is a combination of the blob container and blob: blob-container/blob-name.extension
+- `myBlob` is a combination of the blob container and blob: `blob-container/blob-name.extension`
 
 [!include[](../includes/read-more-heading.md)]
 

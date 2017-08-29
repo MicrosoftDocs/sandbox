@@ -17,7 +17,6 @@ public static async Task Run(HttpRequestMessage req, TraceWriter log)
 [!include[](../includes/takeaways-heading.md)]
 
 - A GitHub webhook function requires configuration on GitHub by adding a webhook to a GitHub repository, adding the function's url and GitHub secret to the webhook, and setting the content type as `application/json`.
-
 - A GitHub webhook function can be triggered by a number of repository changes such as issues, pull requests, and branches.
 
 
