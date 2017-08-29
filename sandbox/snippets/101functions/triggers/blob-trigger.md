@@ -17,10 +17,9 @@ public static async Task Run(Stream myBlob, TraceWriter log)
 
 [!include[](../includes/takeaways-heading.md)]
 
-- A blob trigger requires a blob storage account and a container to access blobs. 
 - `myBlob` is a combination of the blob container and blob: blob-container/blob-name.extension
 
 [!include[](../includes/read-more-heading.md)]
 
-[Create a function triggered by Azure Blob storage](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-storage-blob-triggered-function)
-[Azure Functions Blob Storage Bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob)
+- [Create a function triggered by Azure Blob storage](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-storage-blob-triggered-function)
+- [Azure Functions Blob Storage Bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob)

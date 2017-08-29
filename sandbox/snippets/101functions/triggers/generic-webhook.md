@@ -31,6 +31,5 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
 
 [!include[](../includes/read-more-heading.md)]
 
-[Create a function triggered by a generic webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-generic-webhook-triggered-function)
-
-[Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
+- [Create a function triggered by a generic webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-generic-webhook-triggered-function)
+- [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
