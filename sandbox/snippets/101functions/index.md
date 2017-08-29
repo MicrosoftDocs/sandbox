@@ -20,8 +20,8 @@ ms.author: alias
 ## Functions Basics
 
 ### Host.json basics
-* [Configuring timeout](101functions/basics/host.md#configuring-timeout)
-* [Configuring queues](101functions/basics/host.md#configuring-queues)
+* [Configuring timeout](basics/host.md#configuring-timeout)
+* [Configuring queues](basics/host.md#configuring-queues)
 
 ### Authentication
 * CORS
@@ -63,9 +63,9 @@ ms.author: alias
 ### Blob storage
 
 ### Cosmos DB
-* [Using DocumentClient](101functions/cosmosdb/index.md#using-documentclient)
-* [Retrieve a single document by ID](101functions/cosmosdb/index.md#retrieve-a-single-document-by-id)
-* [Retrieve a list of documents](101functions/cosmosdb/index.md#retrieve-a-list-of-documents)
+* [Using DocumentClient](cosmosdb/#using-documentclient)
+* [Retrieve a single document by ID](cosmosdb/#retrieve-a-single-document-by-id)
+* [Retrieve a list of documents](cosmosdb/#retrieve-a-list-of-documents)
 
 ### Event Hubs
 
