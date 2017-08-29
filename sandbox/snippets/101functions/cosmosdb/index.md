@@ -1,6 +1,6 @@
 ---
-title: Your Project Name
-description: Your Project Description
+title: Azure Functions Cosmos DB Tips
+description: 101 Azure Functions
 author: githubusername
 manager: alias
 keywords: 
@@ -49,3 +49,33 @@ public static async Task<HttpResponseMessage> Run(
 ```
 
 For more information about this topic, see [the documentation](https://msdn.microsoft.com/library/azure/microsoft.azure.documents.client.documentclient.aspx) for `DocumentClient`.
+
+## Retrieve a single document by ID
+
+The Cosmos DB binding can automatically retrieve a document from Cosmos DB and bind it to an object. Note the example uses `object`, but it can bind to other types, including: `dynamic`, `string`, `Microsoft.Azure.Documents.Document`, or a strongly-typed object that you create.
+
+```csharp
+[FunctionName("CosmosDBSample")]
+public static HttpResponseMessage Run(
+    [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "foo/{id}")] HttpRequestMessage req,
+    [DocumentDB("test", "test", ConnectionStringSetting = "CosmosDB", Id = "{id}")] Document document)
+{
+    if (document == null)
+    {
+        return req.CreateResponse(HttpStatusCode.NotFound);
+    }
+    else
+    {
+        return req.CreateResponse(HttpStatusCode.OK, document);
+    }
+}
+```
+
+[!include[](../includes/takeaways-heading.md)]
+
+- 
+
+[!include[](../includes/read-more-heading.md)]
+
+- Read more stuff here!
+- and here!
