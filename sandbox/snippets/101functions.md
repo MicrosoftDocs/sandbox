@@ -27,7 +27,9 @@ ms.author: alias
 * [Storage](101functions/storage/index.md)
 
 ## Cosmos DB
-* [Cosmos DB](101functions/storage/index.md)
+* [Using DocumentClient](101functions/cosmosdb/index.md#using-documentclient)
+* [Retrieve a single document by ID](101functions/cosmosdb/index.md#retrieve-a-single-document-by-id)
+* [Retrieve a list of documents](101functions/cosmosdb/index.md#retrieve-a-list-of-documents)
 
 ## HTTP
 * [HTTP](101functions/storage/index.md)
