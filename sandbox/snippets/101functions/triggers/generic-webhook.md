@@ -2,7 +2,7 @@
 
 Functions can be created for custom webhooks. The following example is a generic webhook with a request body that contains a first and last name. 
 
-```
+```csharp
 #r "Newtonsoft.Json"
 
 using System;

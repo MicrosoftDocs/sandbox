@@ -2,7 +2,7 @@
 
 Functions can be triggered with a GitHub webhook. This requires configuring a webhook for a GitHub repository. This example logs issue comments from a GitHub repository.
 
-```
+```csharp
 using System.Net;
 
 public static async Task Run(HttpRequestMessage req, TraceWriter log)

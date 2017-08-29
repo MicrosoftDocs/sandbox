@@ -2,7 +2,7 @@
 
 This example reads and logs the contents of a text object in a blob container. This requires a blob storage account and a container for blobs.
 
-```
+```csharp
 using System.Text;
 
 public static async Task Run(Stream myBlob, TraceWriter log)

@@ -2,7 +2,7 @@
 
 Functions can be triggered on a schedule. This examples logs the time, and the next 5 occurrences when a function timer is triggered or logs when it is late. 
 
-```
+```csharp
 using System;
 
 public static void Run(TimerInfo myTimer, TraceWriter log)

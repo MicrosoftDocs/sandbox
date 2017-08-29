@@ -2,7 +2,7 @@
 
 The following example is a function that must be triggered manually. The Azure portal is one way to trigger a function manually.
 
-```
+```csharp
 using System;
 
 public static void Run(string input, TraceWriter log)
