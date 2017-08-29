@@ -1,6 +1,6 @@
 ## Retrieve a list of documents
 
-The Cosmos DB binding can automatically retrieve a list of documents from Cosmos DB and bind it to a parameter. The `sqlQuery` property of the binding is used to specify a query to use to retrieve the documents. This example demonstrates how to select the 5 most recent documents from the collection as determined by the `_ts` timestamp property.
+The Cosmos DB binding can automatically retrieve a list of documents from Cosmos DB and bind it to a parameter. The `sqlQuery` property of the binding is used to specify a query to use to retrieve the documents. This example demonstrates how to select the five most recent documents from the collection as determined by the `_ts` timestamp property.
 
 ```csharp
 [FunctionName("CosmosDBSample")]
