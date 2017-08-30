@@ -17,3 +17,7 @@ ms.author: alias
 #Azure Storage Functions
 
 [!include[](azure-table-storage.md)]
+
+[!include[](azure-table-storage.md)]
+
+[!include[](azure-table-storage.md)]
