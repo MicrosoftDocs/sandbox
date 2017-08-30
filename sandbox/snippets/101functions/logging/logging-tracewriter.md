@@ -26,12 +26,13 @@ host.json
   }
 }
 ```
-Takeaways
+
+[!include[](../includes/takeaways-heading.md)]
 * You can optionally include a `TraceWriter` parameter to your function.
 * `TraceWriter` provides the `Trace`, `Verbose`, `Info`, `Warning` & `Error` methods.
 * `TraceWriter` is a part of the `Microsoft.Azure.WebJobs` package.
 * Avoid using `Console.WriteLine` for logging.
 * Log levels can be configured in `host.json`. The default log level is `info`.
 
-Learn More
+[!include[](../includes/read-more-heading.md)]
 * [Azure Functions C# Developer Reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp#logging)

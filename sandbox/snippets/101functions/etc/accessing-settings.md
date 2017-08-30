@@ -16,7 +16,7 @@ public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anon
 
 ```
 
-Takeaways
+[!include[](../includes/takeaways-heading.md)]
 * Environment varibles get configured in the `Application Settings` section
 * Use the static `GetEnvironmentVariable` method of the `Environment` type to get access to the
 

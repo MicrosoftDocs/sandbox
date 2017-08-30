@@ -5,7 +5,7 @@ When making HTTP request, you have the ability of supplying additional parameter
 The example below appends 2 query string variables along with their associated values
 :
 
-   `http://&lt;your-function-url&gt;/api/function-name?page=1&orderby=name`
+   `http://<your-function-url>/api/function-name?page=1&orderby=name`
 
 ```csharp
 [FunctionName("AccessQueryString")]
@@ -28,7 +28,7 @@ public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anon
 
 ```
 
-Takeaways
+[!include[](../includes/takeaways-heading.md)]
 * Use the `GetQueryNameValuePairs` of `HttpRequestMessage` to retrieve query string parameters
 * `GetQueryNameValuePairs` returns a list of KeyValuePairs<string, string>
 

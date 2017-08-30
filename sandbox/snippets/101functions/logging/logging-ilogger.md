@@ -19,10 +19,10 @@ public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous,
 
 ```
 
-Takeaways
+[!include[](../includes/takeaways-heading.md)]
 * `ILogger` can be used as an alternative to `TraceWriter`
 * `ILogger` supports structured logging
 
-Learn More
+[!include[](../includes/read-more-heading.md)]
 * [ILogger support](https://github.com/Azure/azure-webjobs-sdk-script/wiki/ILogger)
 * [ILogger extension methods](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.extensions.logging.loggerextensions#methods_summary)

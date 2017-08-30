@@ -19,7 +19,7 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 }
 ```
 
-Takeaways
+[!include[](../includes/takeaways-heading.md)]
 * There are 2 types of keys that can be used to secure your Azure function; Host and Function
 * Host keys are shared by all functions in the same function app.
 * Function keys apply only to the specific function where they are defined.
@@ -27,5 +27,5 @@ Takeaways
 * The `AuthorizationLevel` enum contains the levels of security you can set on the `HttpTrigger` attribute.
 * In the HTTP request, keys can be specified in a `code` query string parameter or a `x-functions-key` HTTP header
 
-Learn More
+[!include[](../includes/read-more-heading.md)]
 * [Working with Keys](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook#working-with-keys)

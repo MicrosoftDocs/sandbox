@@ -28,10 +28,10 @@ public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous,
 }
 ```
 
-Takeaways
+[!include[](../includes/takeaways-heading.md)]
 * Alternative loggers can be used to capture log information from your functions
 * You can use NuGet to not only add loggers, but extend your functions with various functionality
 
-Learn More
+[!include[](../includes/read-more-heading.md)]
 * [Serilog](https://serilog.net/)
 * [Azure Functions C# Developer Reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp#logging)

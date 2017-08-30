@@ -39,7 +39,7 @@ public class Customer
 
 ```
 
-Takeaways
+[!include[](../includes/takeaways-heading.md)]
 * Use the `ReadAsAsync` method to serialize the request body to a specified object type.
 * JSON and XML content types are supported out of the box.
 * JSON serialization uses JSON.NET.
