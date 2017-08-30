@@ -17,7 +17,7 @@ XML body content
 </Customer>
 ```
 
-Code
+
 ```csharp
 [FunctionName("ReadingRequestBody")]
 public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "POST", Route = null)]HttpRequestMessage req, TraceWriter log)
@@ -25,7 +25,7 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
     log.Info("101 Azure Function Demo - Reading the request body in HTTP Triggers");
 
     // Read body
-    var data = await req.Content.ReadAsAsync<Customer>();
+    Customer data = await req.Content.ReadAsAsync<Customer>();
 
     // Echo request data back in the response
     return  req.CreateResponse(HttpStatusCode.OK, data);
@@ -41,9 +41,10 @@ public class Customer
 
 Takeaways
 * Use the `ReadAsAsync` method to serialize the request body to a specified object type.
-* JSON and XML content types are supported out of the box
-* JSON serialization uses JSON.NET
+* JSON and XML content types are supported out of the box.
+* JSON serialization uses JSON.NET.
 * Other methods available to ready body content include `ReadAsStringAsync`, `ReadAsStreamAsync` and `ReadAsByteArrayAsync`.
 
 Learn more
-* <Add links>
+* [HttpRequestMessage](https://docs.microsoft.com/dotnet/api/system.net.http.httprequestmessage)
+* [HttpResponseMessage](https://docs.microsoft.com/dotnet/api/system.net.http.httpresponsemessage)

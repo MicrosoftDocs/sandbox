@@ -2,7 +2,7 @@
 To enable basic logging in your functions, you can include a parameter of type `TraceWriter` and an instance will be provided to you. `TraceWritier` is definied in the [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/blob/master/src/Microsoft.Azure.WebJobs.Host/TraceWriter.cs). The `tracing` property in `host.json` can be used to configure `TraceWriter`.
 
 
-Code
+
 ```csharp
 [FunctionName("TraceWritterLogging")]
 public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET")]HttpRequestMessage req, TraceWriter log)
@@ -21,7 +21,7 @@ public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous,
 host.json
 ```json
 {
-  "tracing": {   
+  "tracing": {
     "consoleLevel": "verbose"
   }
 }

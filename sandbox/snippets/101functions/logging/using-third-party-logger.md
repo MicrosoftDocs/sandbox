@@ -1,19 +1,20 @@
 ## Logging with a third party logger
-If you rather user your preferred logger, you can easily do so by just adding a NuGet package.
+If you rather use your preferred logger, you can easily do so by just adding a NuGet package.
 
-The code below shows a function leveraging 
-the [Serilog.Sinks.AzureTableStorage](https://www.nuget.org/packages/serilog.sinks.azuretablestorage) package. It get's the connection
-Code
+The code below shows a function leveraging
+the [Serilog.Sinks.AzureTableStorage](https://www.nuget.org/packages/serilog.sinks.azuretablestorage) package.
+
+
 ```csharp
 [FunctionName("ThirdPartyLogger")]
 public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET")]HttpRequestMessage req)
 {
 
-    var connectionString = Environment.GetEnvironmentVariable("StorageAccountConnectionString", EnvironmentVariableTarget.Process);
-    
-    var tableName = Environment.GetEnvironmentVariable("StorageAccountTableName", EnvironmentVariableTarget.Process);
+    string connectionString = Environment.GetEnvironmentVariable("StorageAccountConnectionString", EnvironmentVariableTarget.Process);
 
-    var log = new LoggerConfiguration()
+    string tableName = Environment.GetEnvironmentVariable("StorageAccountTableName", EnvironmentVariableTarget.Process);
+
+    Logger log = new LoggerConfiguration()
                 .WriteTo.AzureTableStorage(connectionString, storageTableName: tableName, restrictedToMinimumLevel: LogEventLevel.Verbose)
                 .CreateLogger();
 
@@ -32,4 +33,5 @@ Takeaways
 * You can use NuGet to not only add loggers, but extend your functions with various functionality
 
 Learn More
-* 
+* [Serilog](https://serilog.net/)
+* [Azure Functions C# Developer Reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp#logging)

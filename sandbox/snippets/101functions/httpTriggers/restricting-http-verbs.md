@@ -2,7 +2,7 @@
 
 With the `HttpTrigger` attribute, you can list one or more HTTP verbs that your function will respond to.
 
-Code
+
 ```csharp
 // Respond to only GET requests
 Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET")]HttpRequestMessage req, TraceWriter log)
@@ -12,7 +12,7 @@ Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", 
 ```
 
 Takeaways
-* Using the `HttpTrigger` trigger you can list supported HTTP verbs
+* Using the `HttpTrigger` trigger you can list supported HTTP verbs.
 * Always specify one or more HTTP verbs to respond to.
 
 Learn More

@@ -1,13 +1,12 @@
-## Accessing querystring values in Http Triggers
+## Accessing query string values in Http Triggers
 
-When making HTTP request, you have the ability of supplying addional parameters via a query string to the request URL which can be retrieved from by the website or web api to alter how the response is returned.
+When making HTTP request, you have the ability of supplying additional parameters via a query string to the request URL which can be retrieved from by the website or web API to alter how the response is returned.
 
 The example below appends 2 query string variables along with their associated values
 :
 
    `http://&lt;your-function-url&gt;/api/function-name?page=1&orderby=name`
 
-Code
 ```csharp
 [FunctionName("AccessQueryString")]
 public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET")]HttpRequestMessage req, TraceWriter log)
@@ -15,10 +14,10 @@ public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anon
     log.Info("101 Azure Function Demo - Accessing the query string values in HTTP Triggers");
 
     // Retrieve query parameters
-    var values = req.GetQueryNameValuePairs();
+    IEnumerable<KeyValuePair<string, string>> values = req.GetQueryNameValuePairs();
 
     // Write query parameters to log
-    foreach (var val in values)
+    foreach (KeyValuePair<string, string> val in values)
     {
         log.Info($"Parameter: {val.Key}\nValue: {val.Value}\n");
     }

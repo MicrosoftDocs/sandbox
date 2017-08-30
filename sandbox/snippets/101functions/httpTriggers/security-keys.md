@@ -8,7 +8,7 @@ When creating your function, you have the option of allowing it to be called by 
 
 Keys are stored as part of your function app in Azure and are encrypted at rest. To view your keys, create new ones, or roll keys to new values, navigate to one of your functions within the porta
 
-Code
+
 ```csharp
 [FunctionName("SecuredFunction")]
 public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "GET")]HttpRequestMessage req, TraceWriter log)
