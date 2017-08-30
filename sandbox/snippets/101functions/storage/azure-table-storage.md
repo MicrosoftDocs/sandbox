@@ -33,7 +33,7 @@ public static void Run([Table("Persons")]ICollector<Person> tableBinding, TraceW
 
 ### Configuration Settings
 
-Create a `functions.json` file and define your binding. This binding automatically adds the returned value to the Table Storage.
+Create a `functions.json` file and define your binding. This binding automatically adds the objects added to the `ICollector` to the defined table.
 
 ```json
 {
@@ -42,7 +42,6 @@ Create a `functions.json` file and define your binding. This binding automatical
       "type": "table",
       "name": "tableBindings",
       "tableName": "Person",
-      "connection": "MyStorageConnection",
       "direction": "out"
     }
   ],
