@@ -62,7 +62,6 @@ public static void Run(ICollector<Person> tableBinding, TraceWriter log)
         );
 }
 ```
-
-### Read more
+[!include[](../includes/read-more-heading.md)]
 
 See the [full Table Storage documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table).
