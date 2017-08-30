@@ -20,5 +20,5 @@ public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anon
 * Environment varibles get configured in the `Application Settings` section
 * Use the static `GetEnvironmentVariable` method of the `Environment` type to get access to the
 
-Learn more
+[!include[](../includes/read-more-heading.md)]
 * [Environment Variables](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp#environment-variables)

@@ -32,6 +32,6 @@ public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anon
 * Use the `GetQueryNameValuePairs` of `HttpRequestMessage` to retrieve query string parameters
 * `GetQueryNameValuePairs` returns a list of KeyValuePairs<string, string>
 
-Learn more
+[!include[](../includes/read-more-heading.md)]
 * [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
 *  [Create a function triggered by a generic webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-generic-webhook-triggered-function)

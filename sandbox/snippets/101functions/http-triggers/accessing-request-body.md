@@ -45,6 +45,6 @@ public class Customer
 * JSON serialization uses JSON.NET.
 * Other methods available to ready body content include `ReadAsStringAsync`, `ReadAsStreamAsync` and `ReadAsByteArrayAsync`.
 
-Learn more
+[!include[](../includes/read-more-heading.md)]
 * [HttpRequestMessage](https://docs.microsoft.com/dotnet/api/system.net.http.httprequestmessage)
 * [HttpResponseMessage](https://docs.microsoft.com/dotnet/api/system.net.http.httpresponsemessage)
