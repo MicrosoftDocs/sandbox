@@ -17,7 +17,7 @@ Defining a binding between an Azure Function and a table in a storage account ca
 
 The sample functions presented here do not include a trigger and do not work as-is.
 
-### Code declaration
+Bindings can be declared through code in C# using the `TableAttribute`.
 
 ```csharp
 public static void Run([Table("Persons")]ICollector<Person> tableBinding, TraceWriter log)
@@ -31,9 +31,7 @@ public static void Run([Table("Persons")]ICollector<Person> tableBinding, TraceW
 }
 ```
 
-### Configuration Settings
-
-Create a `functions.json` file and define your binding. This binding automatically adds the objects added to the `ICollector` to the defined table.
+Bindings can also be declared through a configuration file. To do so, create a `functions.json` file and define your binding. This binding automatically adds the objects added to the `ICollector` to the defined table.
 
 ```json
 {
