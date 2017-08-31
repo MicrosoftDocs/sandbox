@@ -13,7 +13,6 @@ public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous,
     log.LogWarning("Here is a warning log message");
     log.LogError("Here is an error log message");
     log.LogCritical("This is a critical log message => {message}", "We have a big problem");
-KS
     return req.CreateResponse(HttpStatusCode.OK);
 }
 
