@@ -1,5 +1,5 @@
 ## Basic logging with TraceWriter
-To enable basic logging in your functions, you can include a parameter of type `TraceWriter` and an instance will be provided to you. `TraceWritier` is definied in the [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/blob/master/src/Microsoft.Azure.WebJobs.Host/TraceWriter.cs). The `tracing` property in `host.json` can be used to configure `TraceWriter`.
+To enable basic logging in your functions, you can include a parameter of type `TraceWriter` and an instance is provided to you. `TraceWritier` is defined in the [Azure WebJobs SDK](https://github.com/Azure/azure-webjobs-sdk/blob/master/src/Microsoft.Azure.WebJobs.Host/TraceWriter.cs). The `tracing` property in `host.json` can be used to configure `TraceWriter`.
 
 
 

@@ -1,5 +1,5 @@
 ## Azure Storage Queue Trigger using a POCO
-If your queue message is made up of a JSON payload, the runtime will serialize it into a POCO for you.
+If your queue message is made up of a JSON payload, the runtime serializes it into a POCO for you.
 
 ```csharp
 [FunctionName("SimpleQueue")]

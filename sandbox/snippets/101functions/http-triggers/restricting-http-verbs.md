@@ -1,6 +1,6 @@
-## Restricting HTTP verbs in in HTTP Triggers
+## Restricting HTTP verbs in HTTP Triggers
 
-With the `HttpTrigger` attribute, you can list one or more HTTP verbs that your function will respond to.
+With the `HttpTrigger` attribute, you can list one or more HTTP verbs that your function responds to.
 
 
 ```csharp

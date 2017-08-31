@@ -1,7 +1,7 @@
-## Logging with a third party logger
+## Logging with a third-party logger
 If you rather use your preferred logger, you can easily do so by just adding a NuGet package.
 
-The code below shows a function leveraging
+The following code shows a function using
 the [Serilog.Sinks.AzureTableStorage](https://www.nuget.org/packages/serilog.sinks.azuretablestorage) package.
 
 
@@ -29,8 +29,8 @@ public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous,
 ```
 
 [!include[](../includes/takeaways-heading.md)]
-* Alternative loggers can be used to capture log information from your functions
-* You can use NuGet to not only add loggers, but extend your functions with various functionality
+* Alternative loggers can be used to capture log information from your functions.
+* You can use NuGet to not only add loggers, but extend your functions with other functionality.
 
 [!include[](../includes/read-more-heading.md)]
 * [Serilog](https://serilog.net/)

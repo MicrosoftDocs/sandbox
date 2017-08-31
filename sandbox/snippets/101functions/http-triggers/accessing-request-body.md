@@ -43,7 +43,7 @@ public class Customer
 * Use the `ReadAsAsync` method to serialize the request body to a specified object type.
 * JSON and XML content types are supported out of the box.
 * JSON serialization uses JSON.NET.
-* Other methods available to ready body content include `ReadAsStringAsync`, `ReadAsStreamAsync` and `ReadAsByteArrayAsync`.
+* Other methods available to ready body content include `ReadAsStringAsync`, `ReadAsStreamAsync` and, `ReadAsByteArrayAsync`.
 
 [!include[](../includes/read-more-heading.md)]
 * [HttpRequestMessage](https://docs.microsoft.com/dotnet/api/system.net.http.httprequestmessage)

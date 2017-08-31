@@ -1,5 +1,5 @@
 ## Triggering via Azure Storage Queue
-`ICollector` and `IAsyncCollector` can be used as paramter types for Storage Queue output bindings. Using these interfaces allows you to add multiple messages to the respective Storage Queue.
+`ICollector` and `IAsyncCollector` can be used as parameter types for Storage Queue output bindings. Using these interfaces allows you to add multiple messages to the respective Storage Queue.
 
 ```csharp
 [FunctionName("CollectorQueueOutput")]
@@ -15,7 +15,7 @@ public static void Run([TimerTrigger("*/30 * * * * *")]TimerInfo myTimer,
 
 [!include[](../includes/takeaways-heading.md)]
 * Use the `QueueTrigger` attribute to trigger your function via an Azure Storage Queue.
-* `QueueTrigger` requries the name of the queue and the name of the setting that holds the connection information for your storage account.
+* `QueueTrigger` requires the name of the queue and the name of the setting that holds the connection information for your storage account.
 * Multiple messages can be added to a queue every time the functions runs.
 * `IAsyncCollector` provides a `AddAsync` method that you can use with the async/await keywords.
 

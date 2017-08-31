@@ -1,8 +1,8 @@
 ## Poison queue messages with Azure Storage Queue Triggers
-If a function triggered by a `QueueTrigger` fails, the Azure Functions runtime will automatically try that function five times for that specific queue message.
-If the message continues to fail, then the bad message will moved to a "poison" queue. The name of the queue will be based on the original + "-poison".
+If a function triggered by a `QueueTrigger` fails, the Azure Functions runtime automatically retries that function five times for that specific queue message.
+If the message continues to fail, then the bad message is moved to a "poison" queue. The name of the queue will be based on the original + "-poison".
 
-For example, for a storage queue named `myqueue` then resultant poison queue will be named `myqueue-poison`.
+For example, a storage queue named `myqueue` results in a poison queue named `myqueue-poison`.
 
 
 ```csharp
@@ -23,8 +23,8 @@ public static void Run([QueueTrigger("101functionsqueue", Connection = "AzureWeb
 After letting the code above run, there should be a queue names `101functionsqueue-poison` with the message that failed to process.
 
 [!include[](../includes/takeaways-heading.md)]
-* Using `CloudQueueMessage`, metadata such a the message dequeue count can be retrieved.
-* Five attempts will be made to process a queue message before moving it to a poison queue.
+* Using `CloudQueueMessage`, metadata such as the message dequeue count can be retrieved.
+* Five attempts are made to process a queue message before moving it to a poison queue.
 
 
 [!include[](../includes/read-more-heading.md)]

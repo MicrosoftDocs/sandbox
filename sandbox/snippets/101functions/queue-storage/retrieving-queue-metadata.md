@@ -1,10 +1,10 @@
-## Retrieving queue metadata from a Azure Storage Queue Trigger
+## Retrieving queue metadata from an Azure Storage Queue Trigger
 With Storage Queue triggers, the `CloudQueueMessage` class can be used to retrieve metadata about the queue message.
 Some common properties include:
 
 * DequeueCount - The number of times this message has been dequeued.
 * ExpirationTime - The time that the message expires.
-* Id - Queue message ID.
+* ID - Queue message ID.
 * InsertionTime - TThe time that the message was added to the queue.
 
 ```csharp
