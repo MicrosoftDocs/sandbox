@@ -21,7 +21,7 @@ ms.author: cecilphillip
 
 [!include[](queue-trigger-with-poco.md)]
 
-[!include[](retrieving-queue-metadata.md.md)]
+[!include[](retrieving-queue-metadata.md)]
 
 [!include[](poision-queue-messages.md)]
 
