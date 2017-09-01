@@ -17,6 +17,6 @@ ms.author: antchu
 
 # Proxies
 
-[!include[](proxies-basics.md)]
+[!include[](proxies-proxies-json.md)]
 
 [!include[](proxies-redirects.md)]
