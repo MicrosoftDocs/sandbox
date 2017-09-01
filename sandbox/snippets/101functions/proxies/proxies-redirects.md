@@ -38,7 +38,7 @@ To configure proxies, edit `proxies.json`.
 [!include[](../includes/takeaways-heading.md)]
 
 - Azure Functions Proxies are configured using `proxies.json`.
-- You can edit `proxies.json` using App Service Editor. 
+- Proxies can be used to set the status code and headers if an HTTP request. 
 
 [!include[](../includes/read-more-heading.md)]
 
