@@ -46,6 +46,8 @@ ms.author: alias
 * Defining routes with proxies
 
 ### Proxies
+* [Using proxies.json](proxies/#using-proxiesjson)
+* [Creating an HTTP Redirect](proxies/#creating-an-http-redirect)
 
 ### Logging and monitoring
 

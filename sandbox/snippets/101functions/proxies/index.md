@@ -15,6 +15,8 @@ ms.author: antchu
 
 [!include[](~/includes/header.md)]
 
-# Proxies Samples
+# Proxies
 
 [!include[](proxies-basics.md)]
+
+[!include[](proxies-redirects.md)]
