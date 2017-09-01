@@ -29,5 +29,5 @@ After letting the code above run, there should be a queue names `101functionsque
 
 [!include[](../includes/read-more-heading.md)]
 * [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
-* [Azure Functions Queue Storage bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue#trigger-sample)
+* [Azure Functions Queue Storage bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-queue#trigger-sample)
 * [Introduction to Queues](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction)

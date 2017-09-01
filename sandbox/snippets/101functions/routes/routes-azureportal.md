@@ -15,4 +15,4 @@ Simply enter the route that you want your function to have in the Route template
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Settings for HTTP and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
+- [Settings for HTTP and webhook bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)

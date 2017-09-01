@@ -1,7 +1,7 @@
 ## Logging with ILogger
-As an alternative to `TraceWriter`, an instance of [ILogger](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.extensions.logging.ilogger) can be used instead.
+As an alternative to `TraceWriter`, an instance of [ILogger](https://docs.microsoft.com/aspnet/core/api/microsoft.extensions.logging.ilogger) can be used instead.
 
-The advantage of using an ILogger instead of a `TraceWriter` is that you get support for structured logging, which allows for richer analytics support. This is helpful if you target your logs at a tool like [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-analytics).
+The advantage of using an ILogger instead of a `TraceWriter` is that you get support for structured logging, which allows for richer analytics support. This is helpful if you target your logs at a tool like [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-analytics).
 
 
 ```csharp
@@ -24,4 +24,4 @@ public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous,
 
 [!include[](../includes/read-more-heading.md)]
 * [ILogger support](https://github.com/Azure/azure-webjobs-sdk-script/wiki/ILogger)
-* [ILogger extension methods](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.extensions.logging.loggerextensions#methods_summary)
+* [ILogger extension methods](https://docs.microsoft.com/aspnet/core/api/microsoft.extensions.logging.loggerextensions#methods_summary)

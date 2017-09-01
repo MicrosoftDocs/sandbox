@@ -34,4 +34,4 @@ public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous,
 
 [!include[](../includes/read-more-heading.md)]
 * [Serilog](https://serilog.net/)
-* [Azure Functions C# Developer Reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp#logging)
+* [Azure Functions C# Developer Reference](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp#logging)
