@@ -20,3 +20,5 @@ ms.author: antchu
 [!include[](proxies-proxies-json.md)]
 
 [!include[](proxies-redirects.md)]
+
+[!include[](proxies-mock-api.md)]
