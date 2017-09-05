@@ -14,4 +14,4 @@ On the integrate page under "Allowed HTTP methods" you can choose either All met
 
 [!include[](../includes/read-more-heading.md)]
 
-- 
+- [Azure REST API](https://docs.microsoft.com/en-us/rest/api/)
