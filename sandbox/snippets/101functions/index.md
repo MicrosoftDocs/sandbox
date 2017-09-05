@@ -88,6 +88,7 @@ ms.author: alias
 ### Service Bus
 
 ### Table storage
+* [Defining a table storage trigger](table-storage/#defining-a-table-storage-trigger)
 
 ### Timer
 * [Timer trigger function](timer/#timer-trigger-function)

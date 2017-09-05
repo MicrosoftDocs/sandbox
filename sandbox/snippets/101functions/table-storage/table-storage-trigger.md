@@ -11,7 +11,7 @@ ms.devlang: csharp
 #ms.service: cognitive-services
 ---
 
-## Azure Table Storage
+## Defining a table storage trigger
 
 Defining a binding between an Azure Function and a table in a storage account can be defined in two different ways. 
 
