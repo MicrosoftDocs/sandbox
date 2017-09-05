@@ -65,8 +65,8 @@ ms.author: alias
 ### Blob storage
 
 ### Cosmos DB
-* [Using DocumentClient](cosmosdb/#using-documentclient)
-* [Retrieve a single document by ID](cosmosdb/#retrieve-a-single-document-by-id)
+* [Using DocumentClient](cosmosdb#using-documentclient)
+* [Retrieve a single document by ID](cosmosdb/index.md#retrieve-a-single-document-by-id)
 * [Retrieve a list of documents](cosmosdb/#retrieve-a-list-of-documents)
 
 ### Event Hubs
