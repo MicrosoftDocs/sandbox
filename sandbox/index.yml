@@ -44,3 +44,8 @@ sections:
       href: demos/nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+    - title: 101 Functions
+      html: <p>101 Azure Function Samples</p>
+      href: 101functions
+      image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/cs-custom-vision.svg

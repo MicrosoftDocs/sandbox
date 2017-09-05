@@ -10,3 +10,8 @@
         href: /sandbox/demos/notbacon
       - name: NotHotdog
         href: /sandbox/demos/nothotdog
+    - name: Snippets
+      expanded: true
+      items:
+      - name: 101 Azure Functions
+        href: /sandbox/snippets/101functions
