@@ -53,7 +53,7 @@ ms.author: alias
 ## Triggers and bindings
 
 ### Blob storage
-* [Blob Trigger Function](blob/#blob-trigger-function)
+* [Blob trigger function](blob-storage/#blob-trigger-function)
 
 ### Cosmos DB
 * [Using DocumentClient](cosmosdb/#using-documentclient)
@@ -75,7 +75,7 @@ ms.author: alias
 * [GitHub comment webhook](http/#github-comment-webhook)
 
 ### Manual trigger
-* [Manual C# Function](manual/#manual-c-function)
+* [Manual C# function](manual/#manual-c-function)
 
 ### Mobile Apps
 
@@ -88,7 +88,7 @@ ms.author: alias
 ### Service Bus
 
 ### Table storage
-* [Defining a table storage trigger](table-storage/#defining-a-table-storage-trigger)
+* [Table storage trigger function](table-storage/#table-storage-trigger-function)
 
 ### Timer
 * [Timer trigger function](timer/#timer-trigger-function)
