@@ -15,7 +15,7 @@ ms.author: cecilphillip
 
 [!include[](~/includes/header.md)]
 
-# HTTP Trigger Samples
+# HTTP and webhooks
 
 [!include[](accessing-querystrings.md)]
 
@@ -24,3 +24,7 @@ ms.author: cecilphillip
 [!include[](restricting-http-verbs.md)]
 
 [!include[](security-keys.md)]
+
+[!include[](generic-webhook.md)]
+
+[!include[](github-comment-webhook.md)]

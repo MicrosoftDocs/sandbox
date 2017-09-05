@@ -15,7 +15,7 @@ ms.author: cecilphillip
 
 [!include[](~/includes/header.md)]
 
-# Logging Samples
+# Logging and monitoring
 
 [!include[](logging-ilogger.md)]
 
