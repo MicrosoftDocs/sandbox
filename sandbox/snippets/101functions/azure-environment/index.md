@@ -21,6 +21,4 @@ ms.date: 08/28/2017
 
 [!include[](environment-keys.md)]
 
-[!include[](environment-track-billing.md)]
-
 [!include[](environment-daily-usage-quota.md)]
