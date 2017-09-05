@@ -1,8 +1,8 @@
-## Installing Visual Studio Function Tools
+## Installing Visual Studio Functions Tools
 
 Azure Function tools for Visual Studio is an extension that provides easy development, deployment, and testing of functions within Visual Studio. You can install function tools in Visual Studio 2017 through the Extensions and Updates dialog in the Tools menu. To bring the extension to the top of the search results, type "Azure function" in the search box. Once downloaded,the extension will be ready for use after Visual Studio is restarted. 
 
-![Azure Function tools for Visual Studio Extension](../media/azure-funtion-vs-ext.png)
+![Azure Functions tools for Visual Studio Extension](../media/azure-funtion-vs-ext.png)
 
 [!include[](../includes/takeaways-heading.md)]
 
