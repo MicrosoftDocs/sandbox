@@ -27,8 +27,10 @@ The output should print the text "Hello Azure". To publish this function from th
 
 [!include[](../includes/takeaways-heading.md)]
 
-- 
+- Azure Functions Core Tools provide a local development environment for developing, testing, and publishing functions from the command line.
+- Use of the command line tool requires installation of [Node.js](https://docs.npmjs.com/getting-started/installing-node)
 
 [!include[](../includes/read-more-heading.md)]
 
-- []()
+- [Code and test Azure functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
+- [Azure Functions Core Tools GitHub Repository](https://github.com/azure/azure-functions-cli)
