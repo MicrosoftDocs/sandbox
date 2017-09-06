@@ -21,4 +21,4 @@ Adding the Route property to the HttpTrigger attribute allows you to customize t
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Azure Functions Http and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
+- [Azure Functions Http and webhook bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)
