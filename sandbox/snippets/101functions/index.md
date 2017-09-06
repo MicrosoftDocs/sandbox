@@ -82,12 +82,12 @@ ms.author: alias
 ### Notification Hubs
 
 ### Queue storage
-* [Triggering via Azure Storage Queue](queue-trigger/#triggering-via-azure-storage-queue)
-* [Azure Storage Queue Trigger using a POCO](queue-trigger/#azure-storage-queue-trigger-using-a-poco)
-* [Retrieving queue metadata from an Azure Storage Queue Trigger](queue-trigger/#retrieving-queue-metadata-from-an-azure-storage-queue-trigger)
-* [Poison queue messages with Azure Storage Queue Triggers](queue-trigger/#poison-queue-messages-with-azure-storage-queue-triggers)
-* [Azure Storage Queue output binding](queue-trigger/#azure-storage-queue-output-binding)
-* [Using ICollector with Azure Storage Queue bindings](queue-trigger/#using-icollector-with-azure-storage-queue-bindings)
+* [Triggering via Azure Storage Queue](queue-storage/#triggering-via-azure-storage-queue)
+* [Azure Storage Queue Trigger using a POCO](queue-storage/#azure-storage-queue-trigger-using-a-poco)
+* [Retrieving queue metadata from an Azure Storage Queue Trigger](queue-storage/#retrieving-queue-metadata-from-an-azure-storage-queue-trigger)
+* [Poison queue messages with Azure Storage Queue Triggers](queue-storage/#poison-queue-messages-with-azure-storage-queue-triggers)
+* [Azure Storage Queue output binding](queue-storage/#azure-storage-queue-output-binding)
+* [Using ICollector with Azure Storage Queue bindings](queue-storage/#using-icollector-with-azure-storage-queue-bindings)
 
 ### SendGrid
 
