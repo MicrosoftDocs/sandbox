@@ -1,8 +1,8 @@
 ## Accessing query string values in Http Triggers
 
-When making HTTP request, you have the ability of supplying additional parameters via a query string to the request URL which can be retrieved from by the website or web API to alter how the response is returned.
+When making HTTP requests, you have the ability of supplying additional parameters via a query string. These parameters can be retrieved to alter how the response is returned.
 
-The example below appends 2 query string variables along with their associated values
+The following example appends two query string variables along with their associated values
 :
 
    `http://<your-function-url>/api/function-name?page=1&orderby=name`
@@ -33,5 +33,5 @@ public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anon
 * `GetQueryNameValuePairs` returns a list of KeyValuePairs<string, string>
 
 [!include[](../includes/read-more-heading.md)]
-* [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
-*  [Create a function triggered by a generic webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-generic-webhook-triggered-function)
+* [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)
+*  [Create a function triggered by a generic webhook](https://docs.microsoft.com/azure/azure-functions/functions-create-generic-webhook-triggered-function)

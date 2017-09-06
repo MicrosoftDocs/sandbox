@@ -21,5 +21,5 @@ public static async Task Run(Stream myBlob, TraceWriter log)
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Create a function triggered by Azure Blob storage](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-storage-blob-triggered-function)
-- [Azure Functions Blob Storage Bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob)
+- [Create a function triggered by Azure Blob storage](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function)
+- [Azure Functions Blob Storage Bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-blob)
