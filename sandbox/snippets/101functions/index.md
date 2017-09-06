@@ -111,7 +111,9 @@ ms.author: alias
 ### Functions CLI
 
 ### Portal
-
+* [Allowing HTTP verbs in the Azure Portal](portal/#allowing-http-verbs-in-the-azure-portal)
+* [Getting your function and host keys in the Azure Portal](portal/#getting-your-function-and-host-keys-in-the-azure-portal)
+* [Controlling how much your function can run in one day](portal/#controlling-how-much-your-function-can-run-in-one-day)
 
 ## Continuous Integration/Deployment
 
