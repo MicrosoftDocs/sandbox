@@ -48,6 +48,9 @@ ms.author: alias
 ### Proxies
 * [Using proxies.json](proxies/#using-proxiesjson)
 * [Creating an HTTP Redirect](proxies/#creating-an-http-redirect)
+* [Creating a mock API](proxies/#creating-a-mock-api)
+* [Returning custom responses based on backend response codes](proxies/#returning-custom-responses-based-on-backend-response-codes)
+* [Referencing application settings](proxies/#referencing-application-settings)
 
 ### Logging and monitoring
 
@@ -65,8 +68,8 @@ ms.author: alias
 ### Blob storage
 
 ### Cosmos DB
-* [Using DocumentClient](cosmosdb#using-documentclient)
-* [Retrieve a single document by ID](cosmosdb/index.md#retrieve-a-single-document-by-id)
+* [Using DocumentClient](cosmosdb/#using-documentclient)
+* [Retrieve a single document by ID](cosmosdb/#retrieve-a-single-document-by-id)
 * [Retrieve a list of documents](cosmosdb/#retrieve-a-list-of-documents)
 
 ### Event Hubs
