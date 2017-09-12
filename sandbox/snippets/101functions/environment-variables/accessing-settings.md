@@ -21,4 +21,4 @@ public static Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anon
 * Use the static `GetEnvironmentVariable` method of the `Environment` type to get access to the
 
 [!include[](../includes/read-more-heading.md)]
-* [Environment Variables](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp#environment-variables)
+* [Environment Variables](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp#environment-variables)

@@ -1,11 +1,11 @@
 ---
-title: Function Triggers
+title: Blob storage
 description: 101 Azure Functions
 author: paladique
 manager: scottca
 keywords: 
 ms.topic: article
-ms.date: 01/01/2017
+ms.date: 08/31/2017
 ms.author: jasmineg
 #ms.devlang: 
 #ms.prod:
@@ -15,11 +15,6 @@ ms.author: jasmineg
 
 [!include[](~/includes/header.md)]
 
-# Azure Function Triggers
+# Blob storage triggers and bindings
 
-[!include[](github-comment-webhook.md)]
 [!include[](blob-trigger.md)]
-[!include[](timer-trigger.md)]
-[!include[](generic-webhook.md)]
-
-

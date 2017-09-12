@@ -2,7 +2,7 @@
 
 When creating your function, you have the option of allowing it to be called by anyone (Anonymous) or to require a security key.
 
- When making a request to a secure function, you will be required to provide the security key as shown below
+ When making a request to a secure function, you are required to provide the security key as shown.
 
  `http://&lt;your-function-url&gt;/api/function-name?code=<your-key>`
 
@@ -20,7 +20,7 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 ```
 
 [!include[](../includes/takeaways-heading.md)]
-* There are 2 types of keys that can be used to secure your Azure function; Host and Function
+* There are two types of keys that can be used to secure your Azure function; Host and Function.
 * Host keys are shared by all functions in the same function app.
 * Function keys apply only to the specific function where they are defined.
 * Anonymous functions can be called by anyone.

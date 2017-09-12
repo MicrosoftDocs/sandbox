@@ -18,5 +18,5 @@ public static void Run(string input, TraceWriter log)
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Create your first function in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function)
-- [Get started with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli)
+- [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
+- [Get started with Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli)

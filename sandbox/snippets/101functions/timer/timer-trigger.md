@@ -23,5 +23,5 @@ public static void Run(TimerInfo myTimer, TraceWriter log)
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Create a function in Azure that is triggered by a timer](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-scheduled-function)
-- [Azure Functions timer trigger](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer)
+- [Create a function in Azure that is triggered by a timer](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function)
+- [Azure Functions timer trigger](https://docs.microsoft.com/azure/azure-functions/functions-bindings-timer)
