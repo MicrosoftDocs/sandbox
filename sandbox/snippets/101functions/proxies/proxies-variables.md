@@ -29,7 +29,6 @@ To configure proxies, edit `proxies.json`.
 ```
 
 [!include[](../includes/takeaways-heading.md)]
-
 - Azure Functions Proxies are configured using `proxies.json`.
 - Proxies configuration can reference environment variables and application settings. 
 
