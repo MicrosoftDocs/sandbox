@@ -6,28 +6,27 @@ To configure proxies, edit `proxies.json`.
 
 ```json
 {
-	"proxies": {
-		"statuses": {
-			"matchCondition": {
-				"methods": [
-					"GET"
-				],
-				"route": "/test/{id}"
-			},
-			"backendUri": "https://%WEBSITE_HOSTNAME%/{id}",
-			"responseOverrides": {
-				"response.statusCode": "200",
-				"response.headers.Content-Type": "application/json",
-				"response.body": {
+  "proxies": {
+    "statuses": {
+      "matchCondition": {
+        "methods": [
+          "GET"
+        ],
+        "route": "/test/{id}"
+      },
+      "backendUri": "https://%WEBSITE_HOSTNAME%/{id}",
+      "responseOverrides": {
+        "response.statusCode": "200",
+        "response.headers.Content-Type": "application/json",
+        "response.body": {
           "id": "{id}",
           "value": "%DEFAULT_VALUE%"
         }
-			}
-		}
-	}
+      }
+    }
+  }
 }
 ```
-
 
 [!include[](../includes/takeaways-heading.md)]
 - Azure Functions Proxies are configured using `proxies.json`.
