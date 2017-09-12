@@ -22,3 +22,7 @@ ms.author: antchu
 [!include[](proxies-redirects.md)]
 
 [!include[](proxies-mock-api.md)]
+
+[!include[](proxies-conditional-responses.md)]
+
+[!include[](proxies-variables.md)]
