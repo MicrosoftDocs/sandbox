@@ -60,7 +60,7 @@ ms.author: antchu
 ### HTTP and webhooks
 * [Accessing query string values in Http Triggers](azure-functions-recipes/http.md#accessing-query-string-values-in-http-triggers)
 * [Accessing the request body in HTTP Triggers](azure-functions-recipes/http.md#accessing-the-request-body--in-http-triggers)
-* [Restricting HTTP verbs in in HTTP Triggers](azure-functions-recipes/http.md#restricting-http-verbs-in-in-http-triggers)
+* [Restricting HTTP verbs in HTTP Triggers](azure-functions-recipes/http.md#restricting-http-verbs-in-http-triggers)
 * [Securing HTTP Triggers with security keys](azure-functions-recipes/http.md#securing-http-triggers-with-security-keys)
 * [Generic webhook function](azure-functions-recipes/http.md#generic-webhook-function)
 * [GitHub comment webhook](azure-functions-recipes/http.md#github-comment-webhook)
