@@ -37,6 +37,11 @@ ms.author: alias
 * [Making route parameters optional](routes/#making-route-parameters-optional)
 
 ### Proxies
+* [Using proxies.json](proxies/#using-proxiesjson)
+* [Creating an HTTP Redirect](proxies/#creating-an-http-redirect)
+* [Creating a mock API](proxies/#creating-a-mock-api)
+* [Returning conditional responses based on backend response codes](proxies/#returning-conditional-responses-based-on-backend-response-codes)
+* [Referencing application settings](proxies/#referencing-application-settings)
 
 ### Logging and monitoring
 * [Logging with ILogger](logging/#logging-with-ilogger)
