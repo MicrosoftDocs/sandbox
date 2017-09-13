@@ -1,11 +1,11 @@
 ---
-title: Blob storage
+title: Timer Trigger
 description: 101 Azure Functions
 author: paladique
 manager: scottca
 keywords: 
 ms.topic: article
-ms.date: 08/31/2017
+ms.date: 01/01/2017
 ms.author: jasmineg
 #ms.devlang: 
 #ms.prod:
@@ -15,6 +15,6 @@ ms.author: jasmineg
 
 [!include[](~/includes/header.md)]
 
-# Blob storage triggers and bindings
+# Timer trigger
 
-[!include[](blob-trigger.md)]
+[!include[](timer/timer-trigger.md)]

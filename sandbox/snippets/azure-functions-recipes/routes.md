@@ -17,14 +17,14 @@ ms.date: 08/28/2017
 
 # HTTP routing
 
-[!include[](routes-prefixes.md)]
+[!include[](routes/routes-prefixes.md)]
 
-[!include[](routes-infunction.md)]
+[!include[](routes/routes-infunction.md)]
 
-[!include[](routes-functionjson.md)]
+[!include[](routes/routes-functionjson.md)]
 
-[!include[](routes-azureportal.md)]
+[!include[](routes/routes-azureportal.md)]
 
-[!include[](routes-routeparameters.md)]
+[!include[](routes/routes-routeparameters.md)]
 
-[!include[](routes-optionalparameters.md)]
+[!include[](routes/routes-optionalparameters.md)]

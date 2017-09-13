@@ -17,8 +17,8 @@ ms.author: cecilphillip
 
 # Logging and monitoring
 
-[!include[](logging-ilogger.md)]
+[!include[](logging/logging-ilogger.md)]
 
-[!include[](logging-tracewriter.md)]
+[!include[](logging/logging-tracewriter.md)]
 
-[!include[](using-third-party-logger.md)]
+[!include[](logging/using-third-party-logger.md)]

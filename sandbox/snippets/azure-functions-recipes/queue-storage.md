@@ -17,14 +17,14 @@ ms.author: cecilphillip
 
 #  Storage Queue Trigger Samples
 
-[!include[](basic-queue-trigger.md)]
+[!include[](queue-storage/basic-queue-trigger.md)]
 
-[!include[](queue-trigger-with-poco.md)]
+[!include[](queue-storage/queue-trigger-with-poco.md)]
 
-[!include[](retrieving-queue-metadata.md)]
+[!include[](queue-storage/retrieving-queue-metadata.md)]
 
-[!include[](poision-queue-messages.md)]
+[!include[](queue-storage/poision-queue-messages.md)]
 
-[!include[](basic-output-queue.md)]
+[!include[](queue-storage/basic-output-queue.md)]
 
-[!include[](output-queue-collectors.md)]
+[!include[](queue-storage/output-queue-collectors.md)]

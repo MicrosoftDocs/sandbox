@@ -1,5 +1,5 @@
 ---
-title: Table storage triggers and bindings
+title: Manual trigger basic tips
 description: Tips about the manual trigger
 author: MaximRouiller
 manager: scottca
@@ -15,6 +15,6 @@ ms.author: marouill
 
 [!include[](~/includes/header.md)]
 
-## Table storage triggers and bindings
+## Manual Triggers
 
-[!include[](table-storage-trigger.md)]
+[!include[](manual/manual-trigger.md)]

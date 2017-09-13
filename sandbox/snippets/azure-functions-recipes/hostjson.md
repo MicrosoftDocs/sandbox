@@ -19,6 +19,6 @@ ms.author: marouill
 
 At the root of an application is a metadata file that describes the global configuration of the host serving the different functions.
 
-[!include[](hostjson-timeout.md)]
+[!include[](hostjson/hostjson-timeout.md)]
 
-[!include[](hostjson-queues.md)]
+[!include[](hostjson/hostjson-queues.md)]

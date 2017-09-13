@@ -17,12 +17,12 @@ ms.author: antchu
 
 # Proxies
 
-[!include[](proxies-proxies-json.md)]
+[!include[](proxies/proxies-proxies-json.md)]
 
-[!include[](proxies-redirects.md)]
+[!include[](proxies/proxies-redirects.md)]
 
-[!include[](proxies-mock-api.md)]
+[!include[](proxies/proxies-mock-api.md)]
 
-[!include[](proxies-conditional-responses.md)]
+[!include[](proxies/proxies-conditional-responses.md)]
 
-[!include[](proxies-variables.md)]
+[!include[](proxies/proxies-variables.md)]

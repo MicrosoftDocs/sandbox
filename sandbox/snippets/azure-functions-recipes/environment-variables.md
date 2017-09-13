@@ -19,4 +19,4 @@ ms.author: cephilli
 
 At the root of an application is a metadata file that describes the global configuration of the host serving the different functions.
 
-[!include[](accessing-settings.md)]
+[!include[](environment-variables/accessing-settings.md)]

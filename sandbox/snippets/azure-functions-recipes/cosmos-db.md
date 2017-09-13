@@ -17,8 +17,8 @@ ms.author: antchu
 
 # Cosmos DB (DocumentDB) Binding Samples
 
-[!include[](cosmosdb-documentdbclient.md)]
+[!include[](cosmos-db/cosmos-db-documentdbclient.md)]
 
-[!include[](cosmosdb-id.md)]
+[!include[](cosmos-db/cosmos-db-id.md)]
 
-[!include[](cosmosdb-sqlquery.md)]
+[!include[](cosmos-db/cosmos-db-sqlquery.md)]

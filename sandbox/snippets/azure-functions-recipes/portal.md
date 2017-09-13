@@ -17,8 +17,8 @@ ms.date: 08/28/2017
 
 # Azure Portal Environment Tips
 
-[!include[](environment-controlling-http-verbs.md)]
+[!include[](portal/environment-controlling-http-verbs.md)]
 
-[!include[](environment-keys.md)]
+[!include[](portal/environment-keys.md)]
 
-[!include[](environment-daily-usage-quota.md)]
+[!include[](portal/environment-daily-usage-quota.md)]

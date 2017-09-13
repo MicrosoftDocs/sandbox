@@ -17,14 +17,14 @@ ms.author: cecilphillip
 
 # HTTP and webhooks
 
-[!include[](accessing-querystrings.md)]
+[!include[](http/accessing-querystrings.md)]
 
-[!include[](accessing-request-body.md)]
+[!include[](http/accessing-request-body.md)]
 
-[!include[](restricting-http-verbs.md)]
+[!include[](http/restricting-http-verbs.md)]
 
-[!include[](security-keys.md)]
+[!include[](http/security-keys.md)]
 
-[!include[](generic-webhook.md)]
+[!include[](http/generic-webhook.md)]
 
-[!include[](github-comment-webhook.md)]
+[!include[](http/github-comment-webhook.md)]
