@@ -1,12 +1,12 @@
 ---
-title: 101 Azure Functions
-description: 101 Azure Functions
-author: githubusername
+title: Azure Functions Recipes
+description: Azure Functions Recipes
+author: anthonychu
 manager: scottca
 keywords: 
 ms.topic: article
 ms.date: 01/01/2017
-ms.author: alias
+ms.author: antchu
 #ms.devlang: 
 #ms.prod:
 #ms.technology:
@@ -15,15 +15,13 @@ ms.author: alias
 
 [!include[](../../includes/header.md)]
 
-# Here are 101 Functions!
+# Functions Recipes
 
 ## Functions Basics
 
 ### Host.json basics
 * [Configuring timeout](hostjson/#configuring-timeout)
 * [Configuring queues](hostjson/#configuring-queues)
-
-### Authentication
 
 ### Environment
 * [Accessing environment variables](environment-variables/#accessing-environment-variables)
@@ -48,12 +46,6 @@ ms.author: alias
 * [Basic logging with TraceWriter](logging/#basic-logging-with-tracewriter)
 * [Logging with a third party logger](logging/#logging-with-a-third-party-logger)
 
-### Testing
-
-### Exception handling
-
-### OpenAPI 2.0 (Swagger)
-
 
 ## Triggers and bindings
 
@@ -64,12 +56,6 @@ ms.author: alias
 * [Using DocumentClient](cosmosdb/#using-documentclient)
 * [Retrieve a single document by ID](cosmosdb/#retrieve-a-single-document-by-id)
 * [Retrieve a list of documents](cosmosdb/#retrieve-a-list-of-documents)
-
-### Event Hubs
-
-### External file
-
-### External table
 
 ### HTTP and webhooks
 * [Accessing query string values in Http Triggers](http/#accessing-query-string-values-in-http-triggers)
@@ -82,10 +68,6 @@ ms.author: alias
 ### Manual trigger
 * [Manual C# function](manual/#manual-c-function)
 
-### Mobile Apps
-
-### Notification Hubs
-
 ### Queue storage
 * [Triggering via Azure Storage Queue](queue-storage/#triggering-via-azure-storage-queue)
 * [Azure Storage Queue Trigger using a POCO](queue-storage/#azure-storage-queue-trigger-using-a-poco)
@@ -94,35 +76,17 @@ ms.author: alias
 * [Azure Storage Queue output binding](queue-storage/#azure-storage-queue-output-binding)
 * [Using ICollector with Azure Storage Queue bindings](queue-storage/#using-icollector-with-azure-storage-queue-bindings)
 
-### SendGrid
-
-### Service Bus
-
 ### Table storage
 * [Table storage trigger function](table-storage/#table-storage-trigger-function)
 
 ### Timer
 * [Timer trigger function](timer/#timer-trigger-function)
 
-### Twilio
-
 
 ## Coding Environment
-
-### Visual Studio
-
-### VS Code
-
-### Functions CLI
 
 ### Portal
 * [Allowing HTTP verbs in the Azure Portal](portal/#allowing-http-verbs-in-the-azure-portal)
 * [Getting your function and host keys in the Azure Portal](portal/#getting-your-function-and-host-keys-in-the-azure-portal)
 * [Controlling how much your function can run in one day](portal/#controlling-how-much-your-function-can-run-in-one-day)
-
-## Continuous Integration/Deployment
-
-### GitHub
-
-### VSTS
 
