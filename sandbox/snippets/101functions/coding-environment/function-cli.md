@@ -23,8 +23,6 @@ Function `myHttpTrigger` is now ready to be tested. Enter the following command 
 func run myHttpTrigger --content '{\"name\": \"Azure\"}'
 ``` 
 
-The output should print the text "Hello Azure". To publish this function from the command line, refer to the documentation listed at the bottom of the example.
-
 [!include[](../includes/takeaways-heading.md)]
 
 - Azure Functions Core Tools provide a local development environment for developing, testing, and publishing functions from the command line.

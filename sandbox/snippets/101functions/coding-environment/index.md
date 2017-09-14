@@ -20,3 +20,5 @@ ms.author: jasmineg
 [!include[](function-tools-vscode.md)]
 
 [!include[](function-cli.md)]
+
+[!include[](functions-in-portal.md)]
