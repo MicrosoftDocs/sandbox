@@ -1,6 +1,6 @@
-## Restricting HTTP verbs in in HTTP Triggers
+## Restricting HTTP verbs in HTTP Triggers
 
-With the `HttpTrigger` attribute, you can list one or more HTTP verbs that your function will respond to.
+With the `HttpTrigger` attribute, you can list one or more HTTP verbs that your function responds to.
 
 
 ```csharp
@@ -16,5 +16,5 @@ Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", 
 * Always specify one or more HTTP verbs to respond to.
 
 [!include[](../includes/read-more-heading.md)]
-* [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
+* [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)
 * [Method Definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)

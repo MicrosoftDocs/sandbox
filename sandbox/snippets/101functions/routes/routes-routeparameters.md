@@ -20,4 +20,4 @@ If only the parameter name is entered, it will default to type string. If you wa
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
+- [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)
