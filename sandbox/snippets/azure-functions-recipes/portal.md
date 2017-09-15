@@ -17,6 +17,8 @@ ms.date: 08/28/2017
 
 # Azure Portal Environment Tips
 
+[!include[](portal/functions-in-portal.md)]
+
 [!include[](portal/environment-controlling-http-verbs.md)]
 
 [!include[](portal/environment-keys.md)]
