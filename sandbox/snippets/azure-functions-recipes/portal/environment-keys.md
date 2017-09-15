@@ -2,11 +2,11 @@
 
 If your function's authorization is set to function or admin, all requests must contain the function key or the host key to access them. To get to your keys in the Azure Portal, go to the management tab for the function.
 
-![](ManageTab.PNG)
+![](../media/ManageTab.PNG)
 
 On the manage page you will see your function keys, and options to create, remove, or update any function keys.
 
-![](ManagePage.PNG)
+![](../media/ManagePage.PNG)
 
 Host keys are identical across functions in the same function app, but function keys are unique to each function.
 
