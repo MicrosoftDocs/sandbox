@@ -1,5 +1,5 @@
 ---
-title: Azure Functions Coding Environment Tips
+title: Azure Functions CLI Coding Environment Tips
 description: 101 Azure Functions
 author: paladique
 manager: scottca
@@ -13,10 +13,8 @@ ms.author: jasmineg
 #ms.service:
 ---
 
-# Coding Environment Samples
+# Azure Functions CLI
 
-[!include[](function-tools-vs.md)]
+[!include[](cli/function-cli.md)]
 
-[!include[](function-tools-vscode.md)]
-
-[!include[](function-cli.md)]
+[!include[](cli/publish-locally.md)]

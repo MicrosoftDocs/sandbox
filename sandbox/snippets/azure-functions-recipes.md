@@ -86,7 +86,17 @@ ms.author: antchu
 ## Coding Environment
 
 ### Portal
+* [Working with Functions in the Azure Portal](azure-functions-recipes/portal.md#working-with-functions-in-the-azure-portal)
 * [Allowing HTTP verbs in the Azure Portal](azure-functions-recipes/portal.md#allowing-http-verbs-in-the-azure-portal)
 * [Getting your function and host keys in the Azure Portal](azure-functions-recipes/portal.md#getting-your-function-and-host-keys-in-the-azure-portal)
 * [Controlling how much your function can run in one day](azure-functions-recipes/portal.md#controlling-how-much-your-function-can-run-in-one-day)
 
+### Visual Studio
+* [Installing Visual Studio Functions Tools](azure-functions-recipes/visual-studio.md#installing-visual-studio-functions-tools)
+
+### Visual Studio Code
+* [Installing Visual Studio Code Functions Tools](azure-functions-recipes/vscode.md#installing-visual-studio-code-functions-tools)
+
+### CLI
+* [Testing functions with Azure Functions Command Line Tools](azure-functions-recipes/cli.md#testing-functions-with-azure-functions-command-line-tools)
+* [Publishing a function locally](azure-functions-recipes/cli.md#publishing-a-function-locally)

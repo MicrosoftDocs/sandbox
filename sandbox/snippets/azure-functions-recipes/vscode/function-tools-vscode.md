@@ -1,4 +1,4 @@
-## Installing Visual Studio Code Function Tools
+## Installing Visual Studio Code Functions Tools
 
 Azure Function tools for Visual Studio Code is an extension that provides easy development of functions with Intellisense for `host.json`, `function.json` and `proxies.json`. To bring the extension to the top of the search results, type "Azure function" in the search box.
 
