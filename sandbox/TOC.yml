@@ -13,5 +13,5 @@
     - name: Snippets
       expanded: true
       items:
-      - name: 101 Azure Functions
-        href: /sandbox/snippets/101functions
+      - name: Azure Functions Recipes
+        href: /sandbox/snippets/azure-functions-recipes
