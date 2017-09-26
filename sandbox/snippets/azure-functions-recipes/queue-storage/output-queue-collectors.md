@@ -1,8 +1,5 @@
 ## Using ICollector with Azure Storage Queue bindings
-One way to trigger your Azure Function is to use a queue defined in an Azure storage account.
-
-Using the `QueueTrigger` attribute, you can supply the queue name and connection information of the storage account queue that your function monitors for messages.
-
+`ICollector` and `IAsyncCollector` can be used as parameter types for Storage Queue output bindings. Using these interfaces allows you to add multiple messages to the respective Storage Queue.
 
 ```csharp
 [FunctionName("CollectorQueueOutput")]
