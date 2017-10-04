@@ -1,0 +1,9 @@
+{
+    "frameworks": {
+      "net46":{
+        "dependencies": {
+          "linqtotwitter": "4.1.0"
+        }
+      }
+     }
+  }
