@@ -17,7 +17,6 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     {
         try
         {
-            Status status = await _twitterCtx.TweetAsync("Testing a demo " + message);
             return req.CreateResponse(HttpStatusCode.OK);
         }
         catch (TwitterQueryException ex) {
@@ -44,8 +43,8 @@ private static async Task SetupTwitterClient()
 
     _messageMap = new Dictionary<string, string>
     {
-        ["arrived"] = "Arrived at #ServerlessConf NYC. Trying out this #AzureFunctions demo cool",
-        ["joinme"] = "You should join me at the Microsoft booth at #Serverlessconf NYC",
+        ["arrived"] = "Arrived at #ServerlessConf NYC. Trying out this cool #AzureFunctions demo!",
+        ["joinme"] = "You should join me at the Microsoft booth at #Serverlessconf NYC!",
         ["azurefunctions"] = "Azure Functions is awesome!"
     };
 

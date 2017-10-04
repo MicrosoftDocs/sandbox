@@ -11,8 +11,8 @@ module.exports = function(context, req) {
   });
 
   let messageMap = {
-    arrived: "Arrived at #ServerlessConf NYC. Trying out #AzureFunctions",
-    joinme: "You should join me at the Microsoft booth at #Serverlessconf NYC",
+    arrived: "Arrived at #ServerlessConf NYC. Trying out this cool #AzureFunctions demo!",
+    joinme: "You should join me at the Microsoft booth at #Serverlessconf NYC!",
     azurefunctions: "Azure Functions is awesome!"
   };
 
