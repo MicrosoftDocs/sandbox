@@ -44,3 +44,6 @@ sections:
       href: demos/nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+    - title: TwitterFlic
+      html: <p>Use your Flic button to tweet</p>
+      href: demos/twitterflic
