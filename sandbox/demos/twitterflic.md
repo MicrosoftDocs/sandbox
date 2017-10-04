@@ -1,7 +1,7 @@
 ---
 title: TwitterFlic
 description: Use Flic button and Azure Functions to tweet
-author: JasmineGreenaway; CecilPhillip
+author: paladique; cecilphillip
 manager: scottca
 keywords: 
 ms.topic: article
