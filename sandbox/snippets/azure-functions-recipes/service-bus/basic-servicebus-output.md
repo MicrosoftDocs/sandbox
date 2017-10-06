@@ -1,9 +1,9 @@
 ## Azure Service Bus output binding
 Azure Service Bus can be used as output bindings for your Azure Functions app. Using the `ServiceBus` attribute allows you to take a parameter as a source to push queue messages. Some supported parameter types include:
 
-* out <POCO> -  a .NET POCO is serialized into JSON before being added to the message payload
-* out string
-* out byte[]
+* `out <POCO>` -  a .NET object is serialized into JSON before being added to the message payload
+* `out string`
+* `out byte[]`
 
 
 ```csharp
@@ -24,6 +24,6 @@ public static void Run([TimerTrigger("0/10 * * * * *")]TimerInfo myTimer,
 * If POCOs, strings, and byte arrays are parameters of your function, they must be marked with the `out` keyword.
 
 [!include[](../includes/read-more-heading.md)]
-* [Azure Functions Service Bus bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus)
-* [Service Bus Messaging documentations](https://docs.microsoft.com/en-us/azure/service-bus-messaging/)
+* [Azure Functions Service Bus bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-service-bus)
+* [Service Bus Messaging documentations](https://docs.microsoft.com/azure/service-bus-messaging/)
 * [Service Bus client samples](https://github.com/Azure/azure-service-bus/tree/master/samples)

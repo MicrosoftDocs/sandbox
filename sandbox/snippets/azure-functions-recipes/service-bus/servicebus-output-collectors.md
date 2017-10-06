@@ -1,5 +1,5 @@
 ## Using ICollector with Azure Storage Queue bindings
-`ICollector` and `IAsyncCollector` can be used as parameter types for Azure Service Bus output bindings. Using these interfaces allows you to add multiple messages to the respective Storage Queue.
+`ICollector` and `IAsyncCollector` can be used as parameter types for Azure Service Bus output bindings. Using these interfaces allows you to add multiple messages to the respective Service Bus queue or topic.
 
 ```csharp
 [FunctionName("CollectorQueueOutput")]
@@ -16,9 +16,9 @@ public static void Run([TimerTrigger("*/10 * * * * *")]TimerInfo myTimer,
 ```
 
 [!include[](../includes/takeaways-heading.md)]
-*  
+*  Using `ICollector` or `IAsyncCollector` allows you to output multiple messages to a Service Bus queue or topic.
 
 [!include[](../includes/read-more-heading.md)]
-* [Azure Functions Service Bus bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus)
-* [Service Bus Messaging documentations](https://docs.microsoft.com/en-us/azure/service-bus-messaging/)
+* [Azure Functions Service Bus bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-service-bus)
+* [Service Bus Messaging documentations](https://docs.microsoft.com/azure/service-bus-messaging/)
 * [Service Bus client samples](https://github.com/Azure/azure-service-bus/tree/master/samples)

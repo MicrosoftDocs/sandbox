@@ -1,5 +1,5 @@
 ## Triggering via Azure Storage Queue
-Storage Queues can be used as triggers for you functions.
+Storage Queues can be used as triggers for your functions.
 
 Using the `QueuesTrigger` attribute, you can supply the queue along with the connection information for the storage account that should be used.
 
