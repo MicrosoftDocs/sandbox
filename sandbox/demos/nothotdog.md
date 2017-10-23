@@ -77,7 +77,7 @@ curl http://<appname>.azurewebsites.net/api/NotHotdog?url=https://upload.wikimed
 ```
 
 ```json
-"{\"isHotdog\":\"true\"}"
+{"isHotdog":"true"}
 ```
 
 ### POST image data
@@ -86,7 +86,7 @@ curl --data-binary "@not-a-hotdog.jpg" http://<appname>.azurewebsites.net/api/No
 ```
 
 ```json
-"{\"isHotdog\":\"false\"}"
+{"isHotdog":"false"}
 ```
 
 Of course, you could call this from a web-based back-end, a mobile app, or anything else.  Simply hit the endpoint in either way and parse the JSON response.
