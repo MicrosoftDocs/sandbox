@@ -27,10 +27,6 @@ If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
 * To build and test locally, [Visual Studio 2017](https://visualstudio.com) version 15.3 or higher
 
-## Links
-* [Live Demo](https://nothotdogweb.azurewebsites.net/)
-* [NotHotdogFunc Repo](https://github.com/BrianPeek/NotHotdogFunc)
-
 ## What's It Do?
 Give the Azure Function a URL to an image, or POST the image data to the endpoint, and it will return a JSON payload stating whether the picture contains a hotdog.
 
