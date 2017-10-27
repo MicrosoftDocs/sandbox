@@ -12,7 +12,7 @@ ms.service: cognitive-services
 ---
 
 # NotHotdog
-
+<a href="#" class="d-button button-success">Deploy to Azure<span class="docons docons-azure-deploy after"></span></a>
 [!include[](../includes/header.md)]
 
 If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley), you'll understand the reference for this project.  If not, it'll seem very random.  Either way, it's still very stupid.  [NotHotdog](https://github.com/BrianPeek/NotHotdogFunc) is an Azure Function that uses the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) in [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) to determine if a provided image contains a hotdog or not.  
