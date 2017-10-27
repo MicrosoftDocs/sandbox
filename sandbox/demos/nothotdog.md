@@ -18,7 +18,7 @@ If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley
 
 [![Deploy to Azure](../media/buttons/deploy2.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBrianPeek%2FNotHotdogFunc%2Fmaster%2Fazuredeploy.json)
 [![Try it now](../media/buttons/try2.png)](https://nothotdogweb.azurewebsites.net/)
-[![Get the source](../media/buttons/source2.png)](https:/github.com/BrianPeek/NotHotdogFunc)
+[![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/NotHotdogFunc)
 
 > [!TIP]
 > If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/sandbox/demos/notbacon) article.
