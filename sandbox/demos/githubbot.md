@@ -22,7 +22,7 @@ ms.prod: bot-framework
 [![Try it now](../media/buttons/try2.png)](https://join.skype.com/bot/01412d8f-6fdb-4a40-a9ca-19abd9f06c8d)
 
 ## Live Demo
-Type "help" to begin.
+Type "login" to begin.
 
 <iframe width="600" height="450" src='https://webchat.botframework.com/embed/GitHubInfo?s=NxL5sS72wfQ.cwA.IJs.zmVXFQkWc9URov9daL5AWgUOnbIE_oH3OYNyDx1aBJw'></iframe>
 
@@ -40,7 +40,7 @@ GitHubBot lets you manage your GitHub repos and issues from a chat window.  For 
 * Close issues
 * Create new issues
 
-You can see a demo of some of these interactions below.
+You can see a demo of some of these interactions below, or try it for yourself in the chat window above.
 
 ![demo](media/githubbot/demo.gif)
 
