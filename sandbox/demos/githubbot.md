@@ -15,7 +15,7 @@ ms.prod: bot-framework
 
 [!include[](../includes/header.md)]
 
-[GitHubBot](https://github.com/BrianPeek/GitHubBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
+The [GitHub Helper Bot](https://github.com/BrianPeek/GitHubBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
 
 [![Deploy to Azure](../media/buttons/deploy2.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot)
 [![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/GitHubBot)
@@ -31,7 +31,7 @@ Type "login" to begin.
 * A [GitHub](https://github.com/) account
 
 ## What's It Do?
-GitHubBot lets you manage your GitHub repos and issues from a chat window.  For example, you can:
+GitHub Helper Bot lets you manage your GitHub repos and issues from a chat window.  For example, you can:
 
 * Log into GitHub with OAuth
 * List your public and private repos
@@ -75,7 +75,7 @@ When the application is deployed, the GitHub repo above will be setup in the App
 ### GitHub Application Setup
 1. Browse to the [OAuth applications section](https://github.com/settings/developers) of your profile on GitHub.
 1. Click the **Register a new application** button at the top right corner of the page.
-1. Enter the required information.  The one that really matters is **Authorization callback URL**.  This is the URL to the OAuth handler for GitHubBot, and if you deployed the app using the instructions above, it will take the form of **https://&lt;sitename&gt;.azurewebsites.net/api/OAuthCallback**. [3]
+1. Enter the required information.  The one that really matters is **Authorization callback URL**.  This is the URL to the OAuth handler for GitHub Helper Bot, and if you deployed the app using the instructions above, it will take the form of **https://&lt;sitename&gt;.azurewebsites.net/api/OAuthCallback**. [3]
 1. Click the **Register application** button.
 1. After the app is created, you will be presented wtih a **Client ID** and **Client Secret**.  Copy these somewhere safe as you'll need them later. [4]  If you lose them, you can always browse back to the link above and view your application and change its configuration.
 
