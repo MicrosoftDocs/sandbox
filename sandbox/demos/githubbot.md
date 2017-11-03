@@ -1,5 +1,5 @@
 ---
-title: GitHubBot
+title: GitHub Helper Bot
 description: Manage GitHub repos and issues with a chat bot
 author: BrianPeek
 manager: timheuer
@@ -11,7 +11,7 @@ ms.devlang: csharp
 ms.prod: bot-framework
 ---
 
-# GitHubBot
+# GitHub Helper Bot
 
 [!include[](../includes/header.md)]
 
