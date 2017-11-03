@@ -17,14 +17,15 @@ ms.prod: bot-framework
 
 [GitHubBot](https://github.com/BrianPeek/GitHubBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot)
+[![Deploy to Azure](../media/buttons/deploy2.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot)
+[![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/GitHubBot)
+[![Try it now](../media/buttons/try2.png)](https://join.skype.com/bot/01412d8f-6fdb-4a40-a9ca-19abd9f06c8d)
+
+<iframe src='https://webchat.botframework.com/embed/GitHubInfo?s=KSYPxCefQ-k.cwA.s10.rH19HRKVDa0sB7FarroAxY-GUy2gVXVygcWT4aQr6b0'></iframe>
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
 * A [GitHub](https://github.com/) account
-
-## Links
-* [GitHubBot Repo](https://github.com/BrianPeek/GitHubBot)
 
 ## What's It Do?
 GitHubBot lets you manage your GitHub repos and issues from a chat window.  For example, you can:
