@@ -4,7 +4,7 @@
     - name: Demos
       expanded: true
       items:
-      - name: GitHub Helper Bot
+      - name: OctoBot
         href: /sandbox/demos/githubbot
       - name: NotBacon
         href: /sandbox/demos/notbacon
