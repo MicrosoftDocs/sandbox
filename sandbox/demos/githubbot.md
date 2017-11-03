@@ -15,7 +15,7 @@ ms.prod: bot-framework
 
 [!include[](../includes/header.md)]
 
-The [OctoBot](https://github.com/BrianPeek/OctoBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
+[OctoBot](https://github.com/BrianPeek/OctoBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
 
 [![Deploy to Azure](../media/buttons/deploy2.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/OctoBot)
 [![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/OctoBot)
