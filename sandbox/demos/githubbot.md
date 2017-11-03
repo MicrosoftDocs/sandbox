@@ -21,7 +21,7 @@ ms.prod: bot-framework
 [![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/GitHubBot)
 [![Try it now](../media/buttons/try2.png)](https://join.skype.com/bot/01412d8f-6fdb-4a40-a9ca-19abd9f06c8d)
 
-<iframe src='https://webchat.botframework.com/embed/GitHubInfo?s=KSYPxCefQ-k.cwA.s10.rH19HRKVDa0sB7FarroAxY-GUy2gVXVygcWT4aQr6b0'></iframe>
+<iframe width="600" height="600" src='https://webchat.botframework.com/embed/GitHubInfo?s=NxL5sS72wfQ.cwA.IJs.zmVXFQkWc9URov9daL5AWgUOnbIE_oH3OYNyDx1aBJw'></iframe>
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
