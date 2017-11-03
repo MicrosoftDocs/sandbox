@@ -1,5 +1,5 @@
 ---
-title: GitHubBot
+title: OctoBot
 description: Manage GitHub repos and issues with a chat bot
 author: BrianPeek
 manager: timheuer
@@ -11,23 +11,27 @@ ms.devlang: csharp
 ms.prod: bot-framework
 ---
 
-# GitHubBot
+# OctoBot
 
 [!include[](../includes/header.md)]
 
-[GitHubBot](https://github.com/BrianPeek/GitHubBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
+[OctoBot](https://github.com/BrianPeek/OctoBot) is a chat bot that lets you manage your GitHub repos and issues from a chat window.  This project is written in C# using the [Bot Framework](https://dev.botframework.com), [LUIS.ai](https://luis.ai), and [Octokit.NET](https://github.com/octokit/octokit.net).
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot)
+[![Deploy to Azure](../media/buttons/deploy2.png)](https://azuredeploy.net/?repository=https://github.com/BrianPeek/OctoBot)
+[![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/OctoBot)
+[![Try it now](../media/buttons/try2.png)](https://join.skype.com/bot/01412d8f-6fdb-4a40-a9ca-19abd9f06c8d)
+
+## Live Demo
+Type "login" to begin.
+
+<iframe width="600" height="450" src='https://webchat.botframework.com/embed/GitHubInfo?s=NxL5sS72wfQ.cwA.IJs.zmVXFQkWc9URov9daL5AWgUOnbIE_oH3OYNyDx1aBJw'></iframe>
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
 * A [GitHub](https://github.com/) account
 
-## Links
-* [GitHubBot Repo](https://github.com/BrianPeek/GitHubBot)
-
 ## What's It Do?
-GitHubBot lets you manage your GitHub repos and issues from a chat window.  For example, you can:
+OctoBot lets you manage your GitHub repos and issues from a chat window.  For example, you can:
 
 * Log into GitHub with OAuth
 * List your public and private repos
@@ -36,7 +40,7 @@ GitHubBot lets you manage your GitHub repos and issues from a chat window.  For 
 * Close issues
 * Create new issues
 
-You can see a demo of some of these interactions below.
+You can see a demo of some of these interactions below, or try it for yourself in the chat window above.
 
 ![demo](media/githubbot/demo.gif)
 
@@ -46,7 +50,7 @@ The bot can understand long sentences, short commands, and it remembers the last
 Setting this bot up for your own use is a bit tricky as there many parts.  However, if you follow this guide closely, and in the order specified, you should be able to get this running yourself.
 
 ### Azure Deployment
-1. Click the [Deploy to Azure](https://azuredeploy.net/?repository=https://github.com/BrianPeek/GitHubBot) link here or the button above.
+1. Click the [Deploy to Azure](https://azuredeploy.net/?repository=https://github.com/BrianPeek/OctoBot) link here or the button above.
 1. Enter the information for your Azure subscription, such as the resource group, location, etc. and give your site a unique Site Name.  This site name will become part of the URL.
 1. Click **Next** and then **Deploy**.
 1. When complete, opy down the URL to your web application, which will be **https://&lt;sitename&gt;.azurewebsites.net** .
@@ -71,7 +75,7 @@ When the application is deployed, the GitHub repo above will be setup in the App
 ### GitHub Application Setup
 1. Browse to the [OAuth applications section](https://github.com/settings/developers) of your profile on GitHub.
 1. Click the **Register a new application** button at the top right corner of the page.
-1. Enter the required information.  The one that really matters is **Authorization callback URL**.  This is the URL to the OAuth handler for GitHubBot, and if you deployed the app using the instructions above, it will take the form of **https://&lt;sitename&gt;.azurewebsites.net/api/OAuthCallback**. [3]
+1. Enter the required information.  The one that really matters is **Authorization callback URL**.  This is the URL to the OAuth handler for OctoBot, and if you deployed the app using the instructions above, it will take the form of **https://&lt;sitename&gt;.azurewebsites.net/api/OAuthCallback**. [3]
 1. Click the **Register application** button.
 1. After the app is created, you will be presented wtih a **Client ID** and **Client Secret**.  Copy these somewhere safe as you'll need them later. [4]  If you lose them, you can always browse back to the link above and view your application and change its configuration.
 
@@ -79,7 +83,7 @@ When the application is deployed, the GitHub repo above will be setup in the App
 
 ### LUIS.ai
 The root directory of the linked repo contains a file named **GitHubBot.json**. This file contains the LUIS model for the bot.  To use it, do the following:
-1. [Download this file](https://raw.githubusercontent.com/BrianPeek/GitHubBot/master/GitHubBot.json) or clone the whole [GitHubBot repo](https://github.com/BrianPeek/GitHubBot).
+1. [Download this file](https://raw.githubusercontent.com/BrianPeek/GitHubBot/master/GitHubBot.json) or clone the whole [GitHubBot repo](https://github.com/BrianPeek/OctoBot).
 1. Sign into the [LUIS.ai](https://luis.ai) website, creating an account if necessary.
 1. Click the **My apps** tab.
 1. Click the **Import App** button.
@@ -156,7 +160,7 @@ await Conversation.SendAsync(activity, () => new GitHubLuisDialog(luisSvc));
 ```
 
 ## Next Steps
-Here are links to the docs for many of the items discussed above.  Play around with the project and feel free to leave comments on the article, [open issues](https://github.com/BrianPeek/GitHubBot/issues) in the repo, or submit [pull requests](https://github.com/BrianPeek/GitHubBot/pulls) with fixes and new features.
+Here are links to the docs for many of the items discussed above.  Play around with the project and feel free to leave comments on the article, [open issues](https://github.com/BrianPeek/OctoBot/issues) in the repo, or submit [pull requests](https://github.com/BrianPeek/OctoBot/pulls) with fixes and new features.
 
 * [Bot Framework Docs](https://docs.microsoft.com/bot-framework)
 * [LUIS.ai Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home)

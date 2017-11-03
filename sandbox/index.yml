@@ -29,7 +29,7 @@ sections:
     className: cardsM
     columns: 2
     items: 
-    - title: GitHubBot
+    - title: OctoBot
       html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
       href: demos/githubbot
       image:
