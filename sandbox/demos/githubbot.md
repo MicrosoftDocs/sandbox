@@ -23,6 +23,7 @@ ms.prod: bot-framework
 
 ## Live Demo
 Type "help" to begin.
+
 <iframe width="600" height="450" src='https://webchat.botframework.com/embed/GitHubInfo?s=NxL5sS72wfQ.cwA.IJs.zmVXFQkWc9URov9daL5AWgUOnbIE_oH3OYNyDx1aBJw'></iframe>
 
 ## Requirements
