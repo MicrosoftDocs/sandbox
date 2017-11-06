@@ -1,0 +1,9 @@
+{ 
+	"redirections": [ 
+	  {   
+		  "source_path": "sandbox/demos/githubbot.md", 
+		  "redirect_url": "/sandbox/demos/octobot", 
+		  "redirect_document_id": true 
+	  }
+	] 
+  } 
