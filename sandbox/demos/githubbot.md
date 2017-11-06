@@ -22,7 +22,7 @@ ms.prod: bot-framework
 [![Try it now](../media/buttons/try2.png)](https://join.skype.com/bot/01412d8f-6fdb-4a40-a9ca-19abd9f06c8d)
 
 ## Live Demo
-Type "login" to begin. Please note that the demo will use your real GitHub account, so any changes you make are real.
+Type "login" to begin. Please note that the demo will use your real GitHub account, and any changes you make are real.
 
 <iframe width="600" height="450" src='https://webchat.botframework.com/embed/GitHubInfo?s=NxL5sS72wfQ.cwA.IJs.zmVXFQkWc9URov9daL5AWgUOnbIE_oH3OYNyDx1aBJw'></iframe>
 
