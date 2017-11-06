@@ -31,7 +31,7 @@ sections:
     items: 
     - title: OctoBot
       html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
-      href: demos/githubbot
+      href: demos/octobot
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
     - title: NotBacon

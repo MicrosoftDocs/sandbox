@@ -5,7 +5,7 @@
       expanded: true
       items:
       - name: OctoBot
-        href: /sandbox/demos/githubbot
+        href: /sandbox/demos/octobot
       - name: NotBacon
         href: /sandbox/demos/notbacon
       - name: NotHotdog
