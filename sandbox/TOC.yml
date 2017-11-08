@@ -1,4 +1,5 @@
 - name: The Sandbox
   href: index.yml
   items:
-    - href: demos/TOC.yml
+    - name: Demos
+      href: demos/TOC.yml
