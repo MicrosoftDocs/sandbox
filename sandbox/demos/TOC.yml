@@ -1,12 +1,9 @@
-- name: The Sandbox
-  href: index.yml
+- name: Demos
+  expanded: true
   items:
-    - name: Demos
-      expanded: true
-      items:
-      - name: OctoBot
-        href: octobot.md
-      - name: NotBacon
-        href: notbacon.md
-      - name: NotHotdog
-        href: nothotdog.md
+  - name: OctoBot
+    href: octobot.md
+  - name: NotBacon
+    href: notbacon.md
+  - name: NotHotdog
+    href: nothotdog.md
