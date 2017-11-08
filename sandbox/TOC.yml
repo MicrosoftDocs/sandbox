@@ -2,11 +2,4 @@
   href: index.yml
   items:
     - name: Demos
-      expanded: true
-      items:
-      - name: OctoBot
-        href: /sandbox/demos/octobot
-      - name: NotBacon
-        href: /sandbox/demos/notbacon
-      - name: NotHotdog
-        href: /sandbox/demos/nothotdog
+      href: demos/TOC.yml
