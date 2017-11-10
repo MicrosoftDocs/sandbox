@@ -1,0 +1,41 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Demos
+metadata:
+  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
+  title: The Sandbox - Demos
+  description: Demos and code
+  keywords: Azure, .NET, Node.js, API
+  author: brianpeek
+  ms.author: brpeek
+  manager: timheuer
+  ms.date: 11/08/2017
+  ms.topic: article
+  featureFlags:
+  - clicktale
+  ms.service: multiple
+sections:
+- title: Demos and Code
+  items:
+  - type: paragraph
+    text: Some fun demos (with code!) using various Azure services.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items: 
+    - title: OctoBot
+      html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
+      href: demos/octobot
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+    - title: NotBacon
+      html: <p>Train the Azure Custom Vision Service to detect the presence of bacon in photos</p>
+      href: demos/notbacon
+      image:
+        src: https://docs.microsoft.com/azure/media/index/cs-custom-vision.svg
+    - title: NotHotdog
+      html: <p>Is it a hotdog or not? Let the Computer Vision API decide</p>
+      href: demos/nothotdog
+      image:
+        src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
