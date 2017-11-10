@@ -6,6 +6,4 @@
       href: demos/TOC.yml
     - name: Game Development
       expanded: true
-      items:
-      - name: Azure Storage SDK for Unity
-        href: /sandbox/gamedev/azure-storage-unity
+      href: gamedev/TOC.yml
