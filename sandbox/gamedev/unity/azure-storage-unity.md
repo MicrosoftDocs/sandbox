@@ -15,12 +15,12 @@ ms.author: brpeek
 
 # Azure Storage SDK for Unity
 
-[!include[](../includes/header.md)]
+[!include[](../../includes/header.md)]
 
 This is an experimental Unity SDK for Azure Storage.
 
-[![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net)
-[![Try it now](../media/buttons/try2.png)](https://github.com/BrianPeek/azure-storage-net/releases)
+[![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net)
+[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/azure-storage-net/releases)
 
 ## Requirements
 * [Unity 2017.1 (or greater)](https://unity3d.com/)
