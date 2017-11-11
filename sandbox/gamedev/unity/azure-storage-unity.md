@@ -38,6 +38,7 @@ This has been tested with the following Unity exporters.  Others may work, so pl
 1. Download the latest [.unitypackage](https://github.com/BrianPeek/azure-storage-net/releases) from GitHub.
 1. Open Unity and select **Edit > Project Settings > Player** to open the **PlayerSettings** panel.
 1. Select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown in the **Configuration** section.
+
    ![player config](../media/unity-player-config.png)
 1. Add the package to Unity by using the **Assets > Import Package > Custom Package** menu option.
 
