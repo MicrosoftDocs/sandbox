@@ -40,9 +40,11 @@ This has been tested with the following Unity exporters.  Others may work, so pl
 1. Select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown in the **Configuration** section.
 
    ![player config](../media/unity-player-config.png)
-1. Add the package to Unity by using the **Assets > Import Package > Custom Package** menu option.
+1. Add the .unitypackage you downloaded in the first step to Unity by using the **Assets > Import Package > Custom Package** menu option.
+1. In the **Import Unity Package** box that pops up, you can select which things you'd like to import.  By default everything will be selected.  If you don't wish to explore the sample, you may uncheck the **Sample** and **StreamingAssets** directories. 
+1. Click the **Import** button to add the items to your project.
 
-With the package added, you can now use the Azure Storage SDK API here as you would in any other application.  Please take a look at the included sample scripts which demonstrate how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more information.
+With the package added, you can now use the Azure Storage SDK API in your scripts as you would in any other application.  Please take a look at the included sample which demonstrates how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more information.
 
 ## Known Issues and Limitations
 There are a few known issues and workarounds.
