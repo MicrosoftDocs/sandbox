@@ -50,7 +50,7 @@ With the package added, you can now use the Azure Storage SDK API in your script
 There are a few known issues and workarounds.
 
 ### Unity and SSL support
-Due to a Unity limitation, SSL requests using the standard .NET networking stack will fail.  This is a problem Unity is working on.  To workaround this, you can modify your connection string to use http instead of https by modifying the **DefaultEndpointsProtocol** entry.  Here's an example:
+Due to a Unity limitation, SSL requests using the standard .NET networking stack will fail.  This is a problem Unity is working on.  To workaround this, you can modify the the **DefaultEndpointsProtocol** entry in your connection string to use http instead of https.  Here's an example:
 
 ```
 DefaultEndpointsProtocol=http;AccountName=yourazureaccount;AccountKey=abcdef12345;EndpointSuffix=core.windows.net
