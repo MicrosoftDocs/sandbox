@@ -36,7 +36,10 @@ This has been tested with the following Unity exporters.  Others may work, so pl
 
 ## How to Use It
 1. Download the latest [.unitypackage](https://github.com/BrianPeek/azure-storage-net/releases) from GitHub.
-1. In Unity, ensure your project is using the new Experimental scripting runtime.  To do this, click **Edit > Project Settings > Player** and then select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown.
+1. In Unity, ensure your project is using the new Experimental scripting runtime.  To do this, click **Edit > Project Settings > Player** to open the Player Settings panel.
+   ![player menu](../media/unity-player-menu.png)
+1. Select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown in the Configuration section.
+   ![player config](../media/unity-player-config.png)
 1. Add the package to Unity by using the **Assets > Import Package > Custom Package** menu option.
 
 With the package added, you can now use the Azure Storage SDK API here as you would in any other application.  Please take a look at the included sample scripts which demonstrate how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more information.
