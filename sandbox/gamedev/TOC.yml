@@ -3,3 +3,8 @@
   items:
   - name: Azure Storage SDK for Unity
     href: unity/azure-storage-unity.md
+- name: MonoGame
+  expanded: true
+  items:
+  - name: Using the Azure Storage SDK with MonoGame
+    href: monogame/azure-storage-monogame.md
