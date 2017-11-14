@@ -17,6 +17,7 @@ ms.author: brpeek
 [!include[](../../includes/header.md)]
 
 [![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net/tree/gamedev/Samples/GameDev/MonoGame/AzureStorage)
+[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/azure-storage-net/releases)
 
 ## Requirements
 
@@ -32,6 +33,10 @@ This has been tested with the following projects.  Others may work, so please le
 * iOS
 * Android
 
+## Known Issues and Limitations
+
+* None
+
 ## How to Use It
 
 Because MonoGame uses the traditional .NET Framework and CLR on Windows, and Xamarin on other platforms, the existing Azure Storage SDK NuGet package works as-is across all platforms.  To use the Azure Storage SDK, simply add a NuGet package reference to the **WindowsAzure.Storage** package.
@@ -45,9 +50,18 @@ Because MonoGame uses the traditional .NET Framework and CLR on Windows, and Xam
 
 With the package added, you can now use the Azure Storage SDK API in your MonoGame game as you would in any other .NET application.  The **Get the Source** button above will link you to a cross-platform MonoGame sample showing how to use the basic features of the Azure Storage SDK.  Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more samples and tutorials.
 
-## Known Issues and Limitations
+## Try the Sample
 
-* None
+To use the sample, you will need to have an Azure Storage account setup along with a valid connection string.  You can learn more about that [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account).
+
+To use the sample, do the following:
+
+1. Download the [MonoGame sample project](https://github.com/BrianPeek/azure-storage-net/releases/tag/v8.5.0unity) from GitHub.
+1. Unzip to a location on your hard drive.
+1. Navigate to that location and open the **AzureStorage.sln** solution file.
+1. Open **Game1.cs** from the **AzureStorage.Shared** project in Solution Explorer.
+1. Look for the **Initialize** method and add your valid connection string as a parameter.
+1. Build and run!  This will test the Table Storage API and output some debug information to the screen.
 
 ## Next Steps
 
