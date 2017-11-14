@@ -97,7 +97,7 @@ To use the sample, do the following:
 1. Open Unity 2017.1 (or greater) and point it to the project you just unzipped.
 1. Down in the **Project** window, double-click the **AzureSample** scene inside the **Sample** directory to open the main scene for the sample.
 1. In this scene, select the **StorageObject** item in the **Hierarchy** window.
-1. With **StorageObject** selected, you'll notice that there are blank **Connection String** entries in the **Inspector** window.  Fill in the these entries with your valid connection string as shown on the Azure portal.  You can change the names of the other items if you wish, but the defaults should work as-is.
+1. With **StorageObject** selected, you'll notice that there are blank **Connection String** entries in the **Inspector** window.  Fill in the these entries with your valid connection string as shown on the Azure portal, but remember to change the endpoint to use **http** as described above.  You can change the names of the other items if you wish, but the defaults should work as-is.
 1. Run the project from within the editor by clicking the **Play** button.  Alternatively, you can export to the platform of your choosing and run there.
 1. At this point, you can click the button for any of the four storage types and watch the output window.  If things are setup and working, you will see the sample test a standard workflow.
 
