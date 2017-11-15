@@ -60,7 +60,9 @@ To use the sample, do the following:
 1. Unzip to a location on your hard drive.
 1. Navigate to that location and open the **AzureStorage.sln** solution file.
 1. Open **Game1.cs** from the **AzureStorage.Shared** project in Solution Explorer.
-1. Look for the **Initialize** method and add your valid connection string as a parameter.
+1. Look for the **Initialize** method and add your valid connection string as a parameter.  You can find your connection strings in the Azure Portal as shown.
+
+   ![Azure Storage Keys in Azure Porta](../media/storage-keys.png)
 1. Build and run!  This will test the Table Storage API and output some debug information to the screen.
 
 ## Next Steps

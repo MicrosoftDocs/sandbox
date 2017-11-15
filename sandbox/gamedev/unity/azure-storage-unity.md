@@ -21,12 +21,13 @@ This is an experimental Unity SDK for Azure Storage.
 > [!IMPORTANT]
 > As stated above, please note that this SDK is not supported and is not provided by the Azure Storage team.  If you run into problems, please let us know using the [GitHub Issues](https://github.com/BrianPeek/azure-storage-net/issues) page for this fork.
 
-[![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net)
+[![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net/tree/gamedev)
 [![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/azure-storage-net/releases)
 
 ## Requirements
 
 * [Unity 2017.1 (or greater)](https://unity3d.com/)
+  * Unity 2017.1 includes a new scripting runtime that supports .NET 4.6.  This feature allows us to use the existing Azure SDKs.  Please see [this blog post from Unity](https://blogs.unity3d.com/2017/07/11/introducing-unity-2017/) for more information.
 * [An Azure Storage account (Sign up for free!)](https://azure.microsoft.com/en-us/free/)
 
 ## Compatibility
@@ -70,6 +71,7 @@ We have not had success in compiling or running games using the following platfo
 
 * Android (IL2CPP)
 * UWP (IL2CPP)
+* WebGL
 
 We will continue working on these and update as we find fixes.
 
@@ -97,7 +99,9 @@ To use the sample, do the following:
 1. Open Unity 2017.1 (or greater) and point it to the project you just unzipped.
 1. Down in the **Project** window, double-click the **AzureSample** scene inside the **Sample** directory to open the main scene for the sample.
 1. In this scene, select the **StorageObject** item in the **Hierarchy** window.
-1. With **StorageObject** selected, you'll notice that there are blank **Connection String** entries in the **Inspector** window.  Fill in the these entries with your valid connection string as shown on the Azure portal, but remember to change the endpoint to use **http** as described above.  You can change the names of the other items if you wish, but the defaults should work as-is.
+1. With **StorageObject** selected, you'll notice that there are blank **Connection String** entries in the **Inspector** window.  Fill in the these entries with your valid connection string as shown on the Azure portal, but remember to change the endpoint to use **http** as described above.  You can change the names of the other items if you wish, but the defaults should work as-is. You can find your connection strings in the Azure Portal as shown.
+
+   ![Azure Storage Keys in Azure Porta](../media/storage-keys.png)
 1. Run the project from within the editor by clicking the **Play** button.  Alternatively, you can export to the platform of your choosing and run there.
 1. At this point, you can click the button for any of the four storage types and watch the output window.  If things are setup and working, you will see the sample test a standard workflow.
 
