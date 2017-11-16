@@ -63,7 +63,7 @@ To use the sample, do the following:
 1. Look for the **ConnectionString** member and replace with your valid connection string.  You can find your connection strings in the Azure Portal as shown.
 
    ![Azure Storage Keys in Azure Porta](../media/storage-keys.png)
-1. Build and run!  This will test the Table Storage API and output some debug information to the screen.
+1. Build and run!  Press 1, 2, 3, or 4 on your keyboard to test the associated storage API.
 
 ## Next Steps
 
