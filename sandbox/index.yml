@@ -57,9 +57,9 @@ sections:
       html: <p>Use Azure Storage from your Unity project</p>
       href: gamedev/azure-storage-unity
       image:
-        src: media/unity.png
+        src: gamedev/media/unity.png
     - title: Azure Storage SDK for MonoGame
       html: <p>Use Azure Storage with MonoGame</p>
       href: gamedev/azure-storage-monogame
       image:
-        src: media/monogame.png
+        src: gamedev/media/monogame.png
