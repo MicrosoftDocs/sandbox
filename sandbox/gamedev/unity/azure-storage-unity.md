@@ -94,7 +94,7 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 
 To use the sample, do the following:
 
-1. Download the [Unity sample project](https://github.com/BrianPeek/azure-storage-net/releases/tag/v8.5.0unity) from GitHub.
+1. Download the [Unity sample project](https://github.com/BrianPeek/azure-storage-net/releases) from GitHub.
 1. Unzip to a location on your hard drive.
 1. Open Unity 2017.1 (or greater) and point it to the project you just unzipped.
 1. Down in the **Project** window, double-click the **AzureSample** scene inside the **Sample** directory to open the main scene for the sample.

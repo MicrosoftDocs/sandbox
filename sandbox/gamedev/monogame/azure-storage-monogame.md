@@ -56,7 +56,7 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 
 To use the sample, do the following:
 
-1. Download the [MonoGame sample project](https://github.com/BrianPeek/azure-storage-net/releases/tag/v8.5.0unity) from GitHub.
+1. Download the [MonoGame sample project](https://github.com/BrianPeek/azure-storage-net/releases) from GitHub.
 1. Unzip to a location on your hard drive.
 1. Navigate to that location and open the **AzureStorage.sln** solution file.
 1. Open **Game1.cs** from the **AzureStorage.Shared** project in Solution Explorer.
