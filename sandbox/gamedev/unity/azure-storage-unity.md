@@ -50,6 +50,16 @@ Due to a Unity limitation, HTTPS requests using the standard .NET networking sta
 DefaultEndpointsProtocol=http;AccountName=yourazureaccount;AccountKey=abcdef12345;EndpointSuffix=core.windows.net
 ```
 
+### iOS Builds
+
+There is a [known issue](https://issuetracker.unity3d.com/issues/ios-il2cpp-il2cpp-error-for-method-system-dot-void-system-dot-data-dot-constraintcollection-clear-crashes-whiled-building-for-ios) with Unity 2017.2 (and perhaps other versions) where iOS exports may fail with an error of:
+
+```text
+IL2CPP error for method 'System.Void System.Data.ConstraintCollection::Clear()'
+```
+
+This error isn't unique to this SDK.  We have not seen this error with the latest builds of 2017.1 or 2017.3, so you may wish to up/downgrade if you run into it until there is a proper patch from Unity.
+
 ### UWP Builds
 
 To build for UWP, ensure that the the DLLs in the root Plugins directory are excluded from the build, while the DLLs in the WSA directory are included in the build.  To do this:
