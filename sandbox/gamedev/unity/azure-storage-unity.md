@@ -20,7 +20,7 @@ ms.author: brpeek
 > This is an experimental Unity SDK for Azure Storage.  As such, please note that this SDK is not supported and is not provided by the Azure Storage team.  If you run into problems, please let us know using the [GitHub Issues](https://github.com/BrianPeek/azure-storage-net/issues) page for this fork.
 
 [![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net/tree/gamedev)
-[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/AzureSamples-Unity)
+[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/azure-storage-net/releases)
 
 ## Requirements
 
