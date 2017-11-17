@@ -26,7 +26,7 @@ ms.author: brpeek
 
 * [Unity 2017.1 (or greater)](https://unity3d.com/)
   * Unity 2017.1 includes a new scripting runtime that supports .NET 4.6.  This feature allows us to use the existing Azure SDKs with some tweaks.  Please see [this blog post from Unity](https://blogs.unity3d.com/2017/07/11/introducing-unity-2017/) for more information.
-* [An Azure Storage account (Sign up for free!)](https://azure.microsoft.com/en-us/free/)
+* [An Azure Storage account (Sign up for free!)](https://aka.ms/azfreegamedev)
 
 ## Compatibility
 
@@ -102,7 +102,7 @@ We will continue working on these and update as we find fixes.
 
 1. Click the **Import** button to add the items to your project.
 
-With the package added, you can now use the Azure Storage SDK API in your scripts as you would in any other application.  Please take a look at the [sample](https://github.com/BrianPeek/AzureSamples-Unity) (also included in the .unitypackage) which demonstrates how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more samples and tutorials on using the API.
+With the package added, you can now use the Azure Storage SDK API in your scripts as you would in any other application.  Please take a look at the [sample](https://github.com/BrianPeek/AzureSamples-Unity) (also included in the .unitypackage) which demonstrates how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev) for even more samples and tutorials on using the API.
 
 ## Try the Sample
 
@@ -132,4 +132,4 @@ The code for the sample is broken out into four separate scripts, one for each s
 
 ## Next Steps
 
-* [Azure Storage Docs](https://docs.microsoft.com/azure/storage/)
+* [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev)
