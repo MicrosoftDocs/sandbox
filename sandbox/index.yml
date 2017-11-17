@@ -44,3 +44,22 @@ sections:
       href: demos/nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+- title: Game Development
+  items:
+  - type: paragraph
+    text: Experimental SDKs and samples for game development with Azure.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items: 
+    - title: Azure Storage SDK for Unity
+      html: <p>Use Azure Storage from your Unity project</p>
+      href: gamedev/unity/azure-storage-unity
+      image:
+        src: gamedev/media/unity.png
+    - title: Azure Storage SDK for MonoGame
+      html: <p>Use Azure Storage with MonoGame</p>
+      href: gamedev/monogame/azure-storage-monogame
+      image:
+        src: gamedev/media/monogame.png
