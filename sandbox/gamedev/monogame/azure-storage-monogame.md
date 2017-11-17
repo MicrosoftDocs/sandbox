@@ -16,8 +16,8 @@ ms.author: brpeek
 
 [!include[](../../includes/header.md)]
 
-[![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net/tree/gamedev/Samples/GameDev/MonoGame/AzureStorage)
-[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/AzureSamples-MonoGame)
+[![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/AzureSamples-MonoGame)
+<!--[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/AzureSamples-MonoGame)-->
 
 ## Requirements
 
@@ -59,7 +59,7 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 
 To use the sample, do the following:
 
-1. Download the [MonoGame sample project](https://github.com/BrianPeek/AzureSamples-MonoGame) from GitHub.
+1. Download the [MonoGame samples](https://github.com/BrianPeek/AzureSamples-MonoGame) from GitHub.
 
 1. Unzip to a location on your hard drive.
 
