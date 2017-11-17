@@ -17,7 +17,7 @@ ms.author: brpeek
 [!include[](../../includes/header.md)]
 
 [![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net/tree/gamedev/Samples/GameDev/MonoGame/AzureStorage)
-[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/azure-storage-net/releases)
+[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/AzureSamples-MonoGame)
 
 ## Requirements
 
@@ -56,9 +56,9 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 
 To use the sample, do the following:
 
-1. Download the [MonoGame sample project](https://github.com/BrianPeek/azure-storage-net/releases) from GitHub.
+1. Download the [MonoGame sample project](https://github.com/BrianPeek/AzureSamples-MonoGame) from GitHub.
 1. Unzip to a location on your hard drive.
-1. Navigate to that location and open the **AzureStorage.sln** solution file.
+1. Navigate to that location and open the **AzureStorage.sln** solution file in the **Storage** directory.
 1. Open **Game1.cs** from the **AzureStorage.Shared** project in Solution Explorer.
 1. Look for the **ConnectionString** member and replace with your valid connection string.  You can find your connection strings in the Azure Portal as shown.
 
