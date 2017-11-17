@@ -57,6 +57,7 @@ To build for UWP, ensure that the the DLLs in the root Plugins directory are exc
 1. In the **Project** window, select all DLLs that are in the **Plugins** directory.
 
    ![Select all DLLs](media/unity-select-dlls.png)
+   
 1. In the Inspector window at the right, make sure only **WSAPlayer** is selected and **Any Platform** is not selected.
 
    ![Include only WSAPlayer](media/unity-wsaplayer-include.png)
@@ -78,12 +79,17 @@ We will continue working on these and update as we find fixes.
 ## Import the SDK
 
 1. Download the latest [.unitypackage](https://github.com/BrianPeek/azure-storage-net/releases) from GitHub.
+
 1. Open Unity and select **Edit > Project Settings > Player** to open the **PlayerSettings** panel.
+
 1. Select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown in the **Configuration** section.
 
    ![Scripting Configuration dialog](media/unity-player-config.png)
+
 1. Add the .unitypackage you downloaded in the first step to Unity by using the **Assets > Import Package > Custom Package** menu option.
+
 1. In the **Import Unity Package** box that pops up, you can select which things you'd like to import.  By default everything will be selected.
+
 1. Click the **Import** button to add the items to your project.
 
 With the package added, you can now use the Azure Storage SDK API in your scripts as you would in any other application.  Please take a look at the [sample](https://github.com/BrianPeek/AzureSamples-Unity) which demonstrates how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more samples and tutorials on using the API.
@@ -95,14 +101,21 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 To use the sample, do the following:
 
 1. Download the [Unity sample project](https://github.com/BrianPeek/AzureSamples-Unity) from GitHub.
+
 1. Unzip to a location on your hard drive.
+
 1. Open Unity 2017.1 (or greater) and point it to the **Storage** directory inside the unzipped package.
+
 1. In the **Project** window, double-click the **AzureSample** scene inside the **Sample** directory to open the main scene for the sample.
+
 1. In this scene, select the **StorageObject** item in the **Hierarchy** window.
+
 1. With **StorageObject** selected, you'll notice that there are blank **Connection String** entries in the **Inspector** window.  Fill in the these entries with your valid connection string as shown on the Azure portal, but remember to change the endpoint to use **http** as described above.  You can change the names of the other items if you wish, but the defaults should work as-is. You can find your connection strings in the Azure Portal as shown.
 
    ![Azure Storage Keys in Azure Porta](../media/storage-keys.png)
+
 1. Run the project from within the editor by clicking the **Play** button.  Alternatively, you can export to the platform of your choosing and run there.
+
 1. At this point, you can click the button for any of the four storage types and watch the output window.  If things are setup and working, you will see the sample test a standard workflow.
 
 The code for the sample is broken out into four separate scripts, one for each storage type.  Take a look at each to learn more about how it works.

@@ -42,8 +42,11 @@ This has been tested with the following projects.  Others may work, so please le
 Because MonoGame uses the traditional .NET Framework and CLR on Windows, and Xamarin on other platforms, the existing Azure Storage SDK NuGet package works as-is across all platforms.  To use the Azure Storage SDK, simply add a NuGet package reference to the **WindowsAzure.Storage** package.
 
 1. Click the **Projects > Manage NuGet Packages** menu.
+
 1. In the NuGet Package Manager window, enter **azure storage** in the search box.  The **WindowsAzure.Storage** package will appear.
+
 1. Highlight this package, then click the **Install** button on the right side of the window.
+
 1. Accept any license prompts, and the package will be installed.
 
 ![nuget](media/monogame-storage-nuget.png)
@@ -57,12 +60,17 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 To use the sample, do the following:
 
 1. Download the [MonoGame sample project](https://github.com/BrianPeek/AzureSamples-MonoGame) from GitHub.
+
 1. Unzip to a location on your hard drive.
+
 1. Navigate to that location and open the **AzureStorage.sln** solution file in the **Storage** directory.
+
 1. Open **Game1.cs** from the **AzureStorage.Shared** project in Solution Explorer.
+
 1. Look for the **ConnectionString** member and replace with your valid connection string.  You can find your connection strings in the Azure Portal as shown.
 
    ![Azure Storage Keys in Azure Porta](../media/storage-keys.png)
+
 1. Build and run!  Press 1, 2, 3, or 4 on your keyboard to test the associated storage API.
 
 ## Next Steps
