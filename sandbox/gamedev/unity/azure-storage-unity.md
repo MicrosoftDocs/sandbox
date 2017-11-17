@@ -88,11 +88,11 @@ We will continue working on these and update as we find fixes.
 
 1. Add the .unitypackage you downloaded in the first step to Unity by using the **Assets > Import Package > Custom Package** menu option.
 
-1. In the **Import Unity Package** box that pops up, you can select which things you'd like to import.  By default everything will be selected.
+1. In the **Import Unity Package** box that pops up, you can select which things you'd like to import.  By default everything will be selected.  If you don't care to use the sample, you can uncheck that box.
 
 1. Click the **Import** button to add the items to your project.
 
-With the package added, you can now use the Azure Storage SDK API in your scripts as you would in any other application.  Please take a look at the [sample](https://github.com/BrianPeek/AzureSamples-Unity) which demonstrates how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more samples and tutorials on using the API.
+With the package added, you can now use the Azure Storage SDK API in your scripts as you would in any other application.  Please take a look at the [sample](https://github.com/BrianPeek/AzureSamples-Unity) (also included in the .unitypackage) which demonstrates how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more samples and tutorials on using the API.
 
 ## Try the Sample
 
@@ -100,7 +100,7 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 
 To use the sample, do the following:
 
-1. Download the [Unity sample project](https://github.com/BrianPeek/AzureSamples-Unity) from GitHub.
+1. Download the [Unity sample project](https://github.com/BrianPeek/AzureSamples-Unity) from GitHub (or import it from the .unitypackage and continue to step 4).
 
 1. Unzip to a location on your hard drive.
 
