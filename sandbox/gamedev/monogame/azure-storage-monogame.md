@@ -22,7 +22,7 @@ ms.author: brpeek
 ## Requirements
 
 * [MonoGame 3.6 or higher (earlier versions may work)](http://www.monogame.net/)
-* [An Azure Storage account (Sign up for free!)](https://azure.microsoft.com/en-us/free/)
+* [An Azure Storage account (Sign up for free!)](https://aka.ms/azfreegamedev)
 
 ## Compatibility
 
@@ -51,7 +51,7 @@ Because MonoGame uses the traditional .NET Framework and CLR on Windows, and Xam
 
 ![nuget](media/monogame-storage-nuget.png)
 
-With the package added, you can now use the Azure Storage SDK API in your MonoGame game as you would in any other .NET application.  The **Get the Source** button above will link you to a cross-platform MonoGame sample showing how to use the basic features of the Azure Storage SDK.  Also, please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more samples and tutorials.
+With the package added, you can now use the Azure Storage SDK API in your MonoGame game as you would in any other .NET application.  The **Get the Source** button above will link you to a cross-platform MonoGame sample showing how to use the basic features of the Azure Storage SDK.  Also, please refer to the [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev) for even more samples and tutorials.
 
 ## Try the Sample
 
@@ -75,4 +75,4 @@ To use the sample, do the following:
 
 ## Next Steps
 
-* [Azure Storage Docs](https://docs.microsoft.com/azure/storage/)
+* [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev)
