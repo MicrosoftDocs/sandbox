@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Demos
+title: Azure for Game Developers
 metadata:
   document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
-  title: The Sandbox - Demos
-  description: Demos and code
+  title: The Sandbox - Azure for Game Developers
+  description: Azure for Game Developers
   keywords: Azure, .NET, Node.js, API
   author: brianpeek
   ms.author: brpeek
