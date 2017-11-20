@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Azure for Game Developers
+title: Demos
 metadata:
   document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
-  title: The Sandbox - Azure for Game Developers
-  description: Azure for Game Developers
+  title: The Sandbox - Demos
+  description: Demos and code
   keywords: Azure, .NET, Node.js, API
   author: brianpeek
   ms.author: brpeek
@@ -15,10 +15,11 @@ metadata:
   - clicktale
   ms.service: multiple
 sections:
-- title: Azure for Game Developers
-  items:
-  - type: paragraph
-    text: Get started with developing games that use Azure.  More coming soon!
+- items:
+  - type: markdown
+    text: |
+      Get started with developing games that use Azure.  More coming soon!
+- items:
   - type: list
     style: cards
     className: cardsM
@@ -28,9 +29,9 @@ sections:
       html: <p>Use Azure Storage from your Unity project</p>
       href: unity/azure-storage-unity
       image:
-      src: media/unity.png
+        src: media/unity.png
     - title: Azure Storage SDK for MonoGame
       html: <p>Use the Azure Storage SDK with MonoGame</p>
       href: monogame/azure-storage-monogame
       image:
-      src: media/monogame.png
+        src: media/monogame.png
