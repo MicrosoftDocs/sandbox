@@ -1,9 +1,9 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Demos
+title: Demos and Code
 metadata:
   document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
-  title: The Sandbox - Demos
+  title: The Sandbox - Demos and Code
   description: Demos and code
   keywords: Azure, .NET, Node.js, API
   author: brianpeek
@@ -15,10 +15,11 @@ metadata:
   - clicktale
   ms.service: multiple
 sections:
-- title: Demos and Code
-  items:
-  - type: paragraph
-    text: Some fun demos (with code!) using various Azure services.
+- items:
+  - type: markdown
+    text: |
+      Some fun demos (with code!) using various Azure services.
+- items:
   - type: list
     style: cards
     className: cardsM
