@@ -20,8 +20,6 @@ sections:
     text: |
       Get started with developing games that use Azure.  More coming soon!
 - items:
-  - type: paragraph
-    text: Get started with developing games that use Azure.  More coming soon!
   - type: list
     style: cards
     className: cardsM
