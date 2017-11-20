@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Demos
+title: Azure for Game Developers
 metadata:
   document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
-  title: The Sandbox - Demos
-  description: Demos and code
+  title: The Sandbox - Azure for Game Developers
+  description: Azure for Game Developers
   keywords: Azure, .NET, Node.js, API
   author: brianpeek
   ms.author: brpeek
@@ -15,27 +15,22 @@ metadata:
   - clicktale
   ms.service: multiple
 sections:
-- title: Demos and Code
+- title: Azure for Game Developers
   items:
   - type: paragraph
-    text: Some fun demos (with code!) using various Azure services.
+    text: Get started with developing games that use Azure.  More coming soon!
   - type: list
     style: cards
     className: cardsM
     columns: 2
     items: 
-    - title: OctoBot
-      html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
-      href: demos/octobot
+    - title: Azure Storage SDK for Unity
+      html: <p>Use Azure Storage from your Unity project</p>
+      href: unity/azure-storage-unity
       image:
-        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
-    - title: NotBacon
-      html: <p>Train the Azure Custom Vision Service to detect the presence of bacon in photos</p>
-      href: demos/notbacon
+      src: media/unity.png
+    - title: Azure Storage SDK for MonoGame
+      html: <p>Use the Azure Storage SDK with MonoGame</p>
+      href: monogame/azure-storage-monogame
       image:
-        src: https://docs.microsoft.com/azure/media/index/cs-custom-vision.svg
-    - title: NotHotdog
-      html: <p>Is it a hotdog or not? Let the Computer Vision API decide</p>
-      href: demos/nothotdog
-      image:
-        src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+      src: media/monogame.png
