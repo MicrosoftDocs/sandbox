@@ -6,11 +6,11 @@
       href: demos/index.yml
       items:
       - name: OctoBot
-        href: octobot.md
+        href: demos/octobot.md
       - name: NotBacon
-        href: notbacon.md
+        href: demos/notbacon.md
       - name: NotHotdog
-        href: nothotdog.md
+        href: demos/nothotdog.md
     - name: Game Development
       expanded: true
       href: gamedev/index.yml
@@ -19,10 +19,10 @@
         expanded: true
         items:
         - name: Azure Storage SDK for Unity
-          href: unity/azure-storage-unity.md
+          href: gamedev/unity/azure-storage-unity.md
       - name: MonoGame
         expanded: true
         items:
         - name: Using the Azure Storage SDK with MonoGame
-          href: monogame/azure-storage-monogame.md
+          href: gamedev/monogame/azure-storage-monogame.md
 
