@@ -27,10 +27,20 @@ sections:
     style: cards
     className: cardsM
     columns: 2
-    items: 
+    items:
     - title: Azure Storage SDK for Unity
       html: <p>Use Azure Storage from your Unity project</p>
       href: unity/azure-storage-unity
+      image:
+        src: media/unity.png
+    - title: Azure Event Hubs SDK for Unity
+      html: <p>Use Azure Event Hubs from your Unity project</p>
+      href: unity/azure-event-hubs-unity
+      image:
+        src: media/unity.png
+    - title: Azure Mobile Apps SDK for Unity
+      html: <p>Use Azure Mobile Apps from your Unity project</p>
+      href: unity/azure-mobile-apps-unity
       image:
         src: media/unity.png
 - title: MonoGame
