@@ -20,7 +20,7 @@ ms.author: brpeek
 > This is an experimental Unity SDK for Azure Storage.  As such, please note that this SDK is not supported and is not provided by the Azure Storage team.  If you run into problems, please let us know using the [GitHub Issues](https://github.com/BrianPeek/azure-storage-net/issues) page for this fork.
 
 [![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net/tree/gamedev)
-[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/azure-storage-net/releases)
+[![Try it now](../../media/buttons/try2.png)](https://aka.ms/azstorage-unitysdk)
 
 ## Requirements
 
@@ -30,7 +30,7 @@ ms.author: brpeek
 
 ## Compatibility
 
-This has been tested with the following Unity exporters.  Others may work, and we haven't tested every platform, so please let us know if you've had success!
+This has been tested with the following Unity exporters.  Others may work -- we haven't tested every platform, so please let us know if you've had success!
 
 * Windows standalone
 * UWP (.NET)
@@ -50,31 +50,7 @@ Due to a Unity limitation, HTTPS requests using the standard .NET networking sta
 DefaultEndpointsProtocol=http;AccountName=yourazureaccount;AccountKey=abcdef12345;EndpointSuffix=core.windows.net
 ```
 
-### iOS Builds
-
-There is a [known issue](https://issuetracker.unity3d.com/issues/ios-il2cpp-il2cpp-error-for-method-system-dot-void-system-dot-data-dot-constraintcollection-clear-crashes-whiled-building-for-ios) with Unity 2017.2 (and perhaps other versions) where iOS exports may fail with an error of:
-
-```text
-IL2CPP error for method 'System.Void System.Data.ConstraintCollection::Clear()'
-```
-
-This error isn't unique to this SDK.  We have not seen this error with the latest builds of 2017.1 or 2017.3, so you may wish to up/downgrade if you run into it until there is a proper patch from Unity.
-
-### UWP Builds
-
-To build for UWP, ensure that the the DLLs in the root Plugins directory are excluded from the build, while the DLLs in the WSA directory are included in the build.  To do this:
-
-1. In the **Project** window, select all DLLs that are in the **Plugins** directory.
-
-   ![Select all DLLs](media/unity-select-dlls.png)
-   
-1. In the Inspector window at the right, make sure only **WSAPlayer** is selected and **Any Platform** is not selected.
-
-   ![Include only WSAPlayer](media/unity-wsaplayer-include.png)
-
-With these selections, you should be able to export your UWP build without issue.  To go back to building for another platform, reverse the process -- make sure both **Any Platform** and **WSAPlayer** are selected and then export.
-
-![Exclude only WSAPlayer](media/unity-wsaplayer-exclude.png)
+[!include[](include/uwp-known-issues.md)]
 
 ### Other Platforms
 
@@ -88,21 +64,11 @@ We will continue working on these and update as we find fixes.
 
 ## Import the SDK
 
-1. Download the latest [.unitypackage](https://github.com/BrianPeek/azure-storage-net/releases) from GitHub.
+To import the SDK into your own project, make sure you have downloaded the latest [.unitypackage](https://aka.ms/azstorage-unitysdk) from GitHub.  Then, do the following:
 
-1. Open Unity and select **Edit > Project Settings > Player** to open the **PlayerSettings** panel.
+[!include[](include/unity-import.md)]
 
-1. Select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown in the **Configuration** section.
-
-   ![Scripting Configuration dialog](media/unity-player-config.png)
-
-1. Add the .unitypackage you downloaded in the first step to Unity by using the **Assets > Import Package > Custom Package** menu option.
-
-1. In the **Import Unity Package** box that pops up, you can select which things you'd like to import.  By default everything will be selected.  If you don't care to use the sample, you can uncheck that box.
-
-1. Click the **Import** button to add the items to your project.
-
-With the package added, you can now use the Azure Storage SDK API in your scripts as you would in any other application.  Please take a look at the [sample](https://github.com/BrianPeek/AzureSamples-Unity) (also included in the .unitypackage) which demonstrates how to use each of the storage services to perform simple tasks. Also, please refer to the [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev) for even more samples and tutorials on using the API.
+Please refer to the [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev) for even more samples and tutorials on using the API.
 
 ## Try the Sample
 
@@ -116,7 +82,7 @@ To use the sample, do the following:
 
 1. Open Unity 2017.1 (or greater) and point it to the **Storage** directory inside the unzipped package.
 
-1. In the **Project** window, double-click the **AzureSample** scene inside the **Sample** directory to open the main scene for the sample.
+1. In the **Project** window, double-click the **AzureSample** scene inside the **AzureSamples\Storage** directory to open the main scene for the sample.
 
 1. In this scene, select the **StorageObject** item in the **Hierarchy** window.
 
