@@ -68,8 +68,8 @@ sections:
       href: gamedev/unity/azure-mobile-apps-unity
       image:
         src: gamedev/media/unity.png
-    - title: Azure Storage SDK for MonoGame
-      html: <p>Use Azure Storage with MonoGame</p>
-      href: gamedev/monogame/azure-storage-monogame
+    - title: Azure SDKs for MonoGame
+      html: <p>Use Azure SDKs with MonoGame</p>
+      href: gamedev/monogame/azure-monogame
       image:
         src: gamedev/media/monogame.png

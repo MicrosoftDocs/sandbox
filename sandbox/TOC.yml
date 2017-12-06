@@ -27,6 +27,6 @@
       - name: MonoGame
         expanded: true
         items:
-        - name: Using the Azure Storage SDK with MonoGame
-          href: gamedev/monogame/azure-storage-monogame.md
+        - name: Using Azure SDKs with MonoGame
+          href: gamedev/monogame/azure-monogame.md
 

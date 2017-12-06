@@ -52,8 +52,8 @@ sections:
     className: cardsM
     columns: 2
     items: 
-    - title: Azure Storage SDK for MonoGame
-      html: <p>Use the Azure Storage SDK with MonoGame</p>
-      href: monogame/azure-storage-monogame
+    - title: Azure SDKs for MonoGame
+      html: <p>Use the Azure SDKs with MonoGame</p>
+      href: monogame/azure-monogame
       image:
         src: media/monogame.png
