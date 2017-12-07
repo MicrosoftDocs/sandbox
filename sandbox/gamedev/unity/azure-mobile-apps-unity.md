@@ -53,7 +53,7 @@ Due to a Unity limitation, HTTPS requests using the standard .NET networking sta
 http://mymobileapp.azurewebsites.net/
 ```
 
-[!include[](include/uwp-known-issues.md)]
+<!--[!include[](include/uwp-known-issues.md)]-->
 
 ### Other Platforms
 
@@ -70,7 +70,7 @@ We will continue working on these and update as we find fixes.
 
 To import the SDK into your own project, make sure you have downloaded the latest [.unitypackage](https://aka.ms/azmobile-unitysdk) from GitHub.  Then, do the following:
 
-<!--[!include[](include/unity-import.md)]-->
+[!include[](include/unity-import.md)]
 
 Please refer to the [Azure Mobile Apps Docs](https://aka.ms/azgamedev) for even more samples and tutorials on using the API.
 
