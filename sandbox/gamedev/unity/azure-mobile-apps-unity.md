@@ -37,6 +37,7 @@ ms.author: brpeek
 This has been tested with the following Unity exporters.  Others may work -- we haven't tested every platform, so please let us know if you've had success!
 
 * Windows standalone
+* UWP (.NET)
 * iOS
 * Android (Mono)
 * Unity editor
@@ -53,14 +54,13 @@ Due to a Unity limitation, HTTPS requests using the standard .NET networking sta
 http://mymobileapp.azurewebsites.net/
 ```
 
-<!--[!include[](include/uwp-known-issues.md)]-->
+[!include[](include/uwp-known-issues.md)]
 
 ### Other Platforms
 
 We have not had success in compiling or running games using the following platforms:
 
 * Android (IL2CPP)
-* UWP (.NET)
 * UWP (IL2CPP)
 * WebGL
 
