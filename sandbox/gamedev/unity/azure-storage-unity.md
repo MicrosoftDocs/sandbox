@@ -34,7 +34,7 @@ This has been tested with the following Unity exporters.  Others may work -- we 
 
 * Windows standalone
 * UWP (.NET)
-* iOS (IL2CPP)
+* iOS
 * Android (Mono)
 * Unity editor
 
