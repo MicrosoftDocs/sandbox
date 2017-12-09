@@ -37,6 +37,7 @@ This has been tested with the following Unity exporters.  Others may work -- we 
 
 * Windows Standalone
 * Mac Standalone (with Unity 2017.2.0p3)
+* UWP (.NET)
 * Android (Mono)
 * Unity Editor
 * iOS (the `link.xml` file in the `Assets` sample folder works around an IL2CPP issue dealing with [bytecode stripping](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html))
