@@ -84,6 +84,7 @@ IL2CPP error for method 'System.Void System.Data.ConstraintCollection::Clear()'
 
 We have not had success in compiling or running games using the following platforms:
 
+* UWP (IL2CPP)
 * Android (IL2CPP)
 * WebGL - System.Threading is used in Event Hubs DLLs and Unity WebGL does not support this
 
