@@ -1,5 +1,5 @@
 ---
-title: Publishing your first Razor Pages application to Azure
+title: Publishing a Razor Pages application to Azure
 description: A hands-on-lab that that walks through creating a new Razor Pages application and publishing it to an Azure Web App.
 author: CecilPhillip
 manager: scottca
@@ -11,7 +11,7 @@ ms.devlang: csharp
 ms.service: app-service\web
 ---
 
-# Publishing your first Razor Pages application to Azure
+# Publishing a Razor Pages application to Azure
 
 [!include[](../includes/header.md)]
 
