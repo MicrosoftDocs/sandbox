@@ -3,10 +3,30 @@
   items:
     - name: Demos
       expanded: true
+      href: demos/index.yml
       items:
-      - name: GitHubBot
-        href: /sandbox/demos/githubbot
+      - name: OctoBot
+        href: demos/octobot.md
       - name: NotBacon
-        href: /sandbox/demos/notbacon
+        href: demos/notbacon.md
       - name: NotHotdog
-        href: /sandbox/demos/nothotdog
+        href: demos/nothotdog.md
+    - name: Game Development
+      expanded: true
+      href: gamedev/index.yml
+      items:
+      - name: Unity
+        expanded: true
+        items:
+        - name: Azure Storage SDK
+          href: gamedev/unity/azure-storage-unity.md
+        - name: Azure Event Hubs SDK
+          href: gamedev/unity/azure-event-hubs-unity.md
+        - name: Azure Mobile Apps SDK
+          href: gamedev/unity/azure-mobile-apps-unity.md
+      - name: MonoGame
+        expanded: true
+        items:
+        - name: Using Azure SDKs with MonoGame
+          href: gamedev/monogame/azure-monogame.md
+

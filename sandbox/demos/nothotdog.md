@@ -12,12 +12,13 @@ ms.service: cognitive-services
 ---
 
 # NotHotdog
-
 [!include[](../includes/header.md)]
 
 If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley), you'll understand the reference for this project.  If not, it'll seem very random.  Either way, it's still very stupid.  [NotHotdog](https://github.com/BrianPeek/NotHotdogFunc) is an Azure Function that uses the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) in [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) to determine if a provided image contains a hotdog or not.  
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBrianPeek%2FNotHotdogFunc%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](../media/buttons/deploy2.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBrianPeek%2FNotHotdogFunc%2Fmaster%2Fazuredeploy.json)
+[![Get the source](../media/buttons/source2.png)](https://github.com/BrianPeek/NotHotdogFunc)
+[![Try it now](../media/buttons/try2.png)](https://nothotdogweb.azurewebsites.net/)
 
 > [!TIP]
 > If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/sandbox/demos/notbacon) article.
@@ -26,14 +27,11 @@ If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
 * To build and test locally, [Visual Studio 2017](https://visualstudio.com) version 15.3 or higher
 
-## Links
-* [NotHotdogFunc Repo](https://github.com/BrianPeek/NotHotdogFunc)
-
 ## What's It Do?
-Give the Azure Function a URL to an image, or POST the image data to the endpoint, and it will return a JSON payload stating whether the picture contains a hotdog.
+Give the Azure Function a URL to an image, or POST the image data to the endpoint, and it will return a JSON payload stating whether the picture contains a hotdog, along with the tags applied to the image by the Computer Vision API.
 
 ## Configuration
-There are two parts to settings this up to try out:
+There are two parts to setting this up on your own:
 
 ### Computer Vision API
 To use the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/), you will need an endpoint and key.
@@ -69,27 +67,27 @@ You can clone the [repo](https://github.com/BrianPeek/NotHotdogFunc) and run the
 ```
 
 ## How to Run
-The Azure Function is now configured and running, and will be available at **https://&lt;sitename&gt;.azurewebsites.net/api/NotHotdogFunc** . To test it, let's use [cURL](https://curl.haxx.se/) to hit the endpoint, providing both a URL and POST data:
+The Azure Function is now configured and running, and will be available at **https://&lt;sitename&gt;.azurewebsites.net/api/NotHotdog** . To test it, let's use [cURL](https://curl.haxx.se/) to hit the endpoint, providing both a URL and POST data.
 
 ### Link to image
 ```
-curl http://<appname>.azurewebsites.net/api/NotHotdog?url=https://upload.wikimedia.org/wikipedia/commons/5/53/Hot_dog_on_a_plate_-_Evan_Swigart.jpg
+curl https://<appname>.azurewebsites.net/api/NotHotdog?url=https://upload.wikimedia.org/wikipedia/commons/5/53/Hot_dog_on_a_plate_-_Evan_Swigart.jpg
 ```
 
 ```json
-"{\"isHotdog\":\"true\"}"
+{"isHotdog":"true","tags":["food","hot","dog","plate","table","sandwich","snack food","paper","bun","bread","sandwich plate"]}
 ```
 
 ### POST image data
 ```
-curl --data-binary "@not-a-hotdog.jpg" http://<appname>.azurewebsites.net/api/NotHotdog
+curl --data-binary "@not-a-hotdog.jpg" https://<appname>.azurewebsites.net/api/NotHotdog
 ```
 
 ```json
-"{\"isHotdog\":\"false\"}"
+{"isHotdog":"false","tags":["some","set","of","tags"]}
 ```
 
-Of course, you could call this from a web-based back-end, a mobile app, or anything else.  Simply hit the endpoint in either way and parse the JSON response.
+Of course, you could call this from a web-based back-end, a mobile app, or anything else.  Simply hit the endpoint in either way and parse the JSON response.  You can see a sample web-based version running by clicking the "Try it now" button at the top of the article.
 
 ## How it Works
 This Azure Function was created with the new [Azure Functions Tools for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) included with the 15.3 update.  To create a new Function, ensure the Azure Development workload is installed and then create a new Azure Functions project:
@@ -108,7 +106,7 @@ For more details on these tools, please see the [official docs](https://docs.mic
 
 To use the Computer Vision API from C#, a NuGet reference was set to the [Microsoft.ProjectOxford.Vision](https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/) package, which contains the full API for .NET projects.
 
-The steps above have already done in the [sample project](https://github.com/BrianPeek/NotHotdogFunc), and a function named **NotHotdog** was created.  The code for the function is only a few lines.  Here's a very condensed version (see the [source code](https://github.com/BrianPeek/NotHotdogFunc/blob/master/NotHotdog.cs) for the full version).
+The steps above have already done in the [sample project](https://github.com/BrianPeek/NotHotdogFunc), and a function named **NotHotdog** was created.  The code for the function is only a few lines.  Here's a very condensed version (see the [source code](https://github.com/BrianPeek/NotHotdogFunc/blob/master/src/NotHotdog.cs) for the full version).
 
 ```csharp
 [FunctionName("NotHotdog")]

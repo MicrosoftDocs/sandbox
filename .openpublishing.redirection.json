@@ -1,0 +1,14 @@
+{ 
+	"redirections": [ 
+	  {   
+		  "source_path": "sandbox/demos/githubbot.md", 
+		  "redirect_url": "/sandbox/demos/octobot", 
+		  "redirect_document_id": true 
+	  },
+	  {   
+		"source_path": "sandbox/gamedev/monogame/azure-storage-monogame.md", 
+		"redirect_url": "/sandbox/gamedev/monogame/azure-monogame", 
+		"redirect_document_id": true 
+	}
+	] 
+  } 

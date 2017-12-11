@@ -1,0 +1,59 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure for Game Developers
+metadata:
+  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
+  title: The Sandbox - Azure for Game Developers
+  description: Demos and code
+  keywords: Azure, .NET, Node.js, API
+  author: brianpeek
+  ms.author: brpeek
+  manager: timheuer
+  ms.date: 11/08/2017
+  ms.topic: article
+  featureFlags:
+  - clicktale
+  ms.service: multiple
+sections:
+- items:
+  - type: markdown
+    text: |
+      Get started with developing games that use Azure.  More coming soon!
+- title: Unity
+  items:
+  - type: paragraph
+    text: Experimental SDKs and samples for Unity developers.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - title: Azure Storage SDK for Unity
+      html: <p>Use Azure Storage from your Unity project</p>
+      href: unity/azure-storage-unity
+      image:
+        src: media/unity.png
+    - title: Azure Event Hubs SDK for Unity
+      html: <p>Use Azure Event Hubs from your Unity project</p>
+      href: unity/azure-event-hubs-unity
+      image:
+        src: media/unity.png
+    - title: Azure Mobile Apps SDK for Unity
+      html: <p>Use Azure Mobile Apps from your Unity project</p>
+      href: unity/azure-mobile-apps-unity
+      image:
+        src: media/unity.png
+- title: MonoGame
+  items:
+  - type: paragraph
+    text: Samples and docs for MonoGame developers.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items: 
+    - title: Azure SDKs for MonoGame
+      html: <p>Use the Azure SDKs with MonoGame</p>
+      href: monogame/azure-monogame
+      image:
+        src: media/monogame.png

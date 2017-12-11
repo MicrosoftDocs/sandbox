@@ -18,18 +18,20 @@ sections:
 - items:
   - type: markdown
     text: The Sandbox is an area of [docs.microsoft.com](https://docs.microsoft.com/) that is designed to be a place where we can experiment, play with new technology, and get feedback on ideas. This content isn't guaranteed to be kept up-to-date, maintained, or even work at any given moment, and we may revise, rewrite, or even delete things at any time. Of course, community contributions and feedback are welcome. We hope you find something fun or interesting to explore and learn from!
+  - type: paragraph
+    text: <center><img src="media/bit_sandbox1024.png" align="middle" style="max-width:100%;height:auto;display:inline-block;"></center>
 - title: Demos and Code
   items:
   - type: paragraph
-    text: Some fun demos (with code!) using various Azure services
+    text: Some fun demos (with code!) using various Azure services.
   - type: list
     style: cards
     className: cardsM
     columns: 2
     items: 
-    - title: GitHubBot
+    - title: OctoBot
       html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
-      href: demos/githubbot
+      href: demos/octobot
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
     - title: NotBacon
@@ -42,3 +44,32 @@ sections:
       href: demos/nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+- title: Game Development
+  items:
+  - type: paragraph
+    text: Experimental SDKs and samples for game development with Azure.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items: 
+    - title: Azure Storage SDK for Unity
+      html: <p>Use Azure Storage from your Unity project</p>
+      href: gamedev/unity/azure-storage-unity
+      image:
+        src: gamedev/media/unity.png
+    - title: Azure Event Hubs SDK for Unity
+      html: <p>Use Azure Event Hubs from your Unity project</p>
+      href: gamedev/unity/azure-event-hubs-unity
+      image:
+        src: gamedev/media/unity.png
+    - title: Azure Mobile Apps SDK for Unity
+      html: <p>Use Azure Mobile Apps from your Unity project</p>
+      href: gamedev/unity/azure-mobile-apps-unity
+      image:
+        src: gamedev/media/unity.png
+    - title: Azure SDKs for MonoGame
+      html: <p>Use Azure SDKs with MonoGame</p>
+      href: gamedev/monogame/azure-monogame
+      image:
+        src: gamedev/media/monogame.png
