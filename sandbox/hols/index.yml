@@ -30,3 +30,8 @@ sections:
       href: hols/appservicerazorpageshol
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+    - title:  Implementing Publish-Subscribe with Azure Service Bus and the .NET Framework
+      html: <p>Learn how to implement the publish-subscribe pattern with Azure Service Bus and .NET.
+      href: hols/servicebuspubsubhol
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
