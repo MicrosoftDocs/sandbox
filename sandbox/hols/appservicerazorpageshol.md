@@ -29,7 +29,7 @@ Before starting, you need to make sure you have the following tools and accounts
 4. [GitHub account](https://github.com/)
 5. [Microsoft Azure account](https://azure.microsoft.com/free)
 
-If you ever get stuck with the lab exercises, feel free to review the completed solution inside of the **final** folder.
+To get the accompanied projects for this lab, you will need to clone [this GitHub repository](https://github.com/cecilphillip/azure-appservice-razorpages-hol). If you ever get stuck with the lab exercises, feel free to review the completed solution inside of the **final** folder.
 
 <a name="Exercises"></a>
 ## Exercises

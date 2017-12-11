@@ -29,7 +29,7 @@ filters applied to restrict the incoming messages. Unlike queues, producers send
 
 In this lab, you walk through the process of implementing the Publish-Subscribe pattern in Azure Service Bus using topics. You create producers and consumer(s) using C#, the [.NET Framework](https://www.microsoft.com/net/download/windows) and the [Azure Service Bus .NET Client](https://www.nuget.org/packages/WindowsAzure.ServiceBus). By the end of this lab, you should feel comfortable with creating Azure Service Bus namespaces. You will also learn about sending and retrieving messages to topics, and moving troublesome messages to the dead-letter queue.
 
-The lab also assumes that you are using the [Visual Studio IDE](https://www.visualstudio.com/vs) on Windows. Also, you should have already signed up for a [Microsoft Azure account](https://azure.microsoft.com/en-us/free). Included with this lab, you will find a starter solution in the **start** folder, which has the basic setup required for you to get started. Also,
+The lab also assumes that you are using the [Visual Studio IDE](https://www.visualstudio.com/vs) on Windows. Also, you should have already signed up for a [Microsoft Azure account](https://azure.microsoft.com/en-us/free). To get the accompanied projects for this lab, you need to clone [this GitHub repository](https://github.com/cecilphillip/azure-servicebus-pubsub-hol). Included with this lab, you will find a starter solution in the **start** folder, which has the basic setup required for you to get started. Also,
 if you ever get stuck, feel free to review the completed solution inside of the **final** folder.
 
 <a name="Exercises"></a>
@@ -162,7 +162,7 @@ for ServicebusConifg containing placeholders for TopicName and ConnectionString.
 the name of your topic next to the TopiceName key.
 5. Open the **OrderListener.cs** file.
 6. Now you will implement the constructor. You will first use the NamespaceManager to create a subscription. An exception will get
-thrown if you try to create an already existing subscription, so we'll just do a check to see if it's there before creating.
+thrown if you try to create an already existing subscription, so we will just do a check to see if it's there before creating.
 
 To receive messages on a topic in Azure Service Bus, we need an instance of
 the [SubscriptionClient](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.SubscriptionClient?view=azure-dotnet).
