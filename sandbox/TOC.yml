@@ -29,4 +29,11 @@
         items:
         - name: Using Azure SDKs with MonoGame
           href: gamedev/monogame/azure-monogame.md
-
+    - name: Hands on labs
+      expanded: true
+      href: hols/index.yml
+      items:
+      - name: Publishing a Razor Pages application to Azure
+        href: hols/appservicerazorpageshol.md          
+      - name: Implementing Publish-Subscribe with Azure Service Bus and .NET
+        href: hols/servicebuspubsubhol.md    
