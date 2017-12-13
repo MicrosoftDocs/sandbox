@@ -29,4 +29,14 @@
         items:
         - name: Using Azure SDKs with MonoGame
           href: gamedev/monogame/azure-monogame.md
+    - name: Hands on labs
+      expanded: true
+      href: hols/index.yml
+      items:
+      - name: Functions basics
+        href: hols/functions-basics.md
+      - name: Triggers and bindings
+        href: hols/triggers-bindings.md
+      - name: Development environment
+        href: hols/development-environment.md
 

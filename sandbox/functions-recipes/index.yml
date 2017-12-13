@@ -1,0 +1,42 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure Functions Recipes
+metadata:
+  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
+  title: The Sandbox - Azure Functions Recipes
+  description: A collection of focused code snippets for Azure
+  keywords: Azure, .NET, Azure Functions
+  author: cecilphillip
+  ms.author: cephilli
+  manager: scottca
+  ms.date: 13/12/2017
+  ms.topic: article
+  featureFlags:
+  - clicktale
+  ms.service: functions
+sections:
+- items:
+  - type: markdown
+    text: |
+      Functions recipes are a collection of community-maintained tips and tricks for working with Azure Functions. Each recipe is a code snippet that demonstrates a single concept.
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - title: Functions basics
+      html: <p>Description</p>
+      href: functions-recipes/functions-basics
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+    - title: Triggers and bindings
+      html: <p>Description</p>
+      href: functions-recipes/triggers-bindings
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+    - title: Development environment
+      html: <p>Description</p>
+      href: functions-recipes/development-environment
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
