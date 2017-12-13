@@ -6,11 +6,11 @@
       href: demos/index.yml
       items:
       - name: OctoBot
-        href: octobot.md
+        href: demos/octobot.md
       - name: NotBacon
-        href: notbacon.md
+        href: demos/notbacon.md
       - name: NotHotdog
-        href: nothotdog.md
+        href: demos/nothotdog.md
     - name: Game Development
       expanded: true
       href: gamedev/index.yml
