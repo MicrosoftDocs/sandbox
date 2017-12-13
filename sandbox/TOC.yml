@@ -31,12 +31,12 @@
           href: gamedev/monogame/azure-monogame.md
     - name: Hands on labs
       expanded: true
-      href: hols/index.yml
+      href: functions-recipes/index.yml
       items:
       - name: Functions basics
-        href: hols/functions-basics.md
+        href: functions-recipes/functions-basics.md
       - name: Triggers and bindings
-        href: hols/triggers-bindings.md
+        href: functions-recipes/triggers-bindings.md
       - name: Development environment
-        href: hols/development-environment.md
+        href: functions-recipes/development-environment.md
 

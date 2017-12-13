@@ -13,7 +13,7 @@ ms.date: 10/12/2017
 
 # HTTP routing
 
-[!include[](/routes-prefixes.md)]
+[!include[](includes/routes-prefixes.md)]
 
 [!include[](includes/routes-infunction.md)]
 
