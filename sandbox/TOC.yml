@@ -29,7 +29,7 @@
         items:
         - name: Using Azure SDKs with MonoGame
           href: gamedev/monogame/azure-monogame.md
-    - name: Hands on labs
+    - name: Azure Functions Recipes
       expanded: true
       href: functions-recipes/index.yml
       items:

@@ -27,16 +27,16 @@ sections:
     items:
     - title: Functions basics
       html: <p>Description</p>
-      href: functions-recipes/functions-basics
+      href: functions-basics
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
     - title: Triggers and bindings
       html: <p>Description</p>
-      href: functions-recipes/triggers-bindings
+      href: triggers-bindings
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
     - title: Development environment
       html: <p>Description</p>
-      href: functions-recipes/development-environment
+      href: development-environment
       image:
         src: https://docs.microsoft.com/azure/media/index/bot-service.svg
