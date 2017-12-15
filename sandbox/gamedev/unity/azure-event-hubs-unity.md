@@ -16,7 +16,7 @@ ms.author: Dimitris-Ilias Gkanatsios
 [!include[](../../includes/header.md)]
 
 > [!IMPORTANT]
-> This is an experimental Unity SDK for Azure Event Hubs.  As such, please note that this SDK is not supported and is not provided by the Azure Event Hubs team.  If you run into problems, please let us know using the [GitHub Issues](https://github.com/BrianPeek/AzureSamples-Unity) page for this fork.
+> This is an experimental Unity SDK for Azure Event Hubs.  As such, please note that this SDK is not supported and is not provided by the Azure Event Hubs team.  If you run into problems, please let us know using the [GitHub Issues](https://github.com/BrianPeek/AzureSDKs-Unity/issues) page for this fork.
 
 [![Get the source](../../media/buttons/source2.png)](https://github.com/Azure/azure-event-hubs-dotnet)
 [![Try it now](../../media/buttons/try2.png)](https://aka.ms/azeventhubs-unitysdk)
@@ -104,13 +104,13 @@ To use the sample, you will need to have an Azure Event Hubs account with a vali
 
 To use the sample, do the following:
 
-1. Download the [Unity sample project](https://github.com/BrianPeek/AzureSamples-Unity) from GitHub (or import it from the .unitypackage and continue to step 4).
+1. Download the [Unity SDKs repo](https://github.com/BrianPeek/AzureSDKs-Unity) from GitHub (or import it from the .unitypackage and continue to step 4).
 
 1. Unzip to a location on your hard drive.
 
 1. Open Unity 2017.1 (or greater) and point it to the **EventHubs** directory inside the unzipped package.
 
-1. In the **Project** window, double-click the **EventHub** scene inside the **Sample** directory to open the main scene for the sample.
+1. In the **Project** window, double-click the **EventHub** scene inside the **Assets\AzureSamples\EventHubs** directory to open the main scene for the sample.
 
 1. In this scene, select the **EventHubsObject** item in the **Hierarchy** window.
 
