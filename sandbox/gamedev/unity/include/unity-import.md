@@ -10,4 +10,4 @@
 
 1. Click the **Import** button to add the items to your project.
 
-With the package added, you can now use the normal API in your scripts as you would in any other application.  Please take a look at the [sample](https://github.com/BrianPeek/AzureSamples-Unity) (also included in the .unitypackage) which demonstrates how to use each of the storage services to perform simple tasks. 
+With the package added, you can now use the normal API in your scripts as you would in any other application.  Please take a look at the corresponding [sample](https://github.com/BrianPeek/AzureSDKs-Unity) (also included in each .unitypackage) which demonstrates how to use each of the services to perform simple tasks.

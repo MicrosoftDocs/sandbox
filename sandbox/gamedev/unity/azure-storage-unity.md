@@ -76,7 +76,7 @@ To use the sample, you will need to have an Azure Storage account setup along wi
 
 To use the sample, do the following:
 
-1. Download the [Unity sample project](https://github.com/BrianPeek/AzureSamples-Unity) from GitHub (or import it from the .unitypackage and continue to step 4).
+1. Download the [Unity SDKs repo](https://github.com/BrianPeek/AzureSDKs-Unity) from GitHub (or import it from the .unitypackage and continue to step 4).
 
 1. Unzip to a location on your hard drive.
 
