@@ -70,9 +70,9 @@ sections:
         src: gamedev/media/unity.png
     - title: Azure Easy Tables and Unity
       html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
-      href: unity/samples/azure-mobile-apps-unity-racer
+      href: gamedev/unity/samples/azure-mobile-apps-unity-racer
       image:
-        src: media/unity.png
+        src: gamedev/media/unity.png
     - title: Azure SDKs for MonoGame
       html: <p>Use Azure SDKs with MonoGame</p>
       href: gamedev/monogame/azure-monogame
