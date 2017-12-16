@@ -18,12 +18,20 @@
       - name: Unity
         expanded: true
         items:
-        - name: Azure Storage SDK
-          href: gamedev/unity/azure-storage-unity.md
-        - name: Azure Event Hubs SDK
-          href: gamedev/unity/azure-event-hubs-unity.md
-        - name: Azure Mobile Apps SDK
-          href: gamedev/unity/azure-mobile-apps-unity.md
+        - name: SDKs
+          expanded: true
+          items:
+          - name: Azure Storage SDK
+            href: gamedev/unity/azure-storage-unity.md
+          - name: Azure Event Hubs SDK
+            href: gamedev/unity/azure-event-hubs-unity.md
+          - name: Azure Mobile Apps SDK
+            href: gamedev/unity/azure-mobile-apps-unity.md
+        - name: Samples
+          expanded: true
+          items:
+          - name: Easy Tables with Unity and the Mobile Apps SDK
+            href: gamedev/unity/samples/azure-mobile-apps-unity-racer.md
       - name: MonoGame
         expanded: true
         items:

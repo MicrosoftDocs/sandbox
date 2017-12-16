@@ -43,6 +43,11 @@ sections:
       href: unity/azure-mobile-apps-unity
       image:
         src: media/unity.png
+    - title: Azure Easy Tables and Unity
+      html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
+      href: unity/samples/azure-mobile-apps-unity-racer
+      image:
+        src: media/unity.png
 - title: MonoGame
   items:
   - type: paragraph
