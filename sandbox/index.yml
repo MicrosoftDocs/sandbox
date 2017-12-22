@@ -86,14 +86,14 @@ sections:
       html: <p>Description</p>
       href: functions-recipes/functions-basics
       image:
-        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
     - title: Triggers and bindings
       html: <p>Description</p>
       href: functions-recipes/triggers-bindings
       image:
-        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
     - title: Development environment
       html: <p>Description</p>
       href: functions-recipes/development-environment
       image:
-        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
