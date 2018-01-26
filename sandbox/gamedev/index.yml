@@ -62,3 +62,17 @@ sections:
       href: monogame/azure-monogame
       image:
         src: media/monogame.png
+- title: Cool Stuff
+  items:
+  - type: paragraph
+    text: Cool stuff with Azure for game development.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items: 
+    - title: Cool stuff with Azure for game development
+      html: <p>Here you can find interesting resources and starter projects to boost your game with Azure capabilities</p>
+      href: azure-coolstuff.md
+      image:
+        src: media/azure.png
