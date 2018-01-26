@@ -71,7 +71,7 @@ sections:
     className: cardsM
     columns: 2
     items: 
-    - title: Cool stuff with Azure for game development
+    - title: Cool stuff for game development with Azure
       html: <p>Here you can find interesting resources and starter projects to boost your game with Azure capabilities</p>
       href: azure-coolstuff.md
       image:
