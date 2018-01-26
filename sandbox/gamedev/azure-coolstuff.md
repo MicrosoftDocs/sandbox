@@ -11,7 +11,7 @@ ms.author: digkanat
 #ms.technology:
 #ms.service:
 ---
-# Other resources - cool stuff with Azure for game development
+# Other resources - cool stuff for game development with Azure 
 
 [!include[](../includes/header.md)]
 
