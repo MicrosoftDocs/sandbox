@@ -38,7 +38,7 @@ This has been tested with the following projects.  Others may work, so please le
 
 ## How to Use It
 
-Because MonoGame uses the traditional .NET Framework and CLR on Windows, and Xamarin on other platforms, the existing .NET Azure SDK NuGet package works as-is across all platforms.  For example, to use the Azure Storage SDK, simply add a NuGet package reference to the **WindowsAzure.Storage** package as described below.
+Because MonoGame uses the traditional .NET Framework and CLR on Windows, and Xamarin on other platforms, the existing .NET Azure SDK NuGet packages work as-is across all platforms.  For example, to use the Azure Storage SDK, simply add a NuGet package reference to the **WindowsAzure.Storage** package as described below.
 
 1. Click the **Projects > Manage NuGet Packages** menu.
 
@@ -66,7 +66,7 @@ To use the sample, you will need to have an Azure account setup along with the s
 
 1. Fill in any required connection strings or keys at the top of the file.  You can find your connection strings and keys in the Azure Portal.
 
-1. Build and run!  Press 1, 2, 3, or 4 on your keyboard to test the associated sAPI.
+1. Build and run!  Press 1, 2, 3, or 4 on your keyboard to test the associated API.
 
 <!--
 ## Next Steps
