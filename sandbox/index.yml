@@ -78,3 +78,8 @@ sections:
       href: gamedev/monogame/azure-monogame
       image:
         src: gamedev/media/monogame.png
+    - title: Cool stuff with Azure for game development
+      html: <p>Cool stuff with Azure for game development</p>
+      href: gamedev/azure-coolstuff
+      image:
+        src: gamedev/media/azure.png
