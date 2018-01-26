@@ -96,6 +96,10 @@ To use the sample, do the following:
 
 The code for the sample is broken out into four separate scripts, one for each storage type.  Take a look at each to learn more about how it works.
 
+## Cosmos DB Table API
+
+[Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction) is Microsoft's globally distributed, multi-model database. One of the data models available for Cosmos DB is [Table API](https://docs.microsoft.com/en-us/azure/cosmos-db/table-introduction). Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API with no code changes and take advantage of premium capabilities. If you have a Cosmos DB database, you can use the Table Storage client SDK we provide to access it from your Unity game. Check the instructions [here](https://docs.microsoft.com/en-us/azure/cosmos-db/create-table-dotnet#update-your-connection-string) on how to find out your connection string.
+
 ## Next Steps
 
 * [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev)
