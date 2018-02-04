@@ -3,13 +3,16 @@
 If you have complex queries that are not supported by `id` and `sqlQuery` of the Cosmos DB input binding, you can use the `DocumentClient` directly.
 
 ```csharp
-#r "Microsoft.Azure.Documents.Client"
 using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Microsoft.Azure.Documents.Linq;
 
+[FunctionName("CosmosDBSample")]
 public static async Task<HttpResponseMessage> Run(
-    HttpRequestMessage req, DocumentClient client, int minAge, TraceWriter log)
+    [HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestMessage req, 
+    [DocumentDB("test", "test", ConnectionStringSetting = "CosmosDB"] DocumentClient client, 
+    int minAge, 
+    TraceWriter log)
 {
     Uri collectionUri = UriFactory.CreateDocumentCollectionUri("mydb", "mycollection");
 
