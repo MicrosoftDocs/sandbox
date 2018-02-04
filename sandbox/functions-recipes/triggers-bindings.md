@@ -19,9 +19,6 @@ ms.service: functions
 | | |
 ---|---
 |<h2>Triggers and bindings</h2> | |
-|**Blob storage** | |
-[Blob trigger function](blob-storage.md#blob-trigger-function) | Trigger a function when a blob is created
-| | |
 |**Cosmos DB** | |
 [Using DocumentClient](cosmos-db.md#using-documentclient) | Run complex queries with `DocumentClient`
 [Retrieve a single document by ID](cosmos-db.md#retrieve-a-single-document-by-id) | Retrieve a single document with an input binding

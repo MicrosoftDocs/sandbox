@@ -31,5 +31,5 @@ ms.service: functions
 [Installing Visual Studio Code Functions Tools](vscode.md#installing-visual-studio-code-functions-tools) | Install the Functions Tools extension in VS Code
 | | |
 |**CLI** | |
-[Testing functions with Azure Functions Command-Line Tools](cli.md#testing-functions-with-azure-functions-command-line-tools) | Test functions locally using the CLI
+[Testing functions with Azure Functions Core Tools](cli.md#testing-functions-with-azure-functions-core-tools) | Test functions locally using the CLI
 [Publishing a function locally](cli.md#publishing-a-function-locally) | Publish a function app using the CLI
