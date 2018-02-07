@@ -24,7 +24,7 @@ This approach should work for any Unity platform supported by the Facebook SDK.
 * WebGL
 
 > [!NOTE]
-> PC builds can be supported by using the Facebook Gameroom build feature of Unity.
+> PC builds can be supported by using the [Facebook Gameroom](https://unity3d.com/partners/facebook/gameroom) build feature of Unity.
 
 ### Prerequisites
 
