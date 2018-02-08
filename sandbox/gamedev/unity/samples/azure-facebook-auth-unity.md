@@ -12,7 +12,7 @@ ms.assetid:
 
 ## Overview
 
-This example project demonstrates how to incorporate Facebook authentication into a Unity project that stores high score and game telemetry data in Azure Easy Tables.
+This documentation demonstrates how to incorporate Facebook authentication into a Unity project that stores high score and game telemetry data in Azure Easy Tables.
 
 The approach uses the [Facebook Unity SDK](https://developers.facebook.com/docs/unity/) to allow users to log in to Facebook. It then uses [UnityWebRequest](https://docs.unity3d.com/Manual/UnityWebRequest.html) to send HTTP requests to an [Azure function app](https://azure.microsoft.com/en-us/services/functions/) that handles authentication and data insertion and retrieval.
 
@@ -492,7 +492,7 @@ After creating a new app you will be brought to the Add Product page.
 > [!NOTE]
 > The Facebook Unity SDK does not support logging in in the Unity editor. To test in the editor, paste a [debug access token](https://developers.facebook.com/tools/accesstoken/) into the `LogInUser()` function in `FacebookLogin.cs`.
 
-1. [TODO: Add link!] Download and import the Azure Easy Tables with Facebook auth Unity package into your Unity project.
+1. Download and import the [Azure Easy Tables Client with Facebook auth Unity package](https://github.com/dantogno/Azure-Unity-FB-Auth/raw/master/Unity%20Packages/Azure%20Easy%20tables%20client%20with%20FB%20auth.unitypackage) into your Unity project.
 
 2. In the [Azure portal](https://portal.azure.com), navigate to the Function App you created for this example and copy the URL.
 
@@ -502,7 +502,7 @@ After creating a new app you will be brought to the Add Product page.
 > [!IMPORTANT]
 > Be sure to append `/api/` to the end of your Function App URL!
 
-4. [TODO: finalize / verify path] In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure EasyTables with FB Auth/test scene.unity` file to the **Scenes in Build** section.
+4. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB Auth/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
 
 5. Click **Build and Run**. Choose an appropriate file name and location to save the build.
 
@@ -523,9 +523,9 @@ After creating a new app you will be brought to the Add Product page.
 
 ## Try the sample racing game
 
-1. [TODO: Add link!] Download and import the Azure Facebook Auth Sample Game Assets Unity package into your Unity project.
+1. Download and import the [Azure Easy Tables with FB auth sample game assets Unity package](https://github.com/dantogno/Azure-Unity-FB-Auth/raw/master/Unity%20Packages/Azure%20Easy%20tables%20with%20FB%20auth%20sample%20game%20assets.unitypackage) into your Unity project.
 
-2. [TODO: verify / finalize path] In the Unity menu, choose **File > Build Settings...** and add the scenes inside `Assets/Azure Easy tables with FB auth sample game assets/Scenes` to the **Scenes in Build** section.
+2. In the Unity menu, choose **File > Build Settings...** and add the scenes inside `Assets/Azure Easy tables with FB auth sample game assets/Scenes` to the **Scenes in Build** section.
 
 3. Ensure that `MenuScene` is in the top, **index 0** position in the list of **Scenes in Build**.
 
