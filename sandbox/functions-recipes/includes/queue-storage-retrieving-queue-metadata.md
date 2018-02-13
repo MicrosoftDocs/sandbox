@@ -5,7 +5,7 @@ Some common properties include:
 * DequeueCount - The number of times this message has been dequeued.
 * ExpirationTime - The time that the message expires.
 * ID - Queue message ID.
-* InsertionTime - TThe time that the message was added to the queue.
+* InsertionTime - The time that the message was added to the queue.
 
 ```csharp
 [FunctionName("QueueTriggerMetadata")]

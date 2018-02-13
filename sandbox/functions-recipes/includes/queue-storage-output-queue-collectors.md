@@ -10,7 +10,6 @@ public static void Run([TimerTrigger("*/30 * * * * *")]TimerInfo myTimer,
     log.Info("101 Azure Function Demo - Storage Queue output");
 
     queueCollector.Add(new Customer { FirstName = "John" });
-
 }
 ```
 

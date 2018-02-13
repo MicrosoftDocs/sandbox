@@ -11,7 +11,6 @@ public static void Run([QueueTrigger("101functionsqueue", Connection = "AzureWeb
 {
     log.Info("101 Azure Function Demo - Poision Queue Messages");
 
-
     log.Info($"Queue ID: {myQueueItem.Id}");
     log.Info($"Queue Dequeue Count: {myQueueItem.DequeueCount}");
     log.Info($"Queue Payload: {myQueueItem.AsString}");
