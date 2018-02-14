@@ -1,6 +1,6 @@
 ### UWP Builds
 
-To build for UWP, ensure that the the DLLs in the root Plugins directory are excluded from the build, while the DLLs in the WSA directory are included in the build.  To do this:
+To build for UWP, ensure that the DLLs in the root Plugins directory are excluded from the build, while the DLLs in the WSA directory are included in the build.  To do this:
 
 1. In the **Project** window, select all DLLs that are in the root **Plugins\\&lt;SDK&gt;** directory (note that the DLLs and SDK directory name will vary based on the SDK).
 
