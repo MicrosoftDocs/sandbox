@@ -21,6 +21,4 @@ ms.author: cephilli
 
 [!include[](includes/http-security-keys.md)]
 
-[!include[](includes/http-generic-webhook.md)]
-
 [!include[](includes/http-github-comment-webhook.md)]
