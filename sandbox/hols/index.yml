@@ -1,0 +1,37 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Hand on labs
+metadata:
+  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
+  title: The Sandbox - Hands on labs
+  description: Demos and code
+  keywords: Azure, .NET, ASP.NET
+  author: cecilphillip
+  ms.author: cephilli
+  manager: scottca
+  ms.date: 12/11/2017
+  ms.topic: article
+  featureFlags:
+  - clicktale
+  ms.service: multiple
+sections:
+- items:
+  - type: markdown
+    text: |
+      A collection of hands-on-labs that show you how to use various technology stacks with Azure.
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items: 
+    - title: Publishing a Razor Pages application to Azure
+      html: <p>Learn how to create a Razor Pages app in Visual Studio Code and publish it to an Azure Web App.</p>
+      href: hols/appservicerazorpageshol
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+    - title:  Implementing Publish-Subscribe with Azure Service Bus and the .NET Framework
+      html: <p>Learn how to implement the publish-subscribe pattern with Azure Service Bus and .NET.
+      href: hols/servicebuspubsubhol
+      image:
+        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
