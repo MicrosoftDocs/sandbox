@@ -1,10 +1,12 @@
 ## Adding parameters to function routes
 
-To add parameters to your route, and to use them in your function, you must put the parameter in curly braces in the route, and define it in the method parameters like so:
+To add parameters to your route, put the parameter in curly braces in the route property of the HttpTrigger attribute, and add it in the method parameters.
 
 ```csharp
 [FunctionName("Example")]
-public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route="Example/{parameter}")]HttpRequestMessage req, string parameter, TraceWriter log)
+public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example/{parameter}")]HttpRequestMessage req,
+                                                   string parameter,
+                                                   TraceWriter log)
 {
     log.Info($"C# HTTP trigger function processed a request {parameter}");
 

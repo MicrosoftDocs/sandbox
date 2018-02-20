@@ -17,8 +17,6 @@ ms.date: 10/12/2017
 
 [!include[](includes/routes-infunction.md)]
 
-[!include[](includes/routes-functionjson.md)]
-
 [!include[](includes/routes-azureportal.md)]
 
 [!include[](includes/routes-routeparameters.md)]

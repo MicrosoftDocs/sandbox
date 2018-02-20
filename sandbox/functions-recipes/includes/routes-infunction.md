@@ -4,12 +4,13 @@ There are several ways to define function routes. One of those ways is in the fu
 
 ```csharp
 [FunctionName("Example")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route="Example")]HttpRequestMessage req, TraceWriter log)
-        {
-            log.Info($"C# HTTP trigger function processed a request");
+public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example")]HttpRequestMessage req,
+                                                   TraceWriter log)
+{
+    log.Info($"C# HTTP trigger function processed a request");
 
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
-        }
+    return new HttpResponseMessage(HttpStatusCode.Accepted);
+}
 ```
 
 Adding the Route property to the HttpTrigger attribute allows you to customize the route of your function. The above function is called with http://yoururl/api/example. But if we change `Route="Example"` to `Route="Example/MyExample"` the url becomes http://yoururl/api/example/myexample. It can also be left blank so that it can be called by http://yoururl/api/.

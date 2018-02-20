@@ -4,7 +4,9 @@ In order to make route parameters optional in your function call, add a `?` afte
 
 ```csharp
 [FunctionName("Example")]
-public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route="Example/{parameter?}")]HttpRequestMessage req, string? parameter, TraceWriter log)
+public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example/{parameter?}")]HttpRequestMessage req,
+                                                  string? parameter,
+                                                  TraceWriter log)
 {
     log.Info($"C# HTTP trigger function processed a request {parameter}");
 
