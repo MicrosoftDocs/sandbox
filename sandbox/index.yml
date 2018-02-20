@@ -83,17 +83,17 @@ sections:
     columns: 2
     items:
     - title: Functions basics
-      html: <p>Description</p>
+      html: <p>This section contains common tweaks and settings for most Functions apps.</p>
       href: functions-recipes/functions-basics
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
     - title: Triggers and bindings
-      html: <p>Description</p>
+      html: <p>These sample briefly go through how the various triggers and bindings works </p>
       href: functions-recipes/triggers-bindings
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
     - title: Development environment
-      html: <p>Description</p>
+      html: <p>Learn how to setup your development environment to going with developing Functions apps.</p>
       href: functions-recipes/development-environment
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
