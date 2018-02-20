@@ -28,7 +28,6 @@ ms.service: functions
 [Accessing the request body in HTTP Triggers](http.md#accessing-the-request-body--in-http-triggers) | Read the contents of the request body
 [Restricting HTTP verbs in HTTP Triggers](http.md#restricting-http-verbs-in-http-triggers) | Restrict the HTTP verbs that trigger a function
 [Securing HTTP Triggers with security keys](http.md#securing-http-triggers-with-security-keys) | Use keys to lock down an HTTP trigger function
-[Generic webhook function](http.md#generic-webhook-function) | Respond to generic webhooks
 [GitHub comment webhook](http.md#github-comment-webhook) | Respond to GitHub webhooks
 | | |
 |<h2>Manual trigger</h2> | |

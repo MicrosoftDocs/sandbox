@@ -27,7 +27,6 @@ ms.service: functions
 |<h2>HTTP routing</h2>| |
 [Controlling the route prefix with host.json](routes.md#controlling-the-route-prefix-with-hostjson) | Change the route prefix
 [Define the function route with function properties](routes.md#define-the-function-route-with-function-properties) | Customize the route of a single Http trigger function in code
-[Define the function route in function.json](routes.md#define-the-function-route-in-functionjson) | Customize the route of a single Http trigger function in function.json
 [Define the function route in the Azure portal](routes.md#define-the-function-route-in-the-azure-portal) | Customize the route of a single Http trigger function in the Azure portal
 [Adding parameters to function routes](routes.md#adding-parameters-to-function-routes) | Define and access parameters in a route
 [Making route parameters optional](routes.md#making-route-parameters-optional) | Use optional route parameters
