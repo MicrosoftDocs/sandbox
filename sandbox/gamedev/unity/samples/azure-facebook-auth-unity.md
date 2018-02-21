@@ -504,19 +504,21 @@ After creating a new app you will be brought to the Add Product page.
 
 4. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB Auth/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
 
-5. Click **Build and Run**. Choose an appropriate file name and location to save the build.
+5. Ensure a platform supported by the Facebook Unity SDK is selected (Android, iOS, WebGL).
 
-6. Once the build is running, press the **LOGIN** button.
+6. For iOS or Android, choose **Build and Run**. Choose an appropriate path to save the build. For WebGL click **Build** and upload the build to a hosting location on the web.
+
+7. Once the game is running, press the **LOGIN** button.
 
   ![test login](media/test-login.png)
 
-7. This should present a Facebook login screen. Complete the Facebook login process.
+8. This should present a Facebook login screen. Complete the Facebook login process.
 
   ![facebook login](media/fb-login.png)
 
-8. Press **INSERT**. This will add test data to the TestPlayerData table on your Azure Mobile App. Observe the **Output** window to see if the insert operation completed.
+9. Press **INSERT**. This will add test data to the TestPlayerData table on your Azure Mobile App. Observe the **Output** window to see if the insert operation completed.
 
-9. Press the **GET ALL ENTRIES** button. The **Output** window should print the count of entries in the TestPlayerData table. Verify that the count goes up after each new insert. Additionally, you can navigate to the TestPlayerData table in the Easy Tables section of your Mobile App on the [Azure portal](https://portal.azure.com) and manually inspect the entries.
+10. Press the **GET ALL ENTRIES** button. The **Output** window should print the count of entries in the TestPlayerData table. Verify that the count goes up after each new insert. Additionally, you can navigate to the TestPlayerData table in the Easy Tables section of your Mobile App on the [Azure portal](https://portal.azure.com) and manually inspect the entries.
 
 > [!NOTE]
 > The App Service will time out after a period of inactivity. It may take a moment to spin back up when it is hit again, so if the first test fails, please try again to ensure the service is in its running state.
