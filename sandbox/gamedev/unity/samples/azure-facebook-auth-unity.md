@@ -8,7 +8,7 @@ ms.assetid:
 ---
 # Facebook authentication with Unity and Azure
 
-![Facebook authentication with Unity and Azure heading image](media/fb-auth-heading.png)
+![Facebook authentication with Unity and Azure heading image](media/fbauth_fb-auth-heading.png)
 
 ## Overview
 
@@ -60,11 +60,11 @@ An [Azure Mobile App](https://azure.microsoft.com/en-us/services/app-service/mob
 This example uses an Azure Function App for data insertion and retrieval. Our Unity app will send HTTP requests to an Azure HTTP trigger function.
 1. In the [Azure portal](https://portal.azure.com) click **Create a resource**, type "function app" in the search bar and then click **Function App** and select **Create**.
 
-  ![new function app](media/new-function-app.png
+  ![new function app](media/fbauth_new-function-app.png
 
 2. In the next blade, enter a name for your function app, confirm the rest of the settings (default values will work) and click **Create**. Wait a moment for the new resource to be created. A notification in the Azure portal will announce when the new Function App is ready.
 
-  ![create function app](media/create-function-app.png)
+  ![create function app](media/fbauth_create-function-app.png)
 
 
 ### Create an Insert function
@@ -79,7 +79,7 @@ The Unity client will call the Insert function to insert data into our Easy Tabl
 
 3. Scroll down on the right side panel and click **Custom function** under the "Get started on your own" heading.
 
-  ![create function](media/create-function1.png)
+  ![create function](media/fbauth_create-function1.png)
 
 4. Select **HTTP trigger**.
 
@@ -91,7 +91,7 @@ The Unity client will call the Insert function to insert data into our Easy Tabl
 
 8. Click the **Create** button.
 
-  ![new function](media/new-function.png)
+  ![new function](media/fbauth_new-function.png)
 
 #### Add the Azure Mobile Client and Newtonsoft.Json packages to the Insert function
 This example uses the Azure Mobile Client package to simplify authentication and data operations.
@@ -102,7 +102,7 @@ This example uses the Azure Mobile Client package to simplify authentication and
 
 3. Enter **project.json** as the new file's name and press Enter on the keyboard to create the file.
 
-  ![add project file](media/add-project-file.png)
+  ![add project file](media/fbauth_add-project-file.png)
 
 4. Once the new project.json file is created, select it in the **View files** list.
 
@@ -120,7 +120,7 @@ This example uses the Azure Mobile Client package to simplify authentication and
 ```
 6. Click **Save**. If you observe the log, it should detail that the Microsoft.Azure.Mobile.Client and Newtonsoft.Json packages have been installed and compilation has succeeded.
 
-  ![packages added](media/packages-added.png)
+  ![packages added](media/fbauth_packages-added.png)
 
 #### Add the Insert function body
 
@@ -197,7 +197,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
   > * Copy the URL from beneath the **URL** heading.
 
-  ![copy URL](media/app-url.png)
+  ![copy URL](media/fbauth_app-url.png)
 
 > [!NOTE]
 > If you wish to customize this code, using [Visual Studio to test and debug Azure functions](https://blogs.msdn.microsoft.com/webdev/2017/05/10/azure-function-tools-for-visual-studio-2017/) is highly recommended.
@@ -326,13 +326,13 @@ To use Facebook authentication, you must create a new Facebook app.
 
 3. Enter a **Display Name** and **Contact Email** for the new app.
 
-  ![new facebook app](media/new-fb-app.png)
+  ![new facebook app](media/fbauth_new-fb-app.png)
 
 4. Complete the captcha.
 
 5. Take note of the **App ID** and **App Secret** associated with your new app. You may need to click the **Show** button and log in to view your app secret. These values will be used later in the example.
 
-  ![app id and shared secret](media/fb-id-secret.png)
+  ![app id and shared secret](media/fbauth_fb-id-secret.png)
 
 > [!IMPORTANT]
 > The app secret is an important security credential. Do not share this secret with anyone or distribute it within a client application.
@@ -343,7 +343,7 @@ After creating a new app you will be brought to the Add Product page.
 
 1. Hover the mouse over **Facebook Login** from the list of products and then click the **Set Up** button that appears. Facebook will display a page about running a quickstart for various platforms. This is not necessary for this example. Simply clicking the **Set Up** button is sufficient.
 
-  ![new app id](media/fb-add-product.png)
+  ![new app id](media/fbauth_fb-add-product.png)
 
 2. The Facebook account which was used to register the application is an administrator of the app. At this point, only administrators can sign into this application. To authenticate other Facebook accounts, click **App Review** on the left side menu and enable **Make public** to enable general public access using Facebook authentication.
 
@@ -363,7 +363,7 @@ After creating a new app you will be brought to the Add Product page.
 
 6. Click **Save** at the top of the **Authentication / Authorization** settings blade. Azure will present a notification once the settings have successfully saved.
 
-  ![mobile app Facebook settings](media/mobile-app-facebook-settings.png)
+  ![mobile app Facebook settings](media/fbauth_mobile-app-facebook-settings.png)
 
 ### Set permissions for Easy Tables
 
@@ -373,9 +373,9 @@ After creating a new app you will be brought to the Add Product page.
 
 3. Click **Change permissions** then change each of the drop downs to **Authenticated access only**, then click **Save**.
 
-  ![select easy tables](media/select-easy-table.png)
+  ![select easy tables](media/fbauth_select-easy-table.png)
 
-  ![change easy table permissions](media/set-easy-tables-permissions.png)
+  ![change easy table permissions](media/fbauth_set-easy-tables-permissions.png)
 
 ## Configure the Facebook SDK in a new Unity project
 
@@ -389,11 +389,11 @@ After creating a new app you will be brought to the Add Product page.
 
 5. Leave everything checked and click **Import**.
 
-  ![import facebook sdk](media/import-fbsdk-unitypackage.png)
+  ![import facebook sdk](media/fbauth_import-fbsdk-unitypackage.png)
 
 6. After importing, click **Facebook > Edit Settings** in the Unity menu.
 
-  ![open facebook settings](media/open-fbsdk-settings.png)
+  ![open facebook settings](media/fbauth_open-fbsdk-settings.png)
 
 7. In the Facebook settings that open in the Unity Inspector, paste in your Facebook **App Id**.
 
@@ -406,11 +406,11 @@ After creating a new app you will be brought to the Add Product page.
 
 2. Expand the **Android Build Facebook Settings** section. If you are missing prerequisites, a number of warnings may appear here next to yellow exclamation point images. The next steps in this section explain how to fix them. If these warnings don't appear for you, you can safely skip the related steps.
 
-  ![expand Android Facebook settings](media/android-fb-settings.png)
+  ![expand Android Facebook settings](media/fbauth_android-fb-settings.png)
 
 #### Fix the missing debug keystore file warning
 
-![Missing keystore](media/android-debug-keystore-missing-cropped.png)
+![Missing keystore](media/fbauth_android-debug-keystore-missing-cropped.png)
 
 1. Install [Android Studio](https://developer.android.com/studio/index.html).
 
@@ -418,31 +418,31 @@ After creating a new app you will be brought to the Add Product page.
 
 #### Fix the OpenSSL not found warning
 
-![OpenSSL missing](media/openssl-not-found-cropped.png)
+![OpenSSL missing](media/fbauth_openssl-not-found-cropped.png)
 
 1. Download and install the [Win64 Open SSL installer](https://slproweb.com/products/Win32OpenSSL.html) (do not download the "light" version).
 
-  ![download OpenSSL installer](media/download-openssl.png)
+  ![download OpenSSL installer](media/fbauth_download-openssl.png)
 
 2. Add OpenSSL to your path environment variable. In the Windows search, type **environment**, then click **Edit the system environment variables** entry.
 
-  ![Search environment vars](media/search-environment-vars.png)
+  ![Search environment vars](media/fbauth_search-environment-vars.png)
 
 3. Click **Environment Variables...**.
 
-  ![Open environment vars](media/open-environment-vars.png)
+  ![Open environment vars](media/fbauth_open-environment-vars.png)
 
 4. In the lower **System variables** section, select the **Path** variable and then click **Edit...**.
 
-  ![Open path var](media/edit-path-var.png)
+  ![Open path var](media/fbauth_edit-path-var.png)
 
 5. Click **New** and type in the path of the **OpenSSL-Win64\bin\** directory. Then click **OK**.
 
-  ![edit path var](media/add-path-vars.png)
+  ![edit path var](media/fbauth_add-path-vars.png)
 
 #### Fix the Keytool not found warning
 
-![Keytool not found](media/keytool-not-found.png)
+![Keytool not found](media/fbauth_keytool-not-found.png)
 
 1. Download and install the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Unity requires JDK 8 (1.8), 64-bit version.
 
@@ -454,7 +454,7 @@ After creating a new app you will be brought to the Add Product page.
 
 5. Click **New** and type in the path of the **jdk\bin\** directory. Then click **OK**.
 
-  ![edit path var](media/add-path-vars.png)
+  ![edit path var](media/fbauth_add-path-vars.png)
 
 ### Configure the Unity Android build and player settings
 
@@ -466,7 +466,7 @@ After creating a new app you will be brought to the Add Product page.
 
 4. Find the **Identification** section in the Inspector and enter a valid **Package Name**. This should be in the format of `com.CompanyName.ProductName`.
 
-  ![change package name](media/change-package-name.png)
+  ![change package name](media/fbauth_change-package-name.png)
 
 ### Add the Android platform information to your Facebook app
 
@@ -478,7 +478,7 @@ After creating a new app you will be brought to the Add Product page.
 
 4. Click **Settings**. Near the bottom of the **Basic** settings page, click the **Add Platform** button.
 
-  ![add facebook platform](media/fb-add-platform.png)
+  ![add facebook platform](media/fbauth_fb-add-platform.png)
 
 5. Select **Android**.
 
@@ -486,7 +486,7 @@ After creating a new app you will be brought to the Add Product page.
 
 7. Click **Save Changes**.
 
-  ![Android platform settings](media/fb-android-settings.png)
+  ![Android platform settings](media/fbauth_fb-android-settings.png)
 
 ## Try the test scene
 > [!NOTE]
@@ -496,7 +496,7 @@ After creating a new app you will be brought to the Add Product page.
 
 2. In the [Azure portal](https://portal.azure.com), navigate to the Function App you created for this example and copy the URL.
 
-  ![Copy function app URL](media/copy-functionapp-url.png)
+  ![Copy function app URL](media/fbauth_copy-functionapp-url.png)
 
 3. Open the file **EasyTableClient.cs** and change `private const string url = "REPLACE_WITH_YOUR_FUNCTIONAPP_URL"` to match the URL of the function app you created for this example, with `/api/` appended at the end.
 > [!IMPORTANT]
@@ -510,11 +510,11 @@ After creating a new app you will be brought to the Add Product page.
 
 7. Once the game is running, press the **LOGIN** button.
 
-  ![test login](media/test-login.png)
+  ![test login](media/fbauth_test-login.png)
 
 8. This should present a Facebook login screen. Complete the Facebook login process.
 
-  ![facebook login](media/fb-login.png)
+  ![facebook login](media/fbauth_fb-login.png)
 
 9. Press **INSERT**. This will add test data to the TestPlayerData table on your Azure Mobile App. Observe the **Output** window to see if the insert operation completed.
 
@@ -531,7 +531,7 @@ After creating a new app you will be brought to the Add Product page.
 
 3. Ensure that `MenuScene` is in the top, **index 0** position in the list of **Scenes in Build**.
 
-  ![add sample scenes](media/add-sample-scenes.png)
+  ![add sample scenes](media/fbauth_add-sample-scenes.png)
 
 4. Ensure that a supported / configured platform is selected and choose **Build and Run**.
 
