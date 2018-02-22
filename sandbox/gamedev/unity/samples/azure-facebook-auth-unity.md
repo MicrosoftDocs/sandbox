@@ -383,6 +383,9 @@ After creating a new app you will be brought to the Add Product page.
 
 2. Download the [Facebook SDK for Unity](https://developers.facebook.com/docs/unity) and extract the resulting .zip file.
 
+> [!NOTE]
+> There is a bug in the Facebook Unity SDK v7.11.0 that prevents initialization on WebGL. This example was tested with the [previous version](https://developers.facebook.com/docs/unity/change-log) (v7.10.1).
+
 3. Open the extracted directory and navigate to the **FacebookSDK** folder.
 
 4. With your Unity project open, double click the **facebook-unity-sdk.unitypackage** file to bring up the Import Unity Package dialog.
@@ -397,7 +400,52 @@ After creating a new app you will be brought to the Add Product page.
 
 7. In the Facebook settings that open in the Unity Inspector, paste in your Facebook **App Id**.
 
-### Facebook SDK for Unity Android prerequisites setup
+## Facebook SDK for Unity WebGL setup
+
+### Configure Unity build settings
+
+1. Choose **File > Build Settings...** from the Unity menu.
+
+2. Select the **WebGL** platform and click **Switch Platform**.
+
+  > [!NOTE]
+  > If you notice a compiler error regarding an assembly with the same name already being imported, try saving your project, closing Unity, and reopening.
+
+### Configure web platform for your Facebook app
+
+1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps/) and select your app.
+
+2. At the dashboard, select **Settings** and choose **Basic**.
+
+  ![basic settings](media/fbauth_basic-settings.png)
+
+3. Click **Add Platform**.
+
+  ![add facebook platform](media/fbauth_fb-add-platform.png)
+
+4. Select **Website**.
+
+  ![add website platform](media/fbauth_website.png)
+
+5. Enter the **Site URL** where your WebGL build is hosted and click **Save**.
+
+  ![website platform settings](media/fbauth_website-platform-settings.png)
+
+### Configure CORS for Azure Function App
+
+1. In the [Azure portal](https://portal.azure.com), navigate to the Function App created earlier in the example.
+
+2. Click the **Platform features** tab and then select **CORS**.
+
+  ![select CORS](media/fbauth_platformfeatures-cors.png)
+
+3. Click the empty box at the bottom of the **Allowed Origins** list and type in the URL where your WebGL build is hosted.
+
+4. Click **Save**.
+
+  ![cors settings](media/fbauth_cors.png)
+
+## Facebook SDK for Unity Android setup
 
 > [!IMPORTANT]
 > Before continuing, ensure your Unity Android development environment is properly configured. Consult the [Getting started with Android development](https://docs.unity3d.com/Manual/android-GettingStarted.html) documentation for help.
@@ -408,7 +456,7 @@ After creating a new app you will be brought to the Add Product page.
 
   ![expand Android Facebook settings](media/fbauth_android-fb-settings.png)
 
-#### Fix the missing debug keystore file warning
+### Fix the missing debug keystore file warning
 
 ![Missing keystore](media/fbauth_android-debug-keystore-missing-cropped.png)
 
@@ -416,7 +464,7 @@ After creating a new app you will be brought to the Add Product page.
 
 2. Create a new project with the default options. The project will not be used and can safely be deleted once created. The process of creating the new project corrects the missing android debug keystore warning.
 
-#### Fix the OpenSSL not found warning
+### Fix the OpenSSL not found warning
 
 ![OpenSSL missing](media/fbauth_openssl-not-found-cropped.png)
 
@@ -440,7 +488,7 @@ After creating a new app you will be brought to the Add Product page.
 
   ![edit path var](media/fbauth_add-path-vars.png)
 
-#### Fix the Keytool not found warning
+### Fix the Keytool not found warning
 
 ![Keytool not found](media/fbauth_keytool-not-found.png)
 
@@ -502,7 +550,7 @@ After creating a new app you will be brought to the Add Product page.
 > [!IMPORTANT]
 > Be sure to append `/api/` to the end of your Function App URL!
 
-4. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB Auth/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
+4. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB Auth/Test Scene/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
 
 5. Ensure a platform supported by the Facebook Unity SDK is selected (Android, iOS, WebGL).
 
