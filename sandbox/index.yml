@@ -28,7 +28,7 @@ sections:
     style: cards
     className: cardsM
     columns: 2
-    items: 
+    items:
     - title: OctoBot
       html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
       href: demos/octobot
@@ -52,7 +52,7 @@ sections:
     style: cards
     className: cardsM
     columns: 2
-    items: 
+    items:
     - title: Azure Storage SDK for Unity
       html: <p>Use Azure Storage from your Unity project</p>
       href: gamedev/unity/azure-storage-unity
@@ -78,3 +78,27 @@ sections:
       href: gamedev/monogame/azure-monogame
       image:
         src: gamedev/media/monogame.png
+- title: Azure Functions Recipes
+  items:
+  - type: paragraph
+    text: Functions recipes are a collection of community-maintained tips and tricks for working with Azure Functions. Each recipe is a code snippet that demonstrates a single concept.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - title: Functions basics
+      html: <p>This section contains common tweaks and settings for most Functions apps.</p>
+      href: functions-recipes/functions-basics
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+    - title: Triggers and bindings
+      html: <p>These sample briefly go through how the various triggers and bindings works </p>
+      href: functions-recipes/triggers-bindings
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+    - title: Development environment
+      html: <p>Learn how to setup your development environment to going with developing Functions apps.</p>
+      href: functions-recipes/development-environment
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
