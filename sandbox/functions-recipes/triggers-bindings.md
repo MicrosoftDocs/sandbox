@@ -1,5 +1,5 @@
 ---
-title: Triggers and bindings
+title: Azure Functions Recipes - Triggers and bindings
 description: Description
 author: CecilPhillip
 manager: scottca

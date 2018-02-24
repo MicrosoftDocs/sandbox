@@ -1,5 +1,5 @@
 ---
-title: Development environment
+title: Azure Functions Recipes - Development environment
 description: Description
 author: CecilPhillip
 manager: scottca

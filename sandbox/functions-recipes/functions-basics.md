@@ -1,5 +1,5 @@
 ---
-title: Functions Basics
+title: Azure Functions Recipes - Functions Basics
 description: Description
 author: CecilPhillip
 manager: scottca
