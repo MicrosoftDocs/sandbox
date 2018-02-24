@@ -37,4 +37,6 @@
         items:
         - name: Using Azure SDKs with MonoGame
           href: gamedev/monogame/azure-monogame.md
+      - name: Other resources
+        href: gamedev/azure-coolstuff.md
 

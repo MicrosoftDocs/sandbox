@@ -78,3 +78,8 @@ sections:
       href: gamedev/monogame/azure-monogame
       image:
         src: gamedev/media/monogame.png
+    - title: Other resources
+      html: <p>Here you can find interesting resources and starter projects to boost your game with Azure services</p>
+      href: gamedev/azure-coolstuff
+      image:
+        src: gamedev/media/azure.png
