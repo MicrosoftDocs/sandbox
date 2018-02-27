@@ -60,7 +60,7 @@ An [Azure Mobile App](https://azure.microsoft.com/en-us/services/app-service/mob
 This example uses an Azure Function App for data insertion and retrieval. Our Unity app will send HTTP requests to an Azure HTTP trigger function.
 1. In the [Azure portal](https://portal.azure.com) click **Create a resource**, type "function app" in the search bar and then click **Function App** and select **Create**.
 
-  ![new function app](media/fbauth_new-function-app.png
+  ![new function app](media/fbauth_new-function-app.png)
 
 2. In the next blade, enter a name for your function app, confirm the rest of the settings (default values will work) and click **Create**. Wait a moment for the new resource to be created. A notification in the Azure portal will announce when the new Function App is ready.
 
