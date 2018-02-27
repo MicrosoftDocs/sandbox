@@ -23,7 +23,7 @@ The [The GitHub Release Notes Generator](https://github.com/paladique/release-no
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
-* A [GitHub]() account
+* A [GitHub](https://github.com/join) account
 
 
 ## Links
@@ -32,23 +32,26 @@ The [The GitHub Release Notes Generator](https://github.com/paladique/release-no
 ## What's It Do?
 The generator is a [Function App]() containing two Functions:
 
-- A GitHub WebHook triggered when a new release is created, that sends a message to a queue.
-- A Queue Trigger that uses the message sent from the webhook to create a markdown file with Issues and Pull Requests from the last two weeks.
+- A [GitHub WebHook]() triggered when a new release is created, that sends a message to a queue.
+- A [Queue Trigger]() that uses the message sent from the webhook to create a markdown file with the repository's Issues and Pull Requests from the last two weeks, using the [Octokit.NET]() library.
 
 * Note this currently works with only public repositories.
 
 ## Steps
-1. Create a Storage Account. Copy connection string. 
-2. Create blob container named `releases`
-3. Create a queue named `release-queue`
-4. Create a Function App.
-5. Configure Function app, go to application settings and add connection string, name it `storageConenction`
-6. Create a C# GitHub Webhook function. Replace initial code with the following:
+1. Navigate to the Azure Portal and create a storage account. See the [Create a storage account quickstart](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=portal#create-a-general-purpose-storage-account) to get started. 
+2. Navigate to the new storage account, navigate to the **Blob Service** section, select **Browse Blobs**, then click the **Add Container** button at the top to create a blob container named `releases`. See section on how to [create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) for more information.
+3. In the same storage account menu, navigate to the **Queue Service** section, select **Browse Queues**, then click the **Add Queue** button at the top to create a queue named `release-queue`.
+4. In the same storage account menu, navigate to **Access keys** and copy the connection string from either key 1 or 2.
+4. Create a function app. See section on how to [create a function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function#create-a-function-app) to get started.
+5. Navigate to the new function, from the overview, click and open **Application settings**, scroll to and click **+ Add new setting**  and add connection string. Name it `StorageConnection`.
+6. Create a C# GitHub Webhook function. See section on how to [Create a GitHub webhook triggered function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function#create-a-github-webhook-triggered-function) to get started. 
+
+7. Replace initial code with the following:
 
 ```csharp
 using System.Net;
 
-public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, ICollector<string> releaseQueueItem, TraceWriter log)
+public static async Task Run(HttpRequestMessage req, ICollector<string> releaseQueueItem, TraceWriter log)
 {
     // Get request body
     dynamic data = await req.Content.ReadAsAsync<object>();
@@ -60,15 +63,22 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, IColle
     var releaseDetails = String.Format("{0},{1}", releaseName, releaseBody);
 
     releaseQueueItem.Add(releaseDetails);
- 
-    return req.CreateResponse(HttpStatusCode.OK, "Works!");
 }
 ```
-
-7. Navigate to GitHub and select the repo to use with webhook.
+7. In your new function, click **</> Get function URL**, then copy and save the values. Do the same thing for** </> Get GitHub secret**. You will use these values to configure the webhook in GitHub
+7. Navigate to GitHub and select the repo to use with webhook. See section on how to [Configure the webhook
+](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function#configure-the-webhook) on GitHub.
 8. Go to repo settings, then webhooks, and click "add a webhook" button.
-9. From the portal, copy the function url and paste into the payload url field, and the function key into the secret field in the GitHub webhook page.
-10. Select "let me select individual events", check the Releases box, and uncheck Push.
+9. Follow the table to configure your settings:
+
+| Setting | Suggested value | Description |
+|---|---|---|
+| **Payload URL** | Copied value | Use the value returned by  **</> Get function URL**. |
+| **Content type** | application/json | The function expects a JSON payload. |
+| **Secret**   | Copied value | Use the value returned by  **</> Get GitHub secret**. |
+| Event triggers | Let me select individual events | We only want to trigger on release events.  |
+| | Releases |  |
+
 11. Click "add webhook".
 12. Navigate to your GitHub user settings, then to "Developer applications" Click "New OAuth App" and create an app with a homepage url and callback url of your choice.
 13. In the portal, Create a Queue trigger function. Replace initial code with the following:
