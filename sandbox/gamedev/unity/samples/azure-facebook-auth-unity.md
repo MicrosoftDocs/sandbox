@@ -401,7 +401,7 @@ After creating a new app you will be brought to the Add Product page.
 7. In the Facebook settings that open in the Unity Inspector, paste in your Facebook **App Id**.
 
 ## Facebook SDK for Unity WebGL setup
-> [!NOTE]
+> [!TIP]
 > Unity WebGL builds can be hosted on Azure. For more information, see this [blog entry](https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/10/09/hosting-your-unity-game-on-azure/).
 
 ### Configure Unity build settings
