@@ -73,7 +73,7 @@ The Unity client will call the Insert function to insert data into our Easy Tabl
 
 #### Create the new function
 
-1. Once the new Function App has been created, select in in the portal.
+1. Once the new Function App has been created, select it in the portal.
 
 2. Hover over the **Functions** tab and click the **+ button**.
 
@@ -93,8 +93,8 @@ The Unity client will call the Insert function to insert data into our Easy Tabl
 
   ![new function](media/fbauth_new-function.png)
 
-#### Add the Azure Mobile Client and Newtonsoft.Json packages to the Insert function
-This example uses the Azure Mobile Client package to simplify authentication and data operations.
+#### Add the Azure Mobile Client and Newtonsoft.Json NuGet packages to the Insert function
+This example uses the Azure Mobile Client SDK to simplify authentication and data operations.
 
 1. Once the function has been created, select **View files** from the right side panel. You may need to extend the window or scroll right to find it.
 
@@ -128,11 +128,11 @@ The Insert function receives Json parameters in an HTTP POST request sent from t
 
 The parameters include:
 
-  * the name of the table to be modified.
+  * The name of the table to be modified.
 
   * The access token for Facebook authentication (the Facebook Unity SDK gets this key after the user logs in).
 
-  * The data object to add to the table, serialized in Json.
+  * The data object to add to the table.
 
 This insert function deserializes the Json parameters, and then logs in and inserts the data into the appropriate table using the Azure Mobile Apps SDK.
 
