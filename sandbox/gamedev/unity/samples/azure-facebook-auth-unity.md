@@ -330,7 +330,7 @@ To use Facebook authentication, you must create a new Facebook app.
 
 4. Complete the captcha.
 
-5. Take note of the **App ID** and **App Secret** associated with your new app. You may need to click the **Show** button and log in to view your app secret. These values will be used later in the example.
+5. Select **Basic Settings** from the left side menu. Take note of the **App ID** and **App Secret** associated with your new app. You may need to click the **Show** button and log in to view your app secret. These values will be used later in the example.
 
   ![app id and shared secret](media/fbauth_fb-id-secret.png)
 
@@ -339,13 +339,13 @@ To use Facebook authentication, you must create a new Facebook app.
 
 ### Add the Facebook Login product
 
-After creating a new app you will be brought to the Add Product page.
+1. Select **Add Product** from the left side menu.
 
-1. Hover the mouse over **Facebook Login** from the list of products and then click the **Set Up** button that appears. Facebook will display a page about running a quickstart for various platforms. This is not necessary for this example. Simply clicking the **Set Up** button is sufficient.
+2. Hover the mouse over **Facebook Login** from the list of products and then click the **Set Up** button that appears. Facebook will display a page about running a quickstart for various platforms. This is not necessary for this example. Simply clicking the **Set Up** button is sufficient.
 
   ![new app id](media/fbauth_fb-add-product.png)
 
-2. The Facebook account which was used to register the application is an administrator of the app. At this point, only administrators can sign into this application. To authenticate other Facebook accounts, click **App Review** on the left side menu and enable **Make public** to enable general public access using Facebook authentication.
+3. The Facebook account which was used to register the application is an administrator of the app. At this point, only administrators can sign into this application. To authenticate other Facebook accounts, click **App Review** on the left side menu and enable **Make public** to enable general public access using Facebook authentication.
 
 ## Enable Facebook authentication on Azure
 
