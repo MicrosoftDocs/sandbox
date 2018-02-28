@@ -1,0 +1,42 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure Functions Recipes
+metadata:
+  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
+  title: The Sandbox - Azure Functions Recipes
+  description: A collection of focused code snippets for Azure
+  keywords: Azure, .NET, Azure Functions
+  author: cecilphillip
+  ms.author: cephilli
+  manager: scottca
+  ms.date: 13/12/2017
+  ms.topic: article
+  featureFlags:
+  - clicktale
+  ms.service: functions
+sections:
+- items:
+  - type: markdown
+    text: |
+      Functions recipes are a collection of community-maintained tips and tricks for working with Azure Functions. Each recipe is a code snippet that demonstrates a single concept.
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - title: Functions basics
+      html:  <p>This section contains common tweaks and settings for most Functions apps.</p>
+      href: functions-basics
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+    - title: Triggers and bindings
+      html: <p>These sample briefly go through how the various triggers and bindings works </p>
+      href: triggers-bindings
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+    - title: Development environment
+      html: <p>Learn how to setup your development environment to going with developing Functions apps.</p>
+      href: development-environment
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
