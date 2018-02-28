@@ -85,7 +85,7 @@ The Unity client will call the Insert function to insert data into our Easy Tabl
 
 5. Choose **C#** from the **Language:** dropdown.
 
-6. Name the function **Insert**.
+6. Name the function `Insert`.
 
 7. Select **Anonymous** from the **Authorization level** dropdown.
 
@@ -187,7 +187,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 }
 ```
  > [!IMPORTANT]
- > Be sure to replace the string that reads "REPLACE-WITH-YOUR-MOBILEAPP-URL" with the URL to your Azure Mobile App. To find this URL:
+ > Be sure to replace the string that reads `REPLACE-WITH-YOUR-MOBILEAPP-URL` with the URL to your Azure Mobile App. To find this URL:
 
   > * Click **App Services** from the main left menu of the Azure portal.
 
@@ -218,7 +218,7 @@ The Unity client will call the GetAllEntries function to get a list of all the e
 
 5. Choose **C#** from the **Language:** dropdown.
 
-6. Name the function **GetAllEntries**.
+6. Name the function `GetAllEntries`.
 
 7. Select **Anonymous** from the **Authorization level** dropdown.
 
