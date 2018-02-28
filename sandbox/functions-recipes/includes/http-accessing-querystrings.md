@@ -1,4 +1,4 @@
-## Accessing query string values in Http Triggers
+## Accessing query string values in HTTP Triggers
 
 When making HTTP requests, you have the ability of supplying additional parameters via a query string. These parameters can be retrieved to alter how the response is returned.
 
