@@ -23,4 +23,4 @@ If you are specifying a parameter type, put the `?` after the type name like so:
 
 [!include[](../includes/read-more-heading.md)]
 
- - [Azure Functions Http and webhook bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)
+ - [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)

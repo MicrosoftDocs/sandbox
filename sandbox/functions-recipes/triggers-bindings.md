@@ -23,7 +23,7 @@ ms.service: functions
 [Retrieve a list of documents](cosmos-db.md#retrieve-a-list-of-documents) | Retrieve a list of documents with an input binding
 
 |<h2>HTTP and webhooks</h2> | |
-[Accessing query string values in Http Triggers](http.md#accessing-query-string-values-in-http-triggers) | Read query string parameters
+[Accessing query string values in HTTP Triggers](http.md#accessing-query-string-values-in-http-triggers) | Read query string parameters
 [Accessing the request body in HTTP Triggers](http.md#accessing-the-request-body--in-http-triggers) | Read the contents of the request body
 [Restricting HTTP verbs in HTTP Triggers](http.md#restricting-http-verbs-in-http-triggers) | Restrict the HTTP verbs that trigger a function
 [Securing HTTP Triggers with security keys](http.md#securing-http-triggers-with-security-keys) | Use keys to lock down an HTTP trigger function
