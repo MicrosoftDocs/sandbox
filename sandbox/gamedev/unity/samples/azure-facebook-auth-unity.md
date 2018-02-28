@@ -312,7 +312,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 }
 ```
 > [!IMPORTANT]
-> Be sure to replace the string that reads "REPLACE-WITH-YOUR-MOBILEAPP-URL" with the URL to your Azure Mobile App.
+> Be sure to replace the string that reads `REPLACE-WITH-YOUR-MOBILEAPP-URL` with the URL to your Azure Mobile App.
 
 ## Facebook setup
 
