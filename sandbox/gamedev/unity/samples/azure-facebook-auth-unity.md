@@ -400,7 +400,34 @@ To use Facebook authentication, you must create a new Facebook app.
 
 7. In the Facebook settings that open in the Unity Inspector, paste in your Facebook **App Id**.
 
+## Facebook SDK for Unity iOS setup
+
+### Configure Unity build settings
+
+1. Choose **File > Build Settings...** from the Unity menu.
+
+2. Select the **WebGL** platform and click **Switch Platform**.
+
+3. Once the platform has been switched to iOS, click **Player Settings.**
+
+4. Find the **Identification** section in the Inspector and enter a valid **Bundle Identifier**. This should be in the format of `com.CompanyName.ProductName`.
+
+### Add the iOS platform information to your Facebook app
+
+1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps) and select your app.
+
+2. Click **Settings**. Near the bottom of the **Basic** settings page, click the **Add Platform** button.
+
+  ![add facebook platform](media/fbauth_fb-add-platform.png)
+
+5. Select **iOS**.
+
+6. Copy and paste the **Bundle ID** from your Unity project's iOS Player Settings into the corresponding field of your Facebook app's iOS platform settings.
+
+7. Click **Save Changes**.
+
 ## Facebook SDK for Unity WebGL setup
+
 > [!TIP]
 > Unity WebGL builds can be hosted on Azure. For more information, see this [blog entry](https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/10/09/hosting-your-unity-game-on-azure/).
 
