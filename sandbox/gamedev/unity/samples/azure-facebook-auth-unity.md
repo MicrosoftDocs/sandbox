@@ -613,9 +613,9 @@ To use Facebook authentication, you must create a new Facebook app.
 
   ![add sample scenes](media/fbauth_add-sample-scenes.png)
 
-4. Ensure that a supported / configured platform is selected and choose **Build and Run**.
+4. Ensure that a supported / configured platform is selected, make a build and deploy it to the target platform.
 
-5. Once the build is running on your device, press the **Log in** button.
+5. Once the build is running on the target platform, press the **Log in** button.
 
 6. This should present a Facebook login screen. Complete the Facebook login process.
 
