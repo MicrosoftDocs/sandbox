@@ -442,7 +442,7 @@ To use Facebook authentication, you must create a new Facebook app.
 
   ![website platform settings](media/fbauth_website-platform-settings.png)
 
-### Configure CORS for Azure Function App
+#### Configure CORS for Azure Function App
 
 1. In the [Azure portal](https://portal.azure.com), navigate to the Function App created earlier in the example.
 
