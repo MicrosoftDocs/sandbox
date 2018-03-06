@@ -400,40 +400,20 @@ To use Facebook authentication, you must create a new Facebook app.
 
 7. In the Facebook settings that open in the Unity Inspector, paste in your Facebook **App Id**.
 
-## Facebook SDK for Unity iOS setup
+## Setup the Facebook SDK for your chosen platform
 
-### Configure Unity build settings
+* [WebGL](#facebook-sdk-for-unity-webgl-setup)
 
-1. Choose **File > Build Settings...** from the Unity menu.
+* [iOS](#facebook-sdk-for-unity-ios-setup)
 
-2. Select the **WebGL** platform and click **Switch Platform**.
+* [Android](#facebook-sdk-for-unity-android-setup)
 
-3. Once the platform has been switched to iOS, click **Player Settings.**
-
-4. Find the **Identification** section in the Inspector and enter a valid **Bundle Identifier**. This should be in the format of `com.CompanyName.ProductName`.
-
-### Add the iOS platform information to your Facebook app
-
-1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps) and select your app.
-
-2. Click **Settings**. Near the bottom of the **Basic** settings page, click the **Add Platform** button.
-
-  ![add facebook platform](media/fbauth_fb-add-platform.png)
-
-5. Select **iOS**.
-
-6. Copy and paste the **Bundle ID** from your Unity project's iOS Player Settings into the corresponding field of your Facebook app's iOS platform settings.
-
-7. Click **Save Changes**.
-
-Now that you have completed iOS setup, skip to [try the test scene](#try-the-test-scene).
-
-## Facebook SDK for Unity WebGL setup
+### Facebook SDK for Unity WebGL setup
 
 > [!TIP]
 > Unity WebGL builds can be hosted on Azure. For more information, see this [blog entry](https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/10/09/hosting-your-unity-game-on-azure/).
 
-### Configure Unity build settings
+#### Configure Unity build settings
 
 1. Choose **File > Build Settings...** from the Unity menu.
 
@@ -442,7 +422,7 @@ Now that you have completed iOS setup, skip to [try the test scene](#try-the-tes
   > [!NOTE]
   > If you notice a compiler error regarding an assembly with the same name already being imported, try saving your project, closing Unity, and reopening.
 
-### Configure web platform for your Facebook app
+#### Configure web platform for your Facebook app
 
 1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps/) and select your app.
 
@@ -479,7 +459,39 @@ Now that you have completed iOS setup, skip to [try the test scene](#try-the-tes
 > [!IMPORTANT]
 > The Facebook Unity SDK uses popups for logging in on WebGL builds. Be sure to enable popups on your browser or the log in process may be blocked.
 
-## Facebook SDK for Unity Android setup
+> [!NOTE]
+> If you don't need to setup additional platforms, skip to [try the test scene](#try-the-test-scene).
+
+### Facebook SDK for Unity iOS setup
+
+#### Configure Unity build settings
+
+1. Choose **File > Build Settings...** from the Unity menu.
+
+2. Select the **WebGL** platform and click **Switch Platform**.
+
+3. Once the platform has been switched to iOS, click **Player Settings.**
+
+4. Find the **Identification** section in the Inspector and enter a valid **Bundle Identifier**. This should be in the format of `com.CompanyName.ProductName`.
+
+#### Add the iOS platform information to your Facebook app
+
+1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps) and select your app.
+
+2. Click **Settings**. Near the bottom of the **Basic** settings page, click the **Add Platform** button.
+
+  ![add facebook platform](media/fbauth_fb-add-platform.png)
+
+5. Select **iOS**.
+
+6. Copy and paste the **Bundle ID** from your Unity project's iOS Player Settings into the corresponding field of your Facebook app's iOS platform settings.
+
+7. Click **Save Changes**.
+
+> [!NOTE]
+> If you don't need to setup additional platforms, skip to [try the test scene](#try-the-test-scene).
+
+### Facebook SDK for Unity Android setup
 
 > [!IMPORTANT]
 > Before continuing, ensure your Unity Android development environment is properly configured. Consult the [Getting started with Android development](https://docs.unity3d.com/Manual/android-GettingStarted.html) documentation for help.
@@ -490,7 +502,7 @@ Now that you have completed iOS setup, skip to [try the test scene](#try-the-tes
 
   ![expand Android Facebook settings](media/fbauth_android-fb-settings.png)
 
-### Fix the missing debug keystore file warning
+#### Fix the missing debug keystore file warning
 
 ![Missing keystore](media/fbauth_android-debug-keystore-missing-cropped.png)
 
@@ -498,7 +510,7 @@ Now that you have completed iOS setup, skip to [try the test scene](#try-the-tes
 
 2. Create a new project with the default options. The project will not be used and can safely be deleted once created. The process of creating the new project corrects the missing android debug keystore warning.
 
-### Fix the OpenSSL not found warning
+#### Fix the OpenSSL not found warning
 
 ![OpenSSL missing](media/fbauth_openssl-not-found-cropped.png)
 
@@ -522,7 +534,7 @@ Now that you have completed iOS setup, skip to [try the test scene](#try-the-tes
 
   ![edit path var](media/fbauth_add-path-vars.png)
 
-### Fix the Keytool not found warning
+#### Fix the Keytool not found warning
 
 ![Keytool not found](media/fbauth_keytool-not-found.png)
 
@@ -538,7 +550,7 @@ Now that you have completed iOS setup, skip to [try the test scene](#try-the-tes
 
   ![edit path var](media/fbauth_add-path-vars.png)
 
-### Configure the Unity Android build and player settings
+#### Configure the Unity Android build and player settings
 
 1. In the Unity menu, click **File > Build Settings...**.
 
@@ -550,7 +562,7 @@ Now that you have completed iOS setup, skip to [try the test scene](#try-the-tes
 
   ![change package name](media/fbauth_change-package-name.png)
 
-### Add the Android platform information to your Facebook app
+#### Add the Android platform information to your Facebook app
 
 1. In the Unity menu, select **Facebook > Edit Settings**.
 
