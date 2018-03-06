@@ -468,11 +468,13 @@ To use Facebook authentication, you must create a new Facebook app.
 
 1. Choose **File > Build Settings...** from the Unity menu.
 
-2. Select the **WebGL** platform and click **Switch Platform**.
+2. Select the **iOS** platform and click **Switch Platform**.
 
 3. Once the platform has been switched to iOS, click **Player Settings.**
 
 4. Find the **Identification** section in the Inspector and enter a valid **Bundle Identifier**. This should be in the format of `com.CompanyName.ProductName`.
+
+![bundle id](media/fbauth_bundleid.png)
 
 #### Add the iOS platform information to your Facebook app
 
@@ -487,6 +489,8 @@ To use Facebook authentication, you must create a new Facebook app.
 6. Copy and paste the **Bundle ID** from your Unity project's iOS Player Settings into the corresponding field of your Facebook app's iOS platform settings.
 
 7. Click **Save Changes**.
+
+  ![bundle id](media/fbauth_fbios.png)
 
 > [!NOTE]
 > If you don't need to setup additional platforms, skip to [try the test scene](#try-the-test-scene).
