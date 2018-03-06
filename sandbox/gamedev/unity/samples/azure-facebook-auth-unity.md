@@ -426,6 +426,8 @@ To use Facebook authentication, you must create a new Facebook app.
 
 7. Click **Save Changes**.
 
+Now that you have completed iOS setup, skip to [try the test scene](/azure-facebook-auth-unity.md#try-the-test-scene).
+
 ## Facebook SDK for Unity WebGL setup
 
 > [!TIP]
@@ -473,7 +475,7 @@ To use Facebook authentication, you must create a new Facebook app.
 4. Click **Save**.
 
   ![cors settings](media/fbauth_cors.png)
- 
+
 > [!IMPORTANT]
 > The Facebook Unity SDK uses popups for logging in on WebGL builds. Be sure to enable popups on your browser or the log in process may be blocked.
 
