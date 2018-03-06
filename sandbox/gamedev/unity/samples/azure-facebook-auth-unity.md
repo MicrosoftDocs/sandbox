@@ -426,7 +426,7 @@ To use Facebook authentication, you must create a new Facebook app.
 
 7. Click **Save Changes**.
 
-Now that you have completed iOS setup, skip to [try the test scene](/azure-facebook-auth-unity.md#try-the-test-scene).
+Now that you have completed iOS setup, skip to [try the test scene](#try-the-test-scene).
 
 ## Facebook SDK for Unity WebGL setup
 
