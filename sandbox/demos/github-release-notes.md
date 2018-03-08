@@ -63,7 +63,8 @@ public static async Task Run(HttpRequestMessage req, ICollector<string> releaseQ
 ```
 
 1. In your new function, copy the url by clicking click **</> Get function URL**, and save for later. Repeat for **</> Get GitHub secret**. You will use these values to configure the webhook in GitHub. ![Location of function url and GitHub secret](media/github-release-notes/functionurl.png)
-1. Configure webhook function by navigating to **Integrate.** add a new queue storage output. Set the queue name to `release-queue`, Message parameter name to `myQueueItem`, and Storage account connection to `StorageConnection` ![Adding queue storage output](media/github-release-notes/addqueue.png)
+1. Expand the function's context menu, navigate to **Integrate** .
+1. Add a new queue storage output. Set the queue name to `release-queue`, Message parameter name to `myQueueItem`, and Storage account connection to `StorageConnection` ![Adding queue storage output](media/github-release-notes/addqueue.png)
 1. Navigate to GitHub and select the repository to use with webhook. Navgiate to the repository's settings.
 1. In the menu on the left of the repository settings, select webhooks and click **add a webhook** button. ![Adding a webhook in GitHub](media/github-release-notes/addgithubwebhook.png)
 1. Follow the table to configure your settings:
@@ -78,7 +79,8 @@ public static async Task Run(HttpRequestMessage req, ICollector<string> releaseQ
 
 1. Click **add webhook**.
 1. Navigate to your GitHub user settings, then to **Developer Applications**. Click **New OAuth App** and create an app with a homepage url and callback url of your choice. They will not be used. Copy and save the application name for later use. ![Creating a new Oauth app in GitHub](media/github-release-notes/newghapplication.png)
-1. Navigate back the portal, create a queue trigger function. Replace initial code with the following:
+1. Navigate back the portal and return to the function app's Application Settings tab. Add a setting named `ReleaseNotesApp`, with the value as the name of the application created in the previous step. Click **Save**.
+1. In the same function app, create a C# queue trigger function. Replace initial code with the following:
 
 ```csharp
 #r "Microsoft.WindowsAzure.Storage"
@@ -170,7 +172,11 @@ public static async Task<string> GetReleaseDetails(IssueTypeQualifier type, stri
 }
 ```
 
-1. Navigate back to the function app Application settings. Add a setting named `ReleaseNotesApp`, with the value as the name of the application created in step 12. Click Save.
+### Test the application
+Create a new release in the repository. Fill out the required fields and click **Publish release**. The generated blob will be a markdown file named as the release title.
+Monitor and review the functions' execution history in the **Monitor** context menu of the function. ![Function execution history](media/github-release-notes/monitorfunction.png)
+
+If you need to run the function again, but want to avoid creating another release, go to the configured webhook in GitHub to redeliver it. ![Redelivering GitHub Webhook](media/github-release-notes/redeliverwebhook.png)
 
 ## Next Steps
 TBD
