@@ -34,12 +34,12 @@ The generator is a [Function App]() containing two Functions:
 
 ## Steps
 1. Navigate to the Azure Portal and create a storage account. See the [Create a storage account quickstart](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=portal#create-a-general-purpose-storage-account) to get started. 
-1. Navigate to the new storage account, navigate to the **Blob Service** section, select **Browse Blobs**, then click the **Add Container** button at the top to create a blob container named `releases`. See section on how to [create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) for more information.
+1. Navigate to the new storage account, navigate to the **Blob Service** section, select **Browse Blobs**, then click the **Add Container** button at the top to create a blob container named `releases`. See section on how to [create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) for more information. ![Creating a new storage account container](media/github-release-notes/newcontainer.png)
 1. In the same storage account menu, navigate to the **Queue Service** section, select **Browse Queues**, then click the **Add Queue** button at the top to create a queue named `release-queue`.
-1. In the same storage account menu, navigate to **Access keys** and copy the connection string. ![Screenshot]()
+1. In the same storage account menu, navigate to **Access keys** and copy the connection string. ![Storage account access keys](media/github-release-notes/storageaccesskeys.png)
 1. Create a function app. See section on how to [create a function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function#create-a-function-app) to get started.
-1. Navigate to the new function, from the overview, click and open **Application settings**, scroll to and click **+ Add new setting**  and add the copied connection string. Name it `StorageConnection`. ![Screenshot]()
-1. In the function app, add a C# GitHub Webhook function. See section on how to [Create a GitHub webhook triggered function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function#create-a-github-webhook-triggered-function) to get started.
+1. Navigate to the new function, from the overview, click and open **Application settings**, scroll to and click **+ Add new setting**. Name the setting `StorageConnection` and paste the copied connection string into the value field. Click **Save** ![Adding an application setting](media/github-release-notes/appsettings.png)
+1. In the function app, add a C# GitHub webhook function. See section on how to [Create a GitHub webhook triggered function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function#create-a-github-webhook-triggered-function) to get started.
 
 1. Replace initial code with the following:
 
@@ -62,9 +62,10 @@ public static async Task Run(HttpRequestMessage req, ICollector<string> releaseQ
 }
 ```
 
-1. In your new function, click **</> Get function URL**, then copy and save the values. Do the same thing for** </> Get GitHub secret**. You will use these values to configure the webhook in GitHub
-1. Navigate to GitHub and select the repo to use with webhook. See section on how to [Configure the webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function#configure-the-webhook) on GitHub.
-1. Go to repo settings, then webhooks, and click "add a webhook" button. ![Screenshot]()
+1. In your new function, copy the url by clicking click **</> Get function URL**, and save for later. Repeat for **</> Get GitHub secret**. You will use these values to configure the webhook in GitHub. ![Location of function url and GitHub secret](media/github-release-notes/functionurl.png)
+1. Configure webhook function by navigating to **Integrate.** add a new queue storage output. Set the queue name to `release-queue`, Message parameter name to `myQueueItem`, and Storage account connection to `StorageConnection` ![Adding queue storage output](media/github-release-notes/addqueue.png)
+1. Navigate to GitHub and select the repository to use with webhook. Navgiate to the repository's settings.
+1. In the menu on the left of the repository settings, select webhooks and click **add a webhook** button. ![Adding a webhook in GitHub](media/github-release-notes/addgithubwebhook.png)
 1. Follow the table to configure your settings:
 
 | Setting | Suggested value | Description |
@@ -75,9 +76,9 @@ public static async Task Run(HttpRequestMessage req, ICollector<string> releaseQ
 | Event triggers | Let me select individual events | We only want to trigger on release events.  |
 | | Releases |  |
 
-1. Click "add webhook".
-1. Navigate to your GitHub user settings, then to "Developer applications" Click "New OAuth App" and create an app with a homepage url and callback url of your choice. Copy and save the application name for later use. ![Screenshot]()
-1. In the portal, create a queue trigger function. Replace initial code with the following:
+1. Click **add webhook**.
+1. Navigate to your GitHub user settings, then to **Developer Applications**. Click **New OAuth App** and create an app with a homepage url and callback url of your choice. They will not be used. Copy and save the application name for later use. ![Creating a new Oauth app in GitHub](media/github-release-notes/newghapplication.png)
+1. Navigate back the portal, create a queue trigger function. Replace initial code with the following:
 
 ```csharp
 #r "Microsoft.WindowsAzure.Storage"
@@ -115,7 +116,7 @@ public static async Task<string> GetReleaseDetails(IssueTypeQualifier type, stri
 
     request.Repos.Add(repo);
     request.Type = type;
- 
+
     //Search closed issues or merged pull requests
     var qualifier = (type == IssueTypeQualifier.Issue) ? request.Closed : request.Merged;
     qualifier = new DateRange(span, SearchQualifierOperator.GreaterThan);
@@ -131,17 +132,28 @@ public static async Task<string> GetReleaseDetails(IssueTypeQualifier type, stri
 }
 ```
 
-1. Configure webhook function by navigating to "Integrate." add a new queue storage output. Set the queue name to `release-queue` ![Screenshot]()
-1. Navigate to queue trigger, add the following to function.json:
+1. Navigate to queue trigger, add a blob binding to function.json. It should look similar to this:
 
 ```
+  {
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "release-queue",
+      "connection": "StorageConnection"
+    },
     {
       "name": "blobContainer",
       "type": "blob",
       "direction": "inout",
-      "path": "container-name/*",
+      "path": "releases/*",
       "connection": "StorageConnection"
     }
+  ],
+  "disabled": false
+}
 ```
 
 1. In the same function, upload or create a project.json file and add the following:
@@ -158,7 +170,7 @@ public static async Task<string> GetReleaseDetails(IssueTypeQualifier type, stri
 }
 ```
 
-1. Navigate back to the Function app Application settings. Add a setting named "ReleaseNotesApp", with the value as the name of the application created in step 12.
+1. Navigate back to the function app Application settings. Add a setting named `ReleaseNotesApp`, with the value as the name of the application created in step 12. Click Save.
 
 ## Next Steps
 TBD
