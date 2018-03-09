@@ -17,7 +17,7 @@ ms.service: functions
 
 The [The GitHub Release Notes Generator](https://github.com/paladique/release-notes-generator) is tool for generating a release notes document in conjunction with GitHub's release feature. ![Image]()
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)]()
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/paladique/release-notes-generator)
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
@@ -27,10 +27,10 @@ The [The GitHub Release Notes Generator](https://github.com/paladique/release-no
 * [Release Notes Repo](https://github.com/paladique/release-notes-generator)
 
 ## What's It Do?
-The generator is a [Function App]() containing two Functions:
+The generator is a [function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) containing two functions:
 
-- A [GitHub WebHook]() triggered when a new release is created, that sends a message to a queue.
-- A [Queue Trigger]() that uses the message sent from the webhook to create a markdown file with the repository's Issues and Pull Requests from the last two weeks, using the [Octokit.NET]() library.
+- A [GitHub webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function) triggered when a new release is created, that sends a message to a queue.
+- A [queue trigger](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-storage-queue-triggered-function) that uses the message sent from the webhook to create a markdown file with the repository's Issues and Pull Requests from the last two weeks, using the [Octokit.NET](https://github.com/octokit/octokit.net) library.
 
 ## Steps
 1. Navigate to the Azure Portal and create a storage account. See the [Create a storage account quickstart](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=portal#create-a-general-purpose-storage-account) to get started. 
@@ -172,11 +172,15 @@ public static async Task<string> GetReleaseDetails(IssueTypeQualifier type, stri
 }
 ```
 
-### Test the application
+## Test the application
 Create a new release in the repository. Fill out the required fields and click **Publish release**. The generated blob will be a markdown file named as the release title.
 Monitor and review the functions' execution history in the **Monitor** context menu of the function. ![Function execution history](media/github-release-notes/monitorfunction.png)
 
-If you need to run the function again, but want to avoid creating another release, go to the configured webhook in GitHub to redeliver it. ![Redelivering GitHub Webhook](media/github-release-notes/redeliverwebhook.png)
+To run the function again without creating another release, go to the configured webhook in GitHub to redeliver it. ![Redelivering a GitHub webhook](media/github-release-notes/redeliverwebhook.png)
 
 ## Next Steps
-TBD
+The following is additional information on the Azure services used in this demo.
+* [Introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+* [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
+* [Azure Functions C# script (.csx) developer reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp)
+* [OctoKit.NET](https://octokit.github.io/)
