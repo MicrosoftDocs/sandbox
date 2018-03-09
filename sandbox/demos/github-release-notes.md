@@ -15,9 +15,15 @@ ms.service: functions
 
 [!include[](../includes/header.md)]
 
-The [The GitHub Release Notes Generator](https://github.com/paladique/release-notes-generator) is tool for generating a release notes document in conjunction with GitHub's release feature. ![Image]()
+The [The GitHub Release Notes Generator](https://github.com/paladique/release-notes-generator) is tool for generating a release notes document in conjunction with GitHub's release feature. 
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/paladique/release-notes-generator)
+
+
+![Example release on GitHub](media/github-release-notes/exp_release.png)
+
+![Rendered markdown file of release notes](media/github-release-notes/renderednotes.png)
+
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free/) account
