@@ -8,7 +8,6 @@ ms.topic: article
 ms.date: 08/18/2017
 ms.author: brpeek
 ms.devlang: csharp
-ms.service: cognitive-services
 ---
 
 # NotHotdog
