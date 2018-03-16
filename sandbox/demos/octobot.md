@@ -8,7 +8,6 @@ ms.topic: article
 ms.date: 08/10/2017
 ms.author: brpeek
 ms.devlang: csharp
-ms.prod: bot-framework
 ---
 
 # OctoBot

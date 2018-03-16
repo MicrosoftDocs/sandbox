@@ -8,7 +8,6 @@ ms.topic: article
 ms.date: 08/21/2017
 ms.author: antchu
 ms.devlang: csharp
-ms.service: cognitive-services
 ---
 
 # NotBacon
