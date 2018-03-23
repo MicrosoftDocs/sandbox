@@ -19,3 +19,9 @@ ms.author: antchu
 [!include[](includes/cosmos-db-id.md)]
 
 [!include[](includes/cosmos-db-sqlquery.md)]
+
+[!include[](includes/cosmos-db-outputcollector.md)]
+
+[!include[](includes/cosmos-db-staticclient.md)]
+
+[!include[](includes/cosmos-db-livemigration.md)]
