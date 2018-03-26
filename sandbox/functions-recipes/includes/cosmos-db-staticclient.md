@@ -65,5 +65,6 @@ public static async Task<HttpResponseMessage> Run(
 
 [!include[](../includes/read-more-heading.md)]
 
+- [Managing connections in Azure Functions](https://github.com/Azure/azure-functions-host/wiki/Managing-Connections)
 - [Cosmos DB Performance tips for .NET](https://docs.microsoft.com/azure/cosmos-db/performance-tips)
 - [ConnectionPolicy definition](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.connectionpolicy?view=azure-dotnet)
