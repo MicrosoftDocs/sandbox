@@ -1,6 +1,6 @@
 ## Trigger a Function based on changes in Cosmos DB
 
-You can trigger a Function based on changes in your Cosmos DB collections. In this sample we are sending the changes to a second collection using the `IAsyncCollection` explained in [this other recipe](./cosmos-db-outputcollector.md). You could process or work with the documents before sending it to the second collection.
+You can trigger a Function based on changes in your Cosmos DB collections. In this sample we are sending the changes to a second collection using the `IAsyncCollection` explained in [this other recipe](../cosmos-db.md#save-multiple-documents-to-a-collection). You could process or work with the documents before sending it to the second collection.
 
 ```csharp
 using System.Collections.Generic;
