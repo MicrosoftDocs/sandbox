@@ -14,14 +14,14 @@ ms.author: antchu
 
 # Cosmos DB (DocumentDB) Bindings
 
-[!include[](includes/cosmos-db-documentdbclient.md)]
-
 [!include[](includes/cosmos-db-id.md)]
 
 [!include[](includes/cosmos-db-sqlquery.md)]
 
 [!include[](includes/cosmos-db-outputcollector.md)]
 
-[!include[](includes/cosmos-db-staticclient.md)]
-
 [!include[](includes/cosmos-db-livemigration.md)]
+
+[!include[](includes/cosmos-db-documentdbclient.md)]
+
+[!include[](includes/cosmos-db-staticclient.md)]
