@@ -15,27 +15,38 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Host;
 
+private static DocumentClient client = GetCustomClient();
+private static DocumentClient GetCustomClient()
+{
+    DocumentClient customClient = new DocumentClient(
+        new Uri(ConfigurationManager.AppSettings["CosmosDBAccountEndpoint"]), 
+        ConfigurationManager.AppSettings["CosmosDBAccountKey"],
+        new ConnectionPolicy
+        {
+            ConnectionMode = ConnectionMode.Direct,
+            ConnectionProtocol = Protocol.Tcp,
+            // Customize retry options for Throttled requests
+            RetryOptions = new RetryOptions()
+            {
+                MaxRetryAttemptsOnThrottledRequests = 10,
+                MaxRetryWaitTimeInSeconds = 30
+            }
+        });
 
-private static string endpointUrl = ConfigurationManager.AppSettings["CosmosDBAccountEndpoint"];
-private static string authorizationKey = ConfigurationManager.AppSettings["CosmosDBAccountKey"];
-private static DocumentClient client = new DocumentClient(new Uri(endpointUrl), authorizationKey);
+    // Customize PreferredLocations
+    customClient.ConnectionPolicy.PreferredLocations.Add(LocationNames.CentralUS);
+    customClient.ConnectionPolicy.PreferredLocations.Add(LocationNames.NorthEurope);
 
+    return customClient;
+}
 
 [FunctionName("CosmosDbSample")]
 public static async Task<HttpResponseMessage> Run(
-    [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequestMessage req,
+    [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "foo/{id}")] HttpRequestMessage req,
+    string id,
     TraceWriter log)
 {
-    string id = req.GetQueryNameValuePairs()
-        .FirstOrDefault(q => string.Compare(q.Key, "id", true) == 0)
-        .Value;
-
-    if (string.IsNullOrEmpty(id))
-    {
-        return req.CreateResponse(HttpStatusCode.BadRequest);
-    }
-
-    Uri documentUri = UriFactory.CreateDocumentUri("datacamp", "test", id);
+    Uri documentUri = UriFactory.CreateDocumentUri("ToDoList", "Items", id);
     Document doc = await client.ReadDocumentAsync(documentUri);
 
     if (doc == null)
