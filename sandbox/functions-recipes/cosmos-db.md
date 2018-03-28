@@ -8,7 +8,7 @@ ms.service: functions
 ms.devlang: dotnet
 ms.topic: article
 ms.workload: na
-ms.date: 10/12/2017
+ms.date: 03/27/2018
 ms.author: antchu
 ---
 
