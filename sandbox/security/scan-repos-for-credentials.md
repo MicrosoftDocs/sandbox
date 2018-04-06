@@ -26,7 +26,9 @@ To make sure that you can run TruffleHog, install [Python 3][1] - instructions m
 
 ## Getting Started
 
-As I mentioned earlier, let's start by trying to run the tool locally to see the kind of output we are getting, and how we can ingest it. To get started, make sure to install TruffleHog via `pip`:
+As I mentioned earlier, let's start by trying to run the tool locally to see the kind of output we are getting, and how we can ingest it. The big benefit of TruffleHog is that it traverses the entire commit history - even though after you checked in a private key you might've checked in code to remove it, the actual key will still reside somewhere deep in the history - you want to be aware of that.
+
+To get started, make sure to install TruffleHog via `pip`:
 
 ```python
 pip install trufflehog
@@ -37,9 +39,19 @@ pip install trufflehog
 >[!TIP]
 >To avoid any permission issues, we recommend you test the tooling in a Python virtual environment. You can read more about those in [The Hitchhiker's Guide to Python][3].
 
+Next, I am going to run the tool on a test sample repository. I will route the output of the tool into a JSON file, with the help of `--json` and `>> output.json`:
+
+![Running TruffleHog locally][i1]
+
+Once the tool runs and we look at the output JSON file, we will notice that there are some strings found in the file that should trigger some action on the repo contributor's part:
+
+![TruffleHog findings](media/trufflehog/findings.png)
+
 [0]: https://github.com/dxa4481/truffleHog
 [1]: https://www.python.org/downloads/
 [2]: https://docs.docker.com/install/
 [3]: http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 [i0]: media/trufflehog/install.gif
+[i1]: media/trufflehog/test-tool.gif
+[i2]: media/trufflehog/findings.png
