@@ -3,10 +3,48 @@
   items:
     - name: Demos
       expanded: true
+      href: demos/index.yml
       items:
-      - name: GitHubBot
-        href: /sandbox/demos/githubbot
+      - name: OctoBot
+        href: demos/octobot.md
       - name: NotBacon
-        href: /sandbox/demos/notbacon
+        href: demos/notbacon.md
       - name: NotHotdog
-        href: /sandbox/demos/nothotdog
+        href: demos/nothotdog.md
+    - name: Game Development
+      expanded: true
+      href: gamedev/index.yml
+      items:
+      - name: Unity
+        expanded: true
+        items:
+        - name: SDKs
+          expanded: true
+          items:
+          - name: Azure Storage SDK
+            href: gamedev/unity/azure-storage-unity.md
+          - name: Azure Event Hubs SDK
+            href: gamedev/unity/azure-event-hubs-unity.md
+          - name: Azure Mobile Apps SDK
+            href: gamedev/unity/azure-mobile-apps-unity.md
+        - name: Samples
+          expanded: true
+          items:
+          - name: Easy Tables with Unity and the Mobile Apps SDK
+            href: gamedev/unity/samples/azure-mobile-apps-unity-racer.md
+      - name: MonoGame
+        expanded: true
+        items:
+        - name: Using Azure SDKs with MonoGame
+          href: gamedev/monogame/azure-monogame.md
+    - name: Azure Functions Recipes
+      expanded: true
+      href: functions-recipes/index.yml
+      items:
+      - name: Functions basics
+        href: functions-recipes/functions-basics.md
+      - name: Triggers and bindings
+        href: functions-recipes/triggers-bindings.md
+      - name: Development environment
+        href: functions-recipes/development-environment.md
+
