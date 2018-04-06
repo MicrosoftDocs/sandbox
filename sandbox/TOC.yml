@@ -47,4 +47,8 @@
         href: functions-recipes/triggers-bindings.md
       - name: Development environment
         href: functions-recipes/development-environment.md
-
+    - name: Security
+      expanded: true
+      items:
+      - name: Scanning GitHub Repos for Credentials
+        href: security/scan-repos-for-credentials.md
