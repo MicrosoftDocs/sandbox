@@ -41,16 +41,40 @@ pip install trufflehog
 
 Next, I am going to run the tool on a test sample repository. I will route the output of the tool into a JSON file, with the help of `--json` and `>> output.json`:
 
+```python
+trufflehog --regex https://github.com/{USER_ID}/{REPO_ID}.git --json >> output.json
+```
+
 ![Running TruffleHog locally][i1]
 
 Once the tool runs and we look at the output JSON file, we will notice that there are some strings found in the file that should trigger some action on the repo contributor's part:
 
 ![TruffleHog findings](media/trufflehog/findings.png)
 
+>[!IMPORTANT]
+>The TruffleHog tool currently does not output valid JSON due to the fact that it does not properly merge array entries. So for each set of findings, you will have a valid element group, but if there is more than one finding, there will be missing separators (commas) between them.
+
+Some repos are extremely large and have a very extensive commit history. For those cases, we might want to set the depth limit, that determines how many commits down the tree the tool will scan for credentials:
+
+```python
+trufflehog --regex https://github.com/{USER_ID}/{REPO_ID}.git --json --max-depth 7 >> output.json
+```
+
+We now have an idea of how the tool runs. However, there is an unfortunate limitation - we need to run it on a per-repo basis. If you have an organization which you need to scan on a more-or-less constant basis, this won't work out-of-the-box. So let's make sure that we add a scripted component that will allow us to scan an entire organization.
+
+As we talk about writing a script, it's worth investigating what cloud infrastructure we can leverage to make our life even easier. Here are some thoughts:
+
+* [Azure KeyVault][4] - to get access information for the script (to be able to query private orgs in GitHub)
+* [Azure Event Hubs][5] - to track events when they are triggered/information is collected from TruffleHog.
+* [Azure Cosmos DB][6] - to collect the discovered data.
+
 [0]: https://github.com/dxa4481/truffleHog
 [1]: https://www.python.org/downloads/
 [2]: https://docs.docker.com/install/
 [3]: http://docs.python-guide.org/en/latest/dev/virtualenvs/
+[4]: https://docs.microsoft.com/en-us/azure/key-vault/
+[5]: https://docs.microsoft.com/en-us/azure/event-hubs/
+[6]: https://docs.microsoft.com/en-us/azure/cosmos-db/
 
 [i0]: media/trufflehog/install.gif
 [i1]: media/trufflehog/test-tool.gif
