@@ -49,7 +49,7 @@ trufflehog --regex https://github.com/{USER_ID}/{REPO_ID}.git --json >> output.j
 
 Once the tool runs and we look at the output JSON file, we will notice that there are some strings found in the file that should trigger some action on the repo contributor's part:
 
-![TruffleHog findings](media/trufflehog/findings.png)
+![TruffleHog findings][i2]
 
 >[!IMPORTANT]
 >The TruffleHog tool currently does not output valid JSON due to the fact that it does not properly merge array entries. So for each set of findings, you will have a valid element group, but if there is more than one finding, there will be missing separators (commas) between them.
@@ -60,27 +60,56 @@ Some repos are extremely large and have a very extensive commit history. For tho
 trufflehog --regex https://github.com/{USER_ID}/{REPO_ID}.git --json --max-depth 7 >> output.json
 ```
 
+## Building Out the Infrastructure
+
 We now have an idea of how the tool runs. However, there is an unfortunate limitation - we need to run it on a per-repo basis. If you have an organization which you need to scan on a more-or-less constant basis, this won't work out-of-the-box. So let's make sure that we design a solution on top of this tool that scales a bit better.
 
 In terms of cloud infrastructure, there are several components that we can leverage:
 
 * [Azure KeyVault][4] - to get access information for the script (to be able to query private orgs in GitHub)
 * [Azure Event Hubs][5] - to track events when they are triggered/information is collected from TruffleHog.
+* [Azure Container Instances][7] - used to run the Docker-ized version of the credential scanner.
+* [Azure Functions][8] - used to control when the scanner runs.
 * [Azure Cosmos DB][6] - to collect the discovered data.
 
 There is a couple of things that we can do here to make sure that the workflow is fully automated and you, as the customer, have nothing to worry about after the first set up. So we end up with an architecture like:
 
-![Architecture Breakdown](media/trufflehog/arch.png)
+![Architecture Breakdown][i3]
+
+The tool at the core of everything here will be the **passive scanner**. It will, at fixed time intervals, run and scan the repos and log the events.
+
+Before we get to creating the scanner, it's worth mentioning that the scanner itself will need credentials - we do not know the scope of the organization in which it will run, and it might be locked down and have private repos. For those cases, we can conveniently generate [GitHub Personal Access Tokens][9] (PATs). However, we probably don't want to embed them directly into the script since those can change, and we want to give enough room for revocation scenarios. So instead, we'll use KeyVault.
+
+Let's start by creating a new vault through the Azure Portal:
+
+![Create new Key Vault in Azure Portal][i4]
+
+Now, you can create a new **secret** that will represent the PAT:
+
+![Create a new secret][i5]
+
+Let's start with the script. Create a new folder and name it `passivescanner`, and create a new file - `requirements.txt`. This will be the file that stores the list of [dependent Python packages][11] that we will need. Let's start by adding the [`azure-keyvault`][10] package to the file:
+
+```text
+azure-keyvault>=10.0.0a1
+```
 
 [0]: https://github.com/dxa4481/truffleHog
 [1]: https://www.python.org/downloads/
 [2]: https://docs.docker.com/install/
 [3]: http://docs.python-guide.org/en/latest/dev/virtualenvs/
-[4]: https://docs.microsoft.com/en-us/azure/key-vault/
-[5]: https://docs.microsoft.com/en-us/azure/event-hubs/
-[6]: https://docs.microsoft.com/en-us/azure/cosmos-db/
+[4]: https://docs.microsoft.com/azure/key-vault/
+[5]: https://docs.microsoft.com/azure/event-hubs/
+[6]: https://docs.microsoft.com/azure/cosmos-db/
+[7]: https://docs.microsoft.com/azure/container-instances/
+[8]: https://docs.microsoft.com/azure/azure-functions
+[9]: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+[10]: https://pypi.python.org/pypi/azure-keyvault/1.0.0a1
+[11]: https://pip.readthedocs.io/en/1.1/requirements.html
 
 [i0]: media/trufflehog/install.gif
 [i1]: media/trufflehog/test-tool.gif
 [i2]: media/trufflehog/findings.png
-[i2]: media/trufflehog/arch.png
+[i3]: media/trufflehog/arch.png
+[i4]: media/trufflehog/create-vault.gif
+[i5]: media/trufflehog/create-secret.gif
