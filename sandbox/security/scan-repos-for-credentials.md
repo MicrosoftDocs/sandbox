@@ -16,7 +16,7 @@ ms.author: dendeli
 
 You have an organization in GitHub. You have employees that check in code from all over the world, with tens and hundreds of commits happening daily. You are excited about all the code - after all, open source is meant to make your life easier. However, what happens if someone accidentally checks in your storage account keys into source control as well? How soon will you find out about that before it's too late?
 
-The objective of this article is to show you how you can deploy a credential scanner tool to the cloud and have it scan your repositories to make sure that no private information is found in your repos. We'll also discuss how we can make the scanner more proactive and check incoming PRs.
+The objective of this article is to show you how you can deploy a credential scanner tool to the cloud and have it scan your repositories to make sure that no private information is exposed.
 
 ## Toolchain
 
@@ -60,13 +60,17 @@ Some repos are extremely large and have a very extensive commit history. For tho
 trufflehog --regex https://github.com/{USER_ID}/{REPO_ID}.git --json --max-depth 7 >> output.json
 ```
 
-We now have an idea of how the tool runs. However, there is an unfortunate limitation - we need to run it on a per-repo basis. If you have an organization which you need to scan on a more-or-less constant basis, this won't work out-of-the-box. So let's make sure that we add a scripted component that will allow us to scan an entire organization.
+We now have an idea of how the tool runs. However, there is an unfortunate limitation - we need to run it on a per-repo basis. If you have an organization which you need to scan on a more-or-less constant basis, this won't work out-of-the-box. So let's make sure that we design a solution on top of this tool that scales a bit better.
 
-As we talk about writing a script, it's worth investigating what cloud infrastructure we can leverage to make our life even easier. Here are some thoughts:
+In terms of cloud infrastructure, there are several components that we can leverage:
 
 * [Azure KeyVault][4] - to get access information for the script (to be able to query private orgs in GitHub)
 * [Azure Event Hubs][5] - to track events when they are triggered/information is collected from TruffleHog.
 * [Azure Cosmos DB][6] - to collect the discovered data.
+
+There is a couple of things that we can do here to make sure that the workflow is fully automated and you, as the customer, have nothing to worry about after the first set up. So we end up with an architecture like:
+
+![Architecture Breakdown](media/trufflehog/arch.png)
 
 [0]: https://github.com/dxa4481/truffleHog
 [1]: https://www.python.org/downloads/
@@ -79,3 +83,4 @@ As we talk about writing a script, it's worth investigating what cloud infrastru
 [i0]: media/trufflehog/install.gif
 [i1]: media/trufflehog/test-tool.gif
 [i2]: media/trufflehog/findings.png
+[i2]: media/trufflehog/arch.png
