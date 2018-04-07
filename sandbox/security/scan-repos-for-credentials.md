@@ -67,14 +67,14 @@ We now have an idea of how the tool runs. However, there is an unfortunate limit
 In terms of cloud infrastructure, there are several components that we can leverage:
 
 * [Azure KeyVault][4] - to get access information for the script (to be able to query private orgs in GitHub)
-* [Azure Event Hubs][5] - to track events when they are triggered/information is collected from TruffleHog.
 * [Azure Container Instances][7] - used to run the Docker-ized version of the credential scanner.
 * [Azure Functions][8] - used to control when the scanner runs.
-* [Azure Cosmos DB][6] - to collect the discovered data.
 
 There is a couple of things that we can do here to make sure that the workflow is fully automated and you, as the customer, have nothing to worry about after the first set up. So we end up with an architecture like:
 
 ![Architecture Breakdown][i3]
+
+So, the idea is simple - scan the repos, send an email with the report of what was found.
 
 The tool at the core of everything here will be the **passive scanner**. It will, at fixed time intervals, run and scan the repos and log the events.
 
