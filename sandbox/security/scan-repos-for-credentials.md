@@ -94,6 +94,36 @@ Let's start with the script. Create a new folder and name it `passivescanner`, a
 azure-keyvault>=10.0.0a1
 ```
 
+Now, create another new file - `scanner.py`. Let's add some code that gets the credentials from KeyVault:
+
+```python
+from azure.keyvault import KeyVaultClient, KeyVaultAuthentication
+from azure.common.credentials import ServicePrincipalCredentials
+
+credentials = None
+
+def auth_callback(server, resource, scope):
+    credentials = ServicePrincipalCredentials(
+        client_id = '',
+        secret = '',
+        tenant = '',
+        resource = "https://vault.azure.net"
+    )
+    token = credentials.token
+    return token['token_type'], token['access_token']
+
+client = KeyVaultClient(KeyVaultAuthentication(auth_callback))
+
+secret_bundle = client.get_secret("https://VAULT_ID.vault.azure.net/", "GitHubAccessToken", "")
+
+git_key = secret_bundle.value
+```
+
+You might be wondering - where is the credential information coming from? It's sourced from Active Directory, where I've created a test application for the purposes of this demo.
+
+>[!NOTE]
+>You can, of course, not even use Key Vault and instead hard-code the GitHub token locally. This is acceptable for some scenarios, and will save you the effort if you don't want to work with Active Directory.
+
 [0]: https://github.com/dxa4481/truffleHog
 [1]: https://www.python.org/downloads/
 [2]: https://docs.docker.com/install/
