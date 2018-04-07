@@ -153,6 +153,26 @@ This rudimentary piece of Python code will list all public repos (because that's
 
 ![List public Azure samples][i6]
 
+>[!IMPORTANT]
+>You can set `type='all'` to make sure that you include private repositories in the lookup - after all, you have the GitHub token to do that.
+
+Great, now we are able to read in information about each individual repo! Let's run TruffleHog against them. Add this line to the declaration section of `scanner.py`:
+
+```python
+from subprocess import call
+```
+
+This enables us to run shell commands from Python, directly from the for loop we have for our repos, as such:
+
+```python
+for repo in repos:
+        print ("Analyzing repo: " + str(repo))
+        repo_url = "https://" + git_key + "@github.com/" + str(repo) + ".git"
+        call (["trufflehog", "--regex", repo_url, "--json", "--max_depth", "10"])
+```
+
+What we do here is triggering the same `trufflehog` command as we did earlier on the local machine, but this time from within the scanner script.
+
 [0]: https://github.com/dxa4481/truffleHog
 [1]: https://www.python.org/downloads/
 [2]: https://docs.docker.com/install/
