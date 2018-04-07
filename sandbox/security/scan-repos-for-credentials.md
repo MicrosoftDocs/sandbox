@@ -91,7 +91,7 @@ Now, you can create a new **secret** that will represent the PAT:
 Let's start with the script. Create a new folder and name it `passivescanner`, and create a new file - `requirements.txt`. This will be the file that stores the list of [dependent Python packages][11] that we will need. Let's start by adding the [`azure-keyvault`][10] package to the file:
 
 ```text
-azure-keyvault>=10.0.0a1
+azure-keyvault>=0.3.7
 ```
 
 Now, create another new file - `scanner.py`. Let's add some code that gets the credentials from KeyVault:
@@ -124,6 +124,35 @@ You might be wondering - where is the credential information coming from? It's s
 >[!NOTE]
 >You can, of course, not even use Key Vault and instead hard-code the GitHub token locally. This is acceptable for some scenarios, and will save you the effort if you don't want to work with Active Directory.
 
+You now are able to get the GitHub token. Now we need to be able to also get a list of repos in an organization. To make that task easier, I am integrating [github3.py][12] - a third-party library that allows us to talk to the GitHub API, abstracting out most of the REST complexity.
+
+To make sure that we always satisfy the package requirements for the project, append the following line to the `requirements.txt` file:
+
+```text
+github3.py>=1.0.1
+```
+
+Let's get back to `scanner.py` - we would want to get a list of repositories in the organization. And for that, we will add a reference to the library we just specified in the requirements file, right in the source file header:
+
+```python
+from github3 import login
+```
+
+This allows us to log in to GitHub. Here is the actual code that does that:
+
+```python
+gh = login(token=git_key)
+
+repos = gh.organization("Azure-Samples").repositories(type='public')
+
+for repo in repos:
+        print (repo)
+```
+
+This rudimentary piece of Python code will list all public repos (because that's what we care about - credentials exposed in public code):
+
+![List public Azure samples][i6]
+
 [0]: https://github.com/dxa4481/truffleHog
 [1]: https://www.python.org/downloads/
 [2]: https://docs.docker.com/install/
@@ -136,6 +165,7 @@ You might be wondering - where is the credential information coming from? It's s
 [9]: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
 [10]: https://pypi.python.org/pypi/azure-keyvault/1.0.0a1
 [11]: https://pip.readthedocs.io/en/1.1/requirements.html
+[12]: https://github.com/sigmavirus24/github3.py
 
 [i0]: media/trufflehog/install.gif
 [i1]: media/trufflehog/test-tool.gif
@@ -143,3 +173,4 @@ You might be wondering - where is the credential information coming from? It's s
 [i3]: media/trufflehog/arch.png
 [i4]: media/trufflehog/create-vault.gif
 [i5]: media/trufflehog/create-secret.gif
+[i6]: media/trufflehog/list-repos.gif
