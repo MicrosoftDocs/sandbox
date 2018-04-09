@@ -5,7 +5,7 @@ author: Asim Hussain
 manager: jopapa
 keywords: azure logic apps, face api, cognitive services, azure functions, redis, emotion api
 ms.topic: article
-ms.date: 08/18/2017
+ms.date: 04/09/2018
 ms.author: ashussai
 ms.devlang: javascript
 ms.service: cognitive-services
