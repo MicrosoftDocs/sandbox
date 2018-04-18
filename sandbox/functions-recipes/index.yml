@@ -40,3 +40,8 @@ sections:
       href: development-environment
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+    - title: Durable Functions
+      html: <p>Find out how to create stateful workflows with Azure Functions</p>
+      href: functions-recipes/development-environment
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
