@@ -1,7 +1,7 @@
 ---
 title: Azure Functions Recipes - Functions Basics
 description: Description
-author: CecilPhillip
+author: cecilphillip
 manager: scottca
 keywords:
 ms.topic: article
@@ -11,7 +11,7 @@ ms.devlang: csharp
 ms.service: functions
 ---
 
-# Basics
+# Functions Basics
 
 [!include[](../includes/header.md)]
 
