@@ -28,4 +28,6 @@ ms.service: functions
 [Sending event notificationsn](durable-manage-orchestrations.md#sending-event-notifications) | Send notifications to running orchestrations
 [Terminating a running orchestration instance](durable-manage-orchestrations.md#terminating-a-running-orchestration-instance) | Terminate an orchestration instance
 |<h2>Error Handling and Diagnostics</h2> | |
-[Configuring timeout](durable-diagnostics .md#configuring-timeout) | Change the function execution timeout
+[Logging in orchestrator functions](durable-diagnostics.md#logging-in-orchestrator-functions) | Prevent duplicate logs in orchestrator functions
+[Handling activity function exceptions](durable-diagnostics.md#handling-activity-function-exceptions) | Unhandled exceptions in activity functions
+[Calling activity function with retry](durable-diagnostics.md#Calling-activity-function-with-retry) | Add retry behavior to activity function calls
