@@ -3,7 +3,7 @@ title: Azure Functions Recipes - Error Handling and Diagnostics
 description: Error Handling and Diagnostics
 author: cecilphillip
 manager: scottca
-keywords: azure functions, functions, logging, monitoring, dynamic compute, serverless architecture
+keywords: azure functions, functions, logging, diagnostics, monitoring, dynamic compute, serverless architecture
 ms.service: functions
 ms.devlang: csharp
 ms.topic: article

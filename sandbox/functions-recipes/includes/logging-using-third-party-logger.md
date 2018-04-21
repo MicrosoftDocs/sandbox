@@ -4,7 +4,6 @@ If you would rather use your preferred logger, you can easily do so by just addi
 The following code shows a function using
 the [Serilog.Sinks.AzureTableStorage](https://www.nuget.org/packages/serilog.sinks.azuretablestorage) package.
 
-
 ```csharp
 [FunctionName("ThirdPartyLogger")]
 public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET")]HttpRequestMessage req)
