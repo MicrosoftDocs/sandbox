@@ -30,4 +30,4 @@ ms.service: functions
 |<h2>Error Handling and Diagnostics</h2> | |
 [Logging in orchestrator functions](durable-diagnostics.md#logging-in-orchestrator-functions) | Prevent duplicate logs in orchestrator functions
 [Handling activity function exceptions](durable-diagnostics.md#handling-activity-function-exceptions) | Unhandled exceptions in activity functions
-[Calling activity function with retry](durable-diagnostics.md#Calling-activity-function-with-retry) | Add retry behavior to activity function calls
+[Calling activity function with retry](durable-diagnostics.md#calling-activity-functions-with-retry) | Add retry behavior to activity function calls
