@@ -29,7 +29,7 @@ public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityCon
 * `FunctionFailedException` is thrown in the orchestrator if an activity function throws an unhandled exception
 * `FunctionFailedException`'s `InnerException` property will contain the source exception from the activity function.
 
-[!include[](../includes/read-more-heading.md)
+[!include[](../includes/read-more-heading.md)]
 * [Handling errors in Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-error-handling)
 * [Debugging and Diagnostics of Durable Functions](https://cda.ms/rH)
 * [Durable Functions repo and samples](https://github.com/Azure/azure-functions-durable-extension)

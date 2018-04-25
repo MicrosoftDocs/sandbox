@@ -32,7 +32,7 @@ public static async Task OrderOrchestration(
 * A `RetryOptions` instance is used to define retry behavior.
 * The `Handle` property on `RetryOptions` lets callers define whether retries should proceed or not.
 
-[!include[](../includes/read-more-heading.md)
+[!include[](../includes/read-more-heading.md)]
 * [Handling errors in Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-error-handling)
 * [Debugging and Diagnostics of Durable Functions](https://cda.ms/rH)
 * [Durable Functions repo and samples](https://github.com/Azure/azure-functions-durable-extension)
