@@ -24,7 +24,7 @@ ms.service: functions
 [Trigger a function based on changes in Cosmos DB](cosmos-db.md#trigger-a-function-based-on-changes-in-cosmos-db) | Use the change feed to trigger a function
 [Retrieve a list of documents](cosmos-db.md#retrieve-a-list-of-documents) | Retrieve a list of documents with an input binding
 [Using DocumentClient](cosmos-db.md#using-documentclient) | Run complex queries with `DocumentClient`
-[Customize a DocumentClient and reuse it between executions](cosmos-db.md#customize-a-documentclient-and-reuse-it-between-executions) | Create a customized and shared `DocumentClient` instance
+[Customize a DocumentClient and reuse it between executions](cosmos-db.md#customize-a-documentclient-and-reuse-it-between-executions) | Create a customized and shared `DocumentClient` insta
 |<h2>HTTP and webhooks</h2> | |
 [Accessing query string values in HTTP Triggers](http-and-webhooks.md#accessing-query-string-values-in-http-triggers) | Read query string parameters
 [Accessing the request body in HTTP Triggers](http-and-webhooks.md#accessing-the-request-body--in-http-triggers) | Read the contents of the request body
@@ -48,4 +48,4 @@ ms.service: functions
 |<h2>Table storage</h2> | |
 [Table storage input binding](table-storage.md#table-storage-input-binding) | Use the Table storage input binding
 |<h2>Timer</h2> | |
-[Timer trigger function](timer.md#timer-trigger-function) | Trigger a function on a schedule`
+[Timer trigger function](timer.md#timer-trigger-function) | Trigger a function on a schedule
