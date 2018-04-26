@@ -48,4 +48,4 @@ ms.service: functions
 |<h2>Table storage</h2> | |
 [Table storage input binding](table-storage.md#table-storage-input-binding) | Use the Table storage input binding
 |<h2>Timer</h2> | |
-[Timer trigger function](timer.md#timer-trigger-function) | Trigger a function on a schedule
+[Timer trigger function](timer.md#timer-trigger-function) | Trigger a function on a schedule`
