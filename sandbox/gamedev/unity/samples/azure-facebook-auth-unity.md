@@ -35,7 +35,7 @@ This approach should work for any Unity platform supported by the Facebook SDK.
 
 ## Create an Azure Mobile App and configure Easy Tables
 
-An [Azure Mobile App](https://azure.microsoft.com/en-us/services/app-service/mobile) is a type of Azure App Service. This example uses the Easy Tables feature of Azure Mobile Apps to store data simply.
+An [Azure Mobile App](https://azure.microsoft.com/en-us/services/app-service/mobile) is a type of Azure App Service. This example uses the Easy Tables feature of Azure Mobile Apps to simply store data.
 
 > [!NOTE]
 > Below is a broad outline of the steps required to set up Easy Tables, with links to detailed instructions. It is only necessary to follow the ["Configure Easy Tables in Azure"](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#configure-easy-tables-in-azure) and ["Create Easy Tables"](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#create-easy-tables) sections of the linked documentation. **Stop and return here upon reaching the section labeled "Prepare the development environment."** The rest of the article outlines an alternative approach to connecting to Azure that is not compatible with this example.
@@ -57,7 +57,7 @@ An [Azure Mobile App](https://azure.microsoft.com/en-us/services/app-service/mob
 
 ## Create an Azure Function App
 
-This example uses an Azure Function App for data insertion and retrieval. Our Unity app will send HTTP requests to an Azure HTTP trigger function.
+This example uses an Azure Function App for data insertion and retrieval. Our Unity app will send HTTP requests to an Azure HTTP triggered Function.
 1. In the [Azure portal](https://portal.azure.com) click **Create a resource**, type "function app" in the search bar and then click **Function App** and select **Create**.
 
   ![new function app](media/fbauth_new-function-app.png)
@@ -134,7 +134,7 @@ The parameters include:
 
   * The data object to add to the table.
 
-This insert function deserializes the Json parameters, and then logs in and inserts the data into the appropriate table using the Azure Mobile Apps SDK.
+This insert function deserializes the JSON parameters, and then logs in and inserts the data into the appropriate table using the Azure Mobile Apps SDK.
 
 1. Click on **run.csx** in the **View files** list to modify the function body.
 
@@ -250,7 +250,7 @@ The Unity client will call the GetAllEntries function to get a list of all the e
 
 #### Add the GetAllEntries function body
 
-The GetAllEntries function receives Json parameters in an HTTP POST request sent from the Unity client.
+The GetAllEntries function receives JSON parameters in an HTTP POST request sent from the Unity client.
 
 The parameters include:
 
