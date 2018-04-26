@@ -19,9 +19,12 @@ ms.service: functions
 | | |
 |---|---|
 |<h2>Cosmos DB</h2> | |
-[Using DocumentClient](cosmos-db.md#using-documentclient) | Run complex queries with `DocumentClient`
 [Retrieve a single document by ID](cosmos-db.md#retrieve-a-single-document-by-id) | Retrieve a single document with an input binding
+[Save multiple documents to a collection](cosmos-db.md#save-multiple-documents-to-a-collection) | Saving multiple documents
+[Trigger a function based on changes in Cosmos DB](cosmos-db.md#trigger-a-function-based-on-changes-in-cosmos-db) | Use the change feed to trigger a function
 [Retrieve a list of documents](cosmos-db.md#retrieve-a-list-of-documents) | Retrieve a list of documents with an input binding
+[Using DocumentClient](cosmos-db.md#using-documentclient) | Run complex queries with `DocumentClient`
+[Customize a DocumentClient and reuse it between executions](cosmos-db.md#customize-a-documentclient-and-reuse-it-between-executions) | Create a customized and shared `DocumentClient` instance
 |<h2>HTTP and webhooks</h2> | |
 [Accessing query string values in HTTP Triggers](http-and-webhooks.md#accessing-query-string-values-in-http-triggers) | Read query string parameters
 [Accessing the request body in HTTP Triggers](http-and-webhooks.md#accessing-the-request-body--in-http-triggers) | Read the contents of the request body
