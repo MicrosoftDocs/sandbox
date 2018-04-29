@@ -24,6 +24,8 @@ let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "GET")>] req: HttpRequestMes
     req.CreateResponse(HttpStatusCode.OK, sprintf "My setting is %s" customSetting)
 ```
 
+---
+
 [!include[](../includes/takeaways-heading.md)]
 * Environment variables are configured in the `Application Settings` section
 * Use the static `GetEnvironmentVariable` method of the `Environment` type to get access to the
