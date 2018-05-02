@@ -18,7 +18,7 @@ ms.service: functions
 | | |
 |---|---|
 |<h2>Setting up Orchestrations</h2> | |
-[Starting Orchestrations](durable-setup.md#starting-orchestrations) | Start a stateful workflow
+[Starting Orchestrations](durable-setup.md#starting-orchestrations) | Start a stateful orchestration
 [Authoring Orchestrator Functions](durable-setup.md#authoring-orchestrator-functions) | Authoring durable orchestrator functions
 [Authoring Activity Functions](durable-setup.md#authoring-activity-functions) | Authoring activity functions
 |<h2>Managing Orchestrations</h2> | |

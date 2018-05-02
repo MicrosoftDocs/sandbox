@@ -7,14 +7,14 @@ To prevent logging statements from duplicating, use the `IsReplaying` property o
 [FunctionName("PlaceOrder")]
 public static async Task<InvoiceData> OrderOrchestration(
     [OrchestrationTrigger] DurableOrchestrationContext context,
-    TraceWriter log)
+    ILogger log)
 {
     OrderRequestData orderData = context.GetInput<OrderRequestData>();
 
-    if (!context.IsReplaying) log.Info("About Checking inventory");
+    if (!context.IsReplaying) log.LogInformation("About Checking inventory");
     await context.CallActivityAsync<bool>("CheckAndReserveInventory", orderData);
 
-    if (!context.IsReplaying) log.Info("Processing payment");
+    if (!context.IsReplaying) log.LogInformation("Processing payment");
     InvoiceData invoice = await context.CallActivityAsync<InvoiceData>("ProcessPayment", orderData);
 
     return invoice;

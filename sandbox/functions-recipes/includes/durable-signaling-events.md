@@ -7,7 +7,6 @@ public static async Task NotifyEvent(
     [QueueTrigger("event-queue")] NotificationInfo notification,
     [OrchestrationClient] DurableOrchestrationClient orchestrationClient)
 {
-
     await orchestrationClient.RaiseEventAsync(notification.instanceID, notification.EventName, notification.EventData);
 }
 ```

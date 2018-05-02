@@ -1,5 +1,5 @@
 ## Authoring Orchestrator Functions
-Orchestration functions are responsible for managing the stateful workflows in Durable Functions. They take care of checkpointing progress and resuming workflows that are waiting for activities to complete. `OrchestrationTriggerAttribute` is used to annotate functions as orchestrator functions.
+Orchestrator functions are responsible for managing the stateful workflows in Durable Functions. They take care of checkpointing progress and resuming workflows that are waiting for activities to complete. `OrchestrationTriggerAttribute` is used to annotate functions as orchestrator functions.
 
 Orchestration functions support only `DurableOrchestrationContext` as a parameter type. `DurableOrchestrationContext` has methods that allow you to call activity functions, call sub-orchestrations, get input data for the orchestrator, and a few others.
 

@@ -9,7 +9,7 @@ public static async Task OrderOrchestration(
 {
     try
     {
-        bool reserved = await context.CallActivityAsync<bool>("CheckAndReserveInventory", null);
+        await context.CallActivityAsync<bool>("CheckAndReserveInventory", null);
     }
     catch (FunctionFailedException ex)
     {
@@ -31,5 +31,5 @@ public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityCon
 
 [!include[](../includes/read-more-heading.md)]
 * [Handling errors in Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-error-handling)
-* [Debugging and Diagnostics of Durable Functions](https://cda.ms/rH)
+* [Debugging and Diagnostics of Durable Functions](https://channel9.msdn.com/Shows/On-NET/Debugging-and-Diagnostics-of-Durable-Functions?WT.mc_id=functions-recipes-docs-cephilli)
 * [Durable Functions repo and samples](https://github.com/Azure/azure-functions-durable-extension)

@@ -1,5 +1,5 @@
 ## Authoring Activity Functions
-Activities are composed together in orchestration functions to create a stateful workflow. Activities are where most of the processing happens for a given orchestration. `ActivityTriggerAttribute` is used to annotate functions as orchestration activities.
+Activities are composed together in orchestrator functions to create a stateful workflow. Activities are where most of the processing happens for a given orchestration. `ActivityTriggerAttribute` is used to annotate functions as orchestration activities.
 
 Activity functions can accept either an instance of `DurableActivityContext` or a JSON serializable type as a parameter. The return values are serialized to JSON and persisted to the orchestration history table when the orchestrator function does checkpointing.
 
