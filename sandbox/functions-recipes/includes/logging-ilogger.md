@@ -3,7 +3,6 @@ As an alternative to `TraceWriter`, an instance of [`ILogger`](https://docs.micr
 
 The advantage of using `ILogger` instead of `TraceWriter` is that you get support for structured logging, which allows for richer analytics support. This is helpful if you target your logs at a tool like [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-analytics).
 
-
 ```csharp
 [FunctionName("ILoggerHttpLogging")]
 public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET")]HttpRequestMessage req, ILogger log)

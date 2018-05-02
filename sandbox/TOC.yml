@@ -41,10 +41,11 @@
       expanded: true
       href: functions-recipes/index.yml
       items:
-      - name: Functions basics
+      - name: Functions Basics
         href: functions-recipes/functions-basics.md
-      - name: Triggers and bindings
+      - name: Triggers and Bindings
         href: functions-recipes/triggers-bindings.md
-      - name: Development environment
+      - name: Development Environment
         href: functions-recipes/development-environment.md
-
+      - name: Durable Functions
+        href: functions-recipes/durable-functions.md
