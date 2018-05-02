@@ -87,7 +87,7 @@ The Unity client will call the Insert function to insert data into our Easy Tabl
 
 6. Name the function `Insert`.
 
-7. Select **Anonymous** from the **Authorization level** dropdown.
+7. Select **Function** from the **Authorization level** dropdown.
 
 8. Click the **Create** button.
 
@@ -220,7 +220,7 @@ The Unity client will call the GetAllEntries function to get a list of all the e
 
 6. Name the function `GetAllEntries`.
 
-7. Select **Anonymous** from the **Authorization level** dropdown.
+7. Select **Function** from the **Authorization level** dropdown.
 
 8. Click the **Create** button.
 
@@ -596,9 +596,14 @@ To use Facebook authentication, you must create a new Facebook app.
 
   ![Copy function app URL](media/fbauth_copy-functionapp-url.png)
 
-3. Open the file **EasyTableClient.cs** and change `private const string url = "REPLACE_WITH_YOUR_FUNCTIONAPP_URL"` to match the URL of the function app you created for this example, with `/api/` appended at the end.
+3. Open the file **EasyTableClient.cs** and change `private const string url = "FUNCTION_APP_URL"` to match the URL of the function app you created for this sample.
+
+1. Return the Azure portal then navigate to the **Function app settings** and copy the **default** Host Key.
+
+1. Back in **EasyTableClient.cs**, change `private const string hostKey = "FUNCTION_APP_HOST_KEY"` to match the **default** Host Key of your Function App.
+    ![default host key](media/fbauth_defaulthostkey.png)
 > [!IMPORTANT]
-> Be sure to append `/api/` to the end of your Function App URL!
+> Be sure to update the function app URL and Host Key in `EasyTableClient.cs`.
 
 4. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB Auth/Test Scene/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
 
