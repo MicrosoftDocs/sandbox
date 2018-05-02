@@ -2,8 +2,8 @@
 title: "Facebook authentication with Unity and Azure"
 author: dantogno
 ms.author: v-davian
-ms.date: 01/24/2018
-ms.topic: article
+ms.date: 05/01/2018
+ms.topic: sample
 ms.assetid:
 ---
 # Facebook authentication with Unity and Azure
@@ -28,14 +28,14 @@ This approach should work for any Unity platform supported by the Facebook SDK.
 
 ### Prerequisites
 
-* Unity 2017 ([free personal version](https://store.unity.com/products/unity-personal) is fine)
-* Azure subscription (the [free trial](https://azure.microsoft.com/en-us/free/) or included credits from [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) are fine)
+* Unity 2017.1 or greater ([free personal version](https://store.unity.com/products/unity-personal) is fine)
+* Azure subscription (the [free trial](https://aka.ms/azft-gaming) or included credits from [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) are fine)
 * [Visual Studio 2017](https://www.visualstudio.com/) (free Community edition is fine) with Game Development with Unity workload
 * Facebook account
 
 ## Create an Azure Mobile App and configure Easy Tables
 
-An [Azure Mobile App](https://azure.microsoft.com/en-us/services/app-service/mobile) is a type of Azure App Service. This example uses the Easy Tables feature of Azure Mobile Apps to simply store data.
+An [Azure Mobile App](https://azure.microsoft.com/en-us/documentation/learning-paths/appservice-mobileapps/) is a type of Azure App Service. This example uses the Easy Tables feature of Azure Mobile Apps to simply store data.
 
 > [!NOTE]
 > Below is a broad outline of the steps required to set up Easy Tables, with links to detailed instructions. It is only necessary to follow the ["Configure Easy Tables in Azure"](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#configure-easy-tables-in-azure) and ["Create Easy Tables"](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#create-easy-tables) sections of the linked documentation. **Stop and return here upon reaching the section labeled "Prepare the development environment."** The rest of the article outlines an alternative approach to connecting to Azure that is not compatible with this example.
