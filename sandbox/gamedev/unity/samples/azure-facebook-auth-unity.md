@@ -8,7 +8,7 @@ ms.assetid:
 ---
 # Facebook authentication with Unity and Azure
 
-[!include[](../../includes/header.md)]
+[!include[](../../../includes/header.md)]
 
 ![Facebook authentication with Unity and Azure heading image](media/fbauth_fb-auth-heading.png)
 
