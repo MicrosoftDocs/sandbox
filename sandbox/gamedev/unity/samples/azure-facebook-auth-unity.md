@@ -8,6 +8,8 @@ ms.assetid:
 ---
 # Facebook authentication with Unity and Azure
 
+[!include[](../../includes/header.md)]
+
 ![Facebook authentication with Unity and Azure heading image](media/fbauth_fb-auth-heading.png)
 
 ## Overview
@@ -37,20 +39,15 @@ This approach should work for any Unity platform supported by the Facebook SDK.
 
 An [Azure Mobile App](https://azure.microsoft.com/en-us/documentation/learning-paths/appservice-mobileapps/) is a type of Azure App Service. This example uses the Easy Tables feature of Azure Mobile Apps to simply store data.
 
-> [!NOTE]
-> Below is a broad outline of the steps required to set up Easy Tables, with links to detailed instructions. It is only necessary to follow the ["Configure Easy Tables in Azure"](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#configure-easy-tables-in-azure) and ["Create Easy Tables"](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#create-easy-tables) sections of the linked documentation. **Stop and return here upon reaching the section labeled "Prepare the development environment."** The rest of the article outlines an alternative approach to connecting to Azure that is not compatible with this example.
+[!include[](include/racer_configure-easy-tables.md)]
 
-1. Log into the [Azure portal](https://portal.azure.com) and [create a new Mobile App](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#create-a-new-azure-mobile-app).
+### Setup the TestPlayerData table
 
-2. [Configure a data connection and initialize Easy Tables](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#add-a-new-data-connection) for the new Mobile App.
+1. Go back to the Easy Tables blade and click **Add** to add a second table.
 
-3. [Add three Easy Tables](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer#create-easy-tables) with default schema:
+1. Name the new table "**TestPlayerData**" and click **OK**. Leave the rest of the options at their default settings.
 
-  * **TestPlayerData** for use in a simplified test scene.
-
-  * **HighScoreInfo** for storing high scores.
-
-  * **CrashInfo** for storing telemetry data about where the player crashes in a racing game.
+1. A notification will announce when the new table has been created.
 
 > [!NOTE]
 > These specific table names are used in the example code, so be careful about changing them.
@@ -601,9 +598,8 @@ To use Facebook authentication, you must create a new Facebook app.
 1. Return the Azure portal then navigate to the **Function app settings** and copy the **default** Host Key.
 
 1. Back in **EasyTableClient.cs**, change `private const string hostKey = "FUNCTION_APP_HOST_KEY"` to match the **default** Host Key of your Function App.
-    ![default host key](media/fbauth_defaulthostkey.png)
-> [!IMPORTANT]
-> Be sure to update the function app URL and Host Key in `EasyTableClient.cs`.
+
+  ![default host key](media/fbauth_defaulthostkey.png)
 
 4. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB Auth/Test Scene/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
 
