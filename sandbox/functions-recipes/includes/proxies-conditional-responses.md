@@ -1,6 +1,6 @@
 ## Returning conditional responses based on backend response codes
 
-Azure Functions Proxies can be configured to return a custom responses based on the backend response.
+Azure Functions Proxies can be configured to return a custom response based on the backend response.
 
 To configure proxies, edit `proxies.json`.
 
@@ -41,7 +41,7 @@ To configure proxies, edit `proxies.json`.
 [!include[](../includes/takeaways-heading.md)]
 
 - Azure Functions Proxies are configured using `proxies.json`.
-- Proxies can customize the response based on the backend response status code. 
+- Proxies can customize the response based on the backend response status code.
 
 [!include[](../includes/read-more-heading.md)]
 

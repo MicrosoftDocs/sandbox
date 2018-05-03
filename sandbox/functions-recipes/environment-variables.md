@@ -7,7 +7,7 @@ keywords: azure functions, functions, host.json, dynamic compute, serverless arc
 ms.service: functions
 ms.devlang: csharp
 ms.topic: article
-ms.date: 10/12/2017
+ms.date: 04/30/2018
 ms.author: marouill
 ---
 

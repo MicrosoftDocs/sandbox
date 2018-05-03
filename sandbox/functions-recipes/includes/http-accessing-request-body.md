@@ -3,20 +3,22 @@
 When making HTTP requests, you may need to pass on additional data via the body of the request. You can easily get access to content of the message body using `HttpRequestMessage`.
 
 JSON body content
+
 ```json
 {
-	"firstname" : "Scott",
-	"isdisabled" : "true"
+    "firstname" : "Scott",
+    "isdisabled" : "true"
 }
 ```
+
 XML body content
+
 ```xml
 <Customer xmlns="http://schemas.datacontract.org/2004/07/Demos">
-	<FirstName>cecil</FirstName>
-	<IsDisabled>true</IsDisabled>
+    <FirstName>cecil</FirstName>
+    <IsDisabled>true</IsDisabled>
 </Customer>
 ```
-
 
 ```csharp
 [FunctionName("ReadingRequestBody")]
