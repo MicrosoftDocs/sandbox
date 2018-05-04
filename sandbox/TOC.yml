@@ -16,10 +16,10 @@
       href: gamedev/index.yml
       items:
       - name: Unity
-        expanded: true
+        expanded: false
         items:
         - name: SDKs
-          expanded: true
+          expanded: false
           items:
           - name: Azure Storage SDK
             href: gamedev/unity/azure-storage-unity.md
@@ -28,17 +28,17 @@
           - name: Azure Mobile Apps SDK
             href: gamedev/unity/azure-mobile-apps-unity.md
         - name: Samples
-          expanded: true
+          expanded: false
           items:
           - name: Easy Tables with Unity and the Mobile Apps SDK
             href: gamedev/unity/samples/azure-mobile-apps-unity-racer.md
       - name: MonoGame
-        expanded: true
+        expanded: false
         items:
         - name: Using Azure SDKs with MonoGame
           href: gamedev/monogame/azure-monogame.md
     - name: Azure Functions Recipes
-      expanded: true
+      expanded: false
       href: functions-recipes/index.yml
       items:
       - name: Functions Basics

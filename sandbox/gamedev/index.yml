@@ -9,7 +9,7 @@ metadata:
   author: brianpeek
   ms.author: brpeek
   manager: timheuer
-  ms.date: 11/08/2017
+  ms.date: 05/03/2017
   ms.topic: landing-page
   featureFlags:
   - clicktale
@@ -19,14 +19,14 @@ sections:
   - type: markdown
     text: |
       Get started with developing games that use Azure.  More coming soon!
-- title: Unity
+- title: Unity SDKs
   items:
   - type: paragraph
-    text: Experimental SDKs and samples for Unity developers.
+    text: Experimental SDKs for Unity developers.
   - type: list
     style: cards
     className: cardsM
-    columns: 2
+    columns: 3
     items:
     - title: Azure Storage SDK for Unity
       html: <p>Use Azure Storage from your Unity project</p>
@@ -43,12 +43,21 @@ sections:
       href: unity/azure-mobile-apps-unity
       image:
         src: media/unity.png
+- title: Unity Samples
+  items:
+  - type: paragraph
+    text: Samples for Unity developers.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
     - title: Azure Easy Tables and Unity
       html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
       href: unity/samples/azure-mobile-apps-unity-racer
       image:
         src: media/unity.png
-- title: MonoGame
+- title: MonoGame SDKs
   items:
   - type: paragraph
     text: Samples and docs for MonoGame developers.
