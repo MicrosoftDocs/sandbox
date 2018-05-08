@@ -2,6 +2,8 @@
 
 There are several ways to define function routes. One of those ways is in the function header.
 
+# [C#](#tab/csharp) 
+
 ```csharp
 [FunctionName("Example")]
 public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example")]HttpRequestMessage req,
@@ -11,6 +13,16 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 
     return new HttpResponseMessage(HttpStatusCode.Accepted);
 }
+```
+
+# [F#](#tab/fsharp) 
+
+```fsharp
+[<FunctionName("Example")>]
+let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example")>] req: HttpRequestMessage,
+        log: TraceWriter) =
+  log.Info "F# HTTP trigger function processed a request"
+  new HttpResponseMessage(HttpStatusCode.Accepted)
 ```
 
 Adding the Route property to the HttpTrigger attribute allows you to customize the route of your function. The above function is called with http://yoururl/api/example. But if we change `Route="Example"` to `Route="Example/MyExample"` the url becomes http://yoururl/api/example/myexample. It can also be left blank so that it can be called by http://yoururl/api/.
