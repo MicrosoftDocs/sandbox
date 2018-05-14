@@ -15,7 +15,7 @@ ms.service: functions
 
 [!include[](../includes/header.md)]
 
-The [The GitHub Release Notes Generator](https://github.com/paladique/ReleaseNotesGenerator) is tool for generating a release notes document in conjunction with GitHub's release feature. 
+The [The GitHub Release Notes Generator](https://github.com/paladique/ReleaseNotesGenerator) is tool for generating a release notes document in conjunction with GitHub's release feature.
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/paladique/ReleaseNotesGenerator)
 
@@ -25,26 +25,26 @@ The [The GitHub Release Notes Generator](https://github.com/paladique/ReleaseNot
 
 
 ## Requirements
-* An [Azure](https://azure.microsoft.com/en-us/free/) account
+* An [Azure](https://azure.microsoft.com/en-us/free?WT.mc_id=sandbox-functions-jasmineg) account
 * A [GitHub](https://github.com/join) account
 
 ## Links
 * [Release Notes Repo](https://github.com/paladique/release-notes-generator)
 
 ## What's It Do?
-The generator is a [function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) containing two functions:
+The generator is a [function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?WT.mc_id=sandbox-functions-jasmineg) containing two functions:
 
-- A [GitHub webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function) triggered when a new release is created, that sends a message to a queue.
-- A [queue trigger](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-storage-queue-triggered-function) that uses the message sent from the webhook to create a markdown file with the repository's Issues and Pull Requests from the last two weeks, using the [Octokit.NET](https://github.com/octokit/octokit.net) library.
+- A [GitHub webhook](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function?WT.mc_id=sandbox-functions-jasmineg) triggered when a new release is created, that sends a message to a queue.
+- A [queue trigger](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-storage-queue-triggered-function?WT.mc_id=sandbox-functions-jasmineg) that uses the message sent from the webhook to create a markdown file with the repository's Issues and Pull Requests from the last two weeks, using the [Octokit.NET](https://github.com/octokit/octokit.net) library.
 
 ## Steps
-1. Navigate to the Azure Portal and create a storage account. See the [Create a storage account quickstart](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=portal#create-a-general-purpose-storage-account) to get started. 
-1. Navigate to the new storage account, navigate to the **Blob Service** section, select **Browse Blobs**, then click the **Add Container** button at the top to create a blob container named `releases`. See section on how to [create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) for more information. ![Creating a new storage account container](media/github-release-notes/newcontainer.png)
+1. Navigate to the Azure Portal and create a storage account. See the [Create a storage account quickstart](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=portal#create-a-general-purpose-storage-account?WT.mc_id=sandbox-functions-jasmineg) to get started. 
+1. Navigate to the new storage account, navigate to the **Blob Service** section, select **Browse Blobs**, then click the **Add Container** button at the top to create a blob container named `releases`. See section on how to [create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container?WT.mc_id=sandbox-functions-jasmineg) for more information. ![Creating a new storage account container](media/github-release-notes/newcontainer.png)
 1. In the same storage account menu, navigate to the **Queue Service** section, select **Browse Queues**, then click the **Add Queue** button at the top to create a queue named `release-queue`.
 1. In the same storage account menu, navigate to **Access keys** and copy the connection string. ![Storage account access keys](media/github-release-notes/storageaccesskeys.png)
-1. Create a function app. See section on how to [create a function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function#create-a-function-app) to get started.
+1. Create a function app. See section on how to [create a function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function#create-a-function-app?WT.mc_id=sandbox-functions-jasmineg) to get started.
 1. Navigate to the new function, from the overview, click and open **Application settings**, scroll to and click **+ Add new setting**. Name the setting `StorageConnection` and paste the copied connection string into the value field. Click **Save** ![Adding an application setting](media/github-release-notes/appsettings.png)
-1. In the function app, add a C# GitHub webhook function. See section on how to [Create a GitHub webhook triggered function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function#create-a-github-webhook-triggered-function) to get started.
+1. In the function app, add a C# GitHub webhook function. See section on how to [Create a GitHub webhook triggered function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-github-webhook-triggered-function#create-a-github-webhook-triggered-function?WT.mc_id=sandbox-functions-jasmineg) to get started.
 
 1. Replace initial code with the following:
 
@@ -185,7 +185,7 @@ To run the function again without creating another release, go to the configured
 
 ## Next Steps
 The following is additional information on the Azure services used in this demo.
-* [Introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
-* [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
-* [Azure Functions C# script (.csx) developer reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp)
+* [Introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?WT.mc_id=sandbox-functions-jasmineg)
+* [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?WT.mc_id=sandbox-functions-jasmineg)
+* [Azure Functions C# script (.csx) developer reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp?WT.mc_id=sandbox-functions-jasmineg)
 * [OctoKit.NET](https://octokit.github.io/)
