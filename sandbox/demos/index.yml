@@ -40,3 +40,8 @@ sections:
       href: nothotdog
       image:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+    - title: GitHubReleaseNotes
+      html: <p>Generate release notes when creating a new release with Azure Functions and storage</p>
+      href: github-release-notes
+      image:
+        src: https://docs.microsoft.com/azure/media/index/index/AzureFunctions.svg
