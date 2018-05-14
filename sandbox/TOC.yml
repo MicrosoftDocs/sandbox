@@ -11,6 +11,8 @@
         href: demos/notbacon.md
       - name: NotHotdog
         href: demos/nothotdog.md
+      - name: GitHubReleaseNotes
+        href: demos/github-release-notes.md
     - name: Game Development
       expanded: true
       href: gamedev/index.yml
