@@ -35,7 +35,11 @@
     "globalMetadata": {
 		"breadcrumb_path": "/sandbox/breadcrumb/toc.json"
 	},
-    "fileMetadata": {},
+    "fileMetadata": {
+      "monikerRange": {
+        "gamedev/unity/**/*.md": ">= unity-2017.1"
+      }
+    },
     "template": [],
     "dest": "sandbox"
   }

@@ -43,6 +43,11 @@ sections:
       href: unity/azure-mobile-apps-unity
       image:
         src: media/unity.png
+    - title: Computer Vision API SDK for Unity
+      html: <p>Use the Computer Vision API from your Unity project</p>
+      href: unity/computer-vision-unity
+      image:
+        src: media/unity.png
 - title: Unity Samples
   items:
   - type: paragraph
