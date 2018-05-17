@@ -70,7 +70,7 @@
     },
     "groups": {
       "all": {
-        "moniker_range": ""
+        "moniker_range": ">= contososerver-1.0"
       },
       "unity": {
         "moniker_range": ">= unity-2017.1",
