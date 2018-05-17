@@ -65,8 +65,7 @@
     },
     "groups": {
       "all": {
-        "moniker_range": "unity-2017.1",
-        "dest": "sandbox"
+        "moniker_range": "unity-2017.1"
       },
       "unity": {
         "moniker_range": ">= unity-2017.1",
