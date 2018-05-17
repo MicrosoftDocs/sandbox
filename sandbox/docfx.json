@@ -63,13 +63,15 @@
     "globalMetadata": {
       "breadcrumb_path": "/sandbox/breadcrumb/toc.json"
     },
+    "fileMetaData": {},
+    "markdownEngineName": "markdig",
+    "versions": {},
     "groups": {
       "all": {
         "moniker_range": "unity-2017.1"
       },
       "unity": {
-        "moniker_range": ">= unity-2017.1",
-        "dest": "sandbox/gamedev/unity/"
+        "moniker_range": ">= unity-2017.1"
       }
     },
     "template": [],
