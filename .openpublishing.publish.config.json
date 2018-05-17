@@ -8,7 +8,7 @@
       "build_output_subfolder": "sandbox",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [">= unity-2017.1"],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
