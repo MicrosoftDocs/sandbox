@@ -34,7 +34,7 @@
     ],
     "resource": [
       {
-	"group": "all"
+	"group": "all",
         "files": [
           "**/*.png",
 		  "**/*.jpg",
@@ -47,7 +47,7 @@
         ]
       },
       {
-	"group": "unity"
+	"group": "unity",
         "files": [
           "**/*.png",
 		  "**/*.jpg",
