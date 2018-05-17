@@ -66,11 +66,11 @@
     "groups": {
       "all": {
         "moniker_range": "< unity-2017.1",
-        "dest": "."
+        "dest": "./"
       },
       "unity": {
         "moniker_range": ">= unity-2017.1",
-        "dest": "sandbox/gamedev/unity/"
+        "dest": "./gamedev/unity/"
       }
     },
     "template": [],
