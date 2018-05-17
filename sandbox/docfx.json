@@ -65,7 +65,7 @@
     },
     "groups": {
       "all": {
-        "moniker_range": "< unity-2017.1",
+        "moniker_range": "contosoclient-1.0",
         "dest": "sandbox"
       },
       "unity": {
