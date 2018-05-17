@@ -65,7 +65,8 @@
     },
     "fileMetadata": {
       "monikerRange": {
-        "sandbox/gamedev/unity/**/*.md": ">= unity-2017.1"
+        "sandbox/gamedev/unity/**/*.md": ">= unity-2017.1",
+        "test/**.*.md": ">= contososerver-1.0"
       }
     },
     "groups": {
