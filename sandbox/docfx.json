@@ -2,6 +2,22 @@
   "build": {
     "content": [
       {
+	"group": "all",
+        "files": [
+		  "**/*.md",
+		  "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+	"group": "unity",
         "files": [
 		  "**/*.md",
 		  "**/*.yml"
@@ -18,6 +34,20 @@
     ],
     "resource": [
       {
+	"group": "all"
+        "files": [
+          "**/*.png",
+		  "**/*.jpg",
+		  "**/*.svg",
+		  "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+	"group": "unity"
         "files": [
           "**/*.png",
 		  "**/*.jpg",
@@ -39,6 +69,14 @@
       "monikerRange": {
         "sandbox/gamedev/unity/**/*.md": ">= unity-2017.1"
       }
+    },
+    "groups": {
+	"all" : {
+	},
+	"unity": {
+           "moniker_range": ">= unity-2017.1",
+	   "dest": "sandbox/gamedev/unity/"
+	}
     },
     "template": [],
     "dest": "sandbox"
