@@ -1,11 +1,10 @@
 {
   "build": {
-    "content": [
-      {
-	"group": "all",
+    "content": [{
+        "group": "all",
         "files": [
-		  "**/*.md",
-		  "**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -17,10 +16,10 @@
         ]
       },
       {
-	"group": "unity",
+        "group": "unity",
         "files": [
-		  "**/*.md",
-		  "**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,14 +31,13 @@
         ]
       }
     ],
-    "resource": [
-      {
-	"group": "all",
+    "resource": [{
+        "group": "all",
         "files": [
           "**/*.png",
-		  "**/*.jpg",
-		  "**/*.svg",
-		  "**/*.gif"
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -47,12 +45,12 @@
         ]
       },
       {
-	"group": "unity",
+        "group": "unity",
         "files": [
           "**/*.png",
-		  "**/*.jpg",
-		  "**/*.svg",
-		  "**/*.gif"
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -63,20 +61,19 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"breadcrumb_path": "/sandbox/breadcrumb/toc.json"
-	},
+      "breadcrumb_path": "/sandbox/breadcrumb/toc.json"
+    },
     "fileMetadata": {
       "monikerRange": {
         "sandbox/gamedev/unity/**/*.md": ">= unity-2017.1"
       }
     },
     "groups": {
-	"all" : {
-	},
-	"unity": {
-           "moniker_range": ">= unity-2017.1",
-	   "dest": "sandbox/gamedev/unity/"
-	}
+      "all": {},
+      "unity": {
+        "moniker_range": ">= unity-2017.1",
+        "dest": "sandbox/gamedev/unity/"
+      }
     },
     "template": [],
     "dest": "sandbox"
