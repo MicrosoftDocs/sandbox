@@ -63,12 +63,16 @@
     "globalMetadata": {
       "breadcrumb_path": "/sandbox/breadcrumb/toc.json"
     },
-    "fileMetaData": {},
+    "fileMetaData": {
+      "monikerRange": {
+        "gamedev/unity/**/*.md": ">= unity-2017.1"
+      }
+    },
     "markdownEngineName": "markdig",
     "versions": {},
     "groups": {
       "all": {
-        "moniker_range": "unity-2017.1"
+        "moniker_range": ">= contososerver-1.0"
       },
       "unity": {
         "moniker_range": ">= unity-2017.1"
