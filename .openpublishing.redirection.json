@@ -9,6 +9,11 @@
 		"source_path": "sandbox/gamedev/monogame/azure-storage-monogame.md", 
 		"redirect_url": "/sandbox/gamedev/monogame/azure-monogame", 
 		"redirect_document_id": true 
-	}
+	},
+      {
+		"source_path": "sandbox/functions-recipes/hostjson.md", 
+		"redirect_url": "/azure/azure-functions/functions-host-json.md", 
+		"redirect_document_id": true                 
+      }
 	] 
   } 
