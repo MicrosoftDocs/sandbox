@@ -30,6 +30,11 @@
 		"source_path": "sandbox/functions-recipes/development-environment.md", 
 		"redirect_url": "/azure/azure-functions/functions-create-first-azure-function", 
 		"redirect_document_id": true                 
+      },
+      {
+		"source_path": "sandbox/functions-recipes/routes.md", 
+		"redirect_url": "/azure/azure-functions/functions-bindings-http-webhook", 
+		"redirect_document_id": true                 
       }
 	] 
   } 
