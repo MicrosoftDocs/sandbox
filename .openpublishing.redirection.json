@@ -35,6 +35,11 @@
 		"source_path": "sandbox/functions-recipes/routes.md", 
 		"redirect_url": "/azure/azure-functions/functions-bindings-http-webhook", 
 		"redirect_document_id": true                 
+      },
+      {
+		"source_path": "sandbox/functions-recipes/logging.md", 
+		"redirect_url": "/azureazure-functions/functions-dotnet-class-library#logging", 
+		"redirect_document_id": true                 
       }
 	] 
   } 
