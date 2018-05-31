@@ -2,6 +2,8 @@
 
 The Cosmos DB binding can automatically retrieve a list of documents from Cosmos DB and bind it to a parameter. The `sqlQuery` property of the binding is used to specify a query to use to retrieve the documents. This example demonstrates how to select the five most recent documents from the collection as determined by the `_ts` timestamp property.
 
+# [C#](#tab/csharp) 
+
 ```csharp
 [FunctionName("CosmosDBSample")]
 public static HttpResponseMessage Run(
@@ -10,6 +12,16 @@ public static HttpResponseMessage Run(
 {
     return req.CreateResponse(HttpStatusCode.OK, documents);
 }
+```
+
+# [F#](#tab/fsharp) 
+
+```fsharp
+[<FunctionName("CosmosDBSample")>]
+let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "get")>] req: HttpRequestMessage,
+        [<DocumentDB("test", "test", ConnectionStringSetting = "CosmosDB", sqlQuery = "SELECT top 2 * FROM c order by c._ts desc")>] documents: Object seq) =
+
+  req.CreateResponse (HttpStatusCode.OK, documents)
 ```
 
 [!include[](../includes/takeaways-heading.md)]

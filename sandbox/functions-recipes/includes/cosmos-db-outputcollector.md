@@ -2,6 +2,8 @@
 
 The `IAsyncCollector` lets you save multiple documents within one execution of your Function.
 
+# [C#](#tab/csharp) 
+
 ```csharp
 using System.Net;
 using System.Net.Http;
@@ -30,6 +32,24 @@ public static async Task<HttpResponseMessage> Run(
 
     return new HttpResponseMessage(HttpStatusCode.Created);
 }
+```
+
+# [F#](#tab/fsharp) 
+
+```fsharp
+type MyRecord = {
+  id: string
+  name: string
+}
+
+[<FunctionName("CosmosDbSample")>]
+let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)>] records: MyRecord[],
+        log: TraceWriter,
+        [<DocumentDB("ToDoList", "Items", ConnectionStringSetting = "CosmosDB")>] documentsToStore: ICollector<MyRecord>) = 
+
+  log.Info (sprintf "Detected %i incoming documents" records.Length)
+  Array.iter documentsToStore.Add records
+  new HttpResponseMessage(HttpStatusCode.Created)
 ```
 
 [!include[](../includes/takeaways-heading.md)]
