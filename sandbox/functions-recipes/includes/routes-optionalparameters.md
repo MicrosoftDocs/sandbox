@@ -2,16 +2,29 @@
 
 In order to make route parameters optional in your function call, add a `?` after the parameter name in the route definition and the type in the function header.
 
+# [C#](#tab/csharp) 
+
 ```csharp
 [FunctionName("Example")]
 public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example/{parameter?}")]HttpRequestMessage req,
-                                                  string? parameter,
+                                                  string parameter,
                                                   TraceWriter log)
 {
     log.Info($"C# HTTP trigger function processed a request {parameter}");
 
     return new HttpResponseMessage(HttpStatusCode.Accepted);
 }
+```
+
+# [F#](#tab/fsharp) 
+
+```fsharp
+[<FunctionName("Example")>]
+let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example/{parameter?}")>] req: HttpRequestMessage,
+        parameter: string,
+        log: TraceWriter) =
+  log.Info(sprintf "F# HTTP trigger function processed a request %s" parameter)
+  new HttpResponseMessage(HttpStatusCode.Accepted)
 ```
 
 If you are specifying a parameter type, put the `?` after the type name like so: `{parameter:int?}`

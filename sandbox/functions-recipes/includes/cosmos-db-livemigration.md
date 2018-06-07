@@ -2,6 +2,8 @@
 
 You can trigger a Function based on changes in your Cosmos DB collections. In this sample we are sending the changes to a second collection using the `IAsyncCollection` explained in [this other recipe](../cosmos-db.md#save-multiple-documents-to-a-collection). You could process or work with the documents before sending it to the second collection.
 
+# [C#](#tab/csharp) 
+
 ```csharp
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -22,6 +24,21 @@ public static async Task Run(
         await documentsToStore.AddAsync(doc);
     }
 }
+```
+
+# [F#](#tab/fsharp) 
+
+```fsharp
+[<FunctionName("CosmosDbSample")>]
+let Run([<CosmosDBTrigger("ToDoList","Items", ConnectionStringSetting = "CosmosDB")>] documents: IReadOnlyList<Document>,
+        log: TraceWriter,
+        [<DocumentDB("ToDoList", "Migration", ConnectionStringSetting = "CosmosDB", CreateIfNotExists = true)>] documentsToStore: ICollector<Document>) =
+
+  documents
+  |> Seq.iter (fun doc ->
+               log.Info (sprintf "Processing document with Id %s" doc.Id)
+               // work with the document, process or create a new one
+               documentsToStore.Add doc) 
 ```
 
 [!include[](../includes/takeaways-heading.md)]
