@@ -2,6 +2,8 @@
 
 The Cosmos DB binding can automatically retrieve a document from Cosmos DB and bind it to a parameter. This example uses an `object`. The Cosmos DB binding uses a binding expression (`{id}`) to look up a document from Cosmos DB using the `id` value from the HttpTrigger route.
 
+# [C#](#tab/csharp) 
+
 ```csharp
 [FunctionName("CosmosDBSample")]
 public static HttpResponseMessage Run(
@@ -17,6 +19,18 @@ public static HttpResponseMessage Run(
         return req.CreateResponse(HttpStatusCode.OK, document);
     }
 }
+```
+
+# [F#](#tab/fsharp) 
+
+```fsharp
+[<FunctionName("CosmosDBSample")>]
+let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "foo/{id}")>] req: HttpRequestMessage,
+        [<DocumentDB("test", "test", ConnectionStringSetting = "CosmosDB", Id = "{id}")>] document: Object) = 
+
+  if (document = null) 
+  then req.CreateResponse HttpStatusCode.NotFound
+  else req.CreateResponse (HttpStatusCode.OK, document)
 ```
 
 [!include[](../includes/takeaways-heading.md)]
