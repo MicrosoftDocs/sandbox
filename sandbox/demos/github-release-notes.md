@@ -20,8 +20,10 @@ The [The GitHub Release Notes Generator](https://github.com/paladique/ReleaseNot
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/paladique/ReleaseNotesGenerator)
 
 ![Example release on GitHub](media/github-release-notes/exp_release.png)
+_Example release on GitHub_
 
-![Rendered markdown file of release notes](media/github-release-notes/renderednotes.png)
+![Rendered markdown file of example release notes](media/github-release-notes/renderednotes.png)
+_Rendered markdown file of example release notes_
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/en-us/free?WT.mc_id=sandbox-functions-jasmineg) account
