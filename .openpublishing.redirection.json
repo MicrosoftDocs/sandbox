@@ -12,7 +12,7 @@
     },
     {
       "source_path": "sandbox/functions-recipes/table-storage.md",
-      "redirect_url": "/azure/azure-functions/functions-bindings-storage-table.md",
+      "redirect_url": "/azure/azure-functions/functions-bindings-storage-table",
       "redirect_document_id": true
     },
     {
