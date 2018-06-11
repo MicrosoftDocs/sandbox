@@ -46,7 +46,7 @@ sections:
         src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
     - title: GitHub Release Notes Generator
       html: <p>Generate release notes when creating a new release with Azure Functions and storage</p>
-      href: github-release-notes
+      href: demos/github-release-notes
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
 - title: Game Development
