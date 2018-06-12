@@ -434,7 +434,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 # [iOS](#tab/ios)
 
-#### Configure Unity build settings
+### Configure Unity build and player settings
 
 1. Choose **File > Build Settings...** from the Unity menu.
 
@@ -446,7 +446,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 ![bundle id](media/fbauth_bundleid.png)
 
-#### Add the iOS platform information to your Facebook app
+### Add the iOS platform information to your Facebook app
 
 1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps) and select your app.
 
@@ -473,7 +473,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![expand Android Facebook settings](media/fbauth_android-fb-settings.png)
 
-#### Fix the missing debug keystore file warning
+### Fix the missing debug keystore file warning
 
 ![Missing keystore](media/fbauth_android-debug-keystore-missing-cropped.png)
 
@@ -481,7 +481,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 1. Create a new project with the default options. The project will not be used and can safely be deleted once created. The process of creating the new project corrects the missing android debug keystore warning.
 
-#### Fix the OpenSSL not found warning
+### Fix the OpenSSL not found warning
 
 ![OpenSSL missing](media/fbauth_openssl-not-found-cropped.png)
 
@@ -505,7 +505,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![edit path var](media/fbauth_add-path-vars.png)
 
-#### Fix the Keytool not found warning
+### Fix the Keytool not found warning
 
 ![Keytool not found](media/fbauth_keytool-not-found.png)
 
@@ -521,7 +521,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![edit path var](media/fbauth_add-path-vars.png)
 
-#### Configure the Unity Android build and player settings
+### Configure the Unity build and player settings
 
 1. In the Unity menu, click **File > Build Settings...**.
 
@@ -533,7 +533,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![change package name](media/fbauth_change-package-name.png)
 
-#### Add the Android platform information to your Facebook app
+### Add the Android platform information to your Facebook app
 
 1. In the Unity menu, select **Facebook > Edit Settings**.
 
@@ -558,7 +558,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 > [!TIP]
 > Unity WebGL builds can be hosted on Azure. For more information, see this [blog entry](https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/10/09/hosting-your-unity-game-on-azure/).
 
-#### Configure Unity build settings
+### Configure Unity build settings
 
 1. Choose **File > Build Settings...** from the Unity menu.
 
@@ -567,7 +567,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
   > [!NOTE]
   > If you notice a compiler error regarding an assembly with the same name already being imported, try saving your project, closing Unity, and reopening.
 
-#### Configure web platform for your Facebook app
+### Configure web platform for your Facebook app
 
 1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps/) and select your app.
 
@@ -587,7 +587,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![website platform settings](media/fbauth_website-platform-settings.png)
 
-#### Configure CORS for Azure Function App
+### Configure CORS for Azure Function App
 
 1. In the [Azure portal](https://portal.azure.com), navigate to the Function App created earlier in the example.
 
@@ -611,8 +611,6 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 > [!NOTE]
 > The Facebook Unity SDK does not support logging in in the Unity editor. To test in the editor, paste a [debug access token](https://developers.facebook.com/tools/accesstoken/) into the `LogInUser()` function in `FacebookLogin.cs`.
 
-1. Download and import the [Azure Easy Tables Client with Facebook auth Unity package](https://github.com/dantogno/Azure-Unity-FB-Auth/raw/master/Unity%20Packages/Azure%20Easy%20tables%20client%20with%20FB%20auth.unitypackage) into your Unity project.
-
 1. In the [Azure portal](https://portal.azure.com), navigate to the Function App you created for this example and copy the URL.
 
   ![Copy function app URL](media/fbauth_copy-functionapp-url.png)
@@ -625,11 +623,11 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![default host key](media/fbauth_defaulthostkey.png)
 
-1. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB Auth/Test Scene/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
+1. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB auth/Scenes/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
 
 1. Ensure a platform supported by the Facebook Unity SDK is selected (Android, iOS, WebGL).
 
-1. For iOS or Android, choose **Build and Run**. Choose an appropriate path to save the build. For WebGL click **Build** and upload the build to a hosting location on the web.
+1. For iOS or Android, choose **Build and Run**. Choose an appropriate path to save the build. For WebGL, click **Build** and upload the build to a hosting location on the web.
 
 1. Once the game is running, press the **LOGIN** button.
 
@@ -648,9 +646,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 ## Try the sample racing game
 
-1. Download and import the [Azure Easy Tables with FB auth sample game assets Unity package](https://github.com/dantogno/Azure-Unity-FB-Auth/raw/master/Unity%20Packages/Azure%20Easy%20tables%20with%20FB%20auth%20sample%20game%20assets.unitypackage) into your Unity project.
-
-1. In the Unity menu, choose **File > Build Settings...** and add the scenes inside `Assets/Azure Easy tables with FB auth sample game assets/Scenes` to the **Scenes in Build** section.
+1. In the Unity menu, choose **File > Build Settings...** and ensure the the scenes inside `Azure Easy tables client with FB auth/Scenes/` to the **Scenes in Build** section.
 
 1. Ensure that `MenuScene` is in the top, **index 0** position in the list of **Scenes in Build**.
 
