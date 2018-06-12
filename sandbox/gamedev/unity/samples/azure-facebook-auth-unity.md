@@ -93,6 +93,9 @@ The Unity client will call the Insert function to insert data into our Easy Tabl
 #### Add the Azure Mobile Client and Newtonsoft.Json NuGet packages to the Insert function
 This example uses the Azure Mobile Client SDK to simplify authentication and data operations.
 
+> [!NOTE]
+> The code for setting up the Azure functions can be found in the sample's GitHub [repository](https://github.com/BrianPeek/AzureSamples-Unity/tree/master/MobileAppsRacerFbAuth/Azure%20Functions) as well.
+
 1. Once the function has been created, select **View files** from the right side panel. You may need to extend the window or scroll right to find it.
 
 2. Click **+ Add**.
@@ -145,16 +148,29 @@ using Newtonsoft.Json.Linq;
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
 {
     log.Info("C# HTTP trigger function processed a request.");
-    MobileServiceClient client = new MobileServiceClient("https://REPLACE-WITH-YOUR-MOBILEAPP-URL");
+
+    // Update with your Mobile App url!
+    MobileServiceClient client = new MobileServiceClient("INSERT_YOUR_MOBILE_APP_URL_HERE");
     dynamic data = await req.Content.ReadAsStringAsync();
 
-    // Server expects a json arrary with the format:
-    // [{"access_token":"value"},{"tableName":"value"},{instanceJson}]
-    JArray arrayJson = JArray.Parse(data);
-    dynamic authToken = arrayJson[0];
-    var tableName = arrayJson[1].Value<string>("tableName");
-    dynamic objectToInsert = arrayJson[2];
-
+    JArray arrayJson;
+    dynamic authToken;
+    string tableName;
+    dynamic objectToInsert;
+    try
+    {
+        // Server expects a json arrary with the format:
+        // [{"access_token":"value"},{"tableName":"value"},{instanceJson}]
+        arrayJson = JArray.Parse(data);
+        authToken = arrayJson[0];
+        tableName = arrayJson[1].Value<string>("tableName");
+        objectToInsert = arrayJson[2];
+    }
+    catch (Exception exception)
+    {
+        return req.CreateErrorResponse(HttpStatusCode.BadRequest, exception);
+    }
+    
     // Try to log in. Return Unauthorized response upon failure.
     MobileServiceUser user = null;
     while (user == null)
@@ -183,8 +199,9 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     }
 }
 ```
+
  > [!IMPORTANT]
- > Be sure to replace the string that reads `REPLACE-WITH-YOUR-MOBILEAPP-URL` with the URL to your Azure Mobile App. To find this URL:
+ > Be sure to replace the string that reads `INSERT_YOUR_MOBILE_APP_URL_HERE` with the URL to your Azure Mobile App. To find this URL:
 
   > * Click **App Services** from the main left menu of the Azure portal.
 
@@ -222,6 +239,9 @@ The Unity client will call the GetAllEntries function to get a list of all the e
 1. Click the **Create** button.
 
 #### Add the Azure Mobile Client and Newtonsoft.Json packages to the GetAllEntries function
+
+> [!NOTE]
+> The code for setting up the Azure functions can be found in the sample's GitHub [repository](https://github.com/BrianPeek/AzureSamples-Unity/tree/master/MobileAppsRacerFbAuth/Azure%20Functions) as well.
 
 1. Once the function has been created, select **View files** from the right side panel. You may need to extend the window or scroll right to find it.
 
@@ -270,15 +290,26 @@ using Newtonsoft.Json.Linq;
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
 {
     log.Info("C# HTTP trigger function processed a request.");
-    MobileServiceClient client = new MobileServiceClient("https://REPLACE-WITH-YOUR-MOBILEAPP-URL");
+    
+    // Update with your Mobile App url!
+    MobileServiceClient client = new MobileServiceClient("INSERT_YOUR_MOBILE_APP_URL_HERE");
     dynamic data = await req.Content.ReadAsStringAsync();
-
-    // Server expects a json arrary with the format:
-    // [{"access_token":"value"},{"tableName":"value"}]
-    JArray arrayJson = JArray.Parse(data);
-    dynamic authToken = arrayJson[0];
-    var tableName = arrayJson[1].Value<string>("tableName");
-
+    JArray arrayJson;
+    dynamic authToken;
+    string tableName;
+    try
+    {
+        // Server expects a json arrary with the format:
+        // [{"access_token":"value"},{"tableName":"value"}]
+        arrayJson = JArray.Parse(data);
+        authToken = arrayJson[0];
+        tableName = arrayJson[1].Value<string>("tableName");
+    }
+    catch (Exception exception)
+    {
+        return req.CreateErrorResponse(HttpStatusCode.BadRequest, exception);
+    }
+    
     // Try to log in. Return Unauthorized response upon failure.
     MobileServiceUser user = null;
     while (user == null)
@@ -311,7 +342,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 ```
 
 > [!IMPORTANT]
-> Be sure to replace the string that reads `REPLACE-WITH-YOUR-MOBILEAPP-URL` with the URL to your Azure Mobile App.
+> Be sure to replace the string that reads `INSERT_YOUR_MOBILE_APP_URL_HERE` with the URL to your Azure Mobile App.
 
 ## Facebook setup
 
@@ -376,24 +407,24 @@ To use Facebook authentication, you must create a new Facebook app.
 
   ![change easy table permissions](media/fbauth_set-easy-tables-permissions.png)
 
-## Configure the Facebook SDK in a new Unity project
+## Download the project
 
-1. Launch the Unity editor and create a new 3D project.
+Clone or download the project from the [AzureSamples-Unity repo](https://aka.ms/azsamples-unity) on GitHub. 
 
-1. Download the [Facebook SDK for Unity](https://developers.facebook.com/docs/unity) and extract the resulting .zip file.
+* On the GitHub site, click the **Clone or download** button to get a copy of the project to work with.
+
+* This project is located within the `MobileAppsRacerFbAuth` directory.
+
+## Configure the Facebook SDK in the Unity project
+
+The sample Unity project already has the Facebook SDK imported. In new Unity projects, you can download the [Facebook SDK for Unity](https://developers.facebook.com/docs/unity) and import the .unitypackage file into your project.
 
 > [!NOTE]
 > There is a bug in the Facebook Unity SDK v7.11.0 that prevents initialization on WebGL. This example was tested with the [previous version](https://developers.facebook.com/docs/unity/change-log) (v7.10.1).
 
-1. Open the extracted directory and navigate to the **FacebookSDK** folder.
+1. Open the Unity project contained within the `MobileAppsRacerFbAuth` directory of the repository.
 
-1. With your Unity project open, double click the **facebook-unity-sdk.unitypackage** file to bring up the Import Unity Package dialog.
-
-1. Leave everything checked and click **Import**.
-
-  ![import facebook sdk](media/fbauth_import-fbsdk-unitypackage.png)
-
-1. After importing, click **Facebook > Edit Settings** in the Unity menu.
+1. Click **Facebook > Edit Settings** in the Unity menu.
 
   ![open facebook settings](media/fbauth_open-fbsdk-settings.png)
 
@@ -401,67 +432,7 @@ To use Facebook authentication, you must create a new Facebook app.
 
 ## Setup the Facebook SDK for your chosen platform
 
-* [WebGL](#facebook-sdk-for-unity-webgl-setup)
-
-* [iOS](#facebook-sdk-for-unity-ios-setup)
-
-* [Android](#facebook-sdk-for-unity-android-setup)
-
-### Facebook SDK for Unity WebGL setup
-
-> [!TIP]
-> Unity WebGL builds can be hosted on Azure. For more information, see this [blog entry](https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/10/09/hosting-your-unity-game-on-azure/).
-
-#### Configure Unity build settings
-
-1. Choose **File > Build Settings...** from the Unity menu.
-
-1. Select the **WebGL** platform and click **Switch Platform**.
-
-  > [!NOTE]
-  > If you notice a compiler error regarding an assembly with the same name already being imported, try saving your project, closing Unity, and reopening.
-
-#### Configure web platform for your Facebook app
-
-1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps/) and select your app.
-
-1. At the dashboard, select **Settings** and choose **Basic**.
-
-  ![basic settings](media/fbauth_basic-settings.png)
-
-1. Click **Add Platform**.
-
-  ![add facebook platform](media/fbauth_fb-add-platform.png)
-
-1. Select **Website**.
-
-  ![add website platform](media/fbauth_website.png)
-
-1. Enter the **Site URL** where your WebGL build is hosted and click **Save**.
-
-  ![website platform settings](media/fbauth_website-platform-settings.png)
-
-#### Configure CORS for Azure Function App
-
-1. In the [Azure portal](https://portal.azure.com), navigate to the Function App created earlier in the example.
-
-1. Click the **Platform features** tab and then select **CORS**.
-
-  ![select CORS](media/fbauth_platformfeatures-cors.png)
-
-1. Click the empty box at the bottom of the **Allowed Origins** list and type in the URL where your WebGL build is hosted.
-
-1. Click **Save**.
-
-  ![cors settings](media/fbauth_cors.png)
-
-> [!IMPORTANT]
-> The Facebook Unity SDK uses popups for logging in on WebGL builds. Be sure to enable popups on your browser or the log in process may be blocked.
-
-> [!NOTE]
-> If you don't need to setup additional platforms, skip to [try the test scene](#try-the-test-scene).
-
-### Facebook SDK for Unity iOS setup
+# [iOS](#tab/ios)
 
 #### Configure Unity build settings
 
@@ -491,10 +462,7 @@ To use Facebook authentication, you must create a new Facebook app.
 
   ![bundle id](media/fbauth_fbios.png)
 
-> [!NOTE]
-> If you don't need to setup additional platforms, skip to [try the test scene](#try-the-test-scene).
-
-### Facebook SDK for Unity Android setup
+# [Android](#tab/android)
 
 > [!IMPORTANT]
 > Before continuing, ensure your Unity Android development environment is properly configured. Consult the [Getting started with Android development](https://docs.unity3d.com/Manual/android-GettingStarted.html) documentation for help.
@@ -584,6 +552,59 @@ To use Facebook authentication, you must create a new Facebook app.
 1. Click **Save Changes**.
 
   ![Android platform settings](media/fbauth_fb-android-settings.png)
+
+# [WebGL](#tab/webgl)
+
+> [!TIP]
+> Unity WebGL builds can be hosted on Azure. For more information, see this [blog entry](https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/10/09/hosting-your-unity-game-on-azure/).
+
+#### Configure Unity build settings
+
+1. Choose **File > Build Settings...** from the Unity menu.
+
+1. Select the **WebGL** platform and click **Switch Platform**.
+
+  > [!NOTE]
+  > If you notice a compiler error regarding an assembly with the same name already being imported, try saving your project, closing Unity, and reopening.
+
+#### Configure web platform for your Facebook app
+
+1. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps/) and select your app.
+
+1. At the dashboard, select **Settings** and choose **Basic**.
+
+  ![basic settings](media/fbauth_basic-settings.png)
+
+1. Click **Add Platform**.
+
+  ![add facebook platform](media/fbauth_fb-add-platform.png)
+
+1. Select **Website**.
+
+  ![add website platform](media/fbauth_website.png)
+
+1. Enter the **Site URL** where your WebGL build is hosted and click **Save**.
+
+  ![website platform settings](media/fbauth_website-platform-settings.png)
+
+#### Configure CORS for Azure Function App
+
+1. In the [Azure portal](https://portal.azure.com), navigate to the Function App created earlier in the example.
+
+1. Click the **Platform features** tab and then select **CORS**.
+
+  ![select CORS](media/fbauth_platformfeatures-cors.png)
+
+1. Click the empty box at the bottom of the **Allowed Origins** list and type in the URL where your WebGL build is hosted.
+
+1. Click **Save**.
+
+  ![cors settings](media/fbauth_cors.png)
+
+> [!IMPORTANT]
+> The Facebook Unity SDK uses popups for logging in on WebGL builds. Be sure to enable popups on your browser or the log in process may be blocked.
+
+---
 
 ## Try the test scene
 
