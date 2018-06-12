@@ -30,7 +30,7 @@ This approach should work for any Unity platform supported by the Facebook SDK.
 
 ### Prerequisites
 
-* Unity 2017.1 or greater ([free personal version](https://store.unity.com/products/unity-personal) is fine)
+* Unity 5.6.1 or above ([free personal version](https://store.unity.com/products/unity-personal) is fine)
 * Azure subscription (the [free trial](https://aka.ms/azft-gaming) or included credits from [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) are fine)
 * [Visual Studio 2017](https://www.visualstudio.com/) (free Community edition is fine) with Game Development with Unity workload
 * Facebook account
@@ -203,15 +203,11 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
  > [!IMPORTANT]
  > Be sure to replace the string that reads `INSERT_YOUR_MOBILE_APP_URL_HERE` with the URL to your Azure Mobile App. To find this URL:
 
-  > * Click **App Services** from the main left menu of the Azure portal.
-
-  > * Click the name of your Mobile App from the list.
-
-  > * Ensure the **Overview** tab is selected
-
-  > * Copy the URL from beneath the **URL** heading.
-
-  ![copy URL](media/fbauth_app-url.png)
+  > 1. Click **App Services** from the main left menu of the Azure portal.
+  > 1. Click the name of your Mobile App from the list.
+  > 1. Ensure the **Overview** tab is selected
+  > 1. Copy the URL from beneath the **URL** heading.
+  > ![copy URL](media/fbauth_app-url.png)
 
 > [!NOTE]
 > If you wish to customize this code, using [Visual Studio to test and debug Azure functions](https://blogs.msdn.microsoft.com/webdev/2017/05/10/azure-function-tools-for-visual-studio-2017/) is highly recommended.
@@ -407,12 +403,11 @@ To use Facebook authentication, you must create a new Facebook app.
 
   ![change easy table permissions](media/fbauth_set-easy-tables-permissions.png)
 
-## Download the project
+## Download the sample Unity project
 
 Clone or download the project from the [AzureSamples-Unity repo](https://aka.ms/azsamples-unity) on GitHub. 
 
 * On the GitHub site, click the **Clone or download** button to get a copy of the project to work with.
-
 * This project is located within the `MobileAppsRacerFbAuth` directory.
 
 ## Configure the Facebook SDK in the Unity project
