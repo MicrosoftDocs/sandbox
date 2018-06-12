@@ -2,7 +2,7 @@
 title: "Facebook authentication with Unity and Azure"
 author: dantogno
 ms.author: v-davian
-ms.date: 05/01/2018
+ms.date: 06/12/2018
 ms.topic: sample
 ms.assetid:
 ---
@@ -41,7 +41,7 @@ An [Azure Mobile App](https://azure.microsoft.com/en-us/documentation/learning-p
 
 [!include[](include/racer_configure-easy-tables.md)]
 
-### Setup the TestPlayerData table
+### Set up the TestPlayerData table
 
 1. Go back to the Easy Tables blade and click **Add** to add a second table.
 
@@ -425,7 +425,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 1. In the Facebook settings that open in the Unity Inspector, paste in your Facebook **App Id**.
 
-## Setup the Facebook SDK for your chosen platform
+## Set up the Facebook SDK for your chosen platform
 
 # [iOS](#tab/ios)
 
