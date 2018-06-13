@@ -57,6 +57,11 @@ sections:
       href: unity/samples/azure-mobile-apps-unity-racer
       image:
         src: media/unity.png
+    - title: Facebook Authentication and Unity
+      html: <p>Incorporate Facebook authentication into a Unity project</p>
+      href: unity/samples/azure-facebook-auth-unity
+      image:
+        src: media/unity.png
 - title: MonoGame SDKs
   items:
   - type: paragraph
