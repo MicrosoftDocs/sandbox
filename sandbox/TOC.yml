@@ -34,6 +34,8 @@
           items:
           - name: Easy Tables with Unity and the Mobile Apps SDK
             href: gamedev/unity/samples/azure-mobile-apps-unity-racer.md
+          - name: Facebook Authentication with Unity and Azure
+            href: gamedev/unity/samples/azure-facebook-auth-unity.md
       - name: MonoGame
         expanded: false
         items:
