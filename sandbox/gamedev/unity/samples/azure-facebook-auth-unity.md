@@ -620,7 +620,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![default host key](media/fbauth_defaulthostkey.png)
 
-1. In the Unity menu, choose **File > Build Settings...** and add the `Assets/Azure Easy tables client with FB auth/Scenes/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
+1. In the Unity menu, choose **File > Build Settings...** and add the `Assets/AuthSample/Scenes/test scene.unity` file to the index 0 position of the **Scenes in Build** list.
 
 1. Ensure a platform supported by the Facebook Unity SDK is selected (Android, iOS, WebGL).
 
@@ -643,7 +643,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 ## Try the sample racing game
 
-1. In the Unity menu, choose **File > Build Settings...** and ensure the the scenes inside `Azure Easy tables client with FB auth/Scenes/` to the **Scenes in Build** section.
+1. In the Unity menu, choose **File > Build Settings...** and ensure the the scenes inside `Assets/AuthSample/Scenes/` to the **Scenes in Build** section.
 
 1. Ensure that `MenuScene` is in the top, **index 0** position in the list of **Scenes in Build**.
 
