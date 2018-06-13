@@ -18,11 +18,12 @@ ms.assetid:
 
 This article demonstrates how to incorporate Facebook authentication into a Unity project that stores high score and game telemetry data in Azure Easy Tables.
 
-The approach uses the [Facebook Unity SDK](https://developers.facebook.com/docs/unity/) to allow users to log in to Facebook. It then uses [UnityWebRequest](https://docs.unity3d.com/Manual/UnityWebRequest.html) to send HTTP requests to an [Azure function app](https://azure.microsoft.com/en-us/services/functions/) that handles authentication and data insertion and retrieval.
+The approach uses the [Facebook Unity SDK](https://developers.facebook.com/docs/unity/) to allow users to log in to Facebook. It then uses [UnityWebRequest](https://docs.unity3d.com/Manual/UnityWebRequest.html) to send HTTP requests to an [Azure function app](https://azure.microsoft.com/services/functions/) that handles authentication and data insertion and retrieval.
 
 ### Compatibility
 
 This approach should work for any Unity platform supported by the Facebook SDK.
+
 * iOS
 * Android
 * WebGL
@@ -39,7 +40,7 @@ This approach should work for any Unity platform supported by the Facebook SDK.
 
 ## Create an Azure Mobile App and configure Easy Tables
 
-An [Azure Mobile App](https://azure.microsoft.com/en-us/documentation/learning-paths/appservice-mobileapps/) is a type of Azure App Service. This example uses the Easy Tables feature of Azure Mobile Apps to simply store data.
+An [Azure Mobile App](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/) is a type of Azure App Service. This example uses the Easy Tables feature of Azure Mobile Apps to simply store data.
 
 [!include[](include/racer_configure-easy-tables.md)]
 
