@@ -251,15 +251,16 @@ The Unity client will call the GetAllEntries function to get a list of all the e
 1. Once the new project.json file is created, select it in the **View files** list.
 
 1. Paste the following lines into the empty project.json file:
-  ```
-  {
+
+```
+{
   "frameworks": {
-    "net46":{
+    "net46": {
       "dependencies": {
         "Microsoft.Azure.Mobile.Client": "4.0.2"
       }
     }
-   }
+  }
 }
 ```
 
