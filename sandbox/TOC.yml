@@ -41,15 +41,3 @@
         items:
         - name: Using Azure SDKs with MonoGame
           href: gamedev/monogame/azure-monogame.md
-    - name: Azure Functions Recipes
-      expanded: false
-      href: functions-recipes/index.yml
-      items:
-      - name: Functions Basics
-        href: functions-recipes/functions-basics.md
-      - name: Triggers and Bindings
-        href: functions-recipes/triggers-bindings.md
-      - name: Development Environment
-        href: functions-recipes/development-environment.md
-      - name: Durable Functions
-        href: functions-recipes/durable-functions.md

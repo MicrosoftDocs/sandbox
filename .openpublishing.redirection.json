@@ -9,6 +9,37 @@
 		"source_path": "sandbox/gamedev/monogame/azure-storage-monogame.md", 
 		"redirect_url": "/sandbox/gamedev/monogame/azure-monogame", 
 		"redirect_document_id": true 
-	}
+	},
+      {
+		"source_path": "sandbox/functions-recipes/hostjson.md", 
+		"redirect_url": "/azure/azure-functions/functions-host-json.md", 
+		"redirect_document_id": true                 
+      },
+      {
+          
+		"source_path": "sandbox/functions-recipes/functions-basics.md", 
+		"redirect_url": "/azure/azure-functions/functions-dotnet-class-library", 
+		"redirect_document_id": true                 
+      },
+      {
+		"source_path": "sandbox/functions-recipes/triggers-bindings.md", 
+		"redirect_url": "/azure/azure-functions/functions-triggers-bindings", 
+		"redirect_document_id": true                 
+      },
+      {
+		"source_path": "sandbox/functions-recipes/development-environment.md", 
+		"redirect_url": "/azure/azure-functions/functions-create-first-azure-function", 
+		"redirect_document_id": true                 
+      },
+      {
+		"source_path": "sandbox/functions-recipes/routes.md", 
+		"redirect_url": "/azure/azure-functions/functions-bindings-http-webhook", 
+		"redirect_document_id": true                 
+      },
+      {
+		"source_path": "sandbox/functions-recipes/logging.md", 
+		"redirect_url": "/azureazure-functions/functions-dotnet-class-library#logging", 
+		"redirect_document_id": true                 
+      }
 	] 
   } 
