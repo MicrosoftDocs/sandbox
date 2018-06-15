@@ -19,14 +19,14 @@ sections:
   - type: markdown
     text: |
       Get started with developing games that use Azure.  More coming soon!
-- title: Unity SDKs
+- title: Azure SDKs
   items:
   - type: paragraph
-    text: Experimental SDKs for Unity developers.
+    text: Experimental SDKs for game developers.
   - type: list
     style: cards
     className: cardsM
-    columns: 3
+    columns: 4
     items:
     - title: Azure Storage SDK for Unity
       html: <p>Use Azure Storage from your Unity project</p>
@@ -43,15 +43,25 @@ sections:
       href: unity/azure-mobile-apps-unity
       image:
         src: media/unity.png
-- title: Unity Samples
+    - title: Azure SDKs for MonoGame
+      html: <p>Use the Azure SDKs with MonoGame</p>
+      href: monogame/azure-monogame
+      image:
+        src: media/monogame.png
+- title: Azure Gaming Samples
   items:
   - type: paragraph
     text: Samples for Unity developers.
   - type: list
     style: cards
     className: cardsM
-    columns: 2
+    columns: 4
     items:
+    - title: Scavenger
+      html: <p>A virtual scavenger hunt for Unity with PlayFab, Cognitive Services, and more</p>
+      href: https://github.com/BrianPeek/Scavenger
+      image:
+        src: media/unity.png
     - title: Azure Easy Tables and Unity
       html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
       href: unity/samples/azure-mobile-apps-unity-racer
@@ -62,15 +72,6 @@ sections:
       href: unity/samples/azure-facebook-auth-unity
       image:
         src: media/unity.png
-- title: MonoGame SDKs
-  items:
-  - type: paragraph
-    text: Samples and docs for MonoGame developers.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items: 
     - title: Azure SDKs for MonoGame
       html: <p>Use the Azure SDKs with MonoGame</p>
       href: monogame/azure-monogame
