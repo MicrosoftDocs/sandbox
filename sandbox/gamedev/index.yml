@@ -55,7 +55,7 @@ sections:
   - type: list
     style: cards
     className: cardsM
-    columns: 2
+    columns: 3
     items:
     - title: Azure Easy Tables and Unity
       html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
@@ -67,11 +67,6 @@ sections:
       href: unity/samples/azure-facebook-auth-unity
       image:
         src: media/unity.png
-    - title: Azure SDKs for MonoGame
-      html: <p>Use the Azure SDKs with MonoGame</p>
-      href: monogame/azure-monogame
-      image:
-        src: media/monogame.png
     - title: Other Samples
       html: <p>Additional Azure Gaming samples</p>
       href: azure-gaming-samples.md
