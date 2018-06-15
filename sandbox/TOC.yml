@@ -41,6 +41,11 @@
         items:
         - name: Using Azure SDKs with MonoGame
           href: gamedev/monogame/azure-monogame.md
+      - name: Other
+        expanded: false
+        items:
+        - name: Additional samples and tools for Azure Gaming
+          href: gamedev/azure-gaming-samples.md
     - name: Azure Functions Recipes
       expanded: false
       href: functions-recipes/index.yml
