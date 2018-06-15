@@ -26,7 +26,7 @@ sections:
   - type: list
     style: cards
     className: cardsM
-    columns: 4
+    columns: 2
     items:
     - title: Azure Storage SDK for Unity
       html: <p>Use Azure Storage from your Unity project</p>
@@ -55,7 +55,7 @@ sections:
   - type: list
     style: cards
     className: cardsM
-    columns: 4
+    columns: 2
     items:
     - title: Scavenger
       html: <p>A virtual scavenger hunt for Unity with PlayFab, Cognitive Services, and more</p>
