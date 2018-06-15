@@ -54,8 +54,8 @@ You can check the source code and the relevant documentation on [GitHub](https:/
 
 A simple architecture to consume and process messages coming from video game clients (or servers) using the following Azure services:
 
-* Event Hubs
-* Functions
-* Cosmos DB
-* Data Lake Store
-* Data Lake Analytics
+* [Event Hubs](https://docs.microsoft.com/azure/event-hubs/)
+* [Functions](https://docs.microsoft.com/azure/azure-functions/)
+* [Cosmos DB](https://aka.ms/cosdocs-scavenger)
+* [Data Lake Store](https://docs.microsoft.com/azure/data-lake-store/)
+* [Data Lake Analytics](https://docs.microsoft.com/azure/data-lake-analytics/)
