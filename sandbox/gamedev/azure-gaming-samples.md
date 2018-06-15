@@ -20,7 +20,7 @@ There are many samples that demonstrate a variety of gaming scenarios using Azur
 
 [![Get the source](../media/buttons/source2.png)](https://aka.ms/scavenger)
 
-Scavenger is a game written in Unity for a session presented at [Microsoft Build 2018](https://microsoft.com/build/). The game demonstrates usage of various Azure services:
+Scavenger is a virutal scavenger hunt game written in Unity.  Each day players are presented with a list of items to take a photo of.  If the Computer Vision API determines the photo contains the required object, a point is awarded. The game demonstrates usage of various Azure services:
 
 * [Cognitive Services](https://aka.ms/cogdocs-scavenger)
 * [Azure Functions](https://aka.ms/afdocs-scavenger)
