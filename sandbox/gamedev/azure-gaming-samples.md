@@ -18,7 +18,7 @@ There are many samples that demonstrate a variety of gaming scenarios using Azur
 
 ## AzureFunctionsNodeLeaderboards-Cosmos
 
-[![Get the source](../../../media/buttons/source2.png)](https://github.com/dgkanatsios/AzureFunctionsNodeLeaderboards-Cosmos)
+[![Get the source](../media/buttons/source2.png)](https://github.com/dgkanatsios/AzureFunctionsNodeLeaderboards-Cosmos)
 
 This project is a starter kit that allows you to set up a RESTful API service that stores game leaderboards (scores) and exposes them via HTTP(s) methods/operations. A game developer can use this API service in their game and post new scores, get the top scores, find out the latest ones and more. Additionally, a Unity sample client is included in the project. 
 
@@ -28,14 +28,14 @@ You can check the source code and the relevant documentation on [GitHub](https:/
 
 ## AzureContainerInstancesManagement
 
-[![Get the source](../../../media/buttons/source2.png)](https://github.com/dgkanatsios/AzureContainerInstancesManagement)
+[![Get the source](../media/buttons/source2.png)](https://github.com/dgkanatsios/AzureContainerInstancesManagement)
 
 This project allows you to manage Docker containers running on [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/).
 Suppose that you want to manage a series of running Docker containers. These containers may be stateful, so classic scaling methods (via Load Balancers etc.) would not work. A classic example is multiplayer game servers, where its server has its own connections to game clients, its own state etc. Another example would be batch-style projects, where each instance would have to deal with a separate set of data. For these kind of purposes, you would need a set of Docker containers being created on demand and deleted when their job is done and they are no longer needed in order to save costs.
 
 ## GameAnalyticsEventHubFunctionsCosmosDatalake
 
-[![Get the source](../../../media/buttons/source2.png)](https://github.com/dgkanatsios/GameAnalyticsEventHubFunctionsCosmosDatalake)
+[![Get the source](../media/buttons/source2.png)](https://github.com/dgkanatsios/GameAnalyticsEventHubFunctionsCosmosDatalake)
 
 A simple architecture to consume and process messages coming from video game clients (or servers) using the following Azure services:
 
