@@ -16,7 +16,7 @@ ms.author: brpeek
 
 There are many samples that demonstrate a variety of gaming scenarios using Azure.  We have collected some of these samples below.
 
-## AzureFunctionsNodeLeaderboards-Cosmos
+## Leaderboards with Azure Functions, Node, and Cosmos DB
 
 [![Get the source](../media/buttons/source2.png)](https://github.com/dgkanatsios/AzureFunctionsNodeLeaderboards-Cosmos)
 
@@ -26,14 +26,14 @@ The technology/architecture stack includes an [Express](https://expressjs.com/) 
 
 You can check the source code and the relevant documentation on [GitHub](https://github.com/dgkanatsios/AzureFunctionsNodeLeaderboards-Cosmos) and read the relevant blog post [here](https://dgkanatsios.com/2018/01/12/using-azure-functions-and-cosmos-db-to-create-a-game-leaderboard/).
 
-## AzureContainerInstancesManagement
+## Multiplayer Scaling with Azure Container Instances
 
 [![Get the source](../media/buttons/source2.png)](https://github.com/dgkanatsios/AzureContainerInstancesManagement)
 
 This project allows you to manage Docker containers running on [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/).
 Suppose that you want to manage a series of running Docker containers. These containers may be stateful, so classic scaling methods (via Load Balancers etc.) would not work. A classic example is multiplayer game servers, where its server has its own connections to game clients, its own state etc. Another example would be batch-style projects, where each instance would have to deal with a separate set of data. For these kind of purposes, you would need a set of Docker containers being created on demand and deleted when their job is done and they are no longer needed in order to save costs.
 
-## GameAnalyticsEventHubFunctionsCosmosDatalake
+## Analytics with Event Hubs, Azure Functionsm, Cosmos DB, and Datalake
 
 [![Get the source](../media/buttons/source2.png)](https://github.com/dgkanatsios/GameAnalyticsEventHubFunctionsCosmosDatalake)
 

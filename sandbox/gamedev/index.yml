@@ -19,7 +19,7 @@ sections:
   - type: markdown
     text: |
       Get started with developing games that use Azure.  More coming soon!
-- title: Azure SDKs
+- title: Azure Gaming SDKs
   items:
   - type: paragraph
     text: Experimental SDKs for game developers.
