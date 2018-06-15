@@ -77,3 +77,8 @@ sections:
       href: monogame/azure-monogame
       image:
         src: media/monogame.png
+    - title: Other Samples
+      html: <p>Additional Azure Gaming samples</p>
+      href: azure-gaming-samples.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_code-samples.svg
