@@ -22,7 +22,7 @@ sections:
 - title: Azure Gaming SDKs
   items:
   - type: paragraph
-    text: Experimental SDKs for game developers.
+    text: Experimental SDKs for various engines and platforms for game developers.
   - type: list
     style: cards
     className: cardsM
@@ -51,17 +51,12 @@ sections:
 - title: Azure Gaming Samples
   items:
   - type: paragraph
-    text: Samples for Unity developers.
+    text: Samples and tutorials for game developers.
   - type: list
     style: cards
     className: cardsM
     columns: 2
     items:
-    - title: Scavenger
-      html: <p>A virtual scavenger hunt for Unity with PlayFab, Cognitive Services, and more</p>
-      href: https://github.com/BrianPeek/Scavenger
-      image:
-        src: media/unity.png
     - title: Azure Easy Tables and Unity
       html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
       href: unity/samples/azure-mobile-apps-unity-racer
