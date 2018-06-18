@@ -466,13 +466,18 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 > [!IMPORTANT]
 > Before continuing, ensure your Unity Android development environment is properly configured. Consult the [Getting started with Android development](https://docs.unity3d.com/Manual/android-GettingStarted.html) documentation for help.
 
+### Fix any Facebook SDK Android warnings
+
 1. In the Unity menu, click **Facebook > Edit Settings** to open the FacebookSettings in the Inspector.  
 
-1. Expand the **Android Build Facebook Settings** section. If you are missing prerequisites, a number of warnings may appear here next to yellow exclamation point images. The next steps in this section explain how to fix them. If these warnings don't appear for you, you can safely skip the related steps.
+1. Expand the **Android Build Facebook Settings** section. If you are missing prerequisites, a number of warnings may appear here next to yellow exclamation point images.
 
   ![expand Android Facebook settings](media/fbauth_android-fb-settings.png)
 
-### Fix the missing debug keystore file warning
+> [!NOTE]
+> If these warnings don't appear for you, you can safely skip the related steps and progress to [configure the Unity build and player settings](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-facebook-auth-unity?tabs=android#configure-the-unity-build-and-player-settings).
+
+#### Fix the missing debug keystore file warning
 
 ![Missing keystore](media/fbauth_android-debug-keystore-missing-cropped.png)
 
@@ -480,7 +485,9 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 1. Create a new project with the default options. The project will not be used and can safely be deleted once created. The process of creating the new project corrects the missing android debug keystore warning.
 
-### Fix the OpenSSL not found warning
+1. Restart the Unity editor.
+
+#### Fix the OpenSSL not found warning
 
 ![OpenSSL missing](media/fbauth_openssl-not-found-cropped.png)
 
@@ -504,7 +511,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
   ![edit path var](media/fbauth_add-path-vars.png)
 
-### Fix the Keytool not found warning
+#### Fix the Keytool not found warning
 
 ![Keytool not found](media/fbauth_keytool-not-found.png)
 
