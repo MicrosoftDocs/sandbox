@@ -1,14 +1,39 @@
-{ 
-	"redirections": [ 
-	  {   
-		  "source_path": "sandbox/demos/githubbot.md", 
-		  "redirect_url": "/sandbox/demos/octobot", 
-		  "redirect_document_id": true 
-	  },
-	  {   
-		"source_path": "sandbox/gamedev/monogame/azure-storage-monogame.md", 
-		"redirect_url": "/sandbox/gamedev/monogame/azure-monogame", 
-		"redirect_document_id": true 
-	}
-	] 
-  } 
+{
+  "redirections": [
+    {
+      "source_path": "sandbox/functions-recipes/cosmos-db.md",
+      "redirect_url": "/azure/azure-functions/functions-bindings-cosmosdb",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "sandbox/functions-recipes/timer.md",
+      "redirect_url": "/azure/azure-functions/functions-bindings-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "sandbox/functions-recipes/table-storage.md",
+      "redirect_url": "/azure/azure-functions/functions-bindings-storage-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "sandbox/functions-recipes/cli.md",
+      "redirect_url": "/azure/azure-functions/functions-run-local",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "sandbox/functions-recipes/vscode.md",
+      "redirect_url": "https://code.visualstudio.com/tutorials/functions-extension/getting-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "sandbox/demos/githubbot.md",
+      "redirect_url": "/sandbox/demos/octobot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "sandbox/gamedev/monogame/azure-storage-monogame.md",
+      "redirect_url": "/sandbox/gamedev/monogame/azure-monogame",
+      "redirect_document_id": true
+    }
+  ]
+}

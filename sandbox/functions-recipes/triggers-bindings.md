@@ -18,13 +18,6 @@ ms.service: functions
 
 | | |
 |---|---|
-|<h2>Cosmos DB</h2> | |
-[Retrieve a single document by ID](cosmos-db.md#retrieve-a-single-document-by-id) | Retrieve a single document with an input binding
-[Save multiple documents to a collection](cosmos-db.md#save-multiple-documents-to-a-collection) | Saving multiple documents
-[Trigger a function based on changes in Cosmos DB](cosmos-db.md#trigger-a-function-based-on-changes-in-cosmos-db) | Use the change feed to trigger a function
-[Retrieve a list of documents](cosmos-db.md#retrieve-a-list-of-documents) | Retrieve a list of documents with an input binding
-[Using DocumentClient](cosmos-db.md#using-documentclient) | Run complex queries with `DocumentClient`
-[Customize a DocumentClient and reuse it between executions](cosmos-db.md#customize-a-documentclient-and-reuse-it-between-executions) | Create a customized and shared `DocumentClient` insta
 |<h2>HTTP and webhooks</h2> | |
 [Accessing query string values in HTTP Triggers](http-and-webhooks.md#accessing-query-string-values-in-http-triggers) | Read query string parameters
 [Accessing the request body in HTTP Triggers](http-and-webhooks.md#accessing-the-request-body--in-http-triggers) | Read the contents of the request body
@@ -45,7 +38,3 @@ ms.service: functions
 [Using ICollector with Service Bus queue bindings](service-bus.md#using-icollector-with-service-bus-queue-bindings) | Send multiple messages to Service Bus queues with `ICollector` or `IAsyncCollector`
 [Retrieving queue metadata from an Azure Service Bus queue/topic trigger](service-bus.md#retrieving-queue-metadata-from-an-azure-service-bus-queuetopic-trigger) | Get metadata of queue messages from the Service Bus trigger
 [Azure Service Bus output binding](service-bus.md#azure-service-bus-output-binding) | Send messages to Service Bus queues and topics
-|<h2>Table storage</h2> | |
-[Table storage input binding](table-storage.md#table-storage-input-binding) | Use the Table storage input binding
-|<h2>Timer</h2> | |
-[Timer trigger function](timer.md#timer-trigger-function) | Trigger a function on a schedule
