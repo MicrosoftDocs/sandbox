@@ -8,7 +8,7 @@ ms.assetid:
 ---
 # Azure Storage Bird
 
-[!include[](https://docs.microsoft.com/en-us/sandbox/includes/header.md)]
+[!include[](~/includes/header.md)]
 
 ![Azure Storage Bird heading image](media/azstbird_title-screen.png)
 
