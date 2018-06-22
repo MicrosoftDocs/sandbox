@@ -62,7 +62,7 @@ The Azure Storage for Unity SDK requires the .NET 4.6 equivalent scripting runti
 
 1. Select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown in the **Configuration** section. Unity will prompt you to restart the editor.
 
-   ![Scripting Configuration dialog](media\azstbird_unity-player-config.png)
+   ![Scripting Configuration dialog](media/azstbird_unity-player-config.png)
 
 ## Enter your connection string
 
