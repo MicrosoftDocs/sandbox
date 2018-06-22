@@ -103,18 +103,18 @@ The sample game gameplay is based on the [Make a Flappy Bird Style Game](https:/
 
 ### AzureStorageClient.cs
 
-This static class holds the Azure Storage account connection string and contains a static reference to a [CloudBlobClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobclient?view=azure-dotnet), which is necessary for most Azure Storage functions.
+The static class [`AzureStorageClient`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/AzureStorageClient.cs) holds the Azure Storage account connection string and contains a static reference to a [CloudBlobClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobclient?view=azure-dotnet), which is necessary for most Azure Storage functions.
 
 ### TitleSceneBehavior.cs
 
-`TitleSceneBehavior` is placed in the Title Scene. Its `Start` function asynchronously initiates the process of checking for the required music files and downloading them from Azure Storage if necessary. The play button is disabled until the required files are first downloaded and then loaded as audio clips.
+The MonoBehaviour [`TitleSceneBehavior`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/TitleSceneBehavior.cs) is placed on an empty GameObject in the Title Scene. Its `Start` function asynchronously initiates the process of checking for the required music files and downloading them from Azure Storage if necessary. The play button is disabled until the required files are first downloaded and then loaded as audio clips.
 
 ### BlobStorageUtilities.cs
 
-This static class contains functions for downloading files from Azure Blob Storage.
+The static class [`BlobStorageUtilities`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/BlobStorageUtilities.cs) contains functions for downloading files from Azure Blob Storage.
 
 ### LevelMusicPlayer.cs
 
-This class is placed in the Title Scene and persists via `DontDestroyOnLoad`. During the Title Scene, it waits for the `TitleSceneBehavior.DownloadingMusicFilesFinished` event and then begins loading all of the downloaded files as Unity audio clips. This happens before entering the Game Scene in order to avoid stuttering when each new audio clip is played. Once loading is complete, the `LoadingAudioClipsFinished` event is raised, allowing `TitleSceneBehavior` to know when it's safe to display the play button.
+The MonoBehaviour [`LevelMusicPlayer`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/LevelMusicPlayer.cs) is placed on an empty GameObject in the Title Scene and persists via `DontDestroyOnLoad`. During the Title Scene, it waits for the `TitleSceneBehavior.DownloadingMusicFilesFinished` event and then begins loading all of the downloaded files as Unity audio clips. This happens before entering the Game Scene in order to avoid stuttering when each new audio clip is played. Once loading is complete, the `LoadingAudioClipsFinished` event is raised, allowing `TitleSceneBehavior` to know when it's safe to display the play button.
 
 During the Game Scene, `LevelMusicPlayer` handles the `GameControl.StartedNewLevel` event with a function that plays an audio clip corresponding to the new level.
