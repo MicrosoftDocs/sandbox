@@ -103,7 +103,7 @@ The sample game gameplay is based on the [Make a Flappy Bird Style Game](https:/
 
 ### AzureStorageClient.cs
 
-The static class [`AzureStorageClient`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/AzureStorageClient.cs) holds the Azure Storage account connection string and contains a static reference to a [CloudBlobClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobclient?view=azure-dotnet), which is necessary for most Azure Storage functions.
+The static class [`AzureStorageClient`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/AzureStorageClient.cs) holds the Azure Storage account connection string and contains a static reference to a [`CloudBlobClient`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobclient?view=azure-dotnet), which is necessary for most Azure Storage functions.
 
 ### TitleSceneBehavior.cs
 
