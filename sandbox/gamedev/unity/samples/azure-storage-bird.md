@@ -37,16 +37,16 @@ Because music files typically are among the largest data files in games, the sam
 
 1. [Create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) called `music`.
 
-1. Download the [sample music files](https://github.com/dantogno/azure-storage-bird/blob/master/Metal%20Mayhem%20Music%20Pack.zip), unzip them, and [upload them to Azure Storage as block blobs](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob). These music files are from the free [Metal Mayhem Music Pack](https://assetstore.unity.com/packages/audio/music/metal-mayhem-music-pack-19233) made available by Unity.
+1. Download the [sample music files](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Metal%20Mayhem%20Music%20Pack.zip), unzip them, and [upload them to Azure Storage as block blobs](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob). These music files are from the free [Metal Mayhem Music Pack](https://assetstore.unity.com/packages/audio/music/metal-mayhem-music-pack-19233) made available by Unity.
 
 ![browse blobs](media/azstbird_blobs.png)
 
 > [!NOTE]
-> The sample project is hardcoded to look in a block blob container called `music` and use the specific file names included in the sample music zip file (`Track1.ogg` through `Track10.ogg`). If you use differently named files, or only upload some of the files, you will need to modify the sample project's code accordingly.
+> The sample project is hard coded to look in a block blob container called `music` and use the specific file names included in the sample music zip file (`Track1.ogg` through `Track10.ogg`). If you use differently named files, or only upload some of the files, you will need to modify the sample project's code accordingly.
 
 ## Download the sample Unity project
 
-Clone or download the project from the [AzureSamples-Unity repo](https://aka.ms/azsamples-unity) on GitHub.
+Clone or download the project from the [AzureSamples-Unity repository](https://aka.ms/azsamples-unity) on GitHub.
 
 * On the GitHub site, click the **Clone or download** button to get a copy of the project to work with.
 * This project is located within the `AzureStorageBird` directory.
