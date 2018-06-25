@@ -2,7 +2,7 @@
 title: "Azure Storage Bird"
 author: dantogno
 ms.author: v-davian
-ms.date: 06/22/2018
+ms.date: 06/25/2018
 ms.topic: sample
 ms.assetid:
 ---
