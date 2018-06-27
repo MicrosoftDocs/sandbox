@@ -55,11 +55,16 @@ sections:
   - type: list
     style: cards
     className: cardsM
-    columns: 3
+    columns: 2
     items:
     - title: Azure Easy Tables and Unity
       html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
       href: unity/samples/azure-mobile-apps-unity-racer
+      image:
+        src: media/unity.png
+    - title: Azure Storage Bird
+      html: <p>Use Azure Storage to download music at runtime</p>
+      href: unity/samples/azure-storage-bird
       image:
         src: media/unity.png
     - title: Facebook Authentication and Unity
