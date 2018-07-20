@@ -36,7 +36,7 @@ For more information, check out the linked GitHub repo, and watch the [session r
 This project allows you to manage Docker containers running on [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/).
 Suppose that you want to manage a series of running Docker containers. These containers may be stateful, so classic scaling methods (via Load Balancers etc.) would not work. A classic example is multiplayer game servers, where its server has its own connections to game clients, its own state etc. Another example would be batch-style projects, where each instance would have to deal with a separate set of data. For these kind of purposes, you would need a set of Docker containers being created on demand and deleted when their job is done and they are no longer needed in order to save costs.
 
-For more information, check out the linked GitHub repo, and watch the [session recording](https://www.youtube.com/watch?v=DVwqi0JHNbI) from Build.
+For more information, check out the linked GitHub repo, and watch the [session recording](https://www.youtube.com/watch?v=EAcXD6OaO0w) from Build.
 
 ## Leaderboards with Azure Functions, Node, and Cosmos DB
 
