@@ -27,7 +27,7 @@ Scavenger is a virutal scavenger hunt game written in Unity.  Each day players a
 * [Cosmos DB](https://aka.ms/cosdocs-scavenger)
 * [PlayFab](https://playfab.com/)
 
-For more information, check out the linked GitHub repo, and watch the [session recording](https://www.youtube.com/watch?v=xyZyjXluIV4) from Build.
+For more information, check out the linked GitHub repo, and watch the [session recording](https://www.youtube.com/watch?v=arikdfd8_A8) from Build.
 
 ## Multiplayer Scaling with Azure Container Instances
 
