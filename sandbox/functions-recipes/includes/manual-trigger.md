@@ -5,6 +5,7 @@ The following example is a function that must be triggered manually. The Azure p
 ```csharp
 using System;
 
+[NoAutomaticTrigger]
 public static void Run(string input, TraceWriter log)
 {
     log.Info($"This is a manually triggered C# function with input: {input}");
