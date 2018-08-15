@@ -48,7 +48,7 @@ The technology/architecture stack includes an [Express](https://expressjs.com/) 
 
 You can check the source code and the relevant documentation on [GitHub](https://github.com/dgkanatsios/AzureFunctionsNodeLeaderboards-Cosmos) and read the relevant blog post [here](https://dgkanatsios.com/2018/01/12/using-azure-functions-and-cosmos-db-to-create-a-game-leaderboard/).
 
-## Analytics with Event Hubs, Azure Functionsm, Cosmos DB, and Datalake
+## Analytics with Event Hubs, Azure Functions, Cosmos DB, and Datalake
 
 [![Get the source](../media/buttons/source2.png)](https://aka.ms/azanalyticssample)
 

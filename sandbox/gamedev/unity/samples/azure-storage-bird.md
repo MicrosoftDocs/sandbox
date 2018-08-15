@@ -2,7 +2,7 @@
 title: "Azure Storage Bird"
 author: dantogno
 ms.author: v-davian
-ms.date: 06/25/2018
+ms.date: 08/15/2018
 ms.topic: sample
 ms.assetid:
 ---
@@ -24,12 +24,11 @@ Because music files typically are among the largest data files in games, the sam
 
 * [Unity 2017.1 (or greater)](https://unity3d.com/)
   * Unity 2017.1 includes a new scripting runtime that supports .NET 4.6. This feature allows use of the existing Azure SDKs with some tweaks.  Please see [this blog post from Unity](https://blogs.unity3d.com/2017/07/11/introducing-unity-2017/) for more information.
+  * Unity 2018.2 (or greater) is required for HTTPS connections. The project will work without HTTPS for Unity versions 2017.1 through 2018.1.
 * [An Azure subscription (create for free!)](https://aka.ms/azfreegamedev)
 
 > [!NOTE]
-> This project requires the "experimental" .NET 4.6 Mono scripting runtime in Unity 2017. [Unity has stated that soon this will be the default](https://forum.unity3d.com/threads/future-plans-for-the-mono-runtime-upgrade.464327/), however for now, it is still labeled as "experimental" and you may experience issues.
->
-> Additionally, the Azure Storage SDK for Unity is considered experimental. As such, this may not build and run on every single Unity platform.  Please see the Azure Storage SDK [compatibility list](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity#compatibility) for a list of known working platforms and issues.
+> The Azure Storage SDK for Unity is considered experimental. As such, this may not build and run on every single Unity platform.  Please see the Azure Storage SDK [compatibility list](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity#compatibility) for a list of known working platforms and issues.
 
 ## Azure setup
 
@@ -54,15 +53,18 @@ Clone or download the project from the [AzureSamples-Unity repository](https://a
 > [!NOTE]
 > The project comes with the Azure Storage for Unity SDK included. To learn more, including how to import the SDK into new projects, you can visit the [SDK documentation](https://aka.ms/azstoragegamedev).
 
-## Set scripting runtime version to .NET 4.6 equivalent
+## Set scripting runtime version to .NET 4.x equivalent
 
-The Azure Storage for Unity SDK requires the .NET 4.6 equivalent scripting runtime. This is only available in Unity 2017.1 and above.
+The Azure Storage for Unity SDK requires the .NET 4.x equivalent scripting runtime. This is only available in Unity 2017.1 and above.
 
 1. From the Unity menu select **Edit > Project Settings > Player** to open the **PlayerSettings** panel.
 
-1. Select **Experimental (.NET 4.6 Equivalent)** from the **Scripting Runtime Version** dropdown in the **Configuration** section. Unity will prompt you to restart the editor.
+1. Select **.NET 4.x** from the **Scripting Runtime Version** dropdown in the **Configuration** section. Unity will prompt you to restart the editor.
 
    ![Scripting Configuration dialog](media/azstbird_unity-player-config.png)
+
+> [!NOTE]
+> In Unity 2017, this option is labeled **Experimental (.NET 4.6 Equivalent)**.
 
 ## Enter your connection string
 
@@ -80,10 +82,8 @@ The Azure Storage for Unity SDK requires the .NET 4.6 equivalent scripting runti
 
 1. Replace the string `YOUR_CONNECTION_STRING_HERE` with your connection string copied from the Azure portal.
 
-1. Within the connection string you just pasted, locate the text `DefaultEndpointsProtocol=https` and replace the text **https** with **http**.
-
 > [!IMPORTANT]
-> You must modify the **DefaultEndpointsProtocol** entry in your connection string to use **http** instead of **https**. This means your data will not be encrypted to and from the server. Visit the [Unity and SSL support](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity#unity-and-ssl-support) section of the SDK documentation for more information.
+> Using HTTPS requires Unity 2018.2 or above. Unity 2017 and 2018.1 users must modify the **DefaultEndpointsProtocol** entry in the connection string to use **http** instead of **https**. This means your data will not be encrypted to and from the server.
 
 ## Try the sample game
 
