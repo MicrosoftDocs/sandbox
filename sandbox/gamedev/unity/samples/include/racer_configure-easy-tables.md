@@ -4,7 +4,7 @@ Log in to the [Azure portal](https://ms.portal.azure.com). If you do not have an
 
 **Once inside the portal:**
 
-1. Select **New > Web + Mobile > Mobile App > Create**.
+1. Select **New > Mobile > Mobile App**.
 
   ![Create a new Mobile App](../media/vstu_azure-configure-easy-tables-image1.png)
 
@@ -53,7 +53,7 @@ Log in to the [Azure portal](https://ms.portal.azure.com). If you do not have an
      * **Server admin login and Password:** Create a username and password for the server admin.
      * **Location:** Choose a nearby location for the server.
      * Ensure that the **Allow azure services to access server** checkbox remains checked.
-     * Click **Select** to complete configuration the server.
+     * Click **Select** to complete server configuration.
    * **Pricing tier:** Leave the default setting for the walkthrough. This can be modified later.
    * **Collation:** Leave the default setting.
    * Click **Select** to complete configuration of the database.
@@ -76,7 +76,9 @@ Log in to the [Azure portal](https://ms.portal.azure.com). If you do not have an
 
    ![Click Easy Tables notice](../media/vstu_azure-configure-easy-tables-image5.png)
 
-1. This time the blade that appears should state that "You already have a data connection" below the **1** heading. Under the **2** heading, click the checkbox that says **I acknowledge that this will overwrite site contents.** Now click **Initialize App** and wait a few minutes for Azure to complete the initialization process. A new notification will announce when the process is complete.
+1. This time the blade that appears should state that "You already have a data connection" below the **1** heading. Under the **2** heading, click the checkbox that says **I acknowledge that this will overwrite site contents.**
+
+1. Click **Initialize App** and wait a few minutes for Azure to complete the initialization process. Note that the button may read "Create TodoItem table" instead of "Initialize App." Either way, click it. A new notification will announce when the process is complete.
 
    ![Click Initialize App](../media/vstu_azure-configure-easy-tables-image10.png)
 
