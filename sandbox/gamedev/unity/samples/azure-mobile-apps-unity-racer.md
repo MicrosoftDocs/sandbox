@@ -19,9 +19,9 @@ manager: "crdun"
 
 [![Get the source](../../../media/buttons/source2.png)](https://aka.ms/azsamples-unity)
 
-Azure provides a scalable solution to storing telemetry and other game data in the cloud. With the release of Unity 2017, Unity's experimental support for .NET 4.6 makes Azure integration simpler than ever.
+Azure provides a scalable solution to storing telemetry and other game data in the cloud. With the release of Unity 2017, Unity's support for .NET 4.x makes Azure integration simpler than ever.
 
-This sample will walk through the process of using Easy Tables to save telemetry and leaderboard data in Azure using the experimental [Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity).
+This sample will walk through the process of using Easy Tables to save telemetry and leaderboard data in Azure using the [Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity).
 
 ![Sample game screenshot](media/vstu_azure-test-sample-game-image2.png)
 
@@ -31,9 +31,7 @@ This sample will walk through the process of using Easy Tables to save telemetry
 * [An Azure account (Sign up for free!)](https://aka.ms/azfreegamedev)
 
 > [!NOTE]
-> This project requires the "experimental" .NET 4.6 Mono scripting runtime in Unity 2017. [Unity has stated that soon this will be the default](https://forum.unity3d.com/threads/future-plans-for-the-mono-runtime-upgrade.464327/), however for now, it is still labeled as "experimental" and you may experience issues.
->
-> In addition, we will be using an experimental Azure Mobile Client SDK in this tutorial, and, as such, this may not build and run on every single Unity platform.  Please see the [Azure Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity) article for a list of known working platforms and issues.
+> The Azure Mobile Client SDK used in this tutorial is considered experimental. As such, this may not build and run on every single Unity platform. Please see the [Azure Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity) article for a list of known working platforms and issues.
 
 ## Configure Easy Tables in Azure
 
@@ -43,7 +41,7 @@ Easy Tables are a feature of [Azure Mobile Apps](https://azure.microsoft.com/ser
 
 ## Prepare the development environment
 
-There are some prerequisites to using the exerpimental Azure Mobile Client SDK in Unity.
+There are some prerequisites to using the Azure Mobile Client SDK in Unity:
 
 ### Download and install Unity 2017
 
@@ -66,23 +64,29 @@ The walkthrough requires Visual Studio 2017 15.3 or above, with the game develop
 
 This project is located in the [AzureSamples-Unity repo](https://aka.ms/azsamples-unity) on GitHub.  On the GitHub site, click the **Clone or download** button to get a copy of the code to work with.
 
-## Project Walkthrough
+## Project walkthrough
 
 This is a large project, so we will explore the important parts that demonstrate how to use Easy Tables with Unity.
 
 ### Unity scripting runtime
 
-The Azure Mobile Client SDK and its dependencies require the .NET 4.6 runtime.  This is set in the project settings.
+The Azure Mobile Client SDK requires the .NET 4.x equivalent scripting runtime. This is only available in Unity 2017.1 and above.
 
-1. From the Unity **Edit** menu, choose **Project Settings > Player**.
+1. From the Unity menu select **Edit > Project Settings > Player** to open the Player Settings panel.
 
-1. The Player Settings opens in the Unity Inspector window. Under the **Configuration** heading in the **Other Settings** section, click the **Scripting Runtime Version** dropdown and select **Experimental (.NET 4.6 Equivalent)**. This will prompt a dialog asking to restart Unity. Select **Restart**.
+1. Select .NET 4.x from the Scripting Runtime Version dropdown in the Configuration section. Unity will prompt you to restart the editor.
 
-   ![Select .NET 4.6](media/vstu_azure-prepare-dev-environment-image6.png)
+> [!NOTE]
+> In Unity 2017, this option is labeled **Experimental (.NET 4.6 Equivalent)**.
+
+   ![Select .NET 4.x](media/vstu_azure-prepare-dev-environment-image6.png)
+
+> [!NOTE]
+> By default, this project uses the **.NET 4.x Api Compatibility Level**, which requires an **mcs.rsp** file to add an assembly reference to System.Net.Http.dll. The project can also work with the **.NET Standard 2.0 Api Compatibility Level** if the mcs.rsp file is removed.
 
 ## CrashInfo and HighScoreInfo classes
 
-The Unity project must contain data model classes that correspond with the tables created in the Azure Mobile App backend.  You can find these in the **Assets/Scripts/Data Models** directory in the project.
+The Unity project must contain data model classes that correspond with the tables created in the Azure Mobile App backend. You can find these in the **Assets/Scripts/Data Models** directory in the project.
 
 The **CrashInfo**  class looks like this:
 
@@ -116,7 +120,7 @@ Central to the Azure Mobile Client SDK is the [MobileServiceClient](https://docs
 
 ### Locate the URL of the Mobile App backend
 
-The `MobileServiceClient` constructor takes the Mobile App URL as a parameter, so before going forward, locate the URL.
+The `MobileServiceClient` constructor takes the Mobile App URL as a parameter, so before going forward, locate the URL:
 
 1. In the Azure portal, click the **App Services** button.
 
@@ -157,10 +161,10 @@ There should only be a single instance of `MobileServiceClient`, so the walkthro
    }
    ```
 
-1. In the preceding code, replace `MOBILE_APP_URL` with the URL of your Mobile App backend, however ensure you are using the **http://** endpoint and not **https://**.
+1. In the preceding code, replace `MOBILE_APP_URL` with the URL of your Mobile App backend.
 
->[!NOTE]
->Due to a Unity limitation, HTTPS requests using the standard .NET networking stack (i.e. not using UnityWebRequest) will fail.  To workaround this, you will need to use the **http** version of the Mobile Apps endpoint instead of **https**.  **This means your data will not be encrypted to and from the server.**
+>[!IMPORTANT]
+>HTTPS requires Unity 2018.2 or above. Unity 2017 and 2018.1 users must use the **http** version of the Mobile Apps endpoint instead of **https**. This means your data will not be encrypted to and from the server.
 
 ## Test the client connection
 
