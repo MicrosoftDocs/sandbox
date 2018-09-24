@@ -33,7 +33,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"breadcrumb_path": "/sandbox/breadcrumb/toc.json"
+		  "breadcrumb_path": "/sandbox/breadcrumb/toc.json",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/sandbox"
 	},
     "fileMetadata": {},
     "template": [],
