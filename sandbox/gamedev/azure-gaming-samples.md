@@ -38,6 +38,12 @@ Suppose that you want to manage a series of running Docker containers. These con
 
 For more information, check out the linked GitHub repo, and watch the [session recording](https://www.youtube.com/watch?v=EAcXD6OaO0w) from Build.
 
+## Multiplayer Scaling with Kubernetes
+
+[![Get the source](../media/buttons/source2.png)](https://aka.ms/aksmultiplayersample)
+
+Scaling dedicated game servers is hard. They're stateful, can't (well, shouldn't) be explicitly shut down (since players might be still enjoying their game) and, as a rule of thumb, their connection with the players must be of minimal latency, especially for real-time games.  This sample aims to provide a solution/guidance for managing containerized dedicated game servers on Azure Platform using the managed [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/).
+
 ## Leaderboards with Azure Functions, Node, and Cosmos DB
 
 [![Get the source](../media/buttons/source2.png)](https://aka.ms/azleaderboardsample)
