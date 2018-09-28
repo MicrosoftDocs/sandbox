@@ -12,7 +12,7 @@ using Microsoft.Azure.Documents.Linq;
 [FunctionName("CosmosDBSample")]
 public static async Task<HttpResponseMessage> Run(
     [HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestMessage req, 
-    [DocumentDB("test", "test", ConnectionStringSetting = "CosmosDB"] DocumentClient client, 
+    [DocumentDB("test", "test", ConnectionStringSetting = "CosmosDB")] DocumentClient client, 
     int minAge, 
     TraceWriter log)
 {
