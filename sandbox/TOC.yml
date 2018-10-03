@@ -38,6 +38,14 @@
             href: gamedev/unity/samples/azure-storage-bird.md
           - name: Facebook Authentication with Unity and Azure
             href: gamedev/unity/samples/azure-facebook-auth-unity.md
+      - name: Unreal Engine
+        expanded: false
+        items:
+        - name: SDKs
+          expanded: false
+          items:
+          - name: Azure Storage SDK
+            href: gamedev/unreal/azure-storage-unreal.md
       - name: MonoGame
         expanded: false
         items:

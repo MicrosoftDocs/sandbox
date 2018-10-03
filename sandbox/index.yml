@@ -68,6 +68,11 @@ sections:
       href: gamedev/
       image:
         src: gamedev/media/monogame.png
+    - title: Azure SDKs and Samples for Unreal Engine
+      html: <p>Use Azure SDKs with Unreal Engine</p>
+      href: gamedev/
+      image:
+        src: gamedev/media/unreal.png
 - title: Guidance
   items:
   - type: paragraph

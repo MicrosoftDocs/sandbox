@@ -5,12 +5,8 @@ author: BrianPeek
 manager: timheuer
 keywords: azure, unity, gaming
 ms.topic: article
-ms.date: 6/15/2018
+ms.date: 9/21/2018
 ms.author: brpeek
-#ms.devlang: 
-#ms.prod:
-#ms.technology:
-#ms.service:
 ---
 # Azure Gaming Samples
 
@@ -48,7 +44,7 @@ Scaling dedicated game servers is hard. They're stateful, can't (well, shouldn't
 
 [![Get the source](../media/buttons/source2.png)](https://aka.ms/azleaderboardsample)
 
-This project is a starter kit that allows you to set up a RESTful API service that stores game leaderboards (scores) and exposes them via HTTP(s) methods/operations. A game developer can use this API service in their game and post new scores, get the top scores, find out the latest ones and more. Additionally, a Unity sample client is included in the project. 
+This project is a starter kit that allows you to set up a RESTful API service that stores game leaderboards (scores) and exposes them via HTTP(s) methods/operations. A game developer can use this API service in their game and post new scores, get the top scores, find out the latest ones and more. Additionally, a Unity sample client is included in the project.
 
 The technology/architecture stack includes an [Express](https://expressjs.com/) [Node.js](https://nodejs.org/) app hosted on an [Azure Function](https://azure.microsoft.com/en-us/services/functions/) that talks to a [Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) database via its [MongoDB API]((https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction)). [Azure Application Insights](https://azure.microsoft.com/en-us/services/application-insights/) service is used to provide information and metrics regarding application performance and behavior. A Unity game engine client is also provided, with a relevant Unity C# SDK to access the leaderboards API.
 
