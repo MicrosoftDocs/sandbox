@@ -8,9 +8,9 @@ To add parameters to your route, put the parameter in curly braces in the route 
 [FunctionName("Example")]
 public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example/{parameter}")]HttpRequestMessage req,
                                                    string parameter,
-                                                   TraceWriter log)
+                                                   ILogger log)
 {
-    log.Info($"C# HTTP trigger function processed a request {parameter}");
+    log.LogInfo($"C# HTTP trigger function processed a request {parameter}");
 
     return new HttpResponseMessage(HttpStatusCode.Accepted);
 }
@@ -22,8 +22,8 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 [<FunctionName("Example")>]
 let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route="Example/{parameter}")>] req: HttpRequestMessage,
         parameter: string,
-        log: TraceWriter) =
-  log.Info(sprintf "F# HTTP trigger function processed a request %s" parameter)
+        log: ILogger) =
+  log.LogInfo(sprintf "F# HTTP trigger function processed a request %s" parameter)
   new HttpResponseMessage(HttpStatusCode.Accepted)
 ```
 
