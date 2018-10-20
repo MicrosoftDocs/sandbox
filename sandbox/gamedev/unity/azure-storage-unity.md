@@ -49,7 +49,11 @@ Please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storag
 
 ## Unity 2018.1 and SSL support
 
-Due to a limitation in Unity 2018.1 (fixed in 2018.2), HTTPS requests using the standard .NET networking stack (i.e. not using UnityWebRequest) will fail.  To workaround this, you will need to modify the **DefaultEndpointsProtocol** entry in your connection string to use **http** instead of **https**.  **This means your data will not be encrypted to and from the server.**  Here's an example: `DefaultEndpointsProtocol=http;AccountName=yourazureaccount;AccountKey=abcdef12345;EndpointSuffix=core.windows.net`.  We highly recommend upgrading your project to Unity 2018.2 if possible.
+Due to a limitation in Unity 2018.1 (fixed in 2018.2), HTTPS requests using the standard .NET networking stack (i.e. not using UnityWebRequest) will fail.  To workaround this, you will need to modify the **DefaultEndpointsProtocol** entry in your connection string to use **http** instead of **https**.  **This means your data will not be encrypted to and from the server.**  We highly recommend upgrading your project to Unity 2018.2 if possible.  Here's an example of a connection string using http:
+
+```text
+`DefaultEndpointsProtocol=http;AccountName=yourazureaccount;AccountKey=abcdef12345;EndpointSuffix=core.windows.net`
+```
 
 ## Try the Sample
 
@@ -61,7 +65,7 @@ To use the sample, do the following:
 
 1. Unzip to a location on your hard drive.
 
-1. Open Unity 2019.1 (or greater) and point it to the **Storage** directory inside the unzipped package.
+1. Open Unity 2018.1 (or greater) and point it to the **Storage** directory inside the unzipped package.
 
 1. In the **Project** window, double-click the **AzureSample** scene inside the **AzureSamples\Storage** directory to open the main scene for the sample.
 
@@ -69,7 +73,7 @@ To use the sample, do the following:
 
 1. With **StorageObject** selected, you'll notice that there are blank **Connection String** entries in the **Inspector** window.  Fill in the these entries with your valid connection string as shown on the Azure portal, but remember to change the endpoint to use **http** as described above.  You can change the names of the other items if you wish, but the defaults should work as-is. You can find your connection strings in the Azure Portal as shown.
 
-   ![Azure Storage Keys in Azure Porta](../media/storage-keys.png)
+   ![Azure Storage Keys in Azure Portal](../media/storage-keys.png)
 
 1. Run the project from within the editor by clicking the **Play** button.  Alternatively, you can export to the platform of your choosing and run there.
 
