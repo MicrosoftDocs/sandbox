@@ -1,55 +1,74 @@
 ---
-title: Azure Storage SDK for Unity
-description: Azure Storage SDK for Unity
+title: Azure Storage SDK for Unity 2017
+description: Azure Storage SDK for Unity 2017
 author: BrianPeek
 manager: timheuer
 keywords: unity, azure, storage
 ms.topic: article
-ms.date: 10/20/2018
+ms.date: 11/08/2017
 ms.author: brpeek
+#ms.devlang: 
+#ms.prod:
+#ms.technology:
+#ms.service:
 ---
-# Azure Storage SDK for Unity
+# Azure Storage SDK for Unity 2017
 
 [!include[](../../includes/header.md)]
 
-## Azure Storage for Gaming
-
-[Azure Storage](https://docs.microsoft.com/azure/storage/) provides different types of storage that could be used in a variety of gaming scenarios.  For example, you could build a system using Blob Storage to save a user's game state for later play.  Table Storage could be used as a quick and easy database to store simple values.
-
 > [!IMPORTANT]
-> This is an experimental Unity SDK for Azure Storage.  As such, please note that this SDK is not supported and is not provided by the Azure Storage team.  If you run into problems, please let us know using the [GitHub Issues](https://aka.ms/azsdks-unity-issues) page for the SDK.
+> This is an experimental Unity SDK for Azure Storage.  As such, please note that this SDK is not supported and is not provided by the Azure Storage team.  If you run into problems, please let us know using the [GitHub Issues](https://github.com/BrianPeek/azure-storage-net/issues) page for this fork.
 
-[![Get the source](../../media/buttons/source2.png)](https://aka.ms/azsdks-unity)
-[![Try it now](../../media/buttons/try2.png)](https://aka.ms/azstorage-unitysdk)
+[![Get the source](../../media/buttons/source2.png)](https://github.com/BrianPeek/azure-storage-net/tree/gamedev)
+[![Try it now](../../media/buttons/try2.png)](https://github.com/BrianPeek/AzureSDKs-Unity/raw/master/2017.x/UnityPackages/azure-storage-unity-8.6.0.unitypackage)
 
 ## Requirements
 
-* [Unity 2018.1 (or greater)](https://unity3d.com/)
-  * Unity 2018.2 (or greater) is required for proper SSL support.
-  * If you are using Unity 2017, please check out our [Unity 2017 SDK](./azure-storage-unity-2017.md).
+* [Unity 2017.1 (or greater)](https://unity3d.com/)
+  * Unity 2017.1 includes a new scripting runtime that supports .NET 4.6.  This feature allows us to use the existing Azure SDKs with some tweaks.  Please see [this blog post from Unity](https://blogs.unity3d.com/2017/07/11/introducing-unity-2017/) for more information.
 * [An Azure Storage account (Sign up for free!)](https://aka.ms/azfreegamedev)
 
 ## Compatibility
 
-This has been tested with the following Unity exporters.  Others wil likely work, however we haven't tested every possible platform and combination.  Please let us know if you've had success!
+This has been tested with the following Unity exporters.  Others may work -- we haven't tested every platform, so please let us know if you've had success!
 
-* Windows/Mac Standalone
+* Windows standalone
+* UWP (.NET)
 * iOS
-* Android
+* Android (Mono)
+* Unity editor
+
+## Known Issues and Limitations
+
+There are a few known issues and workarounds.
+
+### Unity and SSL support
+
+Due to a Unity limitation, HTTPS requests using the standard .NET networking stack (i.e. not using UnityWebRequest) will fail.  To workaround this, you will need to modify the **DefaultEndpointsProtocol** entry in your connection string to use **http** instead of **https**.  **This means your data will not be encrypted to and from the server.**  Here's an example:
+
+```text
+DefaultEndpointsProtocol=http;AccountName=yourazureaccount;AccountKey=abcdef12345;EndpointSuffix=core.windows.net
+```
+
+[!include[](include/uwp-known-issues.md)]
+
+### Other Platforms
+
+We have not had success in compiling or running games using the following platforms:
+
+* Android (IL2CPP)
 * UWP (IL2CPP)
-* Unity Editor
+* WebGL
+
+We will continue working on these and update as we find fixes.
 
 ## Import the SDK
 
 To import the SDK into your own project, make sure you have downloaded the latest [.unitypackage](https://aka.ms/azstorage-unitysdk) from GitHub.  Then, do the following:
 
-[!include[](include/unity-import.md)]
+[!include[](include/unity-import-2017.md)]
 
-Please refer to the [Azure Storage Docs](https://docs.microsoft.com/azure/storage/) for even more samples and tutorials on using the API.
-
-## Unity 2018.1 and SSL support
-
-Due to a limitation in Unity 2018.1 (fixed in 2018.2), HTTPS requests using the standard .NET networking stack (i.e. not using UnityWebRequest) will fail.  To workaround this, you will need to modify the **DefaultEndpointsProtocol** entry in your connection string to use **http** instead of **https**.  **This means your data will not be encrypted to and from the server.**  Here's an example: `DefaultEndpointsProtocol=http;AccountName=yourazureaccount;AccountKey=abcdef12345;EndpointSuffix=core.windows.net`.  We highly recommend upgrading your project to Unity 2018.2 if possible.
+Please refer to the [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev) for even more samples and tutorials on using the API.
 
 ## Try the Sample
 
@@ -61,7 +80,7 @@ To use the sample, do the following:
 
 1. Unzip to a location on your hard drive.
 
-1. Open Unity 2019.1 (or greater) and point it to the **Storage** directory inside the unzipped package.
+1. Open Unity 2017.1 (or greater) and point it to the **Storage** directory inside the unzipped package.
 
 1. In the **Project** window, double-click the **AzureSample** scene inside the **AzureSamples\Storage** directory to open the main scene for the sample.
 
@@ -83,4 +102,4 @@ The code for the sample is broken out into four separate scripts, one for each s
 
 ## Next Steps
 
-* [Azure Storage Docs](https://docs.microsoft.com/azure/storage/)
+* [Azure Storage Docs](https://aka.ms/azstoragedocsgamedev)
