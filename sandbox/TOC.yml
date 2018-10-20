@@ -23,12 +23,12 @@
         - name: SDKs
           expanded: false
           items:
-          - name: Azure Storage SDK
-            href: gamedev/unity/azure-storage-unity.md
           - name: Azure Event Hubs SDK
             href: gamedev/unity/azure-event-hubs-unity.md
           - name: Azure Mobile Apps SDK
             href: gamedev/unity/azure-mobile-apps-unity.md
+          - name: Azure Storage SDK
+            href: gamedev/unity/azure-storage-unity.md
         - name: Samples
           expanded: false
           items:
