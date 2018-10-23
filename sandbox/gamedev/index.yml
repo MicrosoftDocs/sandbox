@@ -82,3 +82,17 @@ sections:
       href: azure-gaming-samples.md
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
+- title: Tools and Utilities
+  items:
+  - type: paragraph
+    text: Various tools and utilities related to game development.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - title: NuGet2Unity
+      html: <p>Utility to create Unity packages from NuGet</p>
+      href: unity/nuget2unity
+      image:
+        src: media/unity.png

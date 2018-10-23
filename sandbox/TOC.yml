@@ -38,6 +38,8 @@
             href: gamedev/unity/samples/azure-storage-bird.md
           - name: Facebook Authentication with Unity and Azure
             href: gamedev/unity/samples/azure-facebook-auth-unity.md
+        - name: NuGet2Unity
+          href: gamedev/unity/nuget2unity.md
       - name: Unreal Engine
         expanded: false
         items:
