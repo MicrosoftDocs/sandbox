@@ -28,7 +28,7 @@ To configure proxies, edit `proxies.json`.
       },
       "responseOverrides": {
         "response.statusCode": "302",
-        "response.headers.Location": "https://dosc.microsoft.com/"
+        "response.headers.Location": "https://docs.microsoft.com/"
       }
     }
   }
