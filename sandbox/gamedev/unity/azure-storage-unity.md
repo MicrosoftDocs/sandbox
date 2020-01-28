@@ -24,7 +24,7 @@ ms.author: brpeek
 
 ## Requirements
 
-* [Unity 2018.1, .2, or .3)](https://unity3d.com/)
+* [Unity 2018.1, .2, or .3](https://unity3d.com/)
   * Unity 2018.2 (or greater) is required for proper SSL support.
   * If you are using Unity 2017, please check out our [Unity 2017 SDK](./azure-storage-unity-2017.md).
   * Unity 2019.x and greater are not supported and will not work with these SDKs.
