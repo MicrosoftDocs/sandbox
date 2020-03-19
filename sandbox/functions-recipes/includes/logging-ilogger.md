@@ -1,5 +1,5 @@
 ## Logging with ILogger
-As an alternative to `TraceWriter`, an instance of [`ILogger`](https://docs.microsoft.com/aspnet/core/api/microsoft.extensions.logging.ilogger) can be used instead.
+As an alternative to `TraceWriter`, an instance of [`ILogger`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger) can be used instead.
 
 The advantage of using `ILogger` instead of `TraceWriter` is that you get support for structured logging, which allows for richer analytics support. This is helpful if you target your logs at a tool like [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-analytics).
 
