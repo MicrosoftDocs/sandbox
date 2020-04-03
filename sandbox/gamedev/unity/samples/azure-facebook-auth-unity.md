@@ -515,7 +515,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
 
 ![Keytool not found](media/fbauth_keytool-not-found.png)
 
-1. Download and install the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Unity requires JDK 8 (1.8), 64-bit version.
+1. Download and install the [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Unity requires JDK 8 (1.8), 64-bit version.
 
 1. Add the JDK to your path environment variable. In the Windows search, type **environment**, then click **Edit the system environment variables** entry.
 

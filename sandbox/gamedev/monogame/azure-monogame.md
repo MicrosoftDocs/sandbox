@@ -20,7 +20,7 @@ ms.author: brpeek
 
 ## Requirements
 
-* [MonoGame 3.6 or higher (earlier versions may work)](http://www.monogame.net/)
+* [MonoGame 3.6 or higher (earlier versions may work)](https://www.monogame.net/)
 * [An Azure account (Sign up for free!)](https://aka.ms/azfreegamedev)
 
 ## Compatibility

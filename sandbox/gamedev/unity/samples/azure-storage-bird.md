@@ -68,7 +68,7 @@ The Azure Storage for Unity SDK requires the .NET 4.x equivalent scripting runti
 
 ## Enter your connection string
 
-1. Log in to the [Azure portal](http://portal.azure.com).
+1. Log in to the [Azure portal](https://portal.azure.com).
 
 1. Navigate to the Azure Storage account that you created for use with this sample.
 
