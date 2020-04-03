@@ -4,7 +4,7 @@ description: Azure Event Hubs SDK for Unity 2017
 author: dgkanatsios
 keywords: unity, azure, eventhubs
 ms.topic: article
-ms.date: 26/11/2017
+ms.date: 11/26/2017
 ms.author: Dimitris-Ilias Gkanatsios
 #ms.devlang: 
 #ms.prod:
