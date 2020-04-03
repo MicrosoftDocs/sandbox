@@ -23,7 +23,7 @@ If you're familiar with [HBO's Silicon Valley](http://www.hbo.com/silicon-valley
 > If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/sandbox/demos/notbacon) article.
 
 ## Requirements
-* An [Azure](https://azure.microsoft.com/en-us/free/) account
+* An [Azure](https://azure.microsoft.com/free/) account
 * To build and test locally, [Visual Studio 2017](https://visualstudio.com) version 15.3 or higher
 
 ## What's It Do?
@@ -51,7 +51,7 @@ If you have already used up your trial for the Computer Vision API, you can regi
 The function application will be deployed and the GitHub repo above will be setup as the deployment source.  Additionally, the key and endpoint you entered will be automatically configured.  Copy down the URL to your function, which will be **https://&lt;appname&gt;.azurewebsites.net** , with the Function endpoint being **https://&lt;appname&gt;.azurewebsites.net/api/NotHotdog** .
 
 ### Running Locally
-You can clone the [repo](https://github.com/BrianPeek/NotHotdogFunc) and run the project locally.  This requires Visual Studio 2017 version 15.3 or higher, with the Azure Development workload installed.  For more information, see [the docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs).  Note that if you opt to run locally, you will need to create a **local.settings.json** file in the same directory as the function with your endpoint and API keys.  Here's an example -- simply fill in the **VisionKey** and **VisionUri** with the values given to you by the service, and leave the rest blank.
+You can clone the [repo](https://github.com/BrianPeek/NotHotdogFunc) and run the project locally.  This requires Visual Studio 2017 version 15.3 or higher, with the Azure Development workload installed.  For more information, see [the docs](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).  Note that if you opt to run locally, you will need to create a **local.settings.json** file in the same directory as the function with your endpoint and API keys.  Here's an example -- simply fill in the **VisionKey** and **VisionUri** with the values given to you by the service, and leave the rest blank.
 
 ```json
 {
@@ -101,7 +101,7 @@ Finally, select the [trigger](https://docs.microsoft.com/azure/azure-functions/f
 
 ![new function](media/nothotdog/new-function.png)
 
-For more details on these tools, please see the [official docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs).
+For more details on these tools, please see the [official docs](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).
 
 To use the Computer Vision API from C#, a NuGet reference was set to the [Microsoft.ProjectOxford.Vision](https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/) package, which contains the full API for .NET projects.
 

@@ -22,7 +22,7 @@ ms.devlang: csharp
 > If you'd like to use the [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) to analyze your images and return known tags, check out the [NotHotdog](/sandbox/demos/nothotdog) article.
 
 ## Requirements
-* An [Azure](https://azure.microsoft.com/en-us/free/) account
+* An [Azure](https://azure.microsoft.com/free/) account
 
 ## Links
 * [NotBacon Repo](https://github.com/anthonychu/not-bacon)

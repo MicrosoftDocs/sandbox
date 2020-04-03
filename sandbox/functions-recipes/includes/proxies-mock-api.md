@@ -53,4 +53,4 @@ Here is the `proxies.json` of a mock API that responds to GET and POST requests.
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Azure Functions Proxies documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies)
+- [Azure Functions Proxies documentation](https://docs.microsoft.com/azure/azure-functions/functions-proxies)

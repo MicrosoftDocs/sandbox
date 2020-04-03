@@ -15,4 +15,4 @@ Click through to the Function app settings page to get to the Daily Usage Quota 
 
 [!include[](../includes/read-more-heading.md)]
 
-- [More on Function app settings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
+- [More on Function app settings](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings)

@@ -76,7 +76,7 @@ Please refer to the [Azure Mobile Apps Docs](https://aka.ms/azgamedev) for even 
 
 ## Try the Sample
 
-To use the sample, you will need to have an Azure Mobile Apps account setup along with a valid connection string.  You can learn more about that [here](https://docs.microsoft.com/en-us/azure/MobileApps/common/MobileApps-create-MobileApps-account).
+To use the sample, you will need to have an Azure Mobile Apps account setup along with a valid connection string.  You can learn more about that [here](https://docs.microsoft.com/azure/MobileApps/common/MobileApps-create-MobileApps-account).
 
 To use the sample, do the following:
 

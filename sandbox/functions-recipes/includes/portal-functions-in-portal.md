@@ -17,5 +17,5 @@ In the portal view of the function, the left side has a list of the editable fun
 - Function apps host functions.
 
 [!include[](../includes/read-more-heading.md)]
-- [Create your first function in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function)
+- [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
 

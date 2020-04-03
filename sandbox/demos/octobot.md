@@ -26,7 +26,7 @@ Type "login" to begin. Please note that the demo will use your real GitHub accou
 <iframe width="600" height="450" src='https://webchat.botframework.com/embed/GitHubInfo?s=NxL5sS72wfQ.cwA.IJs.zmVXFQkWc9URov9daL5AWgUOnbIE_oH3OYNyDx1aBJw'></iframe>
 
 ## Requirements
-* An [Azure](https://azure.microsoft.com/en-us/free/) account
+* An [Azure](https://azure.microsoft.com/free/) account
 * A [GitHub](https://github.com/) account
 
 ## What's It Do?
@@ -162,5 +162,5 @@ await Conversation.SendAsync(activity, () => new GitHubLuisDialog(luisSvc));
 Here are links to the docs for many of the items discussed above.  Play around with the project and feel free to leave comments on the article, [open issues](https://github.com/BrianPeek/OctoBot/issues) in the repo, or submit [pull requests](https://github.com/BrianPeek/OctoBot/pulls) with fixes and new features.
 
 * [Bot Framework Docs](https://docs.microsoft.com/bot-framework)
-* [LUIS.ai Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home)
+* [LUIS.ai Docs](https://docs.microsoft.com/azure/cognitive-services/LUIS/Home)
 * [OctoKit.NET](https://octokit.github.io/)

@@ -475,7 +475,7 @@ The sample Unity project already has the Facebook SDK imported. In new Unity pro
   ![expand Android Facebook settings](media/fbauth_android-fb-settings.png)
 
 > [!NOTE]
-> If these warnings don't appear for you, you can safely skip the related steps and progress to [configure the Unity build and player settings](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/samples/azure-facebook-auth-unity?tabs=android#configure-the-unity-build-and-player-settings).
+> If these warnings don't appear for you, you can safely skip the related steps and progress to [configure the Unity build and player settings](https://docs.microsoft.com/sandbox/gamedev/unity/samples/azure-facebook-auth-unity?tabs=android#configure-the-unity-build-and-player-settings).
 
 #### Fix the missing debug keystore file warning
 
