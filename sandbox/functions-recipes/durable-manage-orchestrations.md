@@ -11,7 +11,7 @@ ms.workload: na
 ms.date: 04/17/2018
 ---
 
-# Manging Orchestrations
+# Managing Orchestrations
 
 [!include[](includes/durable-instance-id.md)]
 [!include[](includes/durable-http-api.md)]

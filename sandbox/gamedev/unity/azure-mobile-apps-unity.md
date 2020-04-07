@@ -8,6 +8,11 @@ ms.topic: article
 ms.date: 10/20/2018
 ms.author: brpeek
 ---
+
+> [!NOTE]
+> Visual Studio App Center supports end to end and integrated services central to mobile app development. Developers can use **Build**, **Test** and **Distribute** services to set up Continuous Integration and Delivery pipeline. Once the app is deployed, developers can monitor the status and usage of their app using the **Analytics** and **Diagnostics** services, and engage with users using the **Push** service. Developers can also leverage **Auth** to authenticate their users and **Data** service to persist and sync app data in the cloud.
+> If you are looking to integrate cloud services in your mobile application, sign up with [App Center](https://appcenter.ms/signup?utm_source=zumo&utm_medium=Azure&utm_campaign=zumo%20doc) today.
+
 # Azure Mobile Apps SDK for Unity
 
 [!include[](../../includes/header.md)]
@@ -24,9 +29,10 @@ ms.author: brpeek
 
 ## Requirements
 
-* [Unity 2018.1 (or greater)](https://unity3d.com/)
+* [Unity 2018.1, .2, or .3](https://unity3d.com/)
   * Unity 2018.2 (or greater) is required for proper SSL support.
   * If you are using Unity 2017, please check out our [Unity 2017 SDK](./azure-mobile-apps-unity-2017.md).
+  * Unity 2019.x and greater are not supported and will not work with these SDKs.
 * [An Azure Mobile Apps account (Sign up for free!)](https://aka.ms/azfreegamedev)
 
 ## Compatibility
