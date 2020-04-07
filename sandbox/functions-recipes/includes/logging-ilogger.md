@@ -37,4 +37,4 @@ let Run([<HttpTrigger(AuthorizationLevel.Anonymous, "GET")>] req: HttpRequestMes
 
 [!include[](../includes/read-more-heading.md)]
 * [ILogger support](https://github.com/Azure/azure-webjobs-sdk-script/wiki/ILogger)
-* [ILogger extension methods](https://docs.microsoft.com/aspnet/core/api/microsoft.extensions.logging.loggerextensions#methods_summary)
+* [ILogger extension methods](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.loggerextensions)
