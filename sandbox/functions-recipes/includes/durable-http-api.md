@@ -1,5 +1,5 @@
 ## Exposing HTTP Management APIs
-When using a `HttpTrigger` along with Durable Functions, the `CreateCheckStatusResponse` method from `DurableOrchestrationClient` enables the creation of an `HttpResponseMessage`. The response contains links to the various management operations that can be invoked on am orchestration instance. These operations include querying the orchestration status, raising events, and terminating the orchestration.
+When using a `HttpTrigger` along with Durable Functions, the `CreateCheckStatusResponse` method from `DurableOrchestrationClient` enables the creation of an `HttpResponseMessage`. The response contains links to the various management operations that can be invoked on an orchestration instance. These operations include querying the orchestration status, raising events, and terminating the orchestration.
 
 ```csharp
 [FunctionName("RunOrchestration")]
