@@ -51,7 +51,7 @@ There are a few known issues and workarounds.
 Due to a Unity limitation, HTTPS requests using the standard .NET networking stack (i.e. not using UnityWebRequest) will fail.  To workaround this, you will need to use the **http** version of the Mobile Apps endpoint instead of **https**.  **This means your data will not be encrypted to and from the server.**  Here's an example:
 
 ```text
-http://mymobileapp.azurewebsites.net/
+https://mymobileapp.azurewebsites.net/
 ```
 
 <!--[!include[](include/uwp-known-issues.md)]-->
@@ -76,7 +76,7 @@ Please refer to the [Azure Mobile Apps Docs](https://aka.ms/azgamedev) for even 
 
 ## Try the Sample
 
-To use the sample, you will need to have an Azure Mobile Apps account setup along with a valid connection string.  You can learn more about that [here](https://docs.microsoft.com/en-us/azure/MobileApps/common/MobileApps-create-MobileApps-account).
+To use the sample, you will need to have an Azure Mobile Apps account setup along with a valid connection string.  You can learn more about that [here](https://docs.microsoft.com/azure/MobileApps/common/MobileApps-create-MobileApps-account).
 
 To use the sample, do the following:
 

@@ -12,7 +12,7 @@ ms.assetid:
 
 ![Azure Storage Bird heading image](media/azstbird_title-screen.png)
 
-[![Get the source](https://docs.microsoft.com/en-us/sandbox/media/buttons/source2.png)](https://aka.ms/azsamples-unity)
+[![Get the source](https://docs.microsoft.com/sandbox/media/buttons/source2.png)](https://aka.ms/azsamples-unity)
 
 ## Introduction
 
@@ -28,15 +28,15 @@ Because music files typically are among the largest data files in games, the sam
 * [An Azure subscription (create for free!)](https://aka.ms/azfreegamedev)
 
 > [!NOTE]
-> The Azure Storage SDK for Unity is considered experimental. As such, this may not build and run on every single Unity platform.  Please see the Azure Storage SDK [compatibility list](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity#compatibility) for a list of known working platforms and issues.
+> The Azure Storage SDK for Unity is considered experimental. As such, this may not build and run on every single Unity platform.  Please see the Azure Storage SDK [compatibility list](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity#compatibility) for a list of known working platforms and issues.
 
 ## Azure setup
 
-1. [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=portal).
+1. [Create an Azure Storage account](https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=portal).
 
-1. [Create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) called `music`.
+1. [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) called `music`.
 
-1. Download the [sample music files](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Metal%20Mayhem%20Music%20Pack.zip), unzip them, and [upload them to Azure Storage as block blobs](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob). These music files are from the free [Metal Mayhem Music Pack](https://assetstore.unity.com/packages/audio/music/metal-mayhem-music-pack-19233) made available by Unity.
+1. Download the [sample music files](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Metal%20Mayhem%20Music%20Pack.zip), unzip them, and [upload them to Azure Storage as block blobs](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob). These music files are from the free [Metal Mayhem Music Pack](https://assetstore.unity.com/packages/audio/music/metal-mayhem-music-pack-19233) made available by Unity.
 
 ![browse blobs](media/azstbird_blobs.png)
 
@@ -68,7 +68,7 @@ The Azure Storage for Unity SDK requires the .NET 4.x equivalent scripting runti
 
 ## Enter your connection string
 
-1. Log in to the [Azure portal](http://portal.azure.com).
+1. Log in to the [Azure portal](https://portal.azure.com).
 
 1. Navigate to the Azure Storage account that you created for use with this sample.
 
@@ -103,7 +103,7 @@ The sample game gameplay is based on the [Make a Flappy Bird Style Game](https:/
 
 ### AzureStorageClient.cs
 
-The static class [`AzureStorageClient`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/AzureStorageClient.cs) holds the Azure Storage account connection string and contains a static reference to a [`CloudBlobClient`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobclient?view=azure-dotnet), which is necessary for most Azure Storage functions.
+The static class [`AzureStorageClient`](https://github.com/BrianPeek/AzureSamples-Unity/blob/master/AzureStorageBird/Assets/Azure%20Storage%20Bird%20Sample%20Assets/Scripts/AzureStorageClient.cs) holds the Azure Storage account connection string and contains a static reference to a [`CloudBlobClient`](https://docs.microsoft.com/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobclient?view=azure-dotnet), which is necessary for most Azure Storage functions.
 
 ### TitleSceneBehavior.cs
 

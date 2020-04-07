@@ -12,5 +12,5 @@ Azure Function tools for Visual Studio is an extension that provides easy develo
 [!include[](../includes/read-more-heading.md)]
 
 - [Azure Functions Tools for Visual Studio](https://msdn.microsoft.com/library/azure/microsoft.azure.documents.client.documentclient.aspx)
-- [Code and test Azure functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
+- [Code and test Azure functions locally](https://docs.microsoft.com/azure/azure-functions/functions-run-local)
 - [.NET Web Development and Tools Blog - Visual Studio 2017 Tools for Azure Functions](https://blogs.msdn.microsoft.com/webdev/2017/05/10/azure-function-tools-for-visual-studio-2017/)

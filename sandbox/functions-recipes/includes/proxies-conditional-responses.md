@@ -45,5 +45,5 @@ To configure proxies, edit `proxies.json`.
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Azure Functions Proxies documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies)
+- [Azure Functions Proxies documentation](https://docs.microsoft.com/azure/azure-functions/functions-proxies)
 - [Proxies Sample](https://gist.github.com/sjkp/890d94b958965898e45e69bf199c88d4)

@@ -35,5 +35,5 @@ The published function is visible in the Azure portal and ready for use. Use the
 
 [!include[](../includes/read-more-heading.md)]
 
-- [Code and test Azure functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
+- [Code and test Azure functions locally](https://docs.microsoft.com/azure/azure-functions/functions-run-local)
 - [Azure Functions Core Tools GitHub Repository](https://github.com/Azure/azure-functions-core-tools)
