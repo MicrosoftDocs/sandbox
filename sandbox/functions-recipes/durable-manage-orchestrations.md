@@ -1,5 +1,5 @@
 ---
-title: Azure Functions Recipes - Manging Orchestrations
+title: Azure Functions Recipes - Managing Orchestrations
 description: Manging Orchestrations
 author: cecilphillip
 manager: scottca
