@@ -1,5 +1,5 @@
 ## Sending event notifications
-Orchestrations can be sent event notifications by using the `RasieEventAsync` method of `DurableOrchestrationClient`. The method must be provided with the instance ID, an event name, and the associated event data.
+Orchestrations can be sent event notifications by using the `RaiseEventAsync` method of `DurableOrchestrationClient`. The method must be provided with the instance ID, an event name, and the associated event data.
 
 ```csharp
 [FunctionName("NotifyEvent")]
@@ -32,7 +32,7 @@ public static async Task<InvoiceData> OrderOrchestration([OrchestrationTrigger] 
 ```
 
 [!include[](../includes/takeaways-heading.md)]
-* `RasieEventAsync` method of `DurableOrchestrationClient` can be used to send event notifications to orchestrations.
+* `RaiseEventAsync` method of `DurableOrchestrationClient` can be used to send event notifications to orchestrations.
 * `WaitForExternalEvent` on `DurableOrchestrationContext` can be used to pause execution until a notification is received.
 * Alternatively, the notification endpoint returned from `CreateCheckStatusResponse` can be used.
 
