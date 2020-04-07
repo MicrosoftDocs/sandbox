@@ -30,6 +30,6 @@ public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityCon
 * `FunctionFailedException`'s `InnerException` property will contain the source exception from the activity function.
 
 [!include[](../includes/read-more-heading.md)]
-* [Handling errors in Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-error-handling)
+* [Handling errors in Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-error-handling)
 * [Debugging and Diagnostics of Durable Functions](https://channel9.msdn.com/Shows/On-NET/Debugging-and-Diagnostics-of-Durable-Functions?WT.mc_id=functions-recipes-docs-cephilli)
 * [Durable Functions repo and samples](https://github.com/Azure/azure-functions-durable-extension)

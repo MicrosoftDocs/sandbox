@@ -59,7 +59,7 @@ Due to a Unity 2018.1 limitation (fixed in 2018.2), HTTPS requests using the sta
 
 ## Try the Sample
 
-To use the sample, you will need to have an Azure Mobile Apps account setup along with a valid connection string.  You can learn more about that [here](https://docs.microsoft.com/en-us/azure/MobileApps/common/MobileApps-create-MobileApps-account).
+To use the sample, you will need to have an Azure Mobile Apps account setup along with a valid connection string.  You can learn more about that [here](https://docs.microsoft.com/azure/MobileApps/common/MobileApps-create-MobileApps-account).
 
 To use the sample, do the following:
 
@@ -85,4 +85,4 @@ The code for the sample is broken out into four separate scripts, one for each M
 
 ## Next Steps
 
-* [Azure Mobile Apps Docs](https://docs.microsoft.com/en-us/azure/app-service-mobile/)
+* [Azure Mobile Apps Docs](https://docs.microsoft.com/azure/app-service-mobile/)

@@ -116,7 +116,7 @@ public class HighScoreInfo
 
 ## The Azure MobileServiceClient
 
-Central to the Azure Mobile Client SDK is the [MobileServiceClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.mobileservices.mobileserviceclient?view=azure-dotnet), which allows access to your Mobile App backend.  To use this, you will need the URL of your mobile service backend.
+Central to the Azure Mobile Client SDK is the [MobileServiceClient](https://docs.microsoft.com/dotnet/api/microsoft.windowsazure.mobileservices.mobileserviceclient?view=azure-dotnet), which allows access to your Mobile App backend.  To use this, you will need the URL of your mobile service backend.
 
 ### Locate the URL of the Mobile App backend
 

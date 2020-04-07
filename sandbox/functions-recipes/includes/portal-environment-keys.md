@@ -17,4 +17,4 @@ Host keys are identical across functions in the same function app, but function 
 
 [!include[](../includes/read-more-heading.md)]
 
-[More on keys and what they are used for](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook#keys)
+[More on keys and what they are used for](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook#keys)

@@ -14,7 +14,7 @@ ms.author: brpeek
 
 ## Azure Event Hubs for Gaming
 
-Azure Event Hubs is a real-time custom event ingestion service that can collect and store millions of events per second. Events can then be analyzed in real-time using [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) or stored to [Azure Storage](https://azure.microsoft.com/en-us/services/storage/) or [Azure Data Lake Store](https://azure.microsoft.com/en-us/services/data-lake-store/) for processing at a later time. Analysis of this data could reveal various insights about player's performance/behavior during the game as well as be utilized in creation of other types of metrics (e.g. daily/weekly/monthly active users, churn, user sessions, transactions etc.).
+Azure Event Hubs is a real-time custom event ingestion service that can collect and store millions of events per second. Events can then be analyzed in real-time using [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/) or stored to [Azure Storage](https://azure.microsoft.com/services/storage/) or [Azure Data Lake Store](https://azure.microsoft.com/services/data-lake-store/) for processing at a later time. Analysis of this data could reveal various insights about player's performance/behavior during the game as well as be utilized in creation of other types of metrics (e.g. daily/weekly/monthly active users, churn, user sessions, transactions etc.).
 
 > [!IMPORTANT]
 > This is an experimental Unity SDK for Azure Event Hubs.  As such, please note that this SDK is not supported and is not provided by the Azure Event Hubs team.  If you run into problems, please let us know using the [GitHub Issues](https://aka.ms/azsdks-unity-issues) page for the SDK.
@@ -45,7 +45,7 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
 [!include[](include/unity-import.md)]
 
-Please refer to the [Azure Event Hubs Docs](https://docs.microsoft.com/en-us/azure/event-hubs/) for even more samples and tutorials on using the API.
+Please refer to the [Azure Event Hubs Docs](https://docs.microsoft.com/azure/event-hubs/) for even more samples and tutorials on using the API.
 
 ## Unity 2018.1 and SSL support
 
@@ -57,7 +57,7 @@ System.Net.ServicePointManager.ServerCertificateValidationCallback += (sender, c
 
 ## Try the Sample
 
-To use the sample, you will need to have an Azure Event Hubs account with a valid Event Hubs connection string. You'll also need to create an event hub on this account. You can check the Event Hubs documentation [here](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) to understand how to complete this task.
+To use the sample, you will need to have an Azure Event Hubs account with a valid Event Hubs connection string. You'll also need to create an event hub on this account. You can check the Event Hubs documentation [here](https://docs.microsoft.com/azure/event-hubs/event-hubs-create) to understand how to complete this task.
 
 To use the sample, do the following:
 
@@ -79,11 +79,11 @@ To use the sample, do the following:
 
 1. Run the project from within the Unity Editor by clicking the **Play** button.  Alternatively, you can export to the platform of your choosing and run there.
 
-1. To test that the events you are sending are correctly arriving to your Event Hubs account, you can use [Event Hubs capture](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-enable-through-portal) and monitor your Storage/Data Lake Store account. Alternatively, you can create a simple .NET console app with a class that implements the **IEventProcessor** interface, like the one described [here](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph).
+1. To test that the events you are sending are correctly arriving to your Event Hubs account, you can use [Event Hubs capture](https://docs.microsoft.com/azure/event-hubs/event-hubs-capture-enable-through-portal) and monitor your Storage/Data Lake Store account. Alternatively, you can create a simple .NET console app with a class that implements the **IEventProcessor** interface, like the one described [here](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph).
 
 ## Next Steps
 
-* [Azure Event Hubs Docs](https://docs.microsoft.com/en-us/azure/event-hubs/)
-* [Event Hubs as input to Azure Stream Analytics](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs)
-* [Capture Event Hubs data to Azure Storage or Azure Data Lake Store](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-enable-through-portal)
-* [Azure Data Lake Store documentation](https://docs.microsoft.com/en-us/azure/data-lake-store/)
+* [Azure Event Hubs Docs](https://docs.microsoft.com/azure/event-hubs/)
+* [Event Hubs as input to Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-define-inputs)
+* [Capture Event Hubs data to Azure Storage or Azure Data Lake Store](https://docs.microsoft.com/azure/event-hubs/event-hubs-capture-enable-through-portal)
+* [Azure Data Lake Store documentation](https://docs.microsoft.com/azure/data-lake-store/)

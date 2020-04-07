@@ -71,7 +71,7 @@ To add the Azure Storage SDK to your Unreal project, do the following:
    ```
 
   > [!NOTE]
-  > Unreal Engine disables exception handling by default, however the Storage SDK uses exceptions to report errors.  This may cause unexpected behavior in your game if the Storage SDK throws an exception.  You can download the [Unreal Engine source code](https://www.unrealengine.com/en-US/ue4-on-github) and build the engine yourself with exceptions enabled if this is an important scenario for your game.
+  > Unreal Engine disables exception handling by default, however the Storage SDK uses exceptions to report errors.  This may cause unexpected behavior in your game if the Storage SDK throws an exception.  You can download the [Unreal Engine source code](https://www.unrealengine.com/ue4-on-github) and build the engine yourself with exceptions enabled if this is an important scenario for your game.
 
 With the above in place, you should now be able to build the project.  To use the API, follow the generic C++ instructions listed above to connect to and use the Azure Storage service.
 
@@ -117,7 +117,7 @@ The project's existing *AzureStorage.uplugin* and *AzureStorage.Build.cs* contai
 
 ## Cosmos DB Table API
 
-[Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction) is Microsoft's globally distributed, multi-model database. One of the data models available for Cosmos DB is [Table API](https://docs.microsoft.com/en-us/azure/cosmos-db/table-introduction). Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API with no code changes and take advantage of premium capabilities. If you have a Cosmos DB database, you can use the Table Storage client SDK we provide to access it from your Unreal Engine game. Check the instructions [here](https://docs.microsoft.com/en-us/azure/cosmos-db/create-table-dotnet#update-your-connection-string) on how to find out your connection string.
+[Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) is Microsoft's globally distributed, multi-model database. One of the data models available for Cosmos DB is [Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction). Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API with no code changes and take advantage of premium capabilities. If you have a Cosmos DB database, you can use the Table Storage client SDK we provide to access it from your Unreal Engine game. Check the instructions [here](https://docs.microsoft.com/azure/cosmos-db/create-table-dotnet#update-your-connection-string) on how to find out your connection string.
 
 ## Next Steps
 

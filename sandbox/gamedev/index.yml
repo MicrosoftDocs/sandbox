@@ -1,98 +1,56 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Azure for Game Developers
+### YamlMime:Landing
+
+title: Azure for Game Developers documentation # < 60 chars
+summary: Get started with developing games that use Azure. # < 160 chars
+
 metadata:
-  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
-  title: The Sandbox - Azure for Game Developers
-  description: Demos and code
-  keywords: Azure, .NET, Node.js, API
-  author: brianpeek
-  ms.author: brpeek
-  manager: timheuer
-  ms.date: 05/03/2017
-  ms.topic: landing-page
-  featureFlags:
-  - clicktale
-  ms.service: multiple
-sections:
-- items:
-  - type: markdown
-    text: |
-      Get started with developing games that use Azure.  More coming soon!
-- title: Azure Gaming SDKs
-  items:
-  - type: paragraph
-    text: Experimental SDKs for various engines and platforms for game developers.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - title: Azure Storage SDK for Unity
-      html: <p>Use Azure Storage from your Unity project</p>
-      href: unity/azure-storage-unity
-      image:
-        src: media/unity.png
-    - title: Azure Event Hubs SDK for Unity
-      html: <p>Use Azure Event Hubs from your Unity project</p>
-      href: unity/azure-event-hubs-unity
-      image:
-        src: media/unity.png
-    - title: Azure Mobile Apps SDK for Unity
-      html: <p>Use Azure Mobile Apps from your Unity project</p>
-      href: unity/azure-mobile-apps-unity
-      image:
-        src: media/unity.png
-    - title: Azure SDKs for MonoGame
-      html: <p>Use the Azure SDKs with MonoGame</p>
-      href: monogame/azure-monogame
-      image:
-        src: media/monogame.png
-    - title: Azure Storage SDK for Unreal Engine
-      html: <p>Use Azure Storage from your Unreal project</p>
-      href: unreal/azure-storage-unreal
-      image:
-        src: media/unreal.png
-- title: Azure Gaming Samples
-  items:
-  - type: paragraph
-    text: Samples and tutorials for game developers.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - title: Azure Easy Tables and Unity
-      html: <p>Use Azure Easy Tables and the Mobile Apps SDK with Unity</p>
-      href: unity/samples/azure-mobile-apps-unity-racer
-      image:
-        src: media/unity.png
-    - title: Azure Storage Bird
-      html: <p>Use Azure Storage to download music at runtime</p>
-      href: unity/samples/azure-storage-bird
-      image:
-        src: media/unity.png
-    - title: Facebook Authentication and Unity
-      html: <p>Incorporate Facebook authentication into a Unity project</p>
-      href: unity/samples/azure-facebook-auth-unity
-      image:
-        src: media/unity.png
-    - title: Other Samples
-      html: <p>Additional Azure Gaming samples</p>
-      href: azure-gaming-samples.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
-- title: Tools and Utilities
-  items:
-  - type: paragraph
-    text: Various tools and utilities related to game development.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - title: NuGet2Unity
-      html: <p>Utility to create Unity packages from NuGet</p>
-      href: unity/nuget2unity
-      image:
-        src: media/unity.png
+  title: Azure for Game Developers documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Get started with developing games that use Azure. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: multiple #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: brianpeek #Required; your GitHub user alias, with correct capitalization.
+  ms.author: brpeek #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/03/2017 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Azure Gaming SDKs
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Azure Storage SDK for Unity
+            url: unity/azure-storage-unity.md
+          - text: Azure Event Hubs SDK for Unity
+            url: unity/azure-event-hubs-unity.md
+          - text: Azure Mobile Apps SDK for Unity
+            url: unity/azure-mobile-apps-unity.md
+          - text: Azure SDKs for MonoGame
+            url: monogame/azure-monogame.md
+          - text: Azure Storage SDK for Unreal Engine
+            url: unreal/azure-storage-unreal.md
+  
+  # Card (optional)
+  - title: Azure Gaming Samples
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Azure Easy Tables and Unity
+            url: unity/samples/azure-mobile-apps-unity-racer.md
+          - text: Azure Storage Bird
+            url: unity/samples/azure-storage-bird.md
+          - text: Facebook Authentication and Unity
+            url: unity/samples/azure-facebook-auth-unity.md
+          - text: Other Samples
+            url: azure-gaming-samples.md
+  
+  # Card (optional)
+  - title: Tools and Utilities
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: NuGet2Unity
+            url: unity/nuget2unity.md
