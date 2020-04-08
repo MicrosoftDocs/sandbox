@@ -1,47 +1,32 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Demos and Code
+### YamlMime:Landing
+
+title: Sandbox demos documentation # < 60 chars
+summary: Introduce Sandbox demos using various Azure services. # < 160 chars
+
 metadata:
-  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
-  title: The Sandbox - Demos and Code
-  description: Demos and code
-  keywords: Azure, .NET, Node.js, API
-  author: brianpeek
-  ms.author: brpeek
-  manager: timheuer
-  ms.date: 11/08/2017
-  ms.topic: landing-page
-  featureFlags:
-  - clicktale
-  ms.service: multiple
-sections:
-- items:
-  - type: markdown
-    text: |
-      Some fun demos (with code!) using various Azure services.
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - title: OctoBot
-      html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
-      href: octobot
-      image:
-        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
-    - title: NotBacon
-      html: <p>Train the Azure Custom Vision Service to detect the presence of bacon in photos</p>
-      href: notbacon
-      image:
-        src: https://docs.microsoft.com/azure/media/index/cs-custom-vision.svg
-    - title: NotHotdog
-      html: <p>Is it a hotdog or not? Let the Computer Vision API decide</p>
-      href: nothotdog
-      image:
-        src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
-    - title: GitHub Release Notes Generator
-      html: <p>Generate release notes when creating a new release with Azure Functions and storage</p>
-      href: github-release-notes
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+  title: Sandbox demos documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Introduce Sandbox demos using various Azure services. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: multiple #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: brianpeek #Required; your GitHub user alias, with correct capitalization.
+  ms.author: brianpeek #Required; microsoft alias of author; optional team alias.
+  ms.date: 11/08/2017 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Demos
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: OctoBot
+            url: octobot.md
+          - text: NotBacon
+            url: notbacon.md
+          - text: NotHotdog
+            url: nothotdog.md
+          - text: GitHub Release Notes Generator
+            url: github-release-notes.md
