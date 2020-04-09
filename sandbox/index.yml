@@ -38,6 +38,7 @@ additionalContent:
         - title: GitHub Release Notes Generator
           summary: Generate release notes when creating a new release with Azure Functions and storage
           url: demos/github-release-notes.md 
+  sections:
     - title: Game Development # < 60 chars (optional)
       summary: Experimental SDKs and samples for game development with Azure. # < 160 chars (optional)
       items:
@@ -53,6 +54,7 @@ additionalContent:
         - title: Azure SDKs and Samples for Unreal Engine
           summary: Use Azure SDKs with Unreal Engine
           url: gamedev/unreal/azure-storage-unreal.md
+  sections:
     - title: Guidance # < 60 chars (optional)
       summary: Articles, tips and tricks, and examples on a variety of topics. # < 160 chars (optional)
       items:
