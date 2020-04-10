@@ -63,6 +63,4 @@ additionalContent:
         # Card
         - title: Azure Functions Recipes
           summary: A collection of community-maintained tips and tricks for working with Azure Functions.
-          url: functions-recipes
-
-
+          url: https://docs.microsoft.com/sandbox/functions-recipes/
