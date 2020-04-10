@@ -37,6 +37,32 @@ highlightedContent:
       itemType: overview
       url: demos/github-release-notes.md 
 
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: sectiontitle # < 60 chars (optional)
+  summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: Game Development
+      links:
+        - url: gamedev/unity/azure-storage-unity.md
+          itemType: sample
+          text: Azure SDKs and Samples for Unity
+        - url: gamedev/monogame/azure-monogame.md
+          itemType: sample
+          text: Azure SDKs and Samples for MonoGame
+        - url: gamedev/unreal/azure-storage-unreal.md
+          itemType: sample
+          text: Azure SDKs and Samples for Unreal Engine
+
+    # Card
+    - title: Guidance
+      links:
+        - url: https://docs.microsoft.com/sandbox/functions-recipes/
+          itemType: concept
+          text: Azure Functions Recipes
+
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
