@@ -1,89 +1,64 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: The Sandbox
+### YamlMime:Hub
+
+title: Sandbox documentation # < 60 chars
+summary: The Sandbox is designed to be a place where we can experiment, play with new technology, and get feedback on ideas.  # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: azure
+
 metadata:
-  document_id: 82e6a19c-bcea-4072-80c0-ec505ae125a5
-  title: The Sandbox
-  description: The Sandbox is an area of [docs.microsoft.com](https://docs.microsoft.com/) that is designed to be a place where we can experiment, play with new technology, and get feedback on ideas.
-  keywords: Azure, .NET, Node.js, API
-  author: brianpeek
-  ms.author: brpeek
-  manager: timheuer
-  ms.date: 05/03/2017
-  ms.topic: landing-page
-  featureFlags:
-  - clicktale
-  ms.service: multiple
-sections:
-- items:
-  - type: markdown
-    text: The Sandbox is an area of [docs.microsoft.com](https://docs.microsoft.com/) that is designed to be a place where we can experiment, play with new technology, and get feedback on ideas. This content isn't guaranteed to be kept up-to-date, maintained, or even work at any given moment, and we may revise, rewrite, or even delete things at any time. Of course, community contributions and feedback are welcome. We hope you find something fun or interesting to explore and learn from!
-  - type: paragraph
-    text: <center><img src="media/bit_sandbox1024.png" align="middle" style="max-width:100%;height:auto;display:inline-block;"></center>
-- title: Demos and Code
+  title: Sandbox documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: The Sandbox is designed to be a place where we can experiment, play with new technology, and get feedback on ideas.  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: multiple #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: brianpeek #Required; your GitHub user alias, with correct capitalization.
+  ms.author: brianpeek #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/03/2017 #Required; mm/dd/yyyy format.
+
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
-  - type: paragraph
-    text: Some fun demos (with code!) using various Azure services.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
+    # Card
     - title: OctoBot
-      html: <p>Manage GitHub repos and issues in a chat window using Bot Framework and LUIS.ai</p>
-      href: demos/octobot
-      image:
-        src: https://docs.microsoft.com/azure/media/index/bot-service.svg
+      itemType: sample
+      url: demos/octobot.md
+    # Card
     - title: NotBacon
-      html: <p>Train the Azure Custom Vision Service to detect the presence of bacon in photos</p>
-      href: demos/notbacon
-      image:
-        src: https://docs.microsoft.com/azure/media/index/cs-custom-vision.svg
+      itemType: sample
+      url: demos/notbacon.md
+    # Card
     - title: NotHotdog
-      html: <p>Is it a hotdog or not? Let the Computer Vision API decide</p>
-      href: demos/nothotdog
-      image:
-        src: https://docs.microsoft.com/azure/media/index/api_vis_computervision.svg
+      itemType: sample
+      url: demos/notbacon.md
+    # Card
     - title: GitHub Release Notes Generator
-      html: <p>Generate release notes when creating a new release with Azure Functions and storage</p>
-      href: demos/github-release-notes
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
-- title: Game Development
+      itemType: overview
+      url: demos/github-release-notes.md 
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: sectiontitle # < 60 chars (optional)
+  summary: sectionsummary # < 160 chars (optional)
   items:
-  - type: paragraph
-    text: Experimental SDKs and samples for game development with Azure.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - title: Azure SDKs and Samples for Unity
-      html: <p>Use Azure services from your Unity project</p>
-      href: gamedev/
-      image:
-        src: gamedev/media/unity.png
-    - title: Azure SDKs and Samples for MonoGame
-      html: <p>Use Azure SDKs with MonoGame</p>
-      href: gamedev/
-      image:
-        src: gamedev/media/monogame.png
-    - title: Azure SDKs and Samples for Unreal Engine
-      html: <p>Use Azure SDKs with Unreal Engine</p>
-      href: gamedev/
-      image:
-        src: gamedev/media/unreal.png
-- title: Guidance
-  items:
-  - type: paragraph
-    text: Articles, tips and tricks, and examples on a variety of topics.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - title: Azure Functions Recipes
-      html: <p>A collection of community-maintained tips & tricks for working with Azure Functions</p>
-      href: functions-recipes
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+    # Card
+    - title: Game Development
+      links:
+        - url: gamedev/unity/azure-storage-unity.md
+          itemType: sample
+          text: Azure SDKs and Samples for Unity
+        - url: gamedev/monogame/azure-monogame.md
+          itemType: sample
+          text: Azure SDKs and Samples for MonoGame
+        - url: gamedev/unreal/azure-storage-unreal.md
+          itemType: sample
+          text: Azure SDKs and Samples for Unreal Engine
+
+    # Card
+    - title: Guidance
+      links:
+        - url: https://docs.microsoft.com/sandbox/functions-recipes/
+          itemType: concept
+          text: Azure Functions Recipes
