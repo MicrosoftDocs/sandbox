@@ -53,10 +53,23 @@ additionalContent:
         - title: Azure SDKs and Samples for Unreal Engine
           summary: Use Azure SDKs with Unreal Engine
           url: gamedev/unreal/azure-storage-unreal.md
-    - title: Guidance # < 60 chars (optional)
+
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title:  Guidance # < 60 chars (optional)
       summary: Articles, tips and tricks, and examples on a variety of topics. # < 160 chars (optional)
       items:
         # Card
         - title: Azure Functions Recipes
-          summary: A collection of community-maintained tips & tricks for working with Azure Functions
-          url: functions-recipes
+          links:
+            - text: Functions Basics
+              url: functions-recipes/functions-basics.md
+            - text: Triggers and bindings
+              url: functions-recipes/triggers-bindings.md
+            - text: Development environment
+              url: functions-recipes/development-environment.md
+            - text: Durable Functions
+              url: functions-recipes/durable-functions.md
