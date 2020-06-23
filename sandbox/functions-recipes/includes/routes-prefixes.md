@@ -4,8 +4,10 @@ By default Azure Functions has a route prefix on all functions /api/. To change 
 
 ```json
 {
-  "http": {
-    "routePrefix": ""
+  "extensions": {
+    "http": {
+      "routePrefix": ""
+    }
   }
 }
 ```
