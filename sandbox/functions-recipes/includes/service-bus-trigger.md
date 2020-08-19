@@ -16,7 +16,7 @@ Using the `ServiceBusTrigger` attribute, you can supply the queue or topic name,
 Topic Trigger
 ```csharp
 [FunctionName("ServiceBusTopicTrigger")]
-public static void RunTopic([ServiceBusTrigger("functopic", "sampletopic", AccessRights.Manage, Connection = "ConnectionSetting")]string topicMessage,
+public static void Run([ServiceBusTrigger("functopic", "sampletopic", AccessRights.Manage, Connection = "ConnectionSetting")]string topicMessage,
                              TraceWriter log)
 {
     log.Info("101 Azure Function Demo - Service Bus Topic Trigger");
