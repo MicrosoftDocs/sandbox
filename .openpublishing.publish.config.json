@@ -4,8 +4,8 @@
   "docsets_to_publish": [
     {
       "docset_name": "sandbox",
-      "build_source_folder": "sandbox",
-      "build_output_subfolder": "sandbox",
+      "build_source_folder": "previous-versions/sandbox",
+      "build_output_subfolder": "previous-versions/sandbox",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
