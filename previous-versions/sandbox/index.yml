@@ -59,6 +59,6 @@ conceptualContent:
     # Card
     - title: Guidance
       links:
-        - url: https://docs.microsoft.com/sandbox/functions-recipes/
+        - url: https://docs.microsoft.com/previous-versions/sandbox/functions-recipes/
           itemType: concept
           text: Azure Functions Recipes
