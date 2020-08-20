@@ -21,7 +21,7 @@ manager: "crdun"
 
 Azure provides a scalable solution to storing telemetry and other game data in the cloud. With the release of Unity 2017, Unity's support for .NET 4.x makes Azure integration simpler than ever.
 
-This sample will walk through the process of using Easy Tables to save telemetry and leaderboard data in Azure using the [Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity).
+This sample will walk through the process of using Easy Tables to save telemetry and leaderboard data in Azure using the [Mobile Apps SDK for Unity](/previous-versions/sandbox/gamedev/unity/azure-mobile-apps-unity).
 
 ![Sample game screenshot](media/vstu_azure-test-sample-game-image2.png)
 
@@ -31,7 +31,7 @@ This sample will walk through the process of using Easy Tables to save telemetry
 * [An Azure account (Sign up for free!)](https://aka.ms/azfreegamedev)
 
 > [!NOTE]
-> The Azure Mobile Client SDK used in this tutorial is considered experimental. As such, this may not build and run on every single Unity platform. Please see the [Azure Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity) article for a list of known working platforms and issues.
+> The Azure Mobile Client SDK used in this tutorial is considered experimental. As such, this may not build and run on every single Unity platform. Please see the [Azure Mobile Apps SDK for Unity](/previous-versions/sandbox/gamedev/unity/azure-mobile-apps-unity) article for a list of known working platforms and issues.
 
 ## Configure Easy Tables in Azure
 
@@ -189,7 +189,7 @@ This section will simply explain how to play the sample game and ensure it's fun
 
 ## Export for target platform
 
-In addition, you can export and run the Unity game on a target platform.  The experimental Mobile Apps SDK supports the most popular Unity targets.  Please check the [Azure Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity) article to see which platforms are supported and any known issues for exporting to those platforms.
+In addition, you can export and run the Unity game on a target platform.  The experimental Mobile Apps SDK supports the most popular Unity targets.  Please check the [Azure Mobile Apps SDK for Unity](/previous-versions/sandbox/gamedev/unity/azure-mobile-apps-unity) article to see which platforms are supported and any known issues for exporting to those platforms.
 
 ### Starting the game
 
@@ -522,7 +522,7 @@ public class Leaderboard : MonoBehaviour
 
 ## Next Steps
 
-* [Azure Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity)
-* [Other Unity SDKs for Azure](/sandbox/gamedev/)
+* [Azure Mobile Apps SDK for Unity](/previous-versions/sandbox/gamedev/unity/azure-mobile-apps-unity)
+* [Other Unity SDKs for Azure](/previous-versions/sandbox/gamedev/)
 * [Mobile Apps Documentation](/azure/app-service-mobile/)
 * [Azure Samples with Unity](https://aka.ms/azsamples-unity)
