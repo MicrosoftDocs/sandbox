@@ -20,7 +20,7 @@ If you're familiar with [HBO's Silicon Valley](https://www.hbo.com/silicon-valle
 [![Try it now](../media/buttons/try2.png)](https://nothotdogweb.azurewebsites.net/)
 
 > [!TIP]
-> If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/sandbox/demos/notbacon) article.
+> If you'd like to train your own model using the [Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) to recognize images for your domain, check out the [NotBacon](/previous-versions/sandbox/demos/notbacon) article.
 
 ## Requirements
 * An [Azure](https://azure.microsoft.com/free/) account
@@ -137,4 +137,4 @@ Here are links to the docs for the items discussed above.  Play around with the 
 
 * [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/)
 * [Computer Vision API](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
-* Check out [NotBacon](/sandbox/demos/notbacon) for a variant of this using the Custom Vision Service trained with images of bacon!
+* Check out [NotBacon](/previous-versions/sandbox/demos/notbacon) for a variant of this using the Custom Vision Service trained with images of bacon!
